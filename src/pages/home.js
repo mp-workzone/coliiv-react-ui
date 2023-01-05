@@ -7,10 +7,10 @@ import VideoArea from "../components/slogan";
 function Home() {
   return (
     <>
-      <Header />,
-      <Hero />,
-      <VideoArea />,
-      <Service />,
+      <Header />
+      <Hero />
+      <VideoArea />
+      <Service />
       <Gallery />
     </>
   );

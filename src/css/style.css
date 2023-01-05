@@ -31,7 +31,8 @@ img {
   max-width: 100%;
 }
 
-img {
+img,
+svg {
   vertical-align: middle;
 }
 
@@ -83,4 +84,6 @@ p {
 
 .header-area {
   padding: 30px 70px;
+  position: relative;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */

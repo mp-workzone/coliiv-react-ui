@@ -1,5 +1,7 @@
 .header-area {
     padding: 30px 70px;
+    position: relative;
+    top: 0;
     .navbar {
         @extend .flex-center-spaceBetween;
     }
