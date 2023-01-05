@@ -71,7 +71,7 @@ p {
   justify-content: center;
 }
 
-.flex-center-spaceBetween, .header-area .navbar {
+.flex-center-spaceBetween {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,10 +80,4 @@ p {
 .container {
   max-width: clamp(320px, 95%, 1710px);
   margin: 0 auto;
-}
-
-.header-area {
-  padding: 30px 70px;
-  position: relative;
-  top: 0;
 }/*# sourceMappingURL=home.css.map */

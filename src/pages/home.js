@@ -1,17 +1,16 @@
 // @flow
-import Gallery from "../components/gallery";
-import Header from "../components/header";
+import Appartment from "../components/appartment";
 import Hero from "../components/hero";
 import Service from "../components/service";
-import VideoArea from "../components/slogan";
+import Featured from "../components/featured";
+import "../css/home.css";
 function Home() {
   return (
     <>
-      <Header />
       <Hero />
-      <VideoArea />
+      <Featured />
       <Service />
-      <Gallery />
+      <Appartment />
     </>
   );
 }

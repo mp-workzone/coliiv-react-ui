@@ -1,4 +1,4 @@
-function Gallery() {
+function Appartment() {
   return (
     <section className="home-gallery">
       <div className="leaf">
@@ -27,4 +27,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default Appartment;

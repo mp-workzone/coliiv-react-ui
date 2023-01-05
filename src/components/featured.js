@@ -1,4 +1,4 @@
-function Slogan() {
+function Featured() {
   return (
     <section className="vdo-area">
       <div className="plant">
@@ -21,4 +21,4 @@ function Slogan() {
   );
 }
 
-export default Slogan;
+export default Featured;
