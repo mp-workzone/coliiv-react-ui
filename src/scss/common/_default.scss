@@ -19,8 +19,6 @@ body {
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
@@ -40,19 +38,22 @@ svg {
 button {
     border: none;
 }
-
+h1,
+h2 {
+    font-family: "Berton";
+    line-height: 1.33;
+    font-weight: 400;
+}
 h1 {
     font-size: 80px;
+
 }
 
 h2 {
     font-size: 60px;
 }
 
-h1,
-h2 {
-    font-family: "Berton";
-}
+
 
 h4 {
     font-size: 28px;
@@ -64,4 +65,8 @@ h5 {
 
 p {
     font-size: 20px;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    padding: 0;
+    margin: 0;
 }
