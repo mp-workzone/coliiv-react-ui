@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Berton";
+  src: url("../fonts/Berton-Regular.otf") format("OpenType");
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  overflow-x: hidden;
+  left: 1.33;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+button {
+  border: none;
+}
+
+h1,
+h2 {
+  font-family: "Berton";
+  line-height: 1.33;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center-spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: clamp(320px, 92%, 1730px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-alt {
+  max-width: clamp(320px, 92%, 1638px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title-primary {
+  font-size: 62px;
+}
+
+.title-secondary {
+  font-family: "poppins";
+  font-weight: 300;
+}
+
+.dsc {
+  line-height: 1.33;
+  font-weight: 300;
+  max-width: 755px;
+  text-transform: capitalize;
+}
+
+.header-area {
+  padding: 30px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 99999;
+}
+.header-area .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-area {
+  background-color: #272727;
+  padding: 90px 0 20px;
+}
+.footer-area .footer-widgets {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-area .col-right {
+  padding-right: 330px;
+  display: flex;
+}
+.footer-area .footer-widget-link:first-child {
+  padding-right: 160px;
+}
+.footer-area .footer-widget-link li a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  line-height: 2.2;
+}
+
+.footer-social-links {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.footer-social-links li {
+  margin-right: 40px;
+}
+
+.footer-address span {
+  display: block;
+  color: #ffffff;
+}
+
+.copyright p {
+  margin: 0;
+  text-align: right;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}/*# sourceMappingURL=common.css.map */
