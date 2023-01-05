@@ -1,17 +1,13 @@
-import hero from "../assets/home-hero.webp";
+// import hero from "../assets/home-hero.webp";
 function Hero() {
   return (
     <section className="home-hero hero-section">
-      <div className="hero-img">
-        <img src={hero} alt=""></img>
-      </div>
-
-      <div className="hero-title">
-        <h1 className="hero-title__main">El hogar para los</h1>
-        <h2 className="hero-title__sub">Nómadas Digitales</h2>
-      </div>
-      <div className="scroll-down">
-        <a href="/">
+      <div className="container">
+        <div className="hero-title">
+          <h1 className="hero-title__primary">El hogar para los</h1>
+          <h2 className="hero-title__secondary">Nómadas Digitales</h2>
+        </div>
+        <a className="scroll-down" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="127.576"

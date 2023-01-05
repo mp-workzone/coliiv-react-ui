@@ -1,0 +1,25 @@
+.hero-section{
+	position: relative;
+	margin-top: -90px;
+	background-image: url(../assets/home-hero.webp);
+	background-size: cover;
+	padding: 100px 0;
+	height: 100vh;
+	.hero-title{
+		margin-top: 210px;
+		.hero-title__primary,
+		.hero-title__secondary{
+			color: $secondary-color-03;
+		}
+		.hero-title__secondary{
+			font-family: "poppins";
+			font-size: 70px;
+			font-weight: 200;
+		}
+	}
+	.scroll-down{
+		position: absolute;
+		bottom: 55px;
+		left: 4%;
+	}
+}

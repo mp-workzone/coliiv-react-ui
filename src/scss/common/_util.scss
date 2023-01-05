@@ -11,6 +11,26 @@
 }
 
 .container {
-    max-width: clamp(320px, 95%, 1710px);
+    max-width: clamp(320px, 92%, 1730px);
+    padding: 0 10px;
     margin: 0 auto;
+}
+
+.container-alt {
+    max-width: clamp(320px, 92%, 1638px);
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.title-primary{
+    font-size: 62px;
+}
+.title-secondary{
+    font-family: "poppins";
+    font-weight: 300;
+}
+.dsc{
+    line-height: 1.33;
+    font-weight: 300;
+    max-width: 755px;
+    text-transform: capitalize;
 }

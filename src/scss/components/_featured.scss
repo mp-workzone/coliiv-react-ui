@@ -1,0 +1,25 @@
+.featured-area{
+	padding: 200px 0 50px;
+	position: relative;
+	.plant{
+		position: absolute;
+		top: 111px;
+		right: -80px;
+	}
+	.featured-context{
+		padding: 58px 0 200px 70px;
+		color: $secondary-color-03;
+		text-transform: uppercase;
+		.title-secondary{
+			margin-bottom: 40px;
+		}
+	}
+	.featured-video{
+		padding: 0 20px;
+			display: block;
+			width: 100%;
+		img{
+			width: 100%;
+			object-fit: cover;
+		}}
+}
