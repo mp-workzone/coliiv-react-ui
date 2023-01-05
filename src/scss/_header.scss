@@ -1,0 +1,6 @@
+.header-area {
+    padding: 30px 70px;
+    .navbar {
+        @extend .flex-center-spaceBetween;
+    }
+}

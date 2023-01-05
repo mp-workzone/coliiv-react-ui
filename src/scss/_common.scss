@@ -1,0 +1,16 @@
+.flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-spaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: clamp(320px, 95%, 1710px);
+    margin: 0 auto;
+}
