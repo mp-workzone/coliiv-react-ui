@@ -1,17 +1,18 @@
-.featured-area{
+.feature-area{
 	padding: 200px 0 50px;
 	position: relative;
+	z-index: 9;
 	.plant{
 		position: absolute;
 		top: 111px;
 		right: -80px;
 	}
-	.featured-context{
+	.feature-context{
 		padding: 58px 0 200px 70px;
 		color: $secondary-color-03;
 		text-transform: uppercase;
 		.title-secondary{
-			margin-bottom: 40px;
+			margin-bottom: 24px;
 		}
 	}
 	.featured-video{
