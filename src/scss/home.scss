@@ -1,7 +1,16 @@
 // Base
 @import "common/mixin";
 @import "common/variable";
+@import "common/default";
 
 // Home Page Style
 @import "components/hero";
-@import "components/featured";
+@import "components/feature";
+@import "components/service";
+@import "components/appartments";
+@import "components/h2Contact";
+@import "components/serviceTable";
+@import "components/partnerCarousel";
+@import "components/partners";
+@import "components/location";
+

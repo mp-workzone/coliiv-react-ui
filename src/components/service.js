@@ -1,13 +1,17 @@
+import Leaf from "../assets/leaf01.png";
+import Service01 from "../assets/service01.png";
 function Service() {
   return (
     <section className="service-area">
       <div className="leaf">
-        <img src="../assets/leaf01.png" alt="" />
+        <img src={Leaf} alt="" />
       </div>
-      <div className="container">
+      <div className="container-alt">
         <div className="service-title">
-          <h2 className="title__primary">innovación</h2>
-          <h2 className="title__secondary">en cada espacio</h2>
+          <h2 className="title-primary">
+            innovación
+            <span className="title-secondary">en cada espacio </span>
+          </h2>
         </div>
         <div className="service-items">
           <div className="service-item">
@@ -15,7 +19,7 @@ function Service() {
               <div className="title">
                 <h3 className="title__main">Counter Lobby</h3>
                 <h4 className="title__sub">24 horas</h4>
-                <div className="l-r-icon">
+                <div className="right-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.957"
@@ -49,11 +53,14 @@ function Service() {
                   </svg>
                 </div>
               </div>
-              <h5 className="dsc">
+              <h5 className="dsc service-dsc">
                 Coliiv es verdadera innovación. Morbi eu nibh non arcu molestie
                 ultrices. Vestibulum dictum, Leo sed gravida euismod, quam eros
                 maximus urna.
               </h5>
+            </div>
+            <div class="service-img">
+              <img src={Service01} alt="" />
             </div>
           </div>
           <div className="service-item">
@@ -61,7 +68,7 @@ function Service() {
               <div className="title">
                 <h3 className="title__main">Counter Lobby</h3>
                 <h4 className="title__sub">24 horas</h4>
-                <div className="l-r-icon">
+                <div className="right-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.957"
@@ -95,11 +102,14 @@ function Service() {
                   </svg>
                 </div>
               </div>
-              <h5 className="dsc">
+              <h5 className="dsc  service-dsc">
                 Coliiv es verdadera innovación. Morbi eu nibh non arcu molestie
                 ultrices. Vestibulum dictum, Leo sed gravida euismod, quam eros
                 maximus urna.
               </h5>
+            </div>
+            <div class="service-img">
+              <img src={Service01} alt="" />
             </div>
           </div>
           <div className="service-item">
@@ -107,7 +117,7 @@ function Service() {
               <div className="title">
                 <h3 className="title__main">Counter Lobby</h3>
                 <h4 className="title__sub">24 horas</h4>
-                <div className="l-r-icon">
+                <div className="right-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.957"
@@ -141,50 +151,51 @@ function Service() {
                   </svg>
                 </div>
               </div>
-              <h5 className="dsc">
+              <h5 className="dsc service-dsc">
                 Coliiv es verdadera innovación. Morbi eu nibh non arcu molestie
                 ultrices. Vestibulum dictum, Leo sed gravida euismod, quam eros
                 maximus urna.
               </h5>
             </div>
+            <div class="service-img">
+              <img src={Service01} alt="" />
+            </div>
           </div>
         </div>
-        <div className="more">
-          <div className="more__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="127.576"
-              height="127.576"
-              viewBox="0 0 127.576 127.576"
-            >
-              <g id="scroll-down" transform="translate(-308.364 -234.091)">
-                <path
-                  id="Path_2497"
-                  data-name="Path 2497"
-                  d="M309.364,297.879a62.786,62.786,0,1,0,21.578-47.373"
-                  fill="none"
-                  stroke="#9eb255"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                />
-                <path
-                  id="Path_2499"
-                  data-name="Path 2499"
-                  d="M590.2,531.917l19.19-19.636H592.023v-8.7h33v32.592h-8.3V518.354l-19.839,19.839Z"
-                  transform="translate(893.036 -309.73) rotate(0)"
-                  fill="none"
-                  stroke="#9eb255"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                />
-              </g>
-            </svg>
-          </div>
-          <a href="/" className="more__link">
-            VER TODOS
-          </a>
-          <p className="more__ext-info">12 Amenidades</p>
-        </div>
+      </div>
+      <div className="more">
+        <a href="/" className="more-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="204.358"
+            height="204.358"
+            viewBox="0 0 204.358 204.358"
+          >
+            <g id="more-icon" transform="translate(-308.364 -234.091)">
+              <path
+                id="Path_2498"
+                data-name="Path 2498"
+                d="M309.364,336.27a101.175,101.175,0,1,0,34.772-76.339"
+                fill="none"
+                stroke="#9eb255"
+                stroke-miterlimit="10"
+                stroke-width="2"
+              />
+              <path
+                id="Path_2499"
+                data-name="Path 2499"
+                d="M590.2,549.245,621.124,517.6H593.137V503.576h53.172V556.1H632.935V527.389l-31.969,31.968Z"
+                transform="translate(-207.712 -195.197)"
+                fill="none"
+                stroke="#9eb255"
+                stroke-miterlimit="10"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+          <span>VER TODOS</span>
+        </a>
+        <h5 className="ext-info">12 Amenidades</h5>
       </div>
     </section>
   );

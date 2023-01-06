@@ -1,0 +1,28 @@
+.location{
+	padding: 190px 0 80px;
+	.location__title{
+		color: $secondary-color-03;
+		font-weight: 400;
+		margin-bottom: 120px;
+		z-index: 9;
+	}
+	.address{
+		z-index: 999;
+	}
+	.map{
+		position: relative;
+		padding: 0 90px;
+		margin-top: -90px;
+		z-index: -1;
+	}
+	.more-link{
+		display: block;
+		text-align: center;
+		span{
+			margin-top: 24px;
+			display: block;
+			color: #707070;
+			text-decoration: underline;
+		}
+	}
+}
