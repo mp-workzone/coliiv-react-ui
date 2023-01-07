@@ -37,6 +37,7 @@ function H2Contact() {
               <h4 className="dsc">El alma de la convivencia.</h4>
             </div>
             <div className="process-item">
+              <span className="slice portrait"></span>
               <div className="icon">{ICON_BUBBLE_CHART}</div>
               <h3 className="process-item__title">Comunidad</h3>
               <h4 className="dsc">El alma de la convivencia.</h4>

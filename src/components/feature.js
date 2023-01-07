@@ -9,10 +9,11 @@ function Feature() {
       <div className="container">
         <div className="feature-context">
           <h2 className="title-primary">
+            <span className="slice portrait"></span>
             Una nueva forma de vivir,
             <span className="title-secondary">explorar y habitar</span>
           </h2>
-          <h4 className="dsc">
+          <h4 className="dsc feature-dsc">
             Coliiv es un lugar multifuncional, con el uso inteligente del
             espacio para suplir las necesidades modernas.
           </h4>

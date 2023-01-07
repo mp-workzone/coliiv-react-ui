@@ -28,8 +28,13 @@
 		.h2-contact__process{
 			flex: 1;
 			.process-item{
+				position: relative;
 				width: 50%;
 				padding-left: 95px;
+				.portrait{
+					height: 110%;
+					left: -50%;
+				}
 				.icon{
 					margin-bottom: 20px;
 				}

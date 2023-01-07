@@ -1,0 +1,107 @@
+.contact{
+	padding: 80px 0 125px;
+	position: relative;
+		text-align: center;
+		.contact__figure{
+			z-index: 99;
+			.figure02{
+				position: relative;
+				margin-top: -300px;
+			}
+		}
+		.content-wrapper{
+			position: relative;
+			.leaf{
+				position: absolute;
+				left: -250px;
+				top: -200px;
+				z-index: -1;
+			}
+		}
+		.content{
+			max-width: 750px;
+				margin: 0 auto;
+			.contact__title{
+				font-weight: 400;
+				color: $secondary-color-03;
+				margin-bottom: 80px;
+				position: relative;
+				line-height: 1.48;
+				text-transform: uppercase;
+			}
+			.contact__dsc{
+				font-weight: 400;
+				color: $secondary-color-06;
+				margin-bottom: 90px;
+			}
+			.contact__form{
+				padding: 0 25px;
+				text-align: start;
+				.input-name,
+				.input-email{
+					width: 100%;
+					padding: 15px 30px;
+					border-radius: 10px;
+					border: 1px solid $secondary-color-06;
+					margin-bottom: 45px;
+					font-family: "montserrat";
+					&::placeholder{
+						color: $secondary-color-06;
+					}
+				}
+				.input-name,
+				.input-email,
+				.agreement-label{
+					font-weight: 400;
+					font-size: 28px;
+					line-height: 1.32;
+				}
+				.agreement-label{
+					display: inline-block;
+					margin: 45px 0;
+					color: $secondary-color-06;
+					padding-left: 40px;
+				}
+				.input-name,
+				.input-email,
+				.submit-btn{
+					display: block;
+				}
+				input[type=checkbox]{
+					visibility: hidden;
+					position: relative;
+					&::before{
+						content: '';
+						position: absolute;
+						height: 36px;
+						width: 36px;
+						border-radius: 8px;
+						border: 2px solid $secondary-color-06;
+						top: -15px;
+						left: 0;
+						visibility: visible;
+					}
+					&:checked::after{
+						content: '';
+						position: absolute;
+						top: -12px;
+						left: 13px;
+						width: 10px;
+						height: 24px;
+						border:solid $primary-color-01;
+						border-width: 0 3px 3px 0;
+						transform: rotate(45deg);
+						visibility: visible;
+					}
+				}
+				.submit-btn{
+					margin: 45px auto 0;
+					border: none;
+					background: transparent;
+					cursor: pointer;
+					color: $secondary-color-03;
+					text-transform: uppercase;
+				}
+			}
+		}
+}

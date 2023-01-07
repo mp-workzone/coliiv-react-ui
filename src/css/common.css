@@ -38,6 +38,12 @@ button {
   border: none;
 }
 
+input:focus,
+input {
+  outline: none;
+  box-shadow: none;
+}
+
 h1,
 h2 {
   font-family: "Berton";
@@ -101,6 +107,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .title-primary {
   font-size: 62px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .title-secondary {
@@ -133,6 +140,24 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-size: 28px;
   font-style: italic;
   text-decoration: underline;
+}
+
+.slice {
+  position: absolute;
+  background-color: #c4d979;
+  z-index: -1;
+}
+
+.portrait {
+  height: 200%;
+  width: 65px;
+  bottom: -15px;
+}
+
+.landscape {
+  height: 30%;
+  width: 20%;
+  top: -15px;
 }
 
 .header-area {

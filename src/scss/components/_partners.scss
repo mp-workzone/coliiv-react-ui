@@ -2,8 +2,9 @@
 	padding: 230px 0 195px;
 	position: relative;
 	&::after{
+		content: '';
 		position: absolute;
-		width: 5%;
+		width: 6.4%;
 		height: 2px;
 		background-color: #707070;
 		bottom: 0;
@@ -12,7 +13,7 @@
 	}
 	.plant{
 		position: absolute;
-		top: 260px;
+		top: 100px;
 		right: -190px;
 	}
 	.partner-list{

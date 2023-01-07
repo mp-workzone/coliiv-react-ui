@@ -1,15 +1,15 @@
-.partnerCarousel{
+.homeCarousel{
 	padding: 182px 0 120px;
 	background-color: $secondary-color-02;
 	position: relative;
 	z-index: 10;
-	.partnerCarousel-icon{
+	.homeCarousel-icon{
 		position: absolute;
 		top: -235px;
 		right: -535px;
 		z-index: -1;
 	}
-	.partnerCarousel__title{
+	.homeCarousel__title{
 		margin-bottom: 100px;
 		.title-primary{
 			color: $light-color-01;
@@ -33,7 +33,7 @@
 				line-height: 1.33;
 				color: $secondary-color-05;
 				position: relative;
-				display: inline-block;
+				text-transform: uppercase;
 				&::after{
 					content: "";
 					position: absolute;

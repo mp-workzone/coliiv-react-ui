@@ -38,6 +38,11 @@ svg {
 button {
     border: none;
 }
+input:focus,
+input{
+    outline: none;
+    box-shadow: none;
+}
 h1,
 h2 {
     font-family: "Berton";

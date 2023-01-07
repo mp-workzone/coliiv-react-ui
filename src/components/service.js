@@ -17,7 +17,10 @@ function Service() {
           <div className="service-item">
             <div className="content">
               <div className="title">
-                <h3 className="title__main">Counter Lobby</h3>
+                <h3 className="title__main">
+                  <span className="slice portrait"></span>
+                  Counter Lobby
+                </h3>
                 <h4 className="title__sub">24 horas</h4>
                 <div className="right-arrow">
                   <svg
@@ -66,7 +69,10 @@ function Service() {
           <div className="service-item">
             <div className="content">
               <div className="title">
-                <h3 className="title__main">Counter Lobby</h3>
+                <h3 className="title__main">
+                  <span className="slice landscape"></span>
+                  Counter Lobby
+                </h3>
                 <h4 className="title__sub">24 horas</h4>
                 <div className="right-arrow">
                   <svg
@@ -115,6 +121,7 @@ function Service() {
           <div className="service-item">
             <div className="content">
               <div className="title">
+                <span className="slice portrait"></span>
                 <h3 className="title__main">Counter Lobby</h3>
                 <h4 className="title__sub">24 horas</h4>
                 <div className="right-arrow">

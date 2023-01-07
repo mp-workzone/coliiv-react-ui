@@ -29,6 +29,7 @@
 .title-primary {
     font-size: 62px;
     text-transform: uppercase;
+    position: relative;
 }
 
 .title-secondary {
@@ -57,4 +58,19 @@
     font-size: 28px;
     font-style: italic;
     text-decoration: underline;
+}
+.slice{
+    position: absolute;
+    background-color: $primary-color-02;
+    z-index: -1;
+}
+.portrait{
+    height: 200%;
+    width: 65px;
+    bottom: -15px;
+}
+.landscape{
+    height: 30%;
+    width: 20%;
+    top: -15px;
 }

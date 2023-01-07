@@ -1,10 +1,11 @@
 // @flow
 import Appartments from "../components/appartments";
+import Contact from "../components/contact";
 import Feature from "../components/feature";
 import H2Contact from "../components/h2Contact";
 import Hero from "../components/hero";
+import HomeCarousel from "../components/homeCarousel";
 import Location from "../components/location";
-import PartnerCarousel from "../components/partnerCarousel";
 import Partners from "../components/partners";
 import Service from "../components/service";
 import ServiceTable from "../components/serviceTable";
@@ -18,9 +19,10 @@ function Home() {
       <Appartments />
       <H2Contact />
       <ServiceTable />
-      <PartnerCarousel />
+      <HomeCarousel />
       <Partners />
       <Location />
+      <Contact />
     </>
   );
 }

@@ -6,7 +6,7 @@ import CarouselIcon from "../assets/home-carousel-icon.png";
 import CarouselImg from "../assets/carousel-img.jpg";
 import { ICON_PARTNER01, ICON_PARTNER02 } from "../utils/icons";
 
-export default class PartnerCarousel extends Component {
+export default class HomeCarousel extends Component {
   render() {
     const settings = {
       dots: false,
@@ -17,12 +17,12 @@ export default class PartnerCarousel extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div className="partnerCarousel">
-        <div className="partnerCarousel-icon">
+      <div className="homeCarousel">
+        <div className="homeCarousel-icon">
           <img src={CarouselIcon} alt="" />
         </div>
         <div className="container-alt">
-          <div className="partnerCarousel__title">
+          <div className="homeCarousel__title">
             <h2 className="title-primary">
               Nuestros<span className="title-secondary">Socios</span>
             </h2>

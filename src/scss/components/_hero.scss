@@ -7,14 +7,23 @@
 	height: 100vh;
 	.hero-title{
 		margin-top: 210px;
+		.hero-title__primary{
+			position: relative;
+			z-index: 9;
+			.landscape{
+				left: -70px;
+			}
+		}
 		.hero-title__primary,
 		.hero-title__secondary{
 			color: $secondary-color-03;
+			text-transform: uppercase;
 		}
 		.hero-title__secondary{
 			font-family: "poppins";
 			font-size: 70px;
 			font-weight: 200;
+			display: block;
 		}
 	}
 	.scroll-down{

@@ -4,8 +4,11 @@ function Hero() {
     <section className="home-hero hero-section">
       <div className="container">
         <div className="hero-title">
-          <h1 className="hero-title__primary">El hogar para los</h1>
-          <h2 className="hero-title__secondary">Nómadas Digitales</h2>
+          <h1 className="hero-title__primary">
+            <span className="slice landscape"></span>
+            El hogar para los
+            <span className="hero-title__secondary">Nómadas Digitales</span>
+          </h1>
         </div>
         <a className="scroll-down" href="/">
           <svg
