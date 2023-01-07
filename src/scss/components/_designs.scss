@@ -1,0 +1,43 @@
+.design-wrapper{
+	padding-bottom: 190px;
+	.design{
+		@extend .flex-center-spaceBetween;
+		margin-bottom: clamp(80px, 10%, 190px);
+		column-gap: clamp(40px, 10%, 200px);
+		.content{
+			max-width: 50%;
+			.design__title{
+				position: relative;
+				font-size: 52px;
+				font-weight: 400;
+				font-family: "Berton";
+				color: $secondary-color-03;
+				line-height: 1.34;
+				margin-bottom: 40px;
+				.landscape{
+					height: 25%;
+					width: 40%;
+					top: 85%;
+					left: -10%;
+				}
+				
+			}
+			.title-primary{
+				margin-bottom: 46px;
+			}
+		}
+
+	}
+	
+	.design:nth-child(even){
+		flex-direction: row-reverse;
+
+	}
+	.design:last-child{
+		margin-bottom: 0;
+	}
+	.negative-space{
+		margin-top: -250px;
+		position: relative;
+	}
+}

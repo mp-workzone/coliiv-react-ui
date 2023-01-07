@@ -30,6 +30,7 @@
     font-size: 62px;
     text-transform: uppercase;
     position: relative;
+    color: $secondary-color-03;
 
     @include max-width(1024px){
         font-size: 49px;
@@ -46,6 +47,7 @@
     font-family: "poppins";
     font-weight: 200;
     display: block;
+    color: $secondary-color-03;
 }
 .title__main{
     font-family: "Berton";
@@ -71,6 +73,7 @@
     line-height: 1.33;
     font-weight: 300;
     text-transform: capitalize;
+    position: relative;
 }
 .more-link{
     line-height: 1.32;

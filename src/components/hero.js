@@ -1,4 +1,3 @@
-// import hero from "../assets/home-hero.webp";
 function Hero() {
   return (
     <section className="home-hero hero-section">

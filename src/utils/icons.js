@@ -1102,6 +1102,76 @@ export const ICON_MORE = (
     </g>
   </svg>
 );
+export const ICON_SCROLL_DOWN = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="180.42"
+    height="180.42"
+    viewBox="0 0 180.42 180.42"
+  >
+    <g id="scrollDown" transform="translate(37.691 -383.574) rotate(45)">
+      <path
+        id="Path_2498"
+        data-name="Path 2498"
+        d="M309.364,297.879a62.786,62.786,0,1,0,21.578-47.373"
+        fill="none"
+        stroke="#9eb255"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+      <path
+        id="Path_2499"
+        data-name="Path 2499"
+        d="M590.2,531.917l19.19-19.636H592.023v-8.7h33v32.592h-8.3V518.354l-19.839,19.839Z"
+        transform="translate(893.036 -309.731) rotate(90)"
+        fill="none"
+        stroke="#9eb255"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+    </g>
+  </svg>
+);
+export const ICON_ADD = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="43.294"
+    height="43.355"
+    viewBox="0 0 43.294 43.355"
+  >
+    <g id="add-icon" transform="translate(-758.939 659.621) rotate(-45)">
+      <g
+        id="Group_19"
+        data-name="Group 19"
+        transform="translate(990.552 88.364)"
+      >
+        <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+          <path
+            id="Path_1761"
+            data-name="Path 1761"
+            d="M0,24.956,24.957,0"
+            transform="translate(0 0.043)"
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-width="4"
+          />
+          <line
+            id="Line_2"
+            data-name="Line 2"
+            y1="24.957"
+            x2="24.956"
+            transform="translate(25 0) rotate(90)"
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-width="4"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
 // export const ICON_SERVICE = (
 
 // );

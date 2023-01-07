@@ -1,0 +1,29 @@
+.team-hero{
+	padding: 210px 0 60px;
+	position: relative;
+	text-align: center;
+	// height: 100vh;
+	z-index: 9;
+	.leaf{
+		position: absolute;
+		top: -70px;
+		left: -255px;
+		z-index: -1;
+	}
+	.team-hero__title{
+		color: $secondary-color-03;
+		margin-bottom: 93px;
+		text-transform: uppercase;
+	}
+	.dsc{
+		color: $secondary-color-04;
+		font-size: 27px;
+		max-width: 900px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		.portrait{
+			height: 110%;
+			bottom: 15%;
+		}
+	}
+}
