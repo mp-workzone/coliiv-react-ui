@@ -38,41 +38,47 @@ svg {
 button {
     border: none;
 }
+
 input:focus,
-input{
+input {
     outline: none;
     box-shadow: none;
 }
+
 h1,
 h2 {
     font-family: "Berton";
     line-height: 1.33;
     font-weight: 400;
 }
+
 h1 {
     font-size: 80px;
-    @include max-width(1024px){
+    @include max-width(1024px) {
         font-size: 52px;
     }
-    @include max-width(992px){
+
+    @include max-width(992px) {
         font-size: 42px;
     }
-    @include max-width(768px){
+
+    @include max-width(768px) {
         font-size: 36px;
     }
-
 }
 
 h2 {
     font-size: 60px;
 
-    @include max-width(1024px){
+    @include max-width(1024px) {
         font-size: 48px;
     }
-    @include max-width(992px){
+
+    @include max-width(992px) {
         font-size: 38px;
     }
-    @include max-width(768px){
+
+    @include max-width(768px) {
         font-size: 32px;
     }
 }
@@ -80,13 +86,15 @@ h2 {
 h4 {
     font-size: 28px;
 
-    @include max-width(1024px){
+    @include max-width(1024px) {
         font-size: 24px;
     }
-    @include max-width(992px){
+
+    @include max-width(992px) {
         font-size: 18px;
     }
-    @include max-width(768px){
+
+    @include max-width(768px) {
         font-size: 14px;
     }
 }
@@ -94,13 +102,15 @@ h4 {
 h5 {
     font-size: 24px;
 
-    @include max-width(1024px){
+    @include max-width(1024px) {
         font-size: 20px;
     }
-    @include max-width(992px){
+
+    @include max-width(992px) {
         font-size: 17px;
     }
-    @include max-width(768px){
+
+    @include max-width(768px) {
         font-size: 13px;
     }
 }
@@ -108,7 +118,43 @@ h5 {
 p {
     font-size: 20px;
 }
-h1,h2,h3,h4,h5,h6,p,ul,li{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
     padding: 0;
     margin: 0;
+}
+
+@keyframes path-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.svg-group {
+    position: relative;
+    display: inline-block;
+
+    .svg-alt {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.rotate-infinite {
+    transform-origin: center;
+    animation: path-rotate 7s infinite linear;
+    display: inline-block;
 }

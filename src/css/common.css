@@ -131,9 +131,51 @@ p {
   font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
   padding: 0;
   margin: 0;
+}
+
+@-webkit-keyframes path-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes path-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.svg-group {
+  position: relative;
+  display: inline-block;
+}
+.svg-group .svg-alt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.rotate-infinite {
+  transform-origin: center;
+  -webkit-animation: path-rotate 7s infinite linear;
+          animation: path-rotate 7s infinite linear;
+  display: inline-block;
 }
 
 .flex-center-center {
@@ -267,13 +309,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-color: transparent;
   z-index: 99999;
 }
+.header-area:before {
+  background-color: #ffffff;
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s;
+  opacity: 0;
+}
+.header-area.fixed:before {
+  opacity: 1;
+}
 .header-area .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-area .navbar .reservar-btn a {
-  color: #CFEB67;
+  color: #cfeb67;
   display: inline-block;
   padding: 12px 32px;
   background-color: #2f2f2f;

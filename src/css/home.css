@@ -131,9 +131,51 @@ p {
   font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
   padding: 0;
   margin: 0;
+}
+
+@-webkit-keyframes path-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes path-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.svg-group {
+  position: relative;
+  display: inline-block;
+}
+.svg-group .svg-alt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.rotate-infinite {
+  transform-origin: center;
+  -webkit-animation: path-rotate 7s infinite linear;
+          animation: path-rotate 7s infinite linear;
+  display: inline-block;
 }
 
 .hero-section {
