@@ -1,0 +1,20 @@
+import { ICON_BACK } from "../utils/icons";
+import HeroImg from "../assets/hero-img.jpg";
+function EventInternalHero() {
+  return (
+    <section className="event-internal-hero">
+      <div className="evento-internal__wrapper">
+        <a href="" className="back-link">
+          <span>{ICON_BACK}</span>
+          Volver a los eventos
+        </a>
+        <h2 className="title-secondary">ADICOM COLOMBIA</h2>
+        <h5 className="subtitle">Tecnología </h5>
+        <div className="event-internal-hero__img">
+          <img src={HeroImg} alt="" />
+        </div>
+      </div>
+    </section>
+  );
+}
+export default EventInternalHero;

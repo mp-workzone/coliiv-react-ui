@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   display: flex;
 }
 
-.flex-center-spaceBetween, .design-wrapper .design {
+.flex-center-spaceBetween {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,148 +259,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0 auto;
 }
 
-.team-hero {
-  padding: 210px 0 60px;
-  position: relative;
-  text-align: center;
-  z-index: 9;
+.event-internal-hero {
+  padding-top: clamp(60px, 10%, 120px);
+  padding-bottom: 45px;
 }
-.team-hero .leaf {
-  position: absolute;
-  top: -70px;
-  left: -255px;
-  z-index: -1;
-}
-.team-hero .team-hero__title {
-  color: #2f2f2f;
-  margin-bottom: 93px;
-  text-transform: uppercase;
-}
-.team-hero .dsc {
-  color: #737373;
-  font-size: 27px;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-.team-hero .dsc .portrait {
-  height: 110%;
-  bottom: 15%;
-}
-
-.design-wrapper {
-  padding-bottom: 190px;
-}
-.design-wrapper .design {
-  margin-bottom: clamp(80px, 10%, 190px);
-  -moz-column-gap: clamp(40px, 10%, 200px);
-       column-gap: clamp(40px, 10%, 200px);
-}
-.design-wrapper .design .content {
-  max-width: 50%;
-}
-.design-wrapper .design .content .design__title {
-  position: relative;
-  font-size: 52px;
+.event-internal-hero .back-link {
+  font-size: 20px;
+  line-height: 1.35;
   font-weight: 400;
-  font-family: "Berton";
-  color: #2f2f2f;
-  line-height: 1.34;
-  margin-bottom: 40px;
-}
-.design-wrapper .design .content .design__title .landscape {
-  height: 25%;
-  width: 40%;
-  top: 85%;
-  left: -10%;
-}
-.design-wrapper .design .content .title-primary {
-  margin-bottom: 46px;
-}
-.design-wrapper .design:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.design-wrapper .design:last-child {
-  margin-bottom: 0;
-}
-.design-wrapper .negative-space {
-  margin-top: -250px;
-  position: relative;
-}
-
-.team-members {
-  padding: 190px 0 125px;
-  background-color: #272727;
-  border-bottom: 1px solid #737373;
-}
-.team-members .team-members__title {
-  text-align: center;
-  font-family: "Berton";
-  font-weight: 400;
-  line-height: 1.34;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.team-members .grid-area {
-  margin-top: 135px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  row-gap: 70px;
-}
-.team-members .grid-area .team-member {
-  padding: clamp(10px, 5%, 35px);
-}
-.team-members .grid-area .team-member .team-member__img {
-  margin-bottom: 50px;
+  color: #767676;
+  margin-bottom: 30px;
   display: inline-block;
-  position: relative;
 }
-.team-members .grid-area .team-member .team-member__img .add-icon {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+.event-internal-hero .back-link span {
+  margin-right: 15px;
+  vertical-align: text-top;
 }
-.team-members .grid-area .team-member .team-member__name a {
-  font-size: 32px;
-  color: #c4d979;
-  line-height: 1.34;
-  font-weight: 300;
-}
-@media (max-width: 1024px) {
-  .team-members .grid-area .team-member .team-member__name a {
-    font-size: 28px;
-  }
-}
-@media (max-width: 992px) {
-  .team-members .grid-area .team-member .team-member__name a {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .team-members .grid-area .team-member .team-member__name a {
-    font-size: 15px;
-  }
-}
-.team-members .grid-area .team-member .team-member__profession {
-  font-size: 27px;
+.event-internal-hero .title-secondary {
+  font-family: "poppins";
   font-weight: 400;
-  line-height: 1.33;
-  color: #ffffff;
 }
-@media (max-width: 1024px) {
-  .team-members .grid-area .team-member .team-member__profession {
-    font-size: 22px;
-  }
-}
-@media (max-width: 992px) {
-  .team-members .grid-area .team-member .team-member__profession {
-    font-size: 18px;
-  }
-}
-@media (max-width: 768px) {
-  .team-members .grid-area .team-member .team-member__profession {
-    font-size: 13px;
-  }
-}/*# sourceMappingURL=team.css.map */
+.event-internal-hero .subtitle {
+  font-weight: 300;
+  font-size: 26px;
+  color: #767676;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=eventInternal.css.map */

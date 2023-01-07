@@ -1,0 +1,27 @@
+.event-internal-hero{
+	padding-top: clamp(60px, 10%, 120px);
+	padding-bottom: 45px;
+	.back-link{
+		font-size: 20px;
+		line-height: 1.35;
+		font-weight: 400;
+		color: #767676;
+		margin-bottom: 30px;
+		display: inline-block;
+		span{
+			margin-right: 15px;
+			vertical-align: text-top;
+		}
+	}
+	.title-secondary{
+		font-family: "poppins";
+		font-weight: 400;
+	}
+	.subtitle{
+		font-weight: 300;
+		font-size: 26px;
+		color: #767676;
+		margin-bottom: 40px;
+	}
+
+}

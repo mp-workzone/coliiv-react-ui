@@ -97,3 +97,9 @@
     width: 20%;
     top: -15px;
 }
+
+.evento-internal__wrapper{
+    width: clamp(320px, 80%, 1520px);
+    padding: 0 10px;
+    margin: 0 auto;
+}

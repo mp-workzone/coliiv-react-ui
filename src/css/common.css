@@ -253,6 +253,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   top: -15px;
 }
 
+.evento-internal__wrapper {
+  width: clamp(320px, 80%, 1520px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .header-area {
   padding: 30px 0;
   position: -webkit-sticky;

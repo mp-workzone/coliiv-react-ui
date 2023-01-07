@@ -4,6 +4,7 @@ import Header from "./components/header";
 import "./css/common.css";
 import Home from "./pages/home";
 import Team from "./pages/team";
+import EventInternal from "./pages/eventInternal";
 import Test from "./pages/test";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/test/test" element={<Test />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/event/event_internal" element={<EventInternal />} />
       </Routes>
       <Footer />
     </div>
