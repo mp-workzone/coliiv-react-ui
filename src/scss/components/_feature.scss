@@ -6,13 +6,24 @@
 		position: absolute;
 		top: 111px;
 		right: -80px;
+		z-index: -1;
 	}
 	.feature-context{
 		padding: 58px 0 200px 70px;
 		color: $secondary-color-03;
 		text-transform: uppercase;
+		.title-primary{
+			position: relative;
+			z-index: 1;
+			.portrait{
+				left: -50px;
+			}
+		}
 		.title-secondary{
-			margin-bottom: 24px;
+			margin-bottom: 40px;
+		}
+		.feature-dsc{
+			max-width: 755px;
 		}
 	}
 	.featured-video{

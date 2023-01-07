@@ -5,10 +5,11 @@ import H2Contact from "../components/h2Contact";
 import Hero from "../components/hero";
 import Service from "../components/service";
 import ServiceTable from "../components/serviceTable";
-import PartnerCarousel from "../components/partnerCarousel";
+import HomeCarousel from "../components/homeCarousel";
 import Location from "../components/location";
 import "../css/home.css";
 import Partners from "../components/partners";
+import Contact from "../components/contact";
 function Home() {
   return (
     <>
@@ -18,9 +19,10 @@ function Home() {
       <Appartments />
       <H2Contact />
       <ServiceTable />
-      <PartnerCarousel />
+      <HomeCarousel />
       <Partners />
       <Location />
+      <Contact />
     </>
   );
 }

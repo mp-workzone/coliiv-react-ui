@@ -38,6 +38,12 @@ button {
   border: none;
 }
 
+input:focus,
+input {
+  outline: none;
+  box-shadow: none;
+}
+
 h1,
 h2 {
   font-family: "Berton";
@@ -81,14 +87,23 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .hero-section .hero-title {
   margin-top: 210px;
 }
+.hero-section .hero-title .hero-title__primary {
+  position: relative;
+  z-index: 9;
+}
+.hero-section .hero-title .hero-title__primary .landscape {
+  left: -70px;
+}
 .hero-section .hero-title .hero-title__primary,
 .hero-section .hero-title .hero-title__secondary {
   color: #2f2f2f;
+  text-transform: uppercase;
 }
 .hero-section .hero-title .hero-title__secondary {
   font-family: "poppins";
   font-size: 70px;
   font-weight: 200;
+  display: block;
 }
 .hero-section .scroll-down {
   position: absolute;
@@ -105,14 +120,25 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   position: absolute;
   top: 111px;
   right: -80px;
+  z-index: -1;
 }
 .feature-area .feature-context {
   padding: 58px 0 200px 70px;
   color: #2f2f2f;
   text-transform: uppercase;
 }
+.feature-area .feature-context .title-primary {
+  position: relative;
+  z-index: 1;
+}
+.feature-area .feature-context .title-primary .portrait {
+  left: -50px;
+}
 .feature-area .feature-context .title-secondary {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
+}
+.feature-area .feature-context .feature-dsc {
+  max-width: 755px;
 }
 .feature-area .featured-video {
   padding: 0 20px;
@@ -148,6 +174,21 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 .service-area .service-items .service-item .content {
   max-width: 700px;
+}
+.service-area .service-items .service-item .content .title {
+  position: relative;
+  z-index: 9;
+}
+.service-area .service-items .service-item .content .title .portrait {
+  left: -40px;
+  height: 80%;
+  width: 8%;
+  bottom: 35%;
+}
+.service-area .service-items .service-item .content .title .landscape {
+  left: -40px;
+  height: 40%;
+  top: -20%;
 }
 .service-area .service-items .service-item .content .title__main,
 .service-area .service-items .service-item .content .title__sub {
@@ -315,8 +356,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   flex: 1;
 }
 .h2-contact .h2-contact__main-content .h2-contact__process .process-item {
+  position: relative;
   width: 50%;
   padding-left: 95px;
+}
+.h2-contact .h2-contact__main-content .h2-contact__process .process-item .portrait {
+  height: 110%;
+  left: -50%;
 }
 .h2-contact .h2-contact__main-content .h2-contact__process .process-item .icon {
   margin-bottom: 20px;
@@ -354,7 +400,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 .service-table {
   position: relative;
-  padding: 60px 0 190px;
+  padding: 90px 0 190px;
 }
 .service-table .leaf {
   position: absolute;
@@ -417,47 +463,47 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   text-align: center;
 }
 
-.partnerCarousel {
+.homeCarousel {
   padding: 182px 0 120px;
   background-color: #272727;
   position: relative;
   z-index: 10;
 }
-.partnerCarousel .partnerCarousel-icon {
+.homeCarousel .homeCarousel-icon {
   position: absolute;
   top: -235px;
   right: -535px;
   z-index: -1;
 }
-.partnerCarousel .partnerCarousel__title {
+.homeCarousel .homeCarousel__title {
   margin-bottom: 100px;
 }
-.partnerCarousel .partnerCarousel__title .title-primary {
+.homeCarousel .homeCarousel__title .title-primary {
   color: #ffffff;
 }
-.partnerCarousel .item-wrapper {
+.homeCarousel .item-wrapper {
   display: flex;
   -moz-column-gap: 100px;
        column-gap: 100px;
 }
-.partnerCarousel .item-wrapper .img {
+.homeCarousel .item-wrapper .img {
   width: 100%;
 }
-.partnerCarousel .item-wrapper .carousel-content {
+.homeCarousel .item-wrapper .carousel-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 100px 0 50px;
 }
-.partnerCarousel .item-wrapper .carousel-content .title {
+.homeCarousel .item-wrapper .carousel-content .title {
   font-size: 42px;
   font-weight: 300;
   line-height: 1.33;
   color: #adadad;
   position: relative;
-  display: inline-block;
+  text-transform: uppercase;
 }
-.partnerCarousel .item-wrapper .carousel-content .title::after {
+.homeCarousel .item-wrapper .carousel-content .title::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -466,26 +512,26 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   height: 3px;
   background-color: #c4d979;
 }
-.partnerCarousel .item-wrapper .carousel-content .partnes {
+.homeCarousel .item-wrapper .carousel-content .partnes {
   display: flex;
   align-items: center;
 }
-.partnerCarousel .item-wrapper .carousel-content .partnes .partner {
+.homeCarousel .item-wrapper .carousel-content .partnes .partner {
   margin-right: 130px;
 }
-.partnerCarousel .slick-next,
-.partnerCarousel .slick-prev {
+.homeCarousel .slick-next,
+.homeCarousel .slick-prev {
   top: 80px;
   z-index: 99;
 }
-.partnerCarousel .slick-next::before {
+.homeCarousel .slick-next::before {
   content: url("../assets/slide-right.svg");
 }
-.partnerCarousel .slick-prev {
+.homeCarousel .slick-prev {
   left: auto;
   right: 200px !important;
 }
-.partnerCarousel .slick-prev::before {
+.homeCarousel .slick-prev::before {
   content: url("../assets/left-slide.svg");
 }
 
@@ -494,8 +540,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   position: relative;
 }
 .partners::after {
+  content: "";
   position: absolute;
-  width: 5%;
+  width: 6.4%;
   height: 2px;
   background-color: #707070;
   bottom: 0;
@@ -504,7 +551,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 .partners .plant {
   position: absolute;
-  top: 260px;
+  top: 100px;
   right: -190px;
 }
 .partners .partner-list {
@@ -520,8 +567,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 400;
   margin-bottom: 120px;
   z-index: 9;
+  text-transform: uppercase;
 }
 .location .address {
+  color: #737373;
   z-index: 999;
 }
 .location .map {
@@ -539,4 +588,119 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   display: block;
   color: #707070;
   text-decoration: underline;
+}
+
+.contact {
+  padding: 80px 0 125px;
+  position: relative;
+  text-align: center;
+}
+.contact .contact__figure {
+  z-index: 99;
+}
+.contact .contact__figure .figure02 {
+  position: relative;
+  margin-top: -300px;
+}
+.contact .content-wrapper {
+  position: relative;
+}
+.contact .content-wrapper .leaf {
+  position: absolute;
+  left: -250px;
+  top: -200px;
+  z-index: -1;
+}
+.contact .content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.contact .content .contact__title {
+  font-weight: 400;
+  color: #2f2f2f;
+  margin-bottom: 80px;
+  position: relative;
+  line-height: 1.48;
+  text-transform: uppercase;
+}
+.contact .content .contact__dsc {
+  font-weight: 400;
+  color: #707070;
+  margin-bottom: 90px;
+}
+.contact .content .contact__form {
+  padding: 0 25px;
+  text-align: start;
+}
+.contact .content .contact__form .input-name,
+.contact .content .contact__form .input-email {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  margin-bottom: 45px;
+  font-family: "montserrat";
+}
+.contact .content .contact__form .input-name::-moz-placeholder, .contact .content .contact__form .input-email::-moz-placeholder {
+  color: #707070;
+}
+.contact .content .contact__form .input-name:-ms-input-placeholder, .contact .content .contact__form .input-email:-ms-input-placeholder {
+  color: #707070;
+}
+.contact .content .contact__form .input-name::placeholder,
+.contact .content .contact__form .input-email::placeholder {
+  color: #707070;
+}
+.contact .content .contact__form .input-name,
+.contact .content .contact__form .input-email,
+.contact .content .contact__form .agreement-label {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.32;
+}
+.contact .content .contact__form .agreement-label {
+  display: inline-block;
+  margin: 45px 0;
+  color: #707070;
+  padding-left: 40px;
+}
+.contact .content .contact__form .input-name,
+.contact .content .contact__form .input-email,
+.contact .content .contact__form .submit-btn {
+  display: block;
+}
+.contact .content .contact__form input[type=checkbox] {
+  visibility: hidden;
+  position: relative;
+}
+.contact .content .contact__form input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 8px;
+  border: 2px solid #707070;
+  top: -15px;
+  left: 0;
+  visibility: visible;
+}
+.contact .content .contact__form input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 13px;
+  width: 10px;
+  height: 24px;
+  border: solid #9eb255;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  visibility: visible;
+}
+.contact .content .contact__form .submit-btn {
+  margin: 45px auto 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #2f2f2f;
+  text-transform: uppercase;
 }/*# sourceMappingURL=home.css.map */

@@ -10,6 +10,7 @@ function Appartments() {
       <div className="container-alt">
         <div className="appartments-content">
           <h2 className="title-primary">
+            <span className="slice landscape"></span>
             UNA MEZCLA PERFECTA ENTRE LO
             <span className="title-secondary">
               SOFISTICADO Y LO CONTEMPORáNEO

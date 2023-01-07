@@ -5,8 +5,10 @@
 		font-weight: 400;
 		margin-bottom: 120px;
 		z-index: 9;
+		text-transform: uppercase;
 	}
 	.address{
+		color: $secondary-color-04;
 		z-index: 999;
 	}
 	.map{
