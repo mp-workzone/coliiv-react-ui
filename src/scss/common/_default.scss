@@ -51,19 +51,58 @@ h2 {
 }
 h1 {
     font-size: 80px;
+    @include max-width(1024px){
+        font-size: 52px;
+    }
+    @include max-width(992px){
+        font-size: 42px;
+    }
+    @include max-width(768px){
+        font-size: 36px;
+    }
 
 }
 
 h2 {
     font-size: 60px;
+
+    @include max-width(1024px){
+        font-size: 48px;
+    }
+    @include max-width(992px){
+        font-size: 38px;
+    }
+    @include max-width(768px){
+        font-size: 32px;
+    }
 }
 
 h4 {
     font-size: 28px;
+
+    @include max-width(1024px){
+        font-size: 24px;
+    }
+    @include max-width(992px){
+        font-size: 18px;
+    }
+    @include max-width(768px){
+        font-size: 14px;
+    }
 }
 
 h5 {
     font-size: 24px;
+
+    @include max-width(1024px){
+        font-size: 20px;
+    }
+    @include max-width(992px){
+        font-size: 17px;
+    }
+    @include max-width(768px){
+        font-size: 13px;
+    }
 }
 
 p {

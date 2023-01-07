@@ -18,7 +18,10 @@ function Contact() {
             <img src={Leaf} alt="" />
           </div>
           <div className="content">
-            <h2 className="contact__title title-secondary">Contactanos</h2>
+            <h2 className="contact__title title-secondary">
+              <span className="slice landscape"></span>
+              Contactanos
+            </h2>
             <h4 className="contact__dsc dsc">
               Manténgase al día con las aperturas de ubicaciones, eventos
               comunitarios y otras noticias.

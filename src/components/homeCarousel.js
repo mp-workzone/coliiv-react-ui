@@ -18,6 +18,7 @@ export default class HomeCarousel extends Component {
     };
     return (
       <div className="homeCarousel">
+        <span className="slice landscape"></span>
         <div className="homeCarousel-icon">
           <img src={CarouselIcon} alt="" />
         </div>

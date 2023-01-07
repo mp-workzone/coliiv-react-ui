@@ -54,17 +54,77 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-size: 60px;
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 h4 {
   font-size: 28px;
 }
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 14px;
+  }
+}
 
 h5 {
   font-size: 24px;
+}
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  h5 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 13px;
+  }
 }
 
 p {
@@ -81,6 +141,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   margin-top: -90px;
   background-image: url(../assets/home-hero.webp);
   background-size: cover;
+  background-position: center;
   padding: 100px 0;
   height: 100vh;
 }
@@ -92,7 +153,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   z-index: 9;
 }
 .hero-section .hero-title .hero-title__primary .landscape {
-  left: -70px;
+  left: -150px;
+  width: 30%;
 }
 .hero-section .hero-title .hero-title__primary,
 .hero-section .hero-title .hero-title__secondary {
@@ -186,9 +248,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   bottom: 35%;
 }
 .service-area .service-items .service-item .content .title .landscape {
-  left: -40px;
-  height: 40%;
-  top: -20%;
+  left: -50px;
+  height: 30%;
+  width: 25%;
+  top: -13%;
 }
 .service-area .service-items .service-item .content .title__main,
 .service-area .service-items .service-item .content .title__sub {
@@ -245,6 +308,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 .home-appartments .appartments-content .title-primary {
   margin-bottom: 40px;
+}
+.home-appartments .appartments-content .title-primary .landscape {
+  left: -150px;
+  width: 30%;
 }
 .home-appartments .appartments-content .appartments__dsc {
   margin-bottom: 40px;
@@ -362,7 +429,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 .h2-contact .h2-contact__main-content .h2-contact__process .process-item .portrait {
   height: 110%;
-  left: -50%;
+  left: -18%;
+  bottom: -40%;
 }
 .h2-contact .h2-contact__main-content .h2-contact__process .process-item .icon {
   margin-bottom: 20px;
@@ -468,6 +536,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-color: #272727;
   position: relative;
   z-index: 10;
+}
+.homeCarousel .landscape {
+  top: 97%;
+  height: 6%;
 }
 .homeCarousel .homeCarousel-icon {
   position: absolute;
@@ -622,6 +694,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   position: relative;
   line-height: 1.48;
   text-transform: uppercase;
+  font-family: "Berton";
+}
+.contact .content .contact__title .landscape {
+  top: 50%;
+  height: 60%;
+  width: 55%;
+  left: 40%;
 }
 .contact .content .contact__dsc {
   font-weight: 400;

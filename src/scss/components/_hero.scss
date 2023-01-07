@@ -3,6 +3,7 @@
 	margin-top: -90px;
 	background-image: url(../assets/home-hero.webp);
 	background-size: cover;
+	background-position: center;
 	padding: 100px 0;
 	height: 100vh;
 	.hero-title{
@@ -11,7 +12,8 @@
 			position: relative;
 			z-index: 9;
 			.landscape{
-				left: -70px;
+				left: -150px;
+				width: 30%;
 			}
 		}
 		.hero-title__primary,

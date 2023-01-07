@@ -30,6 +30,16 @@
     font-size: 62px;
     text-transform: uppercase;
     position: relative;
+
+    @include max-width(1024px){
+        font-size: 49px;
+    }
+    @include max-width(992px){
+        font-size: 39px;
+    }
+    @include max-width(768px){
+        font-size: 32px;
+    }
 }
 
 .title-secondary {
@@ -42,6 +52,16 @@
     font-size: 34px;
     font-weight: 400;
     line-height: 1.35;
+
+    @include max-width(1024px){
+        font-size: 28px;
+    }
+    @include max-width(992px){
+        font-size: 24px;
+    }
+    @include max-width(768px){
+        font-size: 20px;
+    }
 }
 .title__sub{
     font-weight: 300;

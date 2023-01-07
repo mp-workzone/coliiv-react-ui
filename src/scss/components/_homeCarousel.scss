@@ -3,6 +3,10 @@
 	background-color: $secondary-color-02;
 	position: relative;
 	z-index: 10;
+	.landscape{
+		top: 97%;
+		height: 6%;
+	}
 	.homeCarousel-icon{
 		position: absolute;
 		top: -235px;
