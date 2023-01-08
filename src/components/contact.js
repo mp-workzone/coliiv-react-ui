@@ -37,10 +37,12 @@ function Contact() {
                 className="input-email"
                 placeholder="Correo electrónico"
               />
-              <input type="checkbox" id="input-agreement" />
-              <label htmlFor="input-agreement" className="agreement-label">
-                Mantenerme al día con las últimas noticias.
-              </label>
+              <div className="agreement">
+                <input type="checkbox" id="input-agreement" />
+                <label htmlFor="input-agreement" className="agreement-label">
+                  Mantenerme al día con las últimas noticias.
+                </label>
+              </div>
               <input
                 type="submit"
                 value="Enviar"

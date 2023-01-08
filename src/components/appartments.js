@@ -1,5 +1,8 @@
 import Leaf from "../assets/leaf02.png";
-import Appartment from "../assets/appartment01.jpg";
+import Appartment01 from "../assets/appartment01.jpg";
+import Appartment02 from "../assets/appartment02.jpg";
+import Appartment03 from "../assets/appartment03.jpg";
+import Appartment04 from "../assets/appartment04.jpg";
 import { ICON_SEE_MORE } from "../utils/icons";
 function Appartments() {
   return (
@@ -11,7 +14,7 @@ function Appartments() {
         <div className="appartments-content">
           <h2 className="title-primary">
             <span className="slice landscape"></span>
-            UNA MEZCLA PERFECTA ENTRE LO
+            UNA MEZCLA PERFECTA
             <span className="title-secondary">
               SOFISTICADO Y LO CONTEMPORáNEO
             </span>
@@ -28,7 +31,7 @@ function Appartments() {
         <div class="appartment-wrapper">
           <div class="left-shadow02 appartment ">
             <div class="appartment__img">
-              <img src={Appartment} alt="" />
+              <img src={Appartment01} alt="" />
             </div>
             <h3 class="appartment__title-primary">
               Studio<span class="appartment__title-secondary">loft</span>
@@ -39,10 +42,11 @@ function Appartments() {
           </div>
           <div class="left-shadow appartment ">
             <div class="appartment__img">
-              <img src={Appartment} alt="" />
+              <img src={Appartment02} alt="" />
             </div>
             <h3 class="appartment__title-primary">
-              Studio<span class="appartment__title-secondary">loft</span>
+              Apartamento
+              <span class="appartment__title-secondary">1h - 1b</span>
             </h3>
             <a href="/" className="see-more">
               {ICON_SEE_MORE}
@@ -50,10 +54,11 @@ function Appartments() {
           </div>
           <div class=" right-shadow appartment">
             <div class="appartment__img">
-              <img src={Appartment} alt="" />
+              <img src={Appartment03} alt="" />
             </div>
             <h3 class="appartment__title-primary">
-              Studio<span class="appartment__title-secondary">loft</span>
+              Apartamento
+              <span class="appartment__title-secondary">2h - 2b</span>
             </h3>
             <a href="/" className="see-more">
               {ICON_SEE_MORE}
@@ -61,10 +66,13 @@ function Appartments() {
           </div>
           <div class="right-shadow02 appartment ">
             <div class="appartment__img">
-              <img src={Appartment} alt="" />
+              <img src={Appartment04} alt="" />
             </div>
             <h3 class="appartment__title-primary">
-              Studio<span class="appartment__title-secondary">loft</span>
+              Apartamento
+              <span class="appartment__title-secondary break-off">
+                2h - 2b plus
+              </span>
             </h3>
             <a href="/" className="see-more">
               {ICON_SEE_MORE}

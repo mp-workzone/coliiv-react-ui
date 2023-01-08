@@ -4,7 +4,7 @@ function EventInternalHero() {
   return (
     <section className="event-internal-hero">
       <div className="evento-internal__wrapper">
-        <a href="" className="back-link">
+        <a href="/" className="back-link">
           <span>{ICON_BACK}</span>
           Volver a los eventos
         </a>

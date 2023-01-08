@@ -9,6 +9,9 @@
     .col-right {
         padding-right: 330px;
         display: flex;
+        @include max-width(1360px){
+            padding-right: 100px;
+        }
     }
 
     .footer-widget-link {
@@ -51,5 +54,23 @@
         color: #ffffff;
         font-size: 20px;
         font-weight: 300;
+    }
+}
+@media (max-width: 1024px) {
+    .footer-widget-link li a{
+        font-size: 18px;
+    }
+    .footer-widgets{
+        flex-direction: column;
+    }
+}
+@media (max-width: 992) {
+    .footer-widget-link li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 768) {
+    .footer-widget-link li a{
+        font-size: 14px;
     }
 }

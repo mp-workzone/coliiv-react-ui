@@ -1,12 +1,23 @@
 .contact{
 	padding: 80px 0 125px;
+	@include max-width(768px){
+		padding-bottom: 80px;
+	}
 	position: relative;
 		text-align: center;
 		.contact__figure{
 			z-index: 99;
+			.figure01{
+				width: 100%;
+			}
 			.figure02{
 				position: relative;
 				margin-top: -300px;
+				padding-inline: 10%;
+				margin-bottom: 20px;
+				@include max-width(1024px){
+					margin-top: -30%;
+				}
 			}
 		}
 		.content-wrapper{
@@ -16,11 +27,17 @@
 				left: -250px;
 				top: -200px;
 				z-index: -1;
+				@include max-width(1024px){
+					left: -50%;
+				}
 			}
 		}
 		.content{
 			max-width: 750px;
-				margin: 0 auto;
+			margin: 0 auto;
+				@include max-width(1024px){
+					max-width: 100%;
+				}
 			.contact__title{
 				font-weight: 400;
 				color: $secondary-color-03;
@@ -29,17 +46,33 @@
 				line-height: 1.48;
 				text-transform: uppercase;
 				font-family: "Berton";
+				@include max-width(1024px){
+					font-size: 68px;
+				}
+				@include max-width(992px){
+					font-size: 42px;
+				}
+				@include max-width(768px){
+					font-size: 34px;
+				}
 				.landscape{
 					top: 50%;
 					height: 60%;
 					width: 55%;
 					left: 40%;
+					@include max-width(1024px){
+						width: 60%;
+						left: 60%;
+					}
 				}
 			}
 			.contact__dsc{
 				font-weight: 400;
 				color: $secondary-color-06;
 				margin-bottom: 90px;
+				@include max-width(1024px){
+					text-align: start;
+				}
 			}
 			.contact__form{
 				padding: 0 25px;
@@ -62,13 +95,24 @@
 					font-weight: 400;
 					font-size: 28px;
 					line-height: 1.32;
+					@include max-width(1024px){
+						font-size: 42px;
+					}
+					@include max-width(992px){
+						font-size: 22px;
+					}
+					@include max-width(768px){
+						font-size: 18px;
+					}
 				}
-				.agreement-label{
-					display: inline-block;
-					margin: 45px 0;
-					color: $secondary-color-06;
-					padding-left: 40px;
+				.agreement{
+					display: flex;
+					.agreement-label{
+						color: $secondary-color-06;
+						padding-left: 40px;
+					}
 				}
+				
 				.input-name,
 				.input-email,
 				.submit-btn{
@@ -84,14 +128,18 @@
 						width: 36px;
 						border-radius: 8px;
 						border: 2px solid $secondary-color-06;
-						top: -15px;
+						top: 2px;
 						left: 0;
 						visibility: visible;
+						@include max-width(992px){
+							height: 24px;
+							width: 24px;
+						}
 					}
 					&:checked::after{
 						content: '';
 						position: absolute;
-						top: -12px;
+						top: 5px;
 						left: 13px;
 						width: 10px;
 						height: 24px;
@@ -99,6 +147,11 @@
 						border-width: 0 3px 3px 0;
 						transform: rotate(45deg);
 						visibility: visible;
+						@include max-width(992px){
+							height: 15px;
+							width: 6px;
+							left: 9px;
+						}
 					}
 				}
 				.submit-btn{

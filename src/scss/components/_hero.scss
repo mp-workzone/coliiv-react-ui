@@ -1,19 +1,44 @@
 .hero-section{
 	position: relative;
-	margin-top: -90px;
+	margin-top: -100px;
 	background-image: url(../assets/home-hero.webp);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
+	@include max-width(1024px){
+		background-position: 65% 100px;
+	}
 	padding: 100px 0;
 	height: 100vh;
 	.hero-title{
 		margin-top: 210px;
+		@include max-width(1024px){
+			margin-top: 150px;
+		}
 		.hero-title__primary{
 			position: relative;
 			z-index: 9;
+			@include max-width(1024px){
+				font-size: 88px;
+				font-family: "Vrinda";
+				font-weight: 400;
+				.hero-title__secondary{
+					font-size: 76px;
+				}
+				@include max-width(992px){
+					font-size: 60px;
+				}
+				@include max-width(768px){
+					font-size: 42px;
+				}
+			}
+
 			.landscape{
 				left: -150px;
 				width: 30%;
+				@include max-width(1024px){
+					width: 70%;
+				}
 			}
 		}
 		.hero-title__primary,
@@ -26,6 +51,12 @@
 			font-size: 70px;
 			font-weight: 200;
 			display: block;
+			@include max-width(992px){
+				font-size: 55px !important;
+			}
+			@include max-width(768px){
+				font-size: 36px !important;
+			}
 		}
 	}
 	.scroll-down{

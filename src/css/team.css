@@ -1,6 +1,12 @@
 @font-face {
   font-family: "Berton";
   src: url("../fonts/Berton-Regular.otf") format("OpenType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Vrinda";
+  src: url("../fonts/Vrinda-Regular.ttf") format("TrueType");
+  font-weight: 400;
 }
 *,
 *::after,
@@ -54,11 +60,6 @@ h2 {
 h1 {
   font-size: 80px;
 }
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 52px;
-  }
-}
 @media (max-width: 992px) {
   h1 {
     font-size: 42px;
@@ -72,11 +73,6 @@ h1 {
 
 h2 {
   font-size: 60px;
-}
-@media (max-width: 1024px) {
-  h2 {
-    font-size: 48px;
-  }
 }
 @media (max-width: 992px) {
   h2 {
@@ -92,11 +88,6 @@ h2 {
 h4 {
   font-size: 28px;
 }
-@media (max-width: 1024px) {
-  h4 {
-    font-size: 24px;
-  }
-}
 @media (max-width: 992px) {
   h4 {
     font-size: 18px;
@@ -111,11 +102,6 @@ h4 {
 h5 {
   font-size: 24px;
 }
-@media (max-width: 1024px) {
-  h5 {
-    font-size: 20px;
-  }
-}
 @media (max-width: 992px) {
   h5 {
     font-size: 17px;
@@ -129,6 +115,16 @@ h5 {
 
 p {
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 13px;
+  }
 }
 
 h1,
@@ -201,7 +197,7 @@ li {
 }
 
 .container-alt {
-  max-width: clamp(320px, 92%, 1638px);
+  max-width: clamp(320px, 92%, 1658px);
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -214,12 +210,12 @@ li {
 }
 @media (max-width: 1024px) {
   .title-primary {
-    font-size: 49px;
+    font-size: 68px;
   }
 }
 @media (max-width: 992px) {
   .title-primary {
-    font-size: 39px;
+    font-size: 42px;
   }
 }
 @media (max-width: 768px) {
@@ -234,6 +230,21 @@ li {
   display: block;
   color: #2f2f2f;
 }
+@media (max-width: 1024px) {
+  .title-secondary {
+    font-size: 66px;
+  }
+}
+@media (max-width: 992px) {
+  .title-secondary {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .title-secondary {
+    font-size: 30px;
+  }
+}
 
 .title__main {
   font-family: "Berton";
@@ -243,7 +254,7 @@ li {
 }
 @media (max-width: 1024px) {
   .title__main {
-    font-size: 28px;
+    font-size: 53px;
   }
 }
 @media (max-width: 992px) {
@@ -261,12 +272,42 @@ li {
   font-weight: 300;
   margin-bottom: 22px;
 }
+@media (max-width: 1024px) {
+  .title__sub {
+    font-size: 44px;
+  }
+}
+@media (max-width: 992px) {
+  .title__sub {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .title__sub {
+    font-size: 17px;
+  }
+}
 
 .dsc {
   line-height: 1.33;
   font-weight: 300;
   text-transform: capitalize;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .dsc {
+    font-size: 42px;
+  }
+}
+@media (max-width: 992px) {
+  .dsc {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .dsc {
+    font-size: 14px;
+  }
 }
 
 .more-link {
@@ -275,6 +316,21 @@ li {
   font-size: 28px;
   font-style: italic;
   text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  .more-link {
+    font-size: 36px;
+  }
+}
+@media (max-width: 992px) {
+  .more-link {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .more-link {
+    font-size: 15px;
+  }
 }
 
 .slice {

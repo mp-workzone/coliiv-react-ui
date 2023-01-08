@@ -21,7 +21,7 @@
 }
 
 .container-alt {
-    max-width: clamp(320px, 92%, 1638px);
+    max-width: clamp(320px, 92%, 1658px);
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -33,10 +33,10 @@
     color: $secondary-color-03;
 
     @include max-width(1024px){
-        font-size: 49px;
+        font-size: 68px;
     }
     @include max-width(992px){
-        font-size: 39px;
+        font-size: 42px;
     }
     @include max-width(768px){
         font-size: 32px;
@@ -48,6 +48,16 @@
     font-weight: 200;
     display: block;
     color: $secondary-color-03;
+    @include max-width(1024px){
+        font-size: 66px;
+    }
+    @include max-width(992px) {
+        font-size: 40px;
+    }
+
+    @include max-width(768px) {
+        font-size:30px;
+    }
 }
 .title__main{
     font-family: "Berton";
@@ -56,7 +66,7 @@
     line-height: 1.35;
 
     @include max-width(1024px){
-        font-size: 28px;
+        font-size: 53px;
     }
     @include max-width(992px){
         font-size: 24px;
@@ -68,12 +78,32 @@
 .title__sub{
     font-weight: 300;
     margin-bottom: 22px;
+    @include max-width(1024px){
+        font-size: 44px;
+    }
+    @include max-width(992px) {
+        font-size: 24px;
+    }
+
+    @include max-width(768px) {
+        font-size: 17px;
+    }
 }
 .dsc {
     line-height: 1.33;
     font-weight: 300;
     text-transform: capitalize;
     position: relative;
+    @include max-width(1024px){
+        font-size: 42px;
+    }
+    @include max-width(992px) {
+        font-size: 20px;
+    }
+
+    @include max-width(768px) {
+        font-size: 14px;
+    }
 }
 .more-link{
     line-height: 1.32;
@@ -81,6 +111,16 @@
     font-size: 28px;
     font-style: italic;
     text-decoration: underline;
+    @include max-width(1024px){
+        font-size: 36px;
+    }
+    @include max-width(992px) {
+        font-size: 22px;
+    }
+
+    @include max-width(768px) {
+        font-size: 15px;
+    }
 }
 .slice{
     position: absolute;

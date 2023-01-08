@@ -22,7 +22,7 @@ function Service() {
                   Counter Lobby
                 </h3>
                 <h4 className="title__sub">24 horas</h4>
-                <div className="right-arrow">
+                <a href="/" className="right-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.957"
@@ -54,7 +54,7 @@ function Service() {
                       />
                     </g>
                   </svg>
-                </div>
+                </a>
               </div>
               <h5 className="dsc service-dsc">
                 Coliiv es verdadera innovación. Morbi eu nibh non arcu molestie
@@ -71,10 +71,10 @@ function Service() {
               <div className="title">
                 <h3 className="title__main">
                   <span className="slice landscape"></span>
-                  Counter Lobby
+                  Coworking
                 </h3>
-                <h4 className="title__sub">24 horas</h4>
-                <div className="right-arrow">
+                <h4 className="title__sub">con sala de juntas</h4>
+                <a href="/" className="right-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.957"
@@ -106,12 +106,12 @@ function Service() {
                       />
                     </g>
                   </svg>
-                </div>
+                </a>
               </div>
               <h5 className="dsc  service-dsc">
-                Coliiv es verdadera innovación. Morbi eu nibh non arcu molestie
-                ultrices. Vestibulum dictum, Leo sed gravida euismod, quam eros
-                maximus urna.
+                Nullam rutrum, ipsum vel fermentum ornare, purus sapien
+                ullamcorper diam, a feugiat velit turpis in lectus. Etiam ut
+                erat at velit sagittis elementum.
               </h5>
             </div>
             <div class="service-img">
@@ -122,9 +122,9 @@ function Service() {
             <div className="content">
               <div className="title">
                 <span className="slice portrait"></span>
-                <h3 className="title__main">Counter Lobby</h3>
-                <h4 className="title__sub">24 horas</h4>
-                <div className="right-arrow">
+                <h3 className="title__main">Terraza</h3>
+                <h4 className="title__sub">con piscina</h4>
+                <a href="/" className="right-arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.957"
@@ -156,12 +156,11 @@ function Service() {
                       />
                     </g>
                   </svg>
-                </div>
+                </a>
               </div>
               <h5 className="dsc service-dsc">
-                Coliiv es verdadera innovación. Morbi eu nibh non arcu molestie
-                ultrices. Vestibulum dictum, Leo sed gravida euismod, quam eros
-                maximus urna.
+                Integer a lorem ac ipsum ullamcorper facilisis. Quisque
+                tristique purus et magna maximus, et eleifend est rutrum.
               </h5>
             </div>
             <div class="service-img">

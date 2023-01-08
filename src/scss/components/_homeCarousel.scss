@@ -3,34 +3,74 @@
 	background-color: $secondary-color-02;
 	position: relative;
 	z-index: 10;
+	@include max-width(1024px){
+		padding-bottom: 180px;
+	}
+	@include max-width(992px){
+		padding-bottom: 0;
+	}
+	@include max-width(768px){
+		padding: 80px 0;
+	}
+	// overflow: hidden;
 	.landscape{
-		top: 97%;
-		height: 6%;
+		top: 98%;
+		height: 5%;
+		@include max-width(1024px){
+			width: 30%;
+		}
 	}
 	.homeCarousel-icon{
 		position: absolute;
 		top: -235px;
 		right: -535px;
 		z-index: -1;
+		@include max-width(992px){
+			right: -80%;
+		}
+		@include max-width(768px){
+			width: 95%;
+		}
 	}
 	.homeCarousel__title{
 		margin-bottom: 100px;
-		.title-primary{
+		.title-primary,
+		.title-secondary{
 			color: $light-color-01;
 		}
 	}
-	
+	.slick-list{
+		padding-bottom: 272px;
+	}
 	.item-wrapper{
 		display: flex;
 		column-gap: 100px;
+		@include max-width(992px){
+			row-gap: 50px;
+			flex-direction: column;
+		}
 		.img{
-			width: 100%;
+			width: 50%;
+			@include max-width(992px){
+				width: 100%;
+			}
 		}
 		.carousel-content{
+			flex: 1;
+			max-width: 50%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			padding: 100px 0 50px;
+			@include max-width(1636px){
+				padding: 0;
+			}
+			@include max-width(1400px){
+				justify-content: end;
+			}
+			@include max-width(992px){
+				max-width: 100%;
+			}
 			.title{
 				font-size: 42px;
 				font-weight: 300;
@@ -52,9 +92,17 @@
 			.partnes{
 				display: flex;
 				align-items: center;
-				.partner{
-					margin-right: 130px;
+				justify-content: space-between;
+				@include max-width(1400px){
+					position: absolute;
+					bottom: -250px;
+					left: 50%;
+					transform: translateX(-50%);
+						.partner{
+							margin-right: 100px;
+					}
 				}
+
 			}
 		}
 	}
@@ -62,15 +110,25 @@
 	.slick-prev{
 		top: 80px;
 		z-index: 99;
+		@include max-width(992px){
+			top: 70%;
+		}
 	}
 	.slick-next{
+		right: 1%;
+		@include max-width(1024px){
+			right: 3%;
+		}
 		&::before{
 		content: url("../assets/slide-right.svg");
 	}}
 
 	.slick-prev{
 		left: auto;
-		right: 200px !important;
+		right: 200px;
+		@include max-width(1024px){
+			right: 22%;
+		}
 		&::before{
 		content: url("../assets/left-slide.svg");
 		}

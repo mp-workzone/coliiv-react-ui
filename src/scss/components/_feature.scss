@@ -2,16 +2,29 @@
 	padding: 200px 0 50px;
 	position: relative;
 	z-index: 9;
+	@include max-width(768px){
+		padding-top: 80px;
+	}
 	.plant{
 		position: absolute;
 		top: 111px;
 		right: -80px;
 		z-index: -1;
+		@include max-width(1024px){
+			top: 10px;
+			right: -25%;
+		}
+		@include max-width(768px){
+			right: -60%;
+		}
 	}
 	.feature-context{
-		padding: 58px 0 200px 70px;
+		padding: 58px 0 200px;
 		color: $secondary-color-03;
 		text-transform: uppercase;
+		@include max-width(768px){
+			padding-bottom: 80px;
+		}
 		.title-primary{
 			position: relative;
 			z-index: 1;
@@ -21,17 +34,36 @@
 		}
 		.title-secondary{
 			margin-bottom: 40px;
+			@include max-width(1024px){
+				margin-bottom: 75px;
+			}
 		}
 		.feature-dsc{
 			max-width: 755px;
+			@include max-width(1024px){
+				max-width: 832px;
+			}
 		}
 	}
 	.featured-video{
 		padding: 0 20px;
-			display: block;
-			width: 100%;
+		display: block;
+		width: 100%;
+		position: relative;
+		@include max-width(1024px){
+			padding: 0;
+			height: clamp(1000px, 100vh, 1280px);
+		}
 		img{
+			height: 100%;
 			width: 100%;
 			object-fit: cover;
-		}}
+		}
+		.stop-icon{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 }
