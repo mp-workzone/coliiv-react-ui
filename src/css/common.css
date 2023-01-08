@@ -31,8 +31,10 @@ a {
   text-decoration: none;
 }
 
+svg,
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 img,
@@ -450,6 +452,9 @@ li {
   .footer-widgets {
     flex-direction: column;
   }
+  .footer-area .col-right {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 992) {
   .footer-widget-link li a {
@@ -459,5 +464,10 @@ li {
 @media (max-width: 768) {
   .footer-widget-link li a {
     font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-area .footer-widget-link:first-child {
+    padding-right: 50px;
   }
 }/*# sourceMappingURL=common.css.map */

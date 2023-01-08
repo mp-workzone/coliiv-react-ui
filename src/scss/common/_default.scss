@@ -3,6 +3,7 @@
     src: url("../fonts/Berton-Regular.otf") format("OpenType");
     font-weight: 400;
 }
+
 @font-face {
     font-family: "Vrinda";
     src: url("../fonts/Vrinda-Regular.ttf") format("TrueType");
@@ -32,8 +33,10 @@ a {
     text-decoration: none;
 }
 
+svg,
 img {
     max-width: 100%;
+    vertical-align: middle;
 }
 
 img,
