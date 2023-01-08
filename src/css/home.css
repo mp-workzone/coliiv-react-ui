@@ -946,17 +946,12 @@ li {
     padding-inline: 10px;
   }
 }
-.service-table .service-table__content .table-title tr {
-  position: relative;
-}
-.service-table .service-table__content .table-title tr::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  background-color: #afafaf;
-  left: 0;
-  bottom: 0;
+.service-table .service-table__content .table-title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 99px;
+  background-color: #ffffff;
+  z-index: 99;
 }
 .service-table .service-table__content .table-title tr th {
   padding-bottom: 25px;
@@ -979,6 +974,15 @@ li {
   .service-table .service-table__content .table-title tr th {
     font-size: 24px;
   }
+}
+.service-table .service-table__content .table-body::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: #afafaf;
+  left: 0;
+  top: 0;
 }
 .service-table .service-table__content .table-body tr {
   position: relative;

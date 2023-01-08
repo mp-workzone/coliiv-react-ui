@@ -105,6 +105,78 @@ function ServiceTable() {
               </td>
               <td>{ICON_TICK_SIGN}</td>
             </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE}</span>
+                All units w/ private bathrooms
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE02}</span>
+                Private kitchen in each unit
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE03}</span>
+                Apartments w/ balcony - terrace
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE04}</span>
+                In-unit private washer and dryer
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE05}</span>
+                Housekeeping{" "}
+                <span className="space-left">(Included in rent)</span>
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE06}</span>
+                Fully high-end furnished units
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE07}</span>
+                Air conditioning
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE08}</span>
+                Cable TV - Amazon fire - Apple tv
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE09}</span>
+                In-unit dedicated pro workspace{" "}
+                <span className="space-left">(Smart - office)</span>
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
+            <tr>
+              <td>
+                <span className="space-X">{ICON_SERVICE10}</span>
+                Fast WiFi
+              </td>
+              <td>{ICON_TICK_SIGN}</td>
+            </tr>
           </tbody>
         </table>
       </div>

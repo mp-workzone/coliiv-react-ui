@@ -32,35 +32,38 @@
 			padding-inline: 10px;
 		}
 		.table-title{
+			position: sticky;
+			top: 99px;
+			background-color: $light-color-01;
+			z-index: 99;
 			tr{
-				position: relative;
-				&::after{
-					content: '';
-					height: 2px;
-					width: 100%;
-					position: absolute;
-					background-color: #afafaf;
-					left: 0;bottom: 0;
-				}
-			th{
-				padding-bottom: 25px;
-				font-size: 32px;
-				font-weight: 300;
-				color: $secondary-color-03;
-				line-height: 1.34;
-				@include max-width(1024px){
-					font-size: 42px;
-				}
-				@include max-width(992px){
-					font-size: 28px;
-				}
-				@include max-width(768px){
-					font-size: 24px;
+				th{
+					padding-bottom: 25px;
+					font-size: 32px;
+					font-weight: 300;
+					color: $secondary-color-03;
+					line-height: 1.34;
+					@include max-width(1024px){
+						font-size: 42px;
+					}
+					@include max-width(992px){
+						font-size: 28px;
+					}
+					@include max-width(768px){
+						font-size: 24px;
+					}
 				}
 			}
 		}
-		}
 		.table-body{
+			&::after{
+				content: '';
+				height: 2px;
+				width: 100%;
+				position: absolute;
+				background-color: #afafaf;
+				left: 0;top: 0;
+			}
 			tr{
 				position: relative;
 				&::after{
