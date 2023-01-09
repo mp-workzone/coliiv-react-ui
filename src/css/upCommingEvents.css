@@ -186,7 +186,7 @@ li {
   display: flex;
 }
 
-.flex-center-spaceBetween, .design-wrapper .design {
+.flex-center-spaceBetween, .up-comming-events .event-list .event, .up-comming-events .up-comming-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -473,148 +473,42 @@ input[type=checkbox]:checked::after {
   text-transform: uppercase;
 }
 
-.team-hero {
-  padding: 210px 0 60px;
-  position: relative;
-  text-align: center;
-  z-index: 9;
-}
-.team-hero .leaf {
-  position: absolute;
-  top: -70px;
-  left: -255px;
-  z-index: -1;
-}
-.team-hero .team-hero__title {
-  color: #2f2f2f;
-  margin-bottom: 93px;
-  text-transform: uppercase;
-}
-.team-hero .dsc {
-  color: #737373;
-  font-size: 27px;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-.team-hero .dsc .portrait {
-  height: 110%;
-  bottom: 15%;
-}
-
-.design-wrapper {
-  padding-bottom: 190px;
-}
-.design-wrapper .design {
-  margin-bottom: clamp(80px, 10%, 190px);
-  -moz-column-gap: clamp(40px, 10%, 200px);
-       column-gap: clamp(40px, 10%, 200px);
-}
-.design-wrapper .design .content {
-  max-width: 50%;
-}
-.design-wrapper .design .content .design__title {
-  position: relative;
-  font-size: 52px;
-  font-weight: 400;
-  font-family: "Berton";
-  color: #2f2f2f;
-  line-height: 1.34;
-  margin-bottom: 40px;
-}
-.design-wrapper .design .content .design__title .landscape {
-  height: 25%;
-  width: 40%;
-  top: 85%;
-  left: -10%;
-}
-.design-wrapper .design .content .title-primary {
-  margin-bottom: 46px;
-}
-.design-wrapper .design:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.design-wrapper .design:last-child {
-  margin-bottom: 0;
-}
-.design-wrapper .negative-space {
-  margin-top: -250px;
-  position: relative;
-}
-
-.team-members {
-  padding: 190px 0 125px;
-  background-color: #272727;
-  border-bottom: 1px solid #737373;
-}
-.team-members .team-members__title {
-  text-align: center;
-  font-family: "Berton";
-  font-weight: 400;
-  line-height: 1.34;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.team-members .grid-area {
-  margin-top: 135px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  row-gap: 70px;
-}
-.team-members .grid-area .team-member {
-  padding: clamp(10px, 5%, 35px);
-}
-.team-members .grid-area .team-member .team-member__img {
-  margin-bottom: 50px;
-  display: inline-block;
-  position: relative;
-}
-.team-members .grid-area .team-member .team-member__img .add-icon {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-.team-members .grid-area .team-member .team-member__name a {
-  font-size: 32px;
-  color: #c4d979;
-  line-height: 1.34;
-  font-weight: 300;
-}
-@media (max-width: 1024px) {
-  .team-members .grid-area .team-member .team-member__name a {
-    font-size: 28px;
-  }
-}
-@media (max-width: 992px) {
-  .team-members .grid-area .team-member .team-member__name a {
-    font-size: 20px;
-  }
+.up-comming-events {
+  padding: 130px 0 240px;
 }
 @media (max-width: 768px) {
-  .team-members .grid-area .team-member .team-member__name a {
-    font-size: 15px;
+  .up-comming-events {
+    padding: 80px 0;
   }
 }
-.team-members .grid-area .team-member .team-member__profession {
-  font-size: 27px;
-  font-weight: 400;
-  line-height: 1.33;
-  color: #ffffff;
+.up-comming-events .up-comming-header {
+  padding: 15px 0;
 }
-@media (max-width: 1024px) {
-  .team-members .grid-area .team-member .team-member__profession {
-    font-size: 22px;
-  }
+.up-comming-events .up-comming-header .title-area .title-primary {
+  color: #2f2f2f;
 }
-@media (max-width: 992px) {
-  .team-members .grid-area .team-member .team-member__profession {
-    font-size: 18px;
-  }
+.up-comming-events .up-comming-header .see-calendar .calendar-icon {
+  text-align: center;
+  margin-bottom: 10px;
 }
-@media (max-width: 768px) {
-  .team-members .grid-area .team-member .team-member__profession {
-    font-size: 13px;
-  }
-}/*# sourceMappingURL=team.css.map */
+.up-comming-events .up-comming-header .see-calendar .text {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2f2f2f;
+}
+.up-comming-events .event-list .event {
+  padding: 23px;
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+  -moz-column-gap: 65px;
+       column-gap: 65px;
+}
+.up-comming-events .event-list .event .event__figure {
+  height: 100%;
+  width: 100%;
+}
+.up-comming-events .event-list .event .event__figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=upCommingEvents.css.map */

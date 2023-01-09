@@ -17,6 +17,10 @@
 		@include max-width(768px){
 			right: -60%;
 		}
+		@include max-width(575px){
+			top: 30px;
+			left: calc(100% - 40%);
+		}
 	}
 	.feature-context{
 		padding: 58px 0 200px;
@@ -24,6 +28,9 @@
 		text-transform: uppercase;
 		@include max-width(768px){
 			padding-bottom: 80px;
+		}
+		@include max-width(575px){
+			padding-top: 0;
 		}
 		.title-primary{
 			position: relative;
@@ -36,6 +43,9 @@
 			margin-bottom: 40px;
 			@include max-width(1024px){
 				margin-bottom: 75px;
+			}
+			@include max-width(757px){
+				margin-bottom: 25px;
 			}
 		}
 		.feature-dsc{
@@ -54,6 +64,9 @@
 			padding: 0;
 			height: clamp(1000px, 100vh, 1280px);
 		}
+		@include max-width(575px){
+			max-height: 300px;
+		}
 		img{
 			height: 100%;
 			width: 100%;
@@ -64,6 +77,12 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			@include max-width(575px){
+				svg{
+					height: 35px;
+					width: 35px;
+				}
+			}
 		}
 	}
 }

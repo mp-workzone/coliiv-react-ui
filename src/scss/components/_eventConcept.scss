@@ -1,7 +1,15 @@
 .event-concept{
-	padding: 190px 0 160px;
+	padding: 190px 0 130px;
+	position: relative;
+	z-index: 9;
 	@include max-width(768px){
 		padding: 90px 0;
+	}
+	.leaf{
+		position: absolute;
+		top: -40%;
+		left: -35%;
+		z-index: -1;
 	}
 	.inner-section{
 		@extend .flex-center-spaceBetween;
@@ -31,6 +39,15 @@
 				line-height: 1.48;
 				color: $secondary-color-04;
 				max-width: 680px;
+				@include max-width(992px){
+					font-size: 22px;
+				}
+				@include max-width(768px){
+					font-size: 18px;
+				}
+				@include max-width(575px){
+					font-size: 14px;
+				}
 				.content__dsc{
 					margin-top: 50px;
 					display: block;
@@ -39,6 +56,19 @@
 		}
 		.concept-figute{
 			flex: 1;
+			margin-right: 65px;
+			position: relative;
+			z-index: 9;
+			&::before{
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 70px;
+				right: -65px;
+				background-color: $light-color-02;
+				z-index: -1;
+			}
 		}
 	}
 }

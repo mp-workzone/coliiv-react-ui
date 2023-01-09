@@ -1,9 +1,10 @@
 // Base
-@import "common/mixin";
-@import "common/variable";
-@import "common/default";
-@import "common/util";
+@import "./common/mixin";
+@import "./common/variable";
+@import "./common/default";
+@import "./common/util";
 
 // Event Page Style
 @import "./components/eventHero";
 @import "./components/eventConcept";
+@import "./components/upCommingEvents";
