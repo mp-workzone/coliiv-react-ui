@@ -227,6 +227,7 @@ li {
 }
 
 .title-secondary {
+  font-size: 60px;
   font-family: "poppins";
   font-weight: 200;
   display: block;

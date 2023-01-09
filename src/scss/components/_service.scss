@@ -3,8 +3,11 @@
 	padding: 240px 0 80px;
 	background-image: linear-gradient(#ffffff, #f0f0f0);
 	z-index: 1;
-	@include max-width(768px){
+	@include max-width(767px){
 		padding-top: 80px;
+	}
+	@include max-width(767px){
+		padding-top: 30px;
 	}
 	.leaf{
 		position: absolute;
