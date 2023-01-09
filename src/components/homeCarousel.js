@@ -4,15 +4,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CarouselIcon from "../assets/home-carousel-icon.png";
 import CarouselImg from "../assets/carousel-img.jpg";
+import CarouselImg02 from "../assets/slider-img02.jpg";
+import CarouselImg03 from "../assets/slider-img03.jpg";
+import CarouselImg04 from "../assets/slider-img04.jpg";
 import { ICON_PARTNER01, ICON_PARTNER02 } from "../utils/icons";
 
 export default class HomeCarousel extends Component {
   render() {
     const settings = {
       dots: false,
-      fade: true,
+      // fade: true,
       infinite: true,
-      speed: 5,
+      speed: 800,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
@@ -54,7 +57,7 @@ export default class HomeCarousel extends Component {
             <div className="carousel-item">
               <div className="item-wrapper">
                 <div className="img">
-                  <img src={CarouselImg} alt="" />
+                  <img src={CarouselImg02} alt="" />
                 </div>
                 <div className="carousel-content">
                   <h3 className="title">ARQUITECTURA</h3>
@@ -75,7 +78,7 @@ export default class HomeCarousel extends Component {
             <div className="carousel-item">
               <div className="item-wrapper">
                 <div className="img">
-                  <img src={CarouselImg} alt="" />
+                  <img src={CarouselImg03} alt="" />
                 </div>
                 <div className="carousel-content">
                   <h3 className="title">Inmobiliarios</h3>
@@ -96,7 +99,7 @@ export default class HomeCarousel extends Component {
             <div className="carousel-item">
               <div className="item-wrapper">
                 <div className="img">
-                  <img src={CarouselImg} alt="" />
+                  <img src={CarouselImg04} alt="" />
                 </div>
                 <div className="carousel-content">
                   <h3 className="title">ARQUITECTURA</h3>
