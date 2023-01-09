@@ -176,7 +176,7 @@ li {
   display: inline-block;
 }
 
-.flex-center-center {
+.flex-center-center, .event-hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,7 +186,7 @@ li {
   display: flex;
 }
 
-.flex-center-spaceBetween {
+.flex-center-spaceBetween, .event-concept .inner-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -470,4 +470,90 @@ input[type=checkbox]:checked::after {
   cursor: pointer;
   color: #2f2f2f;
   text-transform: uppercase;
+}
+
+.event-hero {
+  height: 100vh;
+  position: relative;
+  top: -100px;
+}
+.event-hero .bg-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.event-hero .bg-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 8;
+}
+.event-hero .bg-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-hero .hero-title {
+  color: #ffffff;
+  z-index: 99;
+}
+
+.event-concept {
+  padding: 190px 0 160px;
+}
+@media (max-width: 768px) {
+  .event-concept {
+    padding: 90px 0;
+  }
+}
+.event-concept .inner-section {
+  gap: clamp(50px, 12%, 120px);
+}
+.event-concept .inner-section .content {
+  flex: 1;
+}
+.event-concept .inner-section .content .content__title {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.34;
+  font-family: "Berton";
+  color: #2f2f2f;
+  margin-bottom: 25px;
+}
+@media (max-width: 992px) {
+  .event-concept .inner-section .content .content__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .event-concept .inner-section .content .content__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .event-concept .inner-section .content .content__title {
+    font-size: 22px;
+  }
+}
+.event-concept .inner-section .content .content__dec {
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 1.48;
+  color: #737373;
+  max-width: 680px;
+}
+.event-concept .inner-section .content .content__dec .content__dsc {
+  margin-top: 50px;
+  display: block;
+}
+.event-concept .inner-section .concept-figute {
+  flex: 1;
 }/*# sourceMappingURL=event.css.map */
