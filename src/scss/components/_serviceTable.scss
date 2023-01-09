@@ -1,131 +1,151 @@
-.service-table{
-	position: relative;
-	padding: 90px 0 190px;
-	background-color: $light-color-01;
-	z-index: 9;
-	.leaf{
-		position: absolute;
-		top: -250px;
-		left: -250px;
-		z-index: -9;
-		@include max-width(1024px){
-			top: -32%;
-			left: -30%;
-		}
-		@include max-width(1024px){
-			left: -90%;
-		}
-	}
-	.service-table__title{
-		text-align: center;
-		@include max-width(1024px){
-			text-align: start;
-		}
-		.title-primary{
-			color: $secondary-color-03;
-		}
-	}
-	.service-table__content{
-		padding: 195px 60px 0;
-		width: 100%;
-		@include max-width(1024px){
-			padding-inline: 10px;
-		}
-		.table-title{
-			position: sticky;
-			top: 99px;
-			background-color: $light-color-01;
-			z-index: 99;
-			tr{
-				th{
-					padding-bottom: 25px;
-					font-size: 32px;
-					font-weight: 300;
-					color: $secondary-color-03;
-					line-height: 1.34;
-					@include max-width(1024px){
-						font-size: 42px;
-					}
-					@include max-width(992px){
-						font-size: 28px;
-					}
-					@include max-width(768px){
-						font-size: 24px;
-					}
-				}
-			}
-		}
-		.table-body{
-			&::after{
-				content: '';
-				height: 2px;
-				width: 100%;
-				position: absolute;
-				background-color: #afafaf;
-				left: 0;top: 0;
-			}
-			tr{
-				position: relative;
-				&::after{
-					content: '';
-					height: 0;
-					width: 100%;
-					position: absolute;
-					border-bottom:3px dashed #afafaf;
-					left: 0;bottom: 0;
-				}
-				td{
-					padding: 22px 0;
-					position: relative;
-					font-size: 27px;
-					font-weight: 300;
-					color: $secondary-color-03;
-					line-height: 1.33;
-					font-family: "montserrat";
-					padding-left: 130px;
-					@include max-width(1024px){
-						font-size: 32px;
-					}
-					@include max-width(992px){
-						font-size: 26px;
-					}
-					@include max-width(768px){
-						padding-left: 60px;
-						font-size: 20px;
-					}
-					.space-X{
-						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
-						left: 40px;
-						width: 50px;
-						text-align: center;
-						@include max-width(768px){
-							left: 0;
-						}
-					}
-					.space-left{
-						padding-left:  45px;
-						@include max-width(1024px){
-							font-size: 27px;
-						}
-						@include max-width(992px){
-							font-size: 23px;
-						}
-						@include max-width(768px){
-							font-size: 17px;
-						}
-					}
-				}
-				td:last-child{
-					text-align: center;
-					@include max-width(992px){
-						svg{
-						height: 26px;
-						width: 26px;
-					}}
-				}
-			}
-		}
-	}
+.service-table {
+    position: relative;
+    padding: 90px 0 190px;
+    background-color: $light-color-01;
+    z-index: 9;
+    .leaf {
+        position: absolute;
+        top: -250px;
+        left: -250px;
+        z-index: -9;
+        @include max-width(1024px) {
+            top: -32%;
+            left: -30%;
+        }
+
+        @include max-width(1024px) {
+            left: -90%;
+        }
+    }
+
+    .service-table__title {
+        text-align: center;
+        @include max-width(1024px) {
+            text-align: start;
+        }
+
+        .title-primary {
+            color: $secondary-color-03;
+        }
+    }
+
+    .service-table__content {
+        padding: 195px 60px 0;
+        width: 100%;
+        @include max-width(1024px) {
+            padding-inline: 10px;
+        }
+
+        .table-title {
+            position: sticky;
+            top: 99px;
+            background-color: $light-color-01;
+            z-index: 99;
+            tr {
+                th {
+                    padding-bottom: 25px;
+                    font-size: 32px;
+                    font-weight: 300;
+                    color: $secondary-color-03;
+                    line-height: 1.34;
+                    @include max-width(1024px) {
+                        font-size: 42px;
+                    }
+
+                    @include max-width(992px) {
+                        font-size: 28px;
+                    }
+
+                    @include max-width(768px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .table-body {
+            &::after {
+                content: "";
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                background-color: #afafaf;
+                left: 0;
+                top: 0;
+            }
+
+            tr {
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 0;
+                    width: 100%;
+                    position: absolute;
+                    border-bottom: 3px dashed #afafaf;
+                    left: 0;
+                    bottom: 0;
+                }
+
+                td {
+                    padding: 22px 0;
+                    position: relative;
+                    font-size: 27px;
+                    font-weight: 300;
+                    color: $secondary-color-03;
+                    line-height: 1.33;
+                    font-family: "montserrat";
+                    padding-left: 130px;
+                    @include max-width(1024px) {
+                        font-size: 32px;
+                    }
+
+                    @include max-width(992px) {
+                        font-size: 26px;
+                    }
+
+                    @include max-width(768px) {
+                        padding-left: 60px;
+                        font-size: 20px;
+                    }
+
+                    .space-X {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 40px;
+                        width: 50px;
+                        text-align: center;
+                        @include max-width(768px) {
+                            left: 0;
+                        }
+                    }
+
+                    .space-left {
+                        padding-left: 45px;
+                        @include max-width(1024px) {
+                            font-size: 27px;
+                        }
+
+                        @include max-width(992px) {
+                            font-size: 23px;
+                        }
+
+                        @include max-width(768px) {
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+                td:last-child {
+                    text-align: center;
+                    @include max-width(992px) {
+                        svg {
+                            height: 26px;
+                            width: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

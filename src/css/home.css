@@ -31,8 +31,10 @@ a {
   text-decoration: none;
 }
 
+svg,
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 img,
@@ -1081,7 +1083,7 @@ li {
 }
 @media (max-width: 768px) {
   .homeCarousel {
-    padding: 80px 0;
+    padding: 80px 0 120px;
   }
 }
 .homeCarousel .landscape {
@@ -1194,10 +1196,21 @@ li {
     margin-right: 100px;
   }
 }
+@media (max-width: 767px) {
+  .homeCarousel .item-wrapper .carousel-content .partnes {
+    width: 100%;
+    bottom: -300px;
+  }
+  .homeCarousel .item-wrapper .carousel-content .partnes .partner {
+    margin-right: 30px;
+  }
+}
 .homeCarousel .slick-next,
 .homeCarousel .slick-prev {
-  top: 80px;
+  top: 118px;
   z-index: 99;
+  height: 70px;
+  width: 70px;
 }
 @media (max-width: 992px) {
   .homeCarousel .slick-next,
@@ -1206,12 +1219,7 @@ li {
   }
 }
 .homeCarousel .slick-next {
-  right: 1%;
-}
-@media (max-width: 1024px) {
-  .homeCarousel .slick-next {
-    right: 3%;
-  }
+  right: 0;
 }
 .homeCarousel .slick-next::before {
   content: url("../assets/slide-right.svg");
@@ -1225,17 +1233,22 @@ li {
     right: 22%;
   }
 }
+@media (max-width: 575px) {
+  .homeCarousel .slick-prev {
+    right: 100px;
+  }
+}
 .homeCarousel .slick-prev::before {
   content: url("../assets/left-slide.svg");
 }
 
 .partners {
-  padding: 230px 0 195px;
+  padding: 230px 15px 195px;
   position: relative;
 }
 @media (max-width: 768px) {
   .partners {
-    padding: 80px 0;
+    padding: 80px 15px;
   }
 }
 .partners::after {

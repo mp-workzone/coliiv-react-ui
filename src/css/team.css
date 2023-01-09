@@ -31,8 +31,10 @@ a {
   text-decoration: none;
 }
 
+svg,
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 img,
