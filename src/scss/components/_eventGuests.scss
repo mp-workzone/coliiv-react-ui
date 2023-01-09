@@ -1,0 +1,71 @@
+.event-guests-area{
+	padding: 60px 0 90px;
+	position: relative;
+	.plant{
+		position: absolute;
+		bottom: 0px;
+		right: -12%;
+	}
+	.title-primary{
+		text-align: center;
+		color: $secondary-color-03;
+	}
+	.guest{
+		padding: 90px 0 10px;
+		display: flex;
+		align-items: center;
+		column-gap: 30px;
+		.guest-img{
+			flex: 1;
+			position: relative;
+			margin-left: 65px;
+			&::before{
+				content: '';
+				position: absolute;
+				bottom: -70px;
+				left: -65px;
+				height: 100%;
+				width: 100%;
+				background-color: $light-color-02;
+				z-index: -1;
+			}
+		}
+		.about-guest{
+			width: 50%;
+			text-align: center;
+			color: $secondary-color-03;
+			.guest-name{
+				text-transform: uppercase;
+				font-size: 42px;
+				font-weight: 400;
+				font-family: "Berton";
+				line-height: 1.14;
+				@include max-width(992px){
+					font-size: 32px;
+				}
+				@include max-width(768px){
+					font-size: 24px;
+				}
+				@include max-width(575px){
+					font-size: 18px;
+				}
+				
+			}
+			.guest-profession{
+				text-transform: uppercase;
+				font-size: 36px;
+				font-weight: 200;
+				line-height: 1.1;
+				@include max-width(992px){
+					font-size: 31px;
+				}
+				@include max-width(768px){
+					font-size: 23px;
+				}
+				@include max-width(575px){
+					font-size: 17px;
+				}
+			}
+		}
+	}
+}

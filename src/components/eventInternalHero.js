@@ -3,7 +3,7 @@ import HeroImg from "../assets/hero-img.jpg";
 function EventInternalHero() {
   return (
     <section className="event-internal-hero">
-      <div className="evento-internal__wrapper">
+      <div className="inner-wrapper">
         <a href="/" className="back-link">
           <span>{ICON_BACK}</span>
           Volver a los eventos

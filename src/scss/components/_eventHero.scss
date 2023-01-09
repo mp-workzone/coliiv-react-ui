@@ -1,0 +1,17 @@
+.event-hero{
+	height: calc(100vh - 100px);
+	position: relative;
+	.bg-img{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+	.hero-title{
+		color: $light-color-01;
+		background-color: red;
+		z-index: 99;
+	}
+}

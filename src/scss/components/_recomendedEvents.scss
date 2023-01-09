@@ -1,0 +1,73 @@
+.recomnended-events{
+	padding: 90px 0 175px;
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 8%;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $secondary-color-06;
+	}
+	.recomended-events__title{
+		color: $secondary-color-03;
+		.title-primary{
+			margin-bottom: 92px;
+		}
+	}
+	.events{
+		display: flex;
+		column-gap: 40px;
+		.event-figure{
+			margin-bottom: 30px;
+		}
+		.event-title{
+			font-size: 38px;
+			font-family: "Berton";
+			font-weight: 400;
+			line-height: 1.84;
+			color: $secondary-color-03 ;
+			margin-bottom: 15px;
+			@include max-width(992px){
+				font-size: 30px;
+			}
+			@include max-width(768px){
+				font-size: 22px;
+			}
+			@include max-width(575px){
+				font-size: 18px;
+			}
+		}
+		.event-subtitle{
+			font-size: 27px;
+			font-weight: 400;
+			line-height: 1.48;
+			color: #767676;
+			margin-bottom: 25px;
+			@include max-width(992px){
+				font-size: 21px;
+			}
+			@include max-width(768px){
+				font-size: 18px;
+			}
+			@include max-width(575px){
+				font-size: 14px;
+			}
+		}
+		.event-dsc{
+			font-size: 27px;
+			color: $secondary-color-03;
+			@include max-width(992px){
+				font-size: 21px;
+			}
+			@include max-width(768px){
+				font-size: 18px;
+			}
+			@include max-width(575px){
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.event-shedule{
+	padding: 45px 0 60px;
+	.grid-area{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 48px;
+		padding: 0 20px;
+		margin-bottom: 90px;
+		.grid-item{
+			@extend .flex-center-center;
+			flex-direction: column;
+			text-align: center;
+			height: 230px;
+			box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
+			padding: clamp(8px, 8%, 35px);
+			.grid-item__title{
+				font-size: 29px;
+				margin-bottom: 20px;
+				color: #000000;		
+				line-height: 1.24;
+				font-weight: 400;
+				font-family: "Berton";
+				@include max-width(992px){
+					font-size: 22px;
+				}
+				@include max-width(768px){
+					font-size: 18px;
+				}
+				@include max-width(575px){
+					font-size: 15px;
+				}
+			}
+			.grid-item-subtitle{
+				font-size: 26px;
+				line-height: 1.38;
+				color: $secondary-color-04;
+				font-weight: 300;
+				@include max-width(992px){
+					font-size: 20px;
+				}
+				@include max-width(768px){
+					font-size: 16px;
+				}
+				@include max-width(575px){
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.event-shedule__dsc{
+		font-size: 27px;
+		font-weight: 300;
+		line-height: 1.48;
+		color: $secondary-color-04;
+	}
+}

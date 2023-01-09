@@ -1,0 +1,80 @@
+.event-contact-area{
+	padding: 190px 0 120px;
+	position: relative;
+	z-index: 9;
+	@include max-width(768px){
+		padding: 70px 0 80px;
+	}
+	.leaf{
+		position: absolute;
+		top: -8%;
+		right: -35%;
+		z-index: -1;
+	}
+	.inner-section{
+		@extend .flex-center-spaceBetween;
+		gap: clamp(50px, 50%, 140px);
+		padding: 0 32px;
+		.contact-form{
+			padding: 0 8px;
+			flex: 1;
+			.contact-form__title{
+				font-size: 48px;
+				font-weight: 400;
+				line-height: 1.25;
+				color: $secondary-color-03;
+				position: relative;
+				margin-bottom: 100px;
+				text-transform: uppercase;
+				font-family: "Berton";
+				.landscape{
+					width: 50%;
+					top: -15%;
+					left: -15%;
+					height: 25%;
+				}
+			}
+			.contact-form__subtitle{
+				font-size: 45px;
+				font-weight: 200;
+				line-height: 1.88;
+				display: block;
+				font-family: "poppins";
+			}
+			.input-email{
+				margin-bottom: 90px;
+			}
+			.submit-btn{
+				margin-top: 95px;
+			}
+		}
+		.contact-right-area{
+			flex: 1;
+			color: $secondary-color-03;
+			.title{
+				font-size: 52px;
+				font-weight: 400;
+				line-height: 1.34;
+				margin-bottom: 40px;
+				font-family: "Berton";
+			}
+			.contact-right__dsc{
+				font-size: 25px;
+				font-weight: 300;
+				line-height: 1.52;
+				margin-bottom: 35px;
+			}
+			.telephone{
+				margin-top: 15px;
+			}
+			.email,
+			.telephone{
+				font-weight: 400;
+				display: block;
+				.light{
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}
