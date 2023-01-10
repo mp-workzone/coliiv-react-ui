@@ -8,6 +8,10 @@
   src: url("../fonts/Vrinda-Regular.ttf") format("TrueType");
   font-weight: 400;
 }
+:root {
+  --header-offset: -100px;
+}
+
 *,
 *::after,
 *::before {

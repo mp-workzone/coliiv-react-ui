@@ -1854,3 +1854,48 @@ export const ICON_FACILITY03 = (
 // export const ICON_SERVICE = (
 
 // );
+export const ICON_SCROLL_NEXT = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="131"
+    height="131"
+    viewBox="0 0 131 131"
+  >
+    <g
+      id="Group_1909"
+      data-name="Group 1909"
+      transform="translate(-770.029 -1378.746)"
+    >
+      <circle
+        id="Ellipse_70"
+        data-name="Ellipse 70"
+        cx="65.5"
+        cy="65.5"
+        r="65.5"
+        transform="translate(770.029 1378.746)"
+        fill="#dddd2c"
+        opacity="0.486"
+      />
+      <circle
+        id="Ellipse_1"
+        data-name="Ellipse 1"
+        cx="65.5"
+        cy="65.5"
+        r="65.5"
+        transform="translate(770.029 1378.746)"
+        fill="#c4d979"
+        style="mix-blend-mode: multiply;isolation: isolate"
+      />
+      <path
+        id="Path_2506"
+        data-name="Path 2506"
+        d="M0,37.927,25.68,11.649H2.438V0H46.6V43.616H35.489V19.776L8.94,46.325Z"
+        transform="translate(868.078 1444.192) rotate(135)"
+        fill="none"
+        stroke="#fff"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+    </g>
+  </svg>
+);
