@@ -8,6 +8,10 @@
   src: url("../fonts/Vrinda-Regular.ttf") format("TrueType");
   font-weight: 400;
 }
+:root {
+  --header-offset: -100px;
+}
+
 *,
 *::after,
 *::before {
@@ -197,11 +201,21 @@ li {
   padding: 0 10px;
   margin: 0 auto;
 }
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 .container-alt {
   max-width: clamp(320px, 92%, 1658px);
   padding: 0 10px;
-  margin: 0 auto;
+  margin: 0 auto !important;
+}
+@media (max-width: 575px) {
+  .container-alt {
+    max-width: 100%;
+  }
 }
 
 .title-primary {
@@ -225,6 +239,11 @@ li {
     font-size: 32px;
   }
 }
+@media (max-width: 575px) {
+  .title-primary {
+    font-size: 28px;
+  }
+}
 
 .title-secondary {
   font-size: 60px;
@@ -246,6 +265,11 @@ li {
 @media (max-width: 768px) {
   .title-secondary {
     font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .title-secondary {
+    font-size: 27px;
   }
 }
 
