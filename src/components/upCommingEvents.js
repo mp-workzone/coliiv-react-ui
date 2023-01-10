@@ -1,3 +1,4 @@
+import { ICON_LOCATION } from "../utils/icons";
 import Img from "../assets/event-list-img01.jpg";
 import { ICON_CALENDAR } from "../utils/icons";
 function UpCommingEvents() {
@@ -31,7 +32,10 @@ function UpCommingEvents() {
                 tincidunt consectetur. Aliquam porttitor eros vitae ipsum
                 posuere gravida.
               </p>
-              <h6 className="event__location">Medellín, Colombia </h6>
+              <h6 className="event__location  title__sub">
+                <span>{ICON_LOCATION}</span>
+                Medellín, Colombia
+              </h6>
             </div>
             <div className="update-time">
               <h3 className="update-time__no">15</h3>
@@ -53,7 +57,10 @@ function UpCommingEvents() {
                 tincidunt consectetur. Aliquam porttitor eros vitae ipsum
                 posuere gravida.
               </p>
-              <h6 className="event__location">Medellín, Colombia </h6>
+              <h6 className="event__location  title__sub">
+                <span>{ICON_LOCATION}</span>
+                Medellín, Colombia
+              </h6>
             </div>
             <div className="update-time">
               <h3 className="update-time__no">15</h3>
@@ -75,7 +82,10 @@ function UpCommingEvents() {
                 tincidunt consectetur. Aliquam porttitor eros vitae ipsum
                 posuere gravida.
               </p>
-              <h6 className="event__location">Medellín, Colombia </h6>
+              <h6 className="event__location  title__sub">
+                <span>{ICON_LOCATION}</span>
+                Medellín, Colombia
+              </h6>
             </div>
             <div className="update-time">
               <h3 className="update-time__no">15</h3>
@@ -97,7 +107,10 @@ function UpCommingEvents() {
                 tincidunt consectetur. Aliquam porttitor eros vitae ipsum
                 posuere gravida.
               </p>
-              <h6 className="event__location">Medellín, Colombia </h6>
+              <h6 className="event__location  title__sub">
+                <span>{ICON_LOCATION}</span>
+                Medellín, Colombia
+              </h6>
             </div>
             <div className="update-time">
               <h3 className="update-time__no">15</h3>
@@ -119,7 +132,10 @@ function UpCommingEvents() {
                 tincidunt consectetur. Aliquam porttitor eros vitae ipsum
                 posuere gravida.
               </p>
-              <h6 className="event__location">Medellín, Colombia </h6>
+              <h6 className="event__location  title__sub">
+                <span>{ICON_LOCATION}</span>
+                Medellín, Colombia
+              </h6>
             </div>
             <div className="update-time">
               <h3 className="update-time__no">15</h3>

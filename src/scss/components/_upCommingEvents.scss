@@ -1,0 +1,120 @@
+@import "../common/mixin";
+@import "../common/variable";
+@import "../common/default";
+@import "../common/util";
+
+.up-comming-events{
+	padding: 130px 0 240px;
+	@include max-width(768px){
+		padding: 80px 0;
+	}
+	@include max-width(575px){
+		padding: 40px 0;
+	}
+	.up-comming-header{
+		@extend .flex-center-spaceBetween;
+		margin-bottom: 70px;
+		@include max-width(575px){
+		margin-bottom: 30px;
+	}
+		.title-area{
+			.title-primary{
+				color: $secondary-color-03;
+			}
+		}
+		.see-calendar{
+			.calendar-icon{
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			.text{
+				font-weight: 500;
+				line-height: 1.5;
+				color: $secondary-color-03;
+			}
+		}
+	}
+	.event-list{
+		.event{
+			display: grid;
+			grid-template-columns: 2fr 5fr 1fr;
+			padding: 23px;
+			box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
+			column-gap: 65px;	
+				@include max-width(575px){
+					column-gap: 20px;
+				}
+
+			.event__figure{
+				img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+			.event__details{
+				.title{
+					.title__main{
+						font-size: 29px;
+						font-weight: 500;
+						line-height: 2.58;
+						color: $secondary-color-03;
+						margin-bottom: 8px;
+						@include max-width(991px){
+							font-size: 24px;
+						}
+						@include max-width(767px){
+							font-size: 20px;
+						}
+						@include max-width(575px){
+							font-size: 17px;
+						}
+					}
+				}
+				.title__sub{
+					font-size: 21px;
+					font-weight: 500;
+					line-height: 3.52;
+					color: #767676;
+					margin-bottom: 15px;
+					@include max-width(991px){
+						font-size: 24px;
+					}
+					@include max-width(767px){
+						font-size: 20px;
+					}
+					@include max-width(575px){
+						font-size: 17px;
+					}
+				}
+				.event__dsc{
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 1.5;
+					color: $secondary-color-06;
+					margin-bottom: 33px;
+				}
+				.event__location{
+					span{
+						margin-right: 8px;
+					}
+				}
+			}
+			.update-time{
+				@extend .flex-center-center;
+				flex-direction: column;
+				.update-time__no{
+					font-weight: 500;
+					font-size: 40px;
+					color: $secondary-color-03;
+					margin-bottom: 4px;
+				}
+				.update-time__text{
+					
+					color: $secondary-color-03;
+				}
+			}
+
+		}
+	}
+}

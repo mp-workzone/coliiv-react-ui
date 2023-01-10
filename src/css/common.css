@@ -316,6 +316,7 @@ li {
 }
 
 .dsc {
+  font-size: 27px;
   line-height: 1.33;
   font-weight: 300;
   text-transform: capitalize;
@@ -333,7 +334,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .dsc {
+    font-size: 13px;
   }
 }
 
