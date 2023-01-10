@@ -5,6 +5,9 @@
 	@include max-width(768px){
 		padding-bottom: 80px;
 	}
+	@include max-width(575px){
+		padding: 20px 0 40px;
+	}
 	.plant-n-circle{
 		position: absolute;
 		top: 100px;
@@ -12,8 +15,9 @@
 		@include max-width(1024px){
 			right: -38%;
 		}
-		@include max-width(1024px){
-			right: -80%;
+		@include max-width(575px){
+			left: 50%;
+			top: 0;
 		}
 	}
 	.title-primary{
@@ -24,6 +28,9 @@
 		@include max-width(1024px){
 			margin-bottom: 75px;
 		}
+		@include max-width(575px){
+			margin-bottom: 30px;
+		}
 	}
 	.h2-contact__dsc{
 		max-width: 940px;
@@ -31,6 +38,9 @@
 		color: $secondary-color-04;
 		@include max-width(1024px){
 			max-width: 755px;
+		}
+		@include max-width(575px){
+			margin-bottom: 15px;
 		}
 	}
 	.more-link{
@@ -48,13 +58,25 @@
 		@include max-width(768px){
 			row-gap: 80px;
 		}
+		@include max-width(575px){
+			margin-top: 50px;
+			gap: 0;
+		}
 	
 		.h2-contact__process{
 			flex: 1;
+			@include max-width(575px){
+				
+			}
 			.process-item{
 				position: relative;
 				width: 50%;
 				padding-left: 25px;
+				@include max-width(575px){
+					width: 100%;
+					padding-left: 0;
+					margin-bottom: 50px;
+				}
 				.portrait{
 					height: 110%;
 					left: -18%;
@@ -65,6 +87,13 @@
 				}
 				.icon{
 					margin-bottom: 20px;
+					@include max-width(575px){
+						margin-bottom: 0;
+						svg{
+							height: 36px;
+							width: 36px;
+						}
+					}
 				}
 				.process-item__title{
 					font-size: 32px;
@@ -72,6 +101,10 @@
 					color: $secondary-color-03;
 					margin-bottom: 18px;
 					text-transform: uppercase;
+					@include max-width(575px){
+						font-size: 28px;
+						margin-bottom: 0;
+					}
 				}
 				.dsc{
 					max-width: 755px;
@@ -86,6 +119,10 @@
 				.process-item:last-child{
 					padding-left: 20%;
 					width: 60%;
+					@include max-width(575px){
+						width: 100%;
+						padding-left: 0;
+					}
 				}
 			}
 
@@ -97,6 +134,9 @@
 			}
 			.negative-space{
 				margin-top: -35px;
+				@include max-width(575px){
+					margin-top: 0;
+				}
 			}
 		}
 		.h2-contact__video{
@@ -112,11 +152,20 @@
 					object-fit: cover;
 				}
 			}
+			@include max-width(575px){
+				max-height: 320px;	
+			}
 			.play-icon{
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				@include max-width(575px){
+					svg{
+						height: 36px;
+						width: 36px;
+					}
+				}
 			}
 		}
 	}

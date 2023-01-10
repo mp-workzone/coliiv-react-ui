@@ -7,7 +7,7 @@
 		padding-top: 80px;
 	}
 	@include max-width(767px){
-		padding-top: 30px;
+		padding: 30px 0;
 	}
 	.leaf{
 		position: absolute;
@@ -18,6 +18,9 @@
 		@include max-width(768px){
 			left: -70%;
 		}
+		@include max-width(575px){
+			display: none;
+		}
 		}
 	.service-title{
 		@include max-width(1024px){
@@ -25,6 +28,9 @@
 		}
 		@include max-width(768px){
 			margin-bottom: 80px;
+		}
+		@include max-width(575px){
+			margin-bottom: 0;
 		}
 	}
 	.service-items{
@@ -39,6 +45,9 @@
 			}
 			@include max-width(768px){
 				margin-bottom: 80px;
+			}
+			@include max-width(575px){
+				margin-bottom: 35px;
 			}
 			.content{
 				max-width: 700px;
@@ -73,10 +82,16 @@
 					@include max-width(1448px){
 						margin-bottom: 42px;
 					}
+					@include max-width(575px){
+						margin-bottom:15px;
+					}
 				}
 				.right-arrow{
 					margin-bottom: 60px;
 					display: inline-block;
+					@include max-width(575px){
+						margin-bottom: 15px;
+					}
 						svg{
 						@include max-width(1448px){
 							width: 94px;
@@ -89,6 +104,10 @@
 						@include max-width(768px){
 							width: 56px;
 							height: 32px;
+						}
+						@include max-width(575px){
+							width: 32px;
+							height: 24px;
 						}
 					}
 				}
@@ -104,6 +123,9 @@
 					@include max-width(768px){
 						font-size: 24px;
 					}
+					@include max-width(575px){
+						font-size: 15px;
+					}
 				}
 			}
 			.service-img{
@@ -117,6 +139,9 @@
 				@include max-width(768px){
 					margin-bottom: 80px;
 				}
+				@include max-width(575px){
+					margin-bottom: 20px;
+				}
 			}
 		}
 		.service-item:first-child{
@@ -124,9 +149,15 @@
 			@include max-width(1636px){
 				margin-top: 50px;
 			}
+			@include max-width(575px){
+				margin-top: 30px;
+			}
 		}
 		.service-item:last-child{
 			margin-bottom: 140px;
+			@include max-width(575px){
+				margin-bottom: 30px;
+			}
 		}
 		.service-item:nth-child(even){
 			flex-direction: row-reverse;
@@ -145,16 +176,28 @@
 	}
 	.more{
 		text-align: center;
+		.more-link{
+			svg{
+				height: 56px;
+				width: 56px;
+			}
+		}
 		span{
 			margin-top: 24px;
 			display: block;
 			color: $secondary-color-01;
 			text-decoration: underline;
+			@include max-width(575px){
+				margin-top: 15px;
+			}
 		}
 		.ext-info{
 			line-height: 1.33;
 			font-weight: 300;
 			margin-top: 18px;
+			@include max-width(575px){
+				margin-top: 10px;
+			}
 		}
 	}
 }
