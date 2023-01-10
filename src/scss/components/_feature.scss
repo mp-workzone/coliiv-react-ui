@@ -30,13 +30,17 @@
 			padding-bottom: 80px;
 		}
 		@include max-width(575px){
-			padding-top: 0;
+			padding: 0 0 30px;
 		}
 		.title-primary{
 			position: relative;
 			z-index: 1;
 			.portrait{
 				left: -50px;
+				@include max-width(757px){
+					height: 120%;
+					bottom: -2%;
+				}
 			}
 		}
 		.title-secondary{

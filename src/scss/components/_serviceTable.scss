@@ -3,6 +3,9 @@
     padding: 90px 0 190px;
     background-color: $light-color-01;
     z-index: 9;
+    @include max-width(575px) {
+        padding: 40px 0 40px;
+    }
     .leaf {
         position: absolute;
         top: -250px;
@@ -15,6 +18,11 @@
 
         @include max-width(1024px) {
             left: -90%;
+        }
+
+        @include max-width(575px) {
+            left: -30%;
+            top: -10%;
         }
     }
 
@@ -35,14 +43,21 @@
         @include max-width(1024px) {
             padding-inline: 10px;
         }
+        @include max-width(1024px) {
+           padding-top: 40px;
+        }
 
         .table-title {
             position: sticky;
             top: 99px;
-            background-color: $light-color-01;
             z-index: 99;
-            tr {
-                th {
+            ul {
+                background-color: $light-color-01;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                li {
+                    text-align: center;
                     padding-bottom: 25px;
                     font-size: 32px;
                     font-weight: 300;
@@ -59,67 +74,70 @@
                     @include max-width(768px) {
                         font-size: 24px;
                     }
+                    @include max-width(768px) {
+                        padding-bottom: 15px;
+                    }
+                    @include max-width(575px) {
+                       font-size: 17px;
+                    }
+                }
+                .left{
+                    flex: 2;
+                }
+                .right{
+                    flex: 1;
                 }
             }
         }
 
         .table-body {
-            &::after {
-                content: "";
-                height: 2px;
-                width: 100%;
-                position: absolute;
-                background-color: #afafaf;
-                left: 0;
-                top: 0;
-            }
-
-            tr {
-                position: relative;
-                &::after {
-                    content: "";
-                    height: 0;
-                    width: 100%;
-                    position: absolute;
-                    border-bottom: 3px dashed #afafaf;
-                    left: 0;
-                    bottom: 0;
+            flex: 2;
+            border-top: 2px solid #afafaf;
+            li {
+                display: flex;
+                align-items: center;
+                border-bottom: 3px dashed #afafaf;
+                padding: 22px 0;
+                @include max-width(575px){
+                    padding: 10px 0;
                 }
-
-                td {
-                    padding: 22px 0;
-                    position: relative;
-                    font-size: 27px;
-                    font-weight: 300;
-                    color: $secondary-color-03;
-                    line-height: 1.33;
-                    font-family: "montserrat";
-                    padding-left: 130px;
-                    @include max-width(1024px) {
-                        font-size: 32px;
-                    }
-
-                    @include max-width(992px) {
-                        font-size: 26px;
-                    }
-
-                    @include max-width(768px) {
-                        padding-left: 60px;
-                        font-size: 20px;
-                    }
-
-                    .space-X {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        left: 40px;
-                        width: 50px;
-                        text-align: center;
-                        @include max-width(768px) {
-                            left: 0;
+                }
+                .left-side{
+                    display: flex;
+                    flex: 2;
+                    align-items: center;
+                    h4{
+                        font-weight: 300;
+                        color: $secondary-color-03;
+                        line-height: 1.33;
+                        font-family: "montserrat";
+                        @include max-width(1024px) {
+                            font-size: 32px;
                         }
-                    }
 
+                        @include max-width(992px) {
+                            font-size: 26px;
+                        }
+
+                        @include max-width(768px) {
+                            font-size: 20px;
+                        }
+                        @include max-width(575px) {
+                            font-size: 14px;
+                        }
+
+                    }
+                    .space-X {
+                        margin: 0 35px;
+                        width: 45px;
+                        text-align: center;
+                        display: inline-block;
+                        @include max-width(575px) {
+                            width: 20px;
+                            margin: 0 15px 0 0;
+                        }
+
+                    }
                     .space-left {
                         padding-left: 45px;
                         @include max-width(1024px) {
@@ -133,10 +151,14 @@
                         @include max-width(768px) {
                             font-size: 17px;
                         }
+                        @include max-width(575px) {
+                            padding-left: 10px;
+                            font-size: 14px;
+                        }
                     }
-                }
-
-                td:last-child {
+                 }
+                .check-mark {
+                    flex: 1;
                     text-align: center;
                     @include max-width(992px) {
                         svg {
@@ -144,8 +166,14 @@
                             width: 26px;
                         }
                     }
+                    @include max-width(992px) {
+                        svg{
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
                 }
             }
         }
     }
-}
+

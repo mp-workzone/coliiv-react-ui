@@ -18,12 +18,18 @@
     max-width: clamp(320px, 92%, 1730px);
     padding: 0 10px;
     margin: 0 auto;
+    @include max-width(575px){
+        max-width: 100%;
+    }
 }
 
 .container-alt {
     max-width: clamp(320px, 92%, 1658px);
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    @include max-width(575px){
+        max-width: 100%;
+    }
 }
 
 .title-primary {
@@ -40,6 +46,9 @@
     }
     @include max-width(768px){
         font-size: 32px;
+    }
+    @include max-width(575px){
+        font-size: 28px;
     }
 }
 
@@ -58,6 +67,9 @@
 
     @include max-width(768px) {
         font-size:30px;
+    }
+    @include max-width(768px) {
+        font-size:27px;
     }
 }
 .title__main{

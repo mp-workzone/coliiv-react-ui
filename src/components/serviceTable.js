@@ -25,160 +25,148 @@ function ServiceTable() {
             <span className="title-secondary">Disponibles</span>
           </h2>
         </div>
-        <table className="service-table__content">
-          <thead className="table-title">
-            <tr>
-              <th>Servicios coliving</th>
-              <th>disponibilidad</th>
-            </tr>
-          </thead>
-          <tbody className="table-body">
-            <tr>
-              <td>
+        <div className="service-table__content">
+          <div className="table-title">
+            <ul>
+              <li className="left">Servicios coliving</li>
+              <li className="right">disponibilidad</li>
+            </ul>
+          </div>
+          <ul className="table-body">
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE}</span>
-                All units w/ private bathrooms
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>All units w/ private bathrooms</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE02}</span>
-                Private kitchen in each unit
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Private kitchen in each unit</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE03}</span>
-                Apartments w/ balcony - terrace
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Apartments w/ balcony - terrace</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE04}</span>
-                In-unit private washer and dryer
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>In-unit private washer and dryer</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE05}</span>
-                Housekeeping{" "}
-                <span className="space-left">(Included in rent)</span>
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>
+                  Housekeeping
+                  <span className="space-left">(Included in rent)</span>
+                </h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE06}</span>
-                Fully high-end furnished units
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Fully high-end furnished units</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE07}</span>
-                Air conditioning
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Air conditioning</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE08}</span>
-                Cable TV - Amazon fire - Apple tv
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Cable TV - Amazon fire - Apple tv</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE09}</span>
-                In-unit dedicated pro workspace{" "}
-                <span className="space-left">(Smart - office)</span>
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>
+                  In-unit dedicated pro workspace
+                  <span className="space-left">(Smart - office)</span>
+                </h4>{" "}
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE10}</span>
-                Fast WiFi
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Fast WiFi</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE}</span>
-                All units w/ private bathrooms
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>All units w/ private bathrooms</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE02}</span>
-                Private kitchen in each unit
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Private kitchen in each unit</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE03}</span>
-                Apartments w/ balcony - terrace
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Apartments w/ balcony - terrace</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE04}</span>
-                In-unit private washer and dryer
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
-                <span className="space-X">{ICON_SERVICE05}</span>
-                Housekeeping{" "}
-                <span className="space-left">(Included in rent)</span>
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>In-unit private washer and dryer</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE06}</span>
-                Fully high-end furnished units
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Fully high-end furnished units</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE07}</span>
-                Air conditioning
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Air conditioning</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE08}</span>
-                Cable TV - Amazon fire - Apple tv
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
-                <span className="space-X">{ICON_SERVICE09}</span>
-                In-unit dedicated pro workspace{" "}
-                <span className="space-left">(Smart - office)</span>
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-            <tr>
-              <td>
+                <h4>Cable TV - Amazon fire - Apple tv</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+            <li>
+              <div className="left-side">
                 <span className="space-X">{ICON_SERVICE10}</span>
-                Fast WiFi
-              </td>
-              <td>{ICON_TICK_SIGN}</td>
-            </tr>
-          </tbody>
-        </table>
+                <h4>Fast WiFi</h4>
+              </div>
+              <span className="check-mark">{ICON_TICK_SIGN}</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
