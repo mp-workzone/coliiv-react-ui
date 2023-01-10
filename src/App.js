@@ -5,6 +5,7 @@ import "./css/common.css";
 import StdioLoft from "./pages/apartments/stdioLoft";
 import Event from "./pages/event";
 import EventInternal from "./pages/eventInternal";
+import Franchises from "./pages/franchises";
 import Home from "./pages/home";
 import Team from "./pages/team";
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/event-internal" element={<EventInternal />} />
         <Route path="/event" element={<Event />} />
         <Route path="/apartments/stdio-loft" element={<StdioLoft />} />
+        <Route path="/franchises" element={<Franchises />} />
       </Routes>
       <Footer />
     </div>

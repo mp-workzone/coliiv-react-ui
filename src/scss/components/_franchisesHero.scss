@@ -1,0 +1,257 @@
+.franchises-hero{
+	height: 100vh;
+	margin-top: -100px;
+	@extend .flex-center-center;
+	background-image: url(../assets/franchisesHero-img.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .4);
+	}
+	.franchises-hero__title{
+		color: $light-color-01;
+		text-transform: uppercase;
+		z-index: 99;
+	}
+}
+
+// investment factor start
+.investment-factor{
+	padding: 190px 0 95px;
+	@include max-width(767px){
+		padding: 80px 0 40px;
+	}
+	@include max-width(575px){
+		padding: 40px 0 20px;
+	}
+	.investment-factor__content{
+		@extend .flex-center-spaceBetween;
+		gap: clamp(40px, 12%, 120px);
+		.text-area{
+			flex: 1;
+			.title-primary{
+				color: $secondary-color-03;
+				margin-bottom: 30px;
+			}
+			.content-dsc{
+				color: $secondary-color-04;
+			}
+		}
+		.investment-factor__figure{
+			flex: 1;
+			position: relative;
+			margin-right: 5%;
+			&::before{
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 10.7%;
+				left: 10%;
+				background-color: $light-color-02;
+				z-index: -1;
+			}
+		}
+	}
+}
+//  investment factor end
+
+// investment facilities start
+.investment-facilities{
+	padding: 95px 0;
+	@include max-width(767px){
+		padding: 40px 0;
+	}
+	@include max-width(767px){
+		padding: 20px 0;
+	}
+	.investment-facilities__title{
+		text-align: center;
+		margin-bottom: 200px;
+		
+		.title-primary{
+			color: $secondary-color-03;
+		}
+	}
+	.investment-facilities__content{
+		text-align: center;
+		padding-top: 30px;
+		@extend .flex-center-spaceBetween;
+		gap: clamp(30px, 5%, 60px);
+		.facility{
+			flex: 1;
+			.facility-icon{
+				margin-bottom: 38px;
+			}
+			.facility-title{
+				font-size: 32px;
+				font-weight: 400;
+				line-height: 1.1;
+				color: $secondary-color-03;
+				margin-bottom: 30px;
+				text-transform: uppercase;
+			}
+			.facility-dsc.dsc{
+				font-size: 28px;
+				line-height: 1.5;
+				color: $secondary-color-06;
+			}
+		}
+		.facility:nth-child(odd){
+			margin-top: -175px;
+		}
+		.facility:nth-child(even){
+			margin-top: 115px;
+		}
+	}
+}
+// investment facilities end
+
+//market potential & Investment strategy start
+.market-potential,
+.investment-strategy{
+	padding: 95px 0;
+	@include max-width(767px){
+		padding: 40px 0;
+	}
+	@include max-width(767px){
+		padding: 20px 0;
+	}
+	.inner-section{
+		@extend .flex-center-spaceBetween;
+		gap: clamp(40px, 12%, 120px);
+		@include max-width(1024px){
+			flex-direction: column;
+		}
+		.market-potential__figure,
+		.investment-strategy__figure{
+			flex: 1;
+			img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		.market-potential__text,
+		.investment-strategy__text{
+			flex: 1;
+			position: relative;
+			.landscape{
+				width: 40%;
+				left: -7%;
+				top: -8%;
+				height: 17%;
+				
+			}
+			.title-primary{
+				color: $secondary-color-03;
+				margin-bottom: 40px;
+				line-height: 1.24;
+			}
+			.dsc{
+				color: $secondary-color-04;
+				span.dsc{
+					display: block;
+					margin-top: 50px;
+					@include max-width(767px){
+						margin-top: 30px;
+					}
+					@include max-width(575px){
+						margin-top: 15px;
+					}
+				}
+			}
+
+		}
+	}
+}
+//market potential & Investment strategy end
+
+// EXPLORE PROJECTS start
+.explore-project{
+	padding: 85px 0;
+	@include max-width(767px){
+		padding: 40px 0;
+	}
+	@include max-width(575px){
+		padding: 20px 0;
+	}
+	.explore-project__title{
+		.title-primary{
+			color: $secondary-color-02;
+			margin-bottom: 55px;
+		}
+	}
+	.grid-area{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: clamp(2px, 4%, 50px);
+		@include max-width(1024px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include max-width(767px){
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.project{
+			position: relative;
+			&::after{
+				position: absolute;
+				content: '';
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, .3);
+			}
+			.project__title{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 9;
+				.project__title__main{
+					font-family: "Berton";
+					font-weight: 400;
+					font-size: 51px;
+					line-height: 1.11;
+					color: $light-color-01;
+					text-align: center;
+					@include max-width(992px){
+						font-size: 32px;
+					}
+					@include max-width(767px){
+						font-size: 28px;
+					}
+					@include max-width(575px){
+						font-size: 24px;
+					}
+					.project__title__sub{
+						font-family: "poppins";
+						font-size: 49px;
+						font-weight: 200;
+						display: block;
+						
+						@include max-width(992px){
+							font-size: 30px;
+						}
+						@include max-width(767px){
+							font-size: 27px;
+						}
+						@include max-width(575px){
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//EXPLORE PROJECTS end

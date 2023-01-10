@@ -1,0 +1,30 @@
+.held-event{
+	background-color: $secondary-color-02;
+	padding: 120px 0 115px;
+	@include max-width(767px){
+		padding: 80px 0;
+	}
+	@include max-width(575px){
+		padding: 40px 0;
+	}
+	.held-event__title{
+		margin-bottom: 120px;
+		.title-primary{
+		color: $light-color-01;
+		@include max-width(767px){
+			margin-bottom: 60px;
+		}
+		@include max-width(575px){
+			margin-bottom: 30px;
+		}
+	}
+	.held-event__slider-wrapper{
+		.slick-slide {
+			margin-right: 50px;
+		}
+	}
+	}
+
+}
+
+//slick-slide 

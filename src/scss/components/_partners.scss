@@ -1,6 +1,7 @@
 .partners {
     padding: 230px 15px 195px;
     position: relative;
+    z-index: 9;
     @include max-width(768px) {
         padding: 80px 15px;
     }
@@ -20,6 +21,7 @@
         position: absolute;
         top: 100px;
         right: -190px;
+        z-index: -1;
     }
 
     .partner-list {
@@ -28,5 +30,12 @@
         flex-wrap: wrap;
         column-gap: clamp(40px, 12%, 80px);
         row-gap: 60px;
+        @include max-width(767px){
+            .partner-logo{
+                svg{
+                    height: 35px;
+                }
+            }
+        }
     }
 }
