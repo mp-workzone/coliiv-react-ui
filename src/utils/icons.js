@@ -1881,7 +1881,7 @@ export const ICON_SCROLL_NEXT = (
         r="65.5"
         transform="translate(770.029 1378.746)"
         fill="#c4d979"
-        style="mix-blend-mode: multiply;isolation: isolate"
+        style={{mixBlendMode: "multiply", isolation: 'isolate'}}
       />
       <path
         id="Path_2506"
