@@ -118,7 +118,7 @@ function TwoH2BPlus() {
             <section className='apartment-features' style={{paddingTop: "340px"}}>
                 <div className='container-alt'>
                     <div className='title has-border-left'>
-                        <h2>
+                        <h2> 
                             verdadera <span>comodidad</span>
                         </h2>
                     </div>
