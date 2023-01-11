@@ -3,6 +3,8 @@ import {
   ICON_FACILITY02,
   ICON_FACILITY03,
 } from "../utils/icons";
+import Leaf from "../assets/leaf05.png";
+import Plant from "../assets/plant04.png";
 import Img01 from "../assets/InvestmentFactorImg.jpg";
 import Img02 from "../assets/market-potential.jpg";
 import Img03 from "../assets/Investment-strategy.jpg";
@@ -10,29 +12,35 @@ import ExploreProject01 from "../assets/explore-project01.jpg";
 import ExploreProject02 from "../assets/explore-project02.jpg";
 import ExploreProject03 from "../assets/explore-project03.jpg";
 import ExploreProject04 from "../assets/explore-project04.jpg";
+import FranchisesHeroImg from "../assets/franchisesHero-img.jpg";
+import { ICON_STEII, ICON_NAV_GROUP, ICON_G4 } from "../utils/icons";
 function FranchisesHero() {
   return (
     <>
-      <section className="franchises-hero">
-        <h1 className="franchises-hero__title">franquicias</h1>
+      <section className="franchises-hero hero">
+        <div className="hero__img">
+          <img src={FranchisesHeroImg} alt="" />
+        </div>
+        <h1 className="hero__title">franquicias</h1>
       </section>
 
       {/* investment factor start*/}
-      <section className="investment-factor">
+      <section className="investment-factor intro-section">
         <div className="container-alt">
-          <div className="investment-factor__content">
-            <div className="text-area">
+          <div className="inner-section">
+            <div className="intro-text-area">
               <h2 className="title-primary">
+                <span className="slice portrait"></span>
                 POR QUÉ <span className="title-secondary">Invertir</span>
               </h2>
-              <h4 className="content-dsc dsc">
+              <h4 className="dsc">
                 Como clase de activo, los bienes raíces históricamente han
                 ofrecido una combinación de atractivos rendimientos ajustados al
                 riesgo con mayores ingresos y estabilidad que las acciones que
                 se cotizan en bolsa.
               </h4>
             </div>
-            <div className="investment-factor__figure">
+            <div className="intro-figure shadow-right">
               <img src={Img01} alt="" />
             </div>
           </div>
@@ -42,6 +50,9 @@ function FranchisesHero() {
 
       {/* investment facilities start */}
       <section className="investment-facilities">
+        <div className="leaf">
+          <img src={Leaf} alt="" />
+        </div>
         <div className="container-alt">
           <div className="investment-facilities__title">
             <h2 className="title-primary">
@@ -82,12 +93,12 @@ function FranchisesHero() {
       {/* market potential & Investment strategy start */}
       <section className="market-potential-n-Investment-strategy">
         <div className="container-alt">
-          <div className="market-potential">
+          <div className="market-potential intro-section">
             <div className="inner-section">
-              <div className="market-potential__figure">
+              <div className="intro-figure">
                 <img src={Img02} alt="" />
               </div>
-              <div className="market-potential__text">
+              <div className="intro-text-area">
                 <h2 className="title-primary">
                   <span className="slice landscape"></span>
                   Diseñamos para aprovechar
@@ -106,9 +117,9 @@ function FranchisesHero() {
               </div>
             </div>
           </div>
-          <div className="investment-strategy">
+          <div className="investment-strategy intro-section">
             <div className="inner-section">
-              <div className="investment-strategy__text">
+              <div className="intro-text-area">
                 <h2 className="title-primary">
                   eSTRATEGIAS
                   <span className="title-secondary">DE INVERSIÓN</span>
@@ -127,14 +138,14 @@ function FranchisesHero() {
                   </span>
                 </div>
               </div>
-              <div className="investment-strategy__figure">
+              <div className="intro-figure">
                 <img src={Img03} alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* market potential end */}
+      {/* market potential & Investment strategy end */}
 
       {/* EXPLORE PROJECTS start */}
       <section className="explore-project">
@@ -147,7 +158,7 @@ function FranchisesHero() {
               </h2>
             </div>
             <div className="grid-area">
-              <div className="project">
+              <a href="/" className="project">
                 <div className="project__img">
                   <img src={ExploreProject01} alt="" />
                 </div>
@@ -156,42 +167,143 @@ function FranchisesHero() {
                     TAU<span className="project__title__sub">HOUSE</span>
                   </h3>
                 </div>
-              </div>
-              <div className="project">
+              </a>
+              <a href="/" className="project">
                 <div className="project__img">
                   <img src={ExploreProject02} alt="" />
                 </div>
                 <div className="project__title">
-                  <h3 className="project__title__main">
-                    TAU<span className="project__title__sub">HOUSE</span>
-                  </h3>
+                  <h3 className="project__title__main">BELIIV</h3>
                 </div>
-              </div>
-              <div className="project">
+              </a>
+              <a href="/" className="project">
                 <div className="project__img">
                   <img src={ExploreProject03} alt="" />
                 </div>
                 <div className="project__title">
-                  <h3 className="project__title__main">
-                    TAU<span className="project__title__sub">HOUSE</span>
-                  </h3>
+                  <h3 className="project__title__main">WAKE</h3>
                 </div>
-              </div>
-              <div className="project">
+              </a>
+              <a href="/" className="project">
                 <div className="project__img">
                   <img src={ExploreProject04} alt="" />
                 </div>
                 <div className="project__title">
-                  <h3 className="project__title__main">
-                    TAU<span className="project__title__sub">HOUSE</span>
-                  </h3>
+                  <h3 className="project__title__main">WAKE II</h3>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
       {/* EXPLORE PROJECTS end */}
+
+      {/* our partners start */}
+      <section className="our-partners-area">
+        <div className="plant">
+          <img src={Plant} alt="" />
+        </div>
+        <div className="container-alt">
+          <div className="our-partners-title">
+            <h2 className="title-primary">
+              Nuestros<span className="title-secondary">socios</span>
+            </h2>
+          </div>
+          <div className="our-partners-tabs">
+            <div className="tab">
+              <a href="/" className="tab-title active">
+                Inmobilario
+              </a>
+            </div>
+            <div className="tab">
+              <a href="/" className="tab-title">
+                Arquitectura
+              </a>
+            </div>
+            <div className="tab">
+              <a href="/" className="tab-title">
+                Interiorismo
+              </a>
+            </div>
+            <div className="tab">
+              <a href="/" className="tab-title">
+                Fiduciario
+              </a>
+            </div>
+          </div>
+          <div className="our-partners">
+            <div className="partner">
+              <div className="partnar-logo">{ICON_STEII}</div>
+              <div className="partner_details">
+                <h4 className="brand-name">STEII</h4>
+                <p className="partner-dsc">
+                  Nam in bibendum diam, at rutrum neque. Donec bibendum sem quis
+                  odio accumsan, quis aliquet quam tempus. Donec semper dolor
+                  eget tincidunt consectetur. Aliquam porttitor eros vitae ipsum
+                  posuere gravida. Donec sagittis vulputate sem, vel maximus
+                  nunc mollis id. Donec bibendum, ex vitae tempus semper, odio
+                  lectus vehicula mauris, ut sollicitudin nibh tortor sed
+                  ligula. Proin sagittis velit ac ultrices varius.
+                  <span className="partner-dsc">
+                    Nullam ut risus varius, accumsan massa ac, mollis magna.
+                    Aenean ullamcorper ex in justo finibus porta. Maecenas
+                    scelerisque rhoncus neque, et blandit elit tempor eget.
+                  </span>
+                </p>
+                <a href="/" className="more-link">
+                  Conocer más
+                </a>
+              </div>
+            </div>
+            <div className="partner">
+              <div className="partnar-logo">{ICON_NAV_GROUP}</div>
+              <div className="partner_details">
+                <h4 className="brand-name">NAV GROUP</h4>
+                <p className="partner-dsc">
+                  Mauris molestie sit amet arcu ut pellentesque. Mauris iaculis
+                  mauris in mauris malesuada, vitae mattis nunc pulvinar. Class
+                  aptent taciti sociosqu ad litora torquent per conubia nostra,
+                  per inceptos himenaeos. Ut cursus tincidunt velit nec
+                  bibendum. Nunc vel risus accumsan metus euismod tempus.
+                  Vestibulum sagittis enim vel blandit vestibulum. Donec mattis
+                  ornare quam, ac viverra metus facilisis ac. Nulla facilisi.
+                  Suspendisse potenti. Duis ultricies venenatis neque id
+                  pulvinar. Donec non fermentum mi. Donec mi nulla, luctus nec
+                  mattis et, tincidunt pharetra orci. Nam ligula justo, blandit
+                  non ornare in, dapibus a libero. Etiam commodo, nisi ultrices
+                  sollicitudin consectetur, nisi leo sodales dolor, nec sodales
+                  ipsum metus in purus.
+                </p>
+                <a href="/" className="more-link">
+                  Conocer más
+                </a>
+              </div>
+            </div>
+            <div className="partner">
+              <div className="partnar-logo">{ICON_G4}</div>
+              <div className="partner_details">
+                <h4 className="brand-name">G4 PROYECTOS INMBILARIOS</h4>
+                <p className="partner-dsc">
+                  Aliquam in pharetra nisi. Sed vehicula massa non orci
+                  placerat, eget malesuada dui finibus. Vivamus mollis dui a mi
+                  dapibus, in suscipit ligula hendrerit. Pellentesque congue
+                  justo et mauris mollis, pellentesque luctus urna pharetra.
+                  Vivamus interdum mauris turpis, eu convallis purus semper sit
+                  amet. Ut a aliquam ligula. Duis fringilla tristique convallis.
+                  In ultricies metus eu turpis facilisis, ac sollicitudin dui
+                  mollis. Vivamus vehicula mattis ex, ac dictum tellus eleifend
+                  vel. Vestibulum non condimentum tortor, sit amet porttitor
+                  sem.
+                </p>
+                <a href="/" className="more-link">
+                  Conocer más
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* our partners end */}
     </>
   );
 }

@@ -21,61 +21,71 @@ export default class HeldEvent extends Component {
         <div className="container-alt">
           <div className="held-event__title">
             <h2 className="title-primary">Eventos realizados</h2>
-          </div>
-          <div className="held-event__slider-wrapper">
-            <Slider {...settings}>
-              <div className="slider-item">
-                <div className="slider-item__figure">
-                  <img src={Img01} alt="" />
-                </div>
-                <h3 className="slider-item__title">NestJS Beiginner</h3>
-                <h6 className="slider-item__subtitle">
-                  Tecnologia
-                  <span className="slider-item__date">10 - Junio - 2022</span>
-                </h6>
+          </div>{" "}
+        </div>
+        <div className="held-event__slider-wrapper">
+          <Slider {...settings}>
+            <div className="slider-item">
+              <div className="slider-item__figure">
+                <img src={Img01} alt="" />
               </div>
-              <div className="slider-item">
-                <div className="slider-item__figure">
-                  <img src={Img02} alt="" />
-                </div>
-                <h3 className="slider-item__title">NestJS Beiginner</h3>
-                <h6 className="slider-item__subtitle">
-                  Tecnologia
-                  <span className="slider-item__date">10 - Junio - 2022</span>
-                </h6>
+              <h3 className="slider-item__title">NestJS Beiginner</h3>
+              <h6 className="slider-item__subtitle">
+                Tecnologia
+                <span className="slider-item__date">10 - Junio - 2022</span>
+              </h6>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item__figure">
+                <img src={Img02} alt="" />
               </div>
-              <div className="slider-item">
-                <div className="slider-item__figure">
-                  <img src={Img03} alt="" />
-                </div>
-                <h3 className="slider-item__title">NestJS Beiginner</h3>
-                <h6 className="slider-item__subtitle">
-                  Tecnologia
-                  <span className="slider-item__date">10 - Junio - 2022</span>
-                </h6>
+              <h3 className="slider-item__title">PhallantiaPhoto 2021</h3>
+              <h6 className="slider-item__subtitle">
+                Tecnologia
+                <span className="slider-item__date">10 - Junio - 2022</span>
+              </h6>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item__figure">
+                <img src={Img03} alt="" />
               </div>
-              <div className="slider-item">
-                <div className="slider-item__figure">
-                  <img src={Img01} alt="" />
-                </div>
-                <h3 className="slider-item__title">NestJS Beiginner</h3>
-                <h6 className="slider-item__subtitle">
-                  Tecnologia
-                  <span className="slider-item__date">10 - Junio - 2022</span>
-                </h6>
+              <h3 className="slider-item__title">IBM Cognos Analytics</h3>
+              <h6 className="slider-item__subtitle">
+                Marketing
+                <span className="slider-item__date">10 - Junio - 2022</span>
+              </h6>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item__figure">
+                <img src={Img01} alt="" />
               </div>
-              <div className="slider-item">
-                <div className="slider-item__figure">
-                  <img src={Img01} alt="" />
-                </div>
-                <h3 className="slider-item__title">NestJS Beiginner</h3>
-                <h6 className="slider-item__subtitle">
-                  Tecnologia
-                  <span className="slider-item__date">10 - Junio - 2022</span>
-                </h6>
+              <h3 className="slider-item__title">NestJS Beiginner</h3>
+              <h6 className="slider-item__subtitle">
+                Tecnologia
+                <span className="slider-item__date">10 - Junio - 2022</span>
+              </h6>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item__figure">
+                <img src={Img02} alt="" />
               </div>
-            </Slider>
-          </div>
+              <h3 className="slider-item__title">PhallantiaPhoto 2021</h3>
+              <h6 className="slider-item__subtitle">
+                Tecnologia
+                <span className="slider-item__date">10 - Junio - 2022</span>
+              </h6>
+            </div>
+            <div className="slider-item">
+              <div className="slider-item__figure">
+                <img src={Img03} alt="" />
+              </div>
+              <h3 className="slider-item__title">IBM Cognos Analytics</h3>
+              <h6 className="slider-item__subtitle">
+                Marketing
+                <span className="slider-item__date">10 - Junio - 2022</span>
+              </h6>
+            </div>
+          </Slider>
         </div>
       </section>
     );

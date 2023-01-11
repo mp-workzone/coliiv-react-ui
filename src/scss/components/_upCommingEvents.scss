@@ -24,6 +24,7 @@
 		}
 		.see-calendar{
 			.calendar-icon{
+				display: block;
 				text-align: center;
 				margin-bottom: 10px;
 			}
@@ -57,7 +58,6 @@
 					.title__main{
 						font-size: 29px;
 						font-weight: 500;
-						line-height: 2.58;
 						color: $secondary-color-03;
 						margin-bottom: 8px;
 						@include max-width(991px){
@@ -74,7 +74,6 @@
 				.title__sub{
 					font-size: 21px;
 					font-weight: 500;
-					line-height: 3.52;
 					color: #767676;
 					margin-bottom: 15px;
 					@include max-width(991px){

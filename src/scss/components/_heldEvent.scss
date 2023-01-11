@@ -10,21 +10,104 @@
 	.held-event__title{
 		margin-bottom: 120px;
 		.title-primary{
-		color: $light-color-01;
-		@include max-width(767px){
-			margin-bottom: 60px;
-		}
-		@include max-width(575px){
-			margin-bottom: 30px;
+			color: $light-color-01;
+			@include max-width(767px){
+				margin-bottom: 60px;
+			}
+			@include max-width(575px){
+				margin-bottom: 30px;
+			}
 		}
 	}
 	.held-event__slider-wrapper{
-		.slick-slide {
-			margin-right: 50px;
+		width: 93%;
+		margin-left: auto;
+		.slick-list{
+			margin: 0 -25px;
+			.slider-item{
+				padding: 0 25px;
+				color: $light-color-01;
+				.slider-item__figure{
+					margin-bottom: 15px;
+				}
+				.slider-item__title{
+					font-size: 50px;
+					font-family: "Berton";
+					font-weight: 300;
+				
+					margin-bottom: 15px;
+					@include max-width(991px){
+						font-size: 28px;
+					}
+					@include max-width(767px){
+						font-size: 24px;
+					}
+					@include max-width(575px){
+						font-size: 20px;
+					}
+				}
+				.slider-item__subtitle{
+					font-size: 22px;
+					font-weight: 400;
+					line-height: 1.5;
+					.slider-item__date{
+						display: block;
+						margin-top: 6px;
+					}
+				}
+			}
 		}
-	}
-	}
+		.slick-next,
+    .slick-prev {
+        height: 70px;
+        width: 70px;
+        z-index: 99999;
+		top: 35%;
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @include max-width(992px) {
+            top: 70%;
+        }
+        @include max-width(767px) {
+            height: 48px;
+            width: 48px;
+        }
+        @include max-width(575px) {
+            bottom: -35px;
+            top: auto;
+            height: 30px;
+            width: 30px;
+        }
+    }
 
+    .slick-next {
+        right: 70px;
+        &::before {
+            background-image: url("../assets/slide-right.svg");
+        }
+    }
+
+    .slick-prev {
+        left: 70px;
+        @include max-width(1024px) {
+            right: 22%;
+        }
+
+        @include max-width(575px) {
+            right: 15%;
+        }
+
+        &::before {
+            background-image: url("../assets/left-slide.svg");
+        }
+    }
+	}
 }
-
-//slick-slide 
