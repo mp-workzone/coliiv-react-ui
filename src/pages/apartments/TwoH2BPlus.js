@@ -1,13 +1,13 @@
 import Slider from "react-slick";
+import StudioLofFeatureFigure from "../../assets/2h-2b-feature.webp";
+import AboutFigure from "../../assets/2h-2b-plus.webp";
 import Apartment from "../../assets/apartment-1.webp";
 import MapGallery1 from "../../assets/apartment-map.webp";
 import Gallery1 from "../../assets/apt-gal-01.webp";
 import MoreSpaceFigure from "../../assets/more-sp.webp";
 import MoreSpaces from "../../assets/more-spaces.webp";
 import IconScrollNext from "../../assets/scroll-next.svg";
-import AboutFigure from "../../assets/stdio-lofg-ab.png";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
-import StudioLofFeatureFigure from "../../assets/stl-ft-r.webp";
 import "../../css/stdio-loft.css";
 const settings = {
     dots: false,
@@ -35,19 +35,19 @@ const settings2 = {
     slidesToShow: 1,
     slidesToScroll: 1,
 };
-function StdioLoft() {
+function TwoH2BPlus() {
     return (
-        <div className='apartment-page apartment-page--stdio'>
+        <div className='apartment-page apartment-page--stdio apartment-page--2h-plus'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
                 </figure>
                 <div className='hero-title'>
                     <h1>
-                        <span>Studio</span>
-                        <span className='lt'>Loft</span>
+                        <span>Apartamento</span>
+                        <span className='lt'>2H - 2B PLUS</span>
                     </h1>
-                    <div className='bg-text'>SL</div>
+                    <div className='bg-text'>A2<span className="sub">+</span></div>
                 </div>
                 <div className='more-apartment'>
                     <span>Ver apartamentos</span>
@@ -91,24 +91,21 @@ function StdioLoft() {
                     <img src={IconScrollNext} alt='' />
                 </div>
             </section>
-            <section className='apartment-about'>
+            <section className='apartment-about has-circle'>
                 <div className='figure'>
-                    <span>SL</span>
+                    <span className="figure__text">A2<span className="sub">+</span></span>
                     <img src={AboutFigure} alt='' />
                 </div>
                 <div className='container-alt'>
                     <div className='apartment-about-content'>
                         <div className='title'>
                             <h2>
-                                <span className='has-border'>Disfrútalo</span>{" "}
-                                todo <span className='alt'>con estilo</span>
+                                Un nuevo hogar
+                                todo <span className='alt'>una nueva vida</span>
                             </h2>
                         </div>
                         <p>
-                            El Studio Loft te ofrece amet, consectetur
-                            adipiscing elit. Phasellus vestibulum nisl sed
-                            faucibus consequat. Aliquam in leo metus. Fusce at
-                            orci auctor ante malesuada feugiat.
+                        Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.
                         </p>
                     </div>
                 </div>
@@ -118,14 +115,14 @@ function StdioLoft() {
                 <img src={Apartment} alt='' />
             </section>
 
-            <section className='apartment-features'>
-                <div className='container'>
-                    <div className='title'>
+            <section className='apartment-features' style={{paddingTop: "340px"}}>
+                <div className='container-alt'>
+                    <div className='title has-border-left'>
                         <h2>
                             verdadera <span>comodidad</span>
                         </h2>
                     </div>
-                    <div className='features-list has-circle'>
+                    <div className='features-list'>
                         <img
                             className='shape-ovelay'
                             src={StudioLofFeatureFigure}
@@ -508,4 +505,4 @@ function StdioLoft() {
     );
 }
 
-export default StdioLoft;
+export default TwoH2BPlus;

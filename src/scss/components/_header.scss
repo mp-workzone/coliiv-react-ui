@@ -25,6 +25,10 @@
         }
     }
 
+    &.fixed {
+        border-bottom: 1px solid #dddddd;
+    }
+
     .navbar {
         display: flex;
         align-items: center;

@@ -5,7 +5,7 @@ import Gallery1 from "../../assets/apt-gal-01.webp";
 import MoreSpaceFigure from "../../assets/more-sp.webp";
 import MoreSpaces from "../../assets/more-spaces.webp";
 import IconScrollNext from "../../assets/scroll-next.svg";
-import AboutFigure from "../../assets/stdio-lofg-ab.png";
+import AboutFigure from "../../assets/shape-1h-1b.webp";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
 import StudioLofFeatureFigure from "../../assets/stl-ft-r.webp";
 import "../../css/stdio-loft.css";
@@ -35,19 +35,19 @@ const settings2 = {
     slidesToShow: 1,
     slidesToScroll: 1,
 };
-function StdioLoft() {
+function OneHOneB() {
     return (
-        <div className='apartment-page apartment-page--stdio'>
+        <div className='apartment-page apartment-page--stdio apartment-page--2h'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
                 </figure>
                 <div className='hero-title'>
                     <h1>
-                        <span>Studio</span>
-                        <span className='lt'>Loft</span>
+                        <span>Apartamento</span>
+                        <span className='lt'>2H - 2B</span>
                     </h1>
-                    <div className='bg-text'>SL</div>
+                    <div className='bg-text'>A2</div>
                 </div>
                 <div className='more-apartment'>
                     <span>Ver apartamentos</span>
@@ -93,22 +93,19 @@ function StdioLoft() {
             </section>
             <section className='apartment-about'>
                 <div className='figure'>
-                    <span>SL</span>
+                    <span>A2</span>
                     <img src={AboutFigure} alt='' />
                 </div>
                 <div className='container-alt'>
-                    <div className='apartment-about-content'>
+                    <div className='apartment-about-content has-border-right'>
                         <div className='title'>
                             <h2>
-                                <span className='has-border'>Disfrútalo</span>{" "}
-                                todo <span className='alt'>con estilo</span>
+                                Un nuevo hogar
+                                todo <span className='alt'>una nueva vida</span>
                             </h2>
                         </div>
                         <p>
-                            El Studio Loft te ofrece amet, consectetur
-                            adipiscing elit. Phasellus vestibulum nisl sed
-                            faucibus consequat. Aliquam in leo metus. Fusce at
-                            orci auctor ante malesuada feugiat.
+                        Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.
                         </p>
                     </div>
                 </div>
@@ -118,14 +115,14 @@ function StdioLoft() {
                 <img src={Apartment} alt='' />
             </section>
 
-            <section className='apartment-features'>
+            <section className='apartment-features has-circle-alt'>
                 <div className='container'>
                     <div className='title'>
                         <h2>
                             verdadera <span>comodidad</span>
                         </h2>
                     </div>
-                    <div className='features-list has-circle'>
+                    <div className='features-list '>
                         <img
                             className='shape-ovelay'
                             src={StudioLofFeatureFigure}
@@ -508,4 +505,4 @@ function StdioLoft() {
     );
 }
 
-export default StdioLoft;
+export default OneHOneB;

@@ -526,6 +526,9 @@ input[type=checkbox]:checked::after {
 .header-area.menu-open:before, .header-area.fixed:before {
   opacity: 1;
 }
+.header-area.fixed {
+  border-bottom: 1px solid #dddddd;
+}
 .header-area .navbar {
   display: flex;
   align-items: center;
