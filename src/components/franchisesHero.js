@@ -60,27 +60,29 @@ function FranchisesHero() {
               <span className="title-secondary">en bienes raices</span>
             </h2>
           </div>
-          <div className="investment-facilities__content">
-            <div className="facility">
-              <div className="facility-icon">{ICON_FACILITY01}</div>
-              <h4 className="facility-title">ingresos</h4>
-              <h4 className="facility-dsc dsc">
+          <div className="reverse-wrapper">
+            <div className="reverse-item">
+              <div className=" reverse-item__icon">{ICON_FACILITY01}</div>
+              <h4 className="reverse-item__title">ingresos</h4>
+              <h4 className="reverse-item__dsc dsc">
                 Año tras año, el sector inmobiliario ha demostrado su capacidad
                 para ofrecer flujos de ingresos superiores a los inversionistas.
               </h4>
             </div>
-            <div className="facility">
-              <div className="facility-icon">{ICON_FACILITY02}</div>
-              <h4 className="facility-title">estabilidad</h4>
-              <h4 className="facility-dsc dsc">
+            <div className="facility reverse-item">
+              <div className=" reverse-item__icon">{ICON_FACILITY02}</div>
+              <h4 className="reverse-item__title">estabilidad</h4>
+              <h4 className="reverse-item__dsc dsc">
                 Mientras que otros tipos de inversiones zigzaguean, los bienes
                 raíces tienen la reputación de mantenerse estables.
               </h4>
             </div>
-            <div className="facility">
-              <div className="facility-icon">{ICON_FACILITY03}</div>
-              <h4 className="facility-title">rentabilidad ajusta AL RIESGO</h4>
-              <h4 className="facility-dsc dsc">
+            <div className="facility reverse-item">
+              <div className=" reverse-item__icon">{ICON_FACILITY03}</div>
+              <h4 className="reverse-item__title">
+                rentabilidad ajusta AL RIESGO
+              </h4>
+              <h4 className="reverse-item__dsc dsc">
                 Los bienes raíces privados generalmente mitigan el riesgo al
                 mismo tiempo que priorizan los rendimientos atractivos.
               </h4>
