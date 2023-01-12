@@ -1,0 +1,146 @@
+.negative-space{
+	margin-top: -100px;
+}
+.facility{
+	position: relative;
+	height: 100vh;
+	&::after{
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.facility__figure{
+		height: 100%;
+		width: 100%;
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.facility__title{
+		position: absolute;
+		bottom: 56px;
+		left: 8%;
+		color: $light-color-01;
+		text-transform: uppercase;
+		z-index: 99;
+	}
+	.scrollbar{
+		position: absolute;
+		bottom: 100px;
+		right: 70px;
+		z-index: 99;
+		.scrollbar__inner{
+			width: 5px;
+			border-radius: 3px;
+			background-color: $light-color-01;
+			z-index: 99;
+		}
+		.scrollbar__inner.top{
+			height: 190px;
+		}
+		.scrollbar__inner.bottom{
+			margin-top: 22px;
+			height: 22px;
+		}
+		.count-no,
+		.total-count{
+			position: absolute;
+			color: $light-color-01;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 31px;
+			font-weight: 500;
+			line-height: 1.5;
+		}
+		.count-no{
+			top: -25%;
+		}
+		.total-count{
+			bottom: -25%;
+		}
+	}
+
+}
+
+// facility-intro 01 start
+.facility-intro{
+	&.one{
+		padding: 190px 0 95px;
+		@include max-width(767px){
+			padding: 95px 0 40px;
+		}
+		@include max-width(575px){
+			padding: 40px 0 20px;
+	
+		}
+	}
+	&.two{
+		padding: 95px 0;
+		@include max-width(767px){
+			padding: 40px 0;
+		}
+		@include max-width(575px){
+			padding: 20px 0;
+	
+		}
+	}
+	&.three{
+		padding: 95px 0 190px;
+		@include max-width(767px){
+			padding: 40px 0 95px;
+		}
+		@include max-width(575px){
+			padding: 20px 0 40px;
+	
+		}
+	}
+	&.left-space{
+		margin-left: 8%;
+		@include max-width(575px){
+			&.left-space{
+				margin-left: 0;
+			}
+		}
+	}
+	&.right-space{
+		margin-right: 8%;
+		@include max-width(575px){
+			&.left-space{
+				margin-right: 0;
+			}
+		}
+	}
+}
+// facility-intro 01 end
+
+
+// pool facility start
+.pool{
+	padding: 190px 0 95px;
+	@include max-width(767px){
+		padding: 80px 0 40px;
+	}
+	@include max-width(575px){
+		padding: 40px 0 20px;
+	}
+	.pool__figure-title{
+		margin-top: 190px;
+		color: $secondary-color-03;
+	}
+	.pool-left-figure{
+		margin-top: 310px;
+		@include max-width(767px){
+			margin-top: 120px;
+		}
+		@include max-width(575px){
+			margin-top: 60px;
+		}
+	}
+}
+// pool facility end
