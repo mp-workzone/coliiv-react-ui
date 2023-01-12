@@ -1,0 +1,9 @@
+// base style
+@import "./common/mixin";
+@import "./common/variable";
+@import "./common/default";
+@import "./common/util";
+
+//Career page style
+@import "./components/coliversHero";
+@import "./components/commonHero";

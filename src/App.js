@@ -7,6 +7,7 @@ import StdioLoft from "./pages/apartments/stdioLoft";
 import TwoH2B from "./pages/apartments/TwoH2B";
 import TwoH2BPlus from "./pages/apartments/TwoH2BPlus";
 import Career from "./pages/career";
+import Colivers from "./pages/colivers";
 import Event from "./pages/event";
 import EventInternal from "./pages/eventInternal";
 import Franchises from "./pages/franchises";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/apartments/2h-2b-plus" element={<TwoH2BPlus/>} />
         <Route path="/franchises" element={<Franchises />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/colivers" element={<Colivers />} />
       </Routes>
       <Footer />
     </div>
