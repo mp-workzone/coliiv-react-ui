@@ -7,6 +7,9 @@ import SideFigure03 from "../assets/side-figure03.jpg";
 import SideFigure04 from "../assets/side-figure04.jpg";
 import IntroImg from "../assets/coliver-activity.jpg";
 import FavFoodImg from "../assets/fav-food.jpg";
+import FavSportImg from "../assets/fav-sport.jpg";
+import ColiversImg01 from "../assets/colivers-img01.jpg";
+import ColiversImg02 from "../assets/colivers-img02.jpg";
 function ColiversHero() {
   return (
     <>
@@ -20,18 +23,18 @@ function ColiversHero() {
       {/* hero end */}
 
       {/* coliv family start */}
-      <section className="coliv-family">
+      <section className="coliv-intro">
         <div className="plant">
           <img src={Plant} alt="" />
         </div>
         <div className="container-alt">
-          <div className="coliv-family__title">
+          <div className="coliv-intro__title">
             <h2 className="title-primary">
               una verdadera
               <span className="title-secondary">familia CoLIiV</span>
             </h2>
           </div>
-          <div className="coliv-family__dsc dsc">
+          <div className="coliv-intro__dsc dsc">
             Ut varius lorem id tincidunt ornare. Aenean dui nisl, rhoncus ut
             arcu eget, pharetra facilisis nulla. Nunc a elit vitae enim aliquam
             aliquet. Maecenas eleifend mi enim, vel elementum purus tristique
@@ -53,14 +56,15 @@ function ColiversHero() {
               <div className=" reverse-item__icon">{ICON_MESSAGE}</div>
               <h4 className="reverse-item__title">Diálogo</h4>
               <h4 className="reverse-item__dsc dsc">
-                Comunicación entre los residentes de nuestra comunidad.
+                Comunicación entre los <br /> residentes de nuestra <br />
+                comunidad.
               </h4>
             </div>
             <div className="facility reverse-item">
               <div className=" reverse-item__icon">{ICON_BUBBLE_CHART}</div>
               <h4 className="reverse-item__title">Dinamismo</h4>
               <h4 className="reverse-item__dsc dsc">
-                Actividades especiales para cada huésped.
+                Actividades especiales <br /> para cada huésped.
               </h4>
             </div>
           </div>
@@ -185,12 +189,75 @@ function ColiversHero() {
               </span>
             </h4>
             <div className="fav-sport__figure">
-              <img src="" alt="" />
+              <img src={FavSportImg} alt="" />
             </div>
           </div>
         </div>
       </section>
       {/* colivers family fevorite sport end */}
+
+      {/* coliver family start */}
+      <section className="colivers-family">
+        <div className="container-alt">
+          <div className="colivers-family__title">
+            <h2 className="title-primary">
+              Como se describe
+              <span className="title-secondary"> nuestra familia colivers</span>
+            </h2>
+          </div>
+          <div className="colivers-family__content grid-area">
+            <div className="grid-item flex ">
+              <div className="title">
+                <h3 className="title__main">Tranquilos</h3>
+                <h4 className="title__sub dsc">
+                  Raesent pretium finibus interdum. Vestibulum iaculis justo
+                  libero, faucibus blandit ante.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg01} alt="" />
+              </div>
+            </div>
+            <div className="grid-item flex">
+              <div className="title">
+                <h3 className="title__main">optimistas</h3>
+                <h4 className="title__sub dsc">
+                  Proin auctor eleifend diam, in aliquam nisl iaculis eget.
+                  Mauris eu leo dapibus, fringilla felis quis.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg02} alt="" />
+              </div>
+            </div>
+            <div className="grid-item flex">
+              <div className="title">
+                <h3 className="title__main">Animalistas</h3>
+                <h4 className="title__sub dsc">
+                  Aliquam neque. Nullam eget ex vitae risus scelerisque
+                  sollicitudin. Sed ullamcorper lorem.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg02} alt="" />
+              </div>
+            </div>
+            <div className="grid-item flex">
+              <div className="title">
+                <h3 className="title__main">cultos</h3>
+                <h4 className="title__sub dsc">
+                  Rutrum, nulla erat dapibus erat, a ultrices sem orci eget
+                  neque. Curabitur tincidunt felis.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg01} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* coliver family end */}
     </>
   );
 }
