@@ -4,6 +4,7 @@ import Header from "./components/header";
 import "./css/common.css";
 import StdioLoft from "./pages/apartments/stdioLoft";
 import Career from "./pages/career";
+import Colivers from "./pages/colivers";
 import Event from "./pages/event";
 import EventInternal from "./pages/eventInternal";
 import Franchises from "./pages/franchises";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/apartments/stdio-loft" element={<StdioLoft />} />
         <Route path="/franchises" element={<Franchises />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/colivers" element={<Colivers />} />
       </Routes>
       <Footer />
     </div>
