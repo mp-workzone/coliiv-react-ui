@@ -66,12 +66,22 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024) {
+  h1 {
+    font-size: 68px;
+  }
+}
 @media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 36px;
   }
@@ -334,12 +344,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -693,12 +703,22 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024) {
+  h1 {
+    font-size: 68px;
+  }
+}
 @media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 36px;
   }
@@ -952,12 +972,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 

@@ -66,12 +66,22 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024) {
+  h1 {
+    font-size: 68px;
+  }
+}
 @media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 36px;
   }
@@ -334,12 +344,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -540,7 +550,7 @@ input[type=checkbox]:checked::after {
 }
 .facility .scrollbar {
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   right: 70px;
   z-index: 99;
 }
@@ -555,7 +565,7 @@ input[type=checkbox]:checked::after {
 }
 .facility .scrollbar .scrollbar__inner.bottom {
   margin-top: 22px;
-  height: 22px;
+  height: 30px;
 }
 .facility .scrollbar .count-no,
 .facility .scrollbar .total-count {
@@ -574,8 +584,17 @@ input[type=checkbox]:checked::after {
   bottom: -25%;
 }
 
+.facility-text {
+  max-width: 680px;
+}
+
+.maximum {
+  max-width: 60%;
+}
+
 .facility-intro.one {
   padding: 190px 0 95px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .facility-intro.one {
@@ -586,6 +605,12 @@ input[type=checkbox]:checked::after {
   .facility-intro.one {
     padding: 40px 0 20px;
   }
+}
+.facility-intro.one .plantNcircle {
+  position: absolute;
+  top: 5%;
+  left: 78%;
+  z-index: -1;
 }
 .facility-intro.two {
   padding: 95px 0;
@@ -602,6 +627,13 @@ input[type=checkbox]:checked::after {
 }
 .facility-intro.three {
   padding: 95px 0 190px;
+  position: relative;
+}
+.facility-intro.three .plantNcircle {
+  position: absolute;
+  top: 5%;
+  right: -20%;
+  z-index: -1;
 }
 @media (max-width: 767px) {
   .facility-intro.three {
@@ -629,9 +661,29 @@ input[type=checkbox]:checked::after {
     margin-right: 0;
   }
 }
+.facility-intro .terraza-portrait {
+  height: 150%;
+  width: 7%;
+  bottom: -5%;
+  left: -5%;
+}
+.facility-intro .bar-portrait {
+  height: 90%;
+  top: -20%;
+  left: -15%;
+}
+.facility-intro .align-end {
+  align-items: flex-end !important;
+}
 
 .pool {
   padding: 190px 0 95px;
+  position: relative;
+}
+.pool .plantNcircle {
+  top: 5%;
+  right: -15%;
+  position: absolute;
 }
 @media (max-width: 767px) {
   .pool {
@@ -671,6 +723,7 @@ input[type=checkbox]:checked::after {
 }
 .intro-section .inner-section .intro-figure {
   flex: 1;
+  max-width: 50%;
 }
 .intro-section .inner-section .intro-figure img {
   height: 100%;
@@ -736,6 +789,15 @@ input[type=checkbox]:checked::after {
 .intro-section .inner-section .intro-text-area .title-primary .portrait {
   bottom: -75%;
   left: -5%;
+}
+.intro-section .inner-section .intro-text-area .title-primary .title-secondary {
+  position: relative;
+}
+.intro-section .inner-section .intro-text-area .title-primary .title-secondary .landscape {
+  width: 30%;
+  left: -10%;
+  top: 40%;
+  height: 70%;
 }
 .intro-section .inner-section .intro-text-area .dsc {
   position: relative;

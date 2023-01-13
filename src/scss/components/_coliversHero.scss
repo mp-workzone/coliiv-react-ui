@@ -1,3 +1,11 @@
+.colivers-title-primary{
+	@include max-width(1024px){
+		font-size: 72px;
+	
+	.colivers-title-secondary{
+		font-size: 70px;
+	}}
+}
 // coliv family start
 .coliv-intro{
 	padding: 190px 0 95px;
@@ -12,6 +20,13 @@
 		position: absolute;
 		top: 5%;
 		left: -10%;
+		z-index: -1;
+		@include max-width(1024px){
+			left: -40%;
+		}
+		@include max-width(767px){
+			left: -80%;
+		}
 	}
 	.coliv-intro__title{
 		text-align: center;
@@ -29,13 +44,19 @@
 	.coliv-intro__dsc{
 		max-width: 900px;
 		margin: 0 auto;
-		margin-bottom: 160px;
+		// margin-bottom: 160px;
 		text-align: center;
+		color: $secondary-color-04;
+		@include max-width(1024px){
+			padding: 0 35px;
+		}
 		@include max-width(767px){
-			margin-bottom: 80px 0;
+			padding: 0 20px;
+			margin-bottom: 80px;
 		}
 		@include max-width(575px){
-			margin-bottom: 20px 0;
+			padding: 0;
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -54,11 +75,19 @@
 	}
 	.gallery-center-content{
 		padding: 180px 45px 95px;
-		@include max-width(767px){
-			padding: 95px 30px 45px;
+		max-width: 60%;
+		@include max-width(1024px){
+			padding: 95px 50px 45px;
+			max-width: 100%;
 		}
-		@include max-width(575px){
-			padding: 40px 20px 25px;
+		@include max-width(991px){
+			padding: 40px 25px 25px;
+		}
+		@include max-width(767px){
+			padding: 20px 10px 15px;
+		}
+		@include max-width(991px){
+			padding: 10px;
 		}
 		.main-figure{
 			margin-bottom: 117px;
@@ -78,11 +107,14 @@
 			margin: 0 auto;
 			font-family: "Berton";
 			text-align: center;
+			@include max-width(1024px){
+				font-size: 62px;
+			}
 			@include max-width(992px){
-				font-size: 32px;
+				font-size: 36px;
 			}
 			@include max-width(767px){
-				font-size: 24apx;
+				font-size: 27px;
 			}
 			@include max-width(575px){
 				font-size: 20px;
@@ -90,33 +122,69 @@
 		}
 		
 	}
-	.side-figure{
-		position: absolute;
-		img{
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+	
+	.top-figure,
+	.bottom-figure{
+		display: flex;
+		justify-content: space-between;
+		.side-figure{
+			position: absolute;
+			@include max-width(1024px){
+				position: static;
+				display: inline-block;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&.top-left{
+				top: 95px;
+				left: 0;
+				width: clamp(160px, 17%, 357px);
+			}
+			&.bottom-left{
+				bottom: 95px;
+				left: 0;
+				width: clamp(100px, 12%, 212px);
+				@include max-width(1024px){
+					height: 50%;
+				}
+			}
+			&.top-right{
+				top: 20%;
+				right: 0;
+				width: clamp(100px, 12%, 212px);
+				@include max-width(1024px){
+					height: 50%;
+				}
+
+			}
+			&.bottom-right{
+				bottom: 95px;
+				right: 0;
+				width: clamp(160px, 17%, 357px);
+			}
 		}
-		&.top-left{
-			top: 95px;
-			left: 0;
-			width: clamp(200px, 17%, 357px);
-		}
-		&.bottom-left{
-			bottom: 95px;
-			left: 0;
-			width: clamp(150px, 12%, 212px);
-		}
-		&.top-right{
-			top: 20%;
-			right: 0;
-			width: clamp(150px, 12%, 212px);
-		}
-		&.bottom-right{
-			bottom: 95px;
-			right: 0;
-			width: clamp(200px, 17%, 357px);
-		}
+	}
+}
+.top-figure{
+	margin-bottom: 90px;
+	align-items: flex-end;
+	@include max-width(991px){
+		margin-bottom: 60px;
+	}
+	@include max-width(767px){
+		margin-bottom: 40px;
+	}
+}
+.bottom-figure{
+	margin-top: 90px;
+	@include max-width(991px){
+		margin-top: 60px;
+	}
+	@include max-width(767px){
+		margin-top: 40px;
 	}
 }
 //coliv family gallery end
@@ -154,7 +222,14 @@
 	}
 	.inner-content{
 		@extend .flex-center-spaceBetween;
-		gap: clamp(40px, 12%, 120px);
+		gap: clamp(40px, 8%, 120px);
+		@include max-width(1180px){
+			gap: 30px;
+		}
+		@include max-width(1080px){
+			flex-direction: column-reverse;
+			gap: 90px;
+		}
 		.figure-area{
 			flex: 1;
 			img{
@@ -178,6 +253,9 @@
 // colivers family fevorite sport start
 .fav-sport{
 	padding: 95px 0 190px;
+	@include max-width(1024px){
+		padding: 40px 0 380px;
+	}
 	@include max-width(767px){
 		padding: 40px 0 80px;
 	}
@@ -234,11 +312,26 @@
 // coliver family start
 .colivers-family{
 	padding: 35px 0 190px;
+	position: relative;
 	@include max-width(767px){
 		padding-bottom: 80px;
 	}
 	@include max-width(575px){
 		padding-bottom: 40px;
+	}
+	.leaf{
+		position: absolute;
+		top: -10%;
+		right: -30%;
+		z-index: -1;
+		@include max-width(1024px){
+			top: -15%;
+			right: -50%;
+		}
+		@include max-width(767px){
+			top: -25%;
+			right: -80%;
+		}
 	}
 	.colivers-family__title{
 		text-align: center;
@@ -257,6 +350,9 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 50px;
+		@include max-width(1180px){
+			grid-template-columns: 1fr;
+		}
 		@include max-width(991px){
 			gap: 35px;
 		}
@@ -291,10 +387,29 @@
 			}
 			.title__sub{
 				color: $secondary-color-04;
+				@include max-width(1024px){
+					font-size: 38px;
+				}
+				@include max-width(991px){
+					font-size: 28px;
+				}
+				@include max-width(767px){
+					font-size: 22px;
+				}
+				@include max-width(575px){
+					font-size: 16px;
+				}
 			}
 		}
 		.figure{
 			flex: 1;
+			height: 100%;
+			width: 100%;
+			img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 	.grid-item.flex:nth-child(even){
