@@ -42,6 +42,10 @@
 			padding: 23px;
 			box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
 			column-gap: 65px;	
+			position: relative;
+				@include max-width(1080px){
+					display: block;
+				}
 				@include max-width(575px){
 					column-gap: 20px;
 				}
@@ -51,6 +55,14 @@
 					height: 100%;
 					width: 100%;
 					object-fit: cover;
+				}
+				@include max-width(1080px){
+					margin-bottom: 40px;
+					max-height: 350px;
+					overflow: hidden;
+				}
+				@include max-width(767px){
+					margin-bottom: 20px;
 				}
 			}
 			.event__details{
@@ -102,11 +114,37 @@
 			.update-time{
 				@extend .flex-center-center;
 				flex-direction: column;
+				@include max-width(1080px){
+					position: absolute;
+					top: 65%;
+					right: 20px;
+					transform:  translateY(-65%);
+				}
+				@include max-width(890px){
+					top: 60%;
+					transform: translateY(-60%);
+				}
+				@include max-width(575px){
+					position: relative;
+					padding: 20px 0 0 20px;
+					flex-direction: row;
+					justify-content: start;
+					gap: 15px;
+				}
 				.update-time__no{
 					font-weight: 500;
 					font-size: 40px;
 					color: $secondary-color-03;
 					margin-bottom: 4px;
+					@include max-width(991px){
+						font-size: 32px;
+					}
+					@include max-width(767px){
+						font-size: 24px;
+					}
+					@include max-width(575px){
+						font-size: 20px;
+					}
 				}
 				.update-time__text{
 					

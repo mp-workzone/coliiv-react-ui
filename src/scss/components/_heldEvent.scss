@@ -36,20 +36,35 @@
 					font-weight: 300;
 				
 					margin-bottom: 15px;
+					@include max-width(1024){
+						font-size: 72px;
+					}
 					@include max-width(991px){
-						font-size: 28px;
+						font-size: 36px;
 					}
 					@include max-width(767px){
-						font-size: 24px;
+						font-size: 28px;
 					}
 					@include max-width(575px){
-						font-size: 20px;
+						font-size: 22px;
 					}
 				}
 				.slider-item__subtitle{
 					font-size: 22px;
 					font-weight: 400;
 					line-height: 1.5;
+					@include max-width(1024){
+						font-size: 36px;
+					}
+					@include max-width(991px){
+						font-size: 14px;
+					}
+					@include max-width(767px){
+						font-size: 20px;
+					}
+					@include max-width(575px){
+						font-size: 16px;
+					}
 					.slider-item__date{
 						display: block;
 						margin-top: 6px;

@@ -802,9 +802,29 @@ input[type=checkbox]:checked::after {
   right: -35%;
   z-index: -1;
 }
+@media (max-width: 1024px) {
+  .event-contact-area .leaf {
+    right: -60%;
+  }
+}
 .event-contact-area .inner-section {
   gap: clamp(50px, 50%, 140px);
   padding: 0 32px;
+}
+@media (max-width: 1300px) {
+  .event-contact-area .inner-section {
+    gap: 50px;
+  }
+}
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .event-contact-area .inner-section {
+    padding: 0;
+  }
 }
 .event-contact-area .inner-section .contact-form {
   padding: 0 8px;
@@ -820,6 +840,21 @@ input[type=checkbox]:checked::after {
   text-transform: uppercase;
   font-family: "Berton";
 }
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-form .contact-form__title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-form .contact-form__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .contact-form__title {
+    font-size: 32px;
+  }
+}
 .event-contact-area .inner-section .contact-form .contact-form__title .landscape {
   width: 50%;
   top: -15%;
@@ -833,11 +868,36 @@ input[type=checkbox]:checked::after {
   display: block;
   font-family: "poppins";
 }
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-form .contact-form__subtitle {
+    font-size: 62px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-form .contact-form__subtitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .contact-form__subtitle {
+    font-size: 30px;
+  }
+}
 .event-contact-area .inner-section .contact-form .input-email {
   margin-bottom: 90px;
 }
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .input-email {
+    margin-top: 40px;
+  }
+}
 .event-contact-area .inner-section .contact-form .submit-btn {
   margin-top: 95px;
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .submit-btn {
+    margin-top: 40px;
+  }
 }
 .event-contact-area .inner-section .contact-right-area {
   flex: 1;
@@ -850,11 +910,46 @@ input[type=checkbox]:checked::after {
   margin-bottom: 40px;
   font-family: "Berton";
 }
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-right-area .title {
+    font-size: 72px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-right-area .title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-right-area .title {
+    font-size: 32px;
+  }
+}
 .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
   font-size: 25px;
   font-weight: 300;
   line-height: 1.52;
   margin-bottom: 35px;
+}
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 42px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 18px;
+  }
 }
 .event-contact-area .inner-section .contact-right-area .telephone {
   margin-top: 15px;
