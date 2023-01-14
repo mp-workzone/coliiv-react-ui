@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Slider from "react-slick";
 import Apartment from "../../assets/apartment-1.webp";
 import MapGallery1 from "../../assets/apartment-map.webp";
@@ -6,62 +5,49 @@ import Gallery1 from "../../assets/apt-gal-01.webp";
 import MoreSpaceFigure from "../../assets/more-sp.webp";
 import MoreSpaces from "../../assets/more-spaces.webp";
 import IconScrollNext from "../../assets/scroll-next.svg";
-import AboutFigure from "../../assets/stdio-lofg-ab.png";
+import AboutFigure from "../../assets/shape-1h-1b.webp";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
 import StudioLofFeatureFigure from "../../assets/stl-ft-r.webp";
 import "../../css/stdio-loft.css";
-
-function StdioLoft() {
-    const [galleryIndex, setGalleryIndex] = useState(1);
-    const [mapIndex, setMapIndex] = useState(1);
-
-    const settings = {
-        dots: false,
-        infinite: true,
-        arrows: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        afterChange: (index) => {
-            setGalleryIndex(index + 1);
-        },
-    };
-
-    const settings3 = {
-        dots: false,
-        infinite: true,
-        arrows: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-    };
-
-    const settings2 = {
-        dots: false,
-        infinite: true,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        afterChange: (index) => {
-            setMapIndex(index + 1);
-        },
-    };
-
+const settings = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+};
+const settings3 = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+};
+const settings2 = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+};
+function OneHOneB() {
     return (
-        <div className='apartment-page'>
+        <div className='apartment-page apartment-page--stdio apartment-page--2h'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
                 </figure>
                 <div className='hero-title'>
                     <h1>
-                        <span>Studio</span>
-                        <span className='lt'>Loft</span>
+                        <span>Apartamento</span>
+                        <span className='lt'>2H - 2B</span>
                     </h1>
-                    <div className='bg-text'>SL</div>
+                    <div className='bg-text'>A2</div>
                 </div>
                 <div className='more-apartment'>
                     <span>Ver apartamentos</span>
@@ -107,22 +93,19 @@ function StdioLoft() {
             </section>
             <section className='apartment-about'>
                 <div className='figure'>
-                    <span className="figure__text">SL</span>
-                    <img className="image-1" src={AboutFigure} alt='' />
+                    <span>A2</span>
+                    <img src={AboutFigure} alt='' />
                 </div>
                 <div className='container-alt'>
-                    <div className='apartment-about-content'>
+                    <div className='apartment-about-content has-border-right'>
                         <div className='title'>
                             <h2>
-                                <span className='has-border'>Disfrútalo</span>{" "}
-                                todo <span className='alt'>con estilo</span>
+                                Un nuevo hogar
+                                todo <span className='alt'>una nueva vida</span>
                             </h2>
                         </div>
                         <p>
-                            El Studio Loft te ofrece amet, consectetur
-                            adipiscing elit. Phasellus vestibulum nisl sed
-                            faucibus consequat. Aliquam in leo metus. Fusce at
-                            orci auctor ante malesuada feugiat.
+                        Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.
                         </p>
                     </div>
                 </div>
@@ -132,14 +115,14 @@ function StdioLoft() {
                 <img src={Apartment} alt='' />
             </section>
 
-            <section className='apartment-features'>
+            <section className='apartment-features has-circle-alt'>
                 <div className='container'>
                     <div className='title'>
                         <h2>
                             verdadera <span>comodidad</span>
                         </h2>
                     </div>
-                    <div className='features-list has-circle'>
+                    <div className='features-list '>
                         <img
                             className='shape-ovelay'
                             src={StudioLofFeatureFigure}
@@ -343,14 +326,7 @@ function StdioLoft() {
                     <div className='apartment-gallery__item'>
                         <img src={Gallery1} alt='' />
                     </div>
-                    <div className='apartment-gallery__item'>
-                        <img src={Gallery1} alt='' />
-                    </div>
                 </Slider>
-                <div className='slider-progress'>
-                    {galleryIndex < 10 ? "0" : ""}
-                    {galleryIndex} <span></span> 05
-                </div>
             </section>
 
             <section className='apartment-map'>
@@ -366,10 +342,6 @@ function StdioLoft() {
                             <p>Apartamento en piso impar</p>
                         </div>
                         <div className='apartment-map__gallery__slides'>
-                            <div className='slider-progress'>
-                                {mapIndex < 10 ? "0" : ""}
-                                {mapIndex} <span>/</span> 05
-                            </div>
                             <Slider {...settings2}>
                                 <div className='apartment-map__gallery__slide'>
                                     <img src={MapGallery1} alt='' />
@@ -384,7 +356,7 @@ function StdioLoft() {
             </section>
 
             <section className='more-spaces'>
-                <img className='shape-top' src={MoreSpaceFigure} alt='' />
+                <img className="shape-top" src={MoreSpaceFigure} alt="" />
                 <div className='title'>
                     <h2>Más espacios</h2>
                 </div>
@@ -525,7 +497,7 @@ function StdioLoft() {
                                 </g>
                             </svg>
                         </span>
-                        <span className='text'>VER TODOS</span>
+                        <span className="text">VER TODOS</span>
                     </a>
                 </div>
             </section>
@@ -533,4 +505,4 @@ function StdioLoft() {
     );
 }
 
-export default StdioLoft;
+export default OneHOneB;

@@ -1881,7 +1881,7 @@ export const ICON_SCROLL_NEXT = (
         r="65.5"
         transform="translate(770.029 1378.746)"
         fill="#c4d979"
-        // style="mix-blend-mode: multiply;isolation: isolate"
+        style={{mixBlendMode: "multiply", isolation: 'isolate'}}
       />
       <path
         id="Path_2506"
@@ -1941,7 +1941,6 @@ export const ICON_STEII = (
 export const ICON_NAV_GROUP = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    // xmlns:xlink="http://www.w3.org/1999/xlink"
     width="207.232"
     height="47.711"
     viewBox="0 0 207.232 47.711"
