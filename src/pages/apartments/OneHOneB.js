@@ -37,7 +37,7 @@ const settings2 = {
 };
 function OneHOneB() {
     return (
-        <div className='apartment-page apartment-page--stdio apartment-page--1h'>
+        <div className='apartment-page apartment-page--1h'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
@@ -93,8 +93,8 @@ function OneHOneB() {
             </section>
             <section className='apartment-about'>
                 <div className='figure'>
-                    <span>A1</span>
-                    <img src={AboutFigure} alt='' />
+                    <span className="figure__text">A1</span>
+                    <img className="image-2" src={AboutFigure} alt='' />
                 </div>
                 <div className='container-alt'>
                     <div className='apartment-about-content'>

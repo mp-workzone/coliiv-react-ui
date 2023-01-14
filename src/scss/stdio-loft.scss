@@ -117,11 +117,21 @@
 
     .figure {
         img {
-            width: 584px;
-            position: absolute;
-            left: -120px;
-            top: 50%;
-            transform: translateY(-50%);
+            &.image-1 {
+                width: 584px;
+                position: absolute;
+                left: -120px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &.image-2 {
+                width: 700px;
+                position: absolute;
+                left: -240px;
+                top: 320px;
+                transform: translateY(-50%);
+            }
         }
 
         .figure__text {
@@ -211,20 +221,6 @@
             font-weight: 300;
             font-size: 28px;
             margin-bottom: 0;
-        }
-    }
-}
-
-.apartment-page--1h {
-    .apartment-about {
-        .figure {
-            img {
-                width: 700px;
-                position: absolute;
-                left: -240px;
-                top: 320px;
-                transform: translateY(-50%);
-            }
         }
     }
 }
@@ -374,10 +370,57 @@
         margin: 0 30px;
         width: 620px;
     }
+
+    .slick-prev {
+        display: none;
+    }
+
+    .slick-next {
+        right: 70px;
+        z-index: 9999;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: 2px solid #f1f1f1;
+        &:before {
+            content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNy44NTIiIGhlaWdodD0iMzYuNjk4IiB2aWV3Qm94PSIwIDAgMzcuODUyIDM2LjY5OCI+DQogIDxnIGlkPSJHcm91cF8xMjEwIiBkYXRhLW5hbWU9Ikdyb3VwIDEyMTAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMS40MTQpIj4NCiAgICA8bGluZSBpZD0iTGluZV81IiBkYXRhLW5hbWU9IkxpbmUgNSIgeDI9IjM1LjQzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxNi45MzUpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmMWYxZjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPGxpbmUgaWQ9IkxpbmVfNiIgZGF0YS1uYW1lPSJMaW5lIDYiIHgxPSIxNi45MzUiIHkxPSIxNi45MzUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjUwMykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YxZjFmMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICA8bGluZSBpZD0iTGluZV83IiBkYXRhLW5hbWU9IkxpbmUgNyIgeDE9IjE2LjkzNSIgeTI9IjE2LjkzNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTguNTAzIDE2LjkzNSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YxZjFmMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPC9nPg0KPC9zdmc+DQo=);
+            opacity: 1;
+        }
+    }
+
+    .slider-progress {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        color: #707070;
+        margin-top: 20px;
+        span {
+            width: 63px;
+            height: 2px;
+            background-color: #707070;
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
 }
 
 .apartment-map {
     padding: 190px 0 100px;
+
+    .slider-progress {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        color: #707070;
+        margin-top: 20px;
+        justify-content: flex-end;
+        padding-right: 22px;
+        span {
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+
     .apartment-map__gallery {
         margin-top: -100px;
         display: flex;

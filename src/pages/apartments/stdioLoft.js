@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Slider from "react-slick";
 import Apartment from "../../assets/apartment-1.webp";
 import MapGallery1 from "../../assets/apartment-map.webp";
@@ -9,35 +10,48 @@ import AboutFigure from "../../assets/stdio-lofg-ab.png";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
 import StudioLofFeatureFigure from "../../assets/stl-ft-r.webp";
 import "../../css/stdio-loft.css";
-const settings = {
-    dots: false,
-    infinite: true,
-    arrows: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-};
-const settings3 = {
-    dots: false,
-    infinite: true,
-    arrows: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-};
-const settings2 = {
-    dots: false,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-};
+
 function StdioLoft() {
+    const [galleryIndex, setGalleryIndex] = useState(1);
+    const [mapIndex, setMapIndex] = useState(1);
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        afterChange: (index) => {
+            setGalleryIndex(index + 1);
+        },
+    };
+
+    const settings3 = {
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+    };
+
+    const settings2 = {
+        dots: false,
+        infinite: true,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        afterChange: (index) => {
+            setMapIndex(index + 1);
+        },
+    };
+
     return (
-        <div className='apartment-page apartment-page--stdio'>
+        <div className='apartment-page'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
@@ -93,8 +107,8 @@ function StdioLoft() {
             </section>
             <section className='apartment-about'>
                 <div className='figure'>
-                    <span>SL</span>
-                    <img src={AboutFigure} alt='' />
+                    <span className="figure__text">SL</span>
+                    <img className="image-1" src={AboutFigure} alt='' />
                 </div>
                 <div className='container-alt'>
                     <div className='apartment-about-content'>
@@ -329,7 +343,14 @@ function StdioLoft() {
                     <div className='apartment-gallery__item'>
                         <img src={Gallery1} alt='' />
                     </div>
+                    <div className='apartment-gallery__item'>
+                        <img src={Gallery1} alt='' />
+                    </div>
                 </Slider>
+                <div className='slider-progress'>
+                    {galleryIndex < 10 ? "0" : ""}
+                    {galleryIndex} <span></span> 05
+                </div>
             </section>
 
             <section className='apartment-map'>
@@ -345,6 +366,10 @@ function StdioLoft() {
                             <p>Apartamento en piso impar</p>
                         </div>
                         <div className='apartment-map__gallery__slides'>
+                            <div className='slider-progress'>
+                                {mapIndex < 10 ? "0" : ""}
+                                {mapIndex} <span>/</span> 05
+                            </div>
                             <Slider {...settings2}>
                                 <div className='apartment-map__gallery__slide'>
                                     <img src={MapGallery1} alt='' />
@@ -359,7 +384,7 @@ function StdioLoft() {
             </section>
 
             <section className='more-spaces'>
-                <img className="shape-top" src={MoreSpaceFigure} alt="" />
+                <img className='shape-top' src={MoreSpaceFigure} alt='' />
                 <div className='title'>
                     <h2>Más espacios</h2>
                 </div>
@@ -500,7 +525,7 @@ function StdioLoft() {
                                 </g>
                             </svg>
                         </span>
-                        <span className="text">VER TODOS</span>
+                        <span className='text'>VER TODOS</span>
                     </a>
                 </div>
             </section>
