@@ -98,12 +98,12 @@ h2 {
 h4 {
     font-size: 28px;
 
-    @include max-width(992px) {
-        font-size: 18px;
+    @include max-width(991px) {
+        font-size: 24px;
     }
 
-    @include max-width(768px) {
-        font-size: 14px;
+    @include max-width(767px) {
+        font-size: 18px;
     }
 }
 
@@ -111,22 +111,22 @@ h5 {
     font-size: 24px;
 
     @include max-width(992px) {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     @include max-width(768px) {
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
 p {
     font-size: 20px;
     @include max-width(992px) {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     @include max-width(768px) {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 

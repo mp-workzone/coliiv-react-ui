@@ -2,6 +2,9 @@
 	padding: 190px 0 125px;
 	background-color: $secondary-color-02;
 	border-bottom: 1px solid $secondary-color-04;
+	@include max-width(767px){
+		padding: 90px 0;
+	}
 	.team-members__title{
 		text-align: center;
 		font-family: "Berton";
@@ -16,12 +19,25 @@
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 50px;
 		row-gap: 70px;
+		@include max-width(1024px){
+			grid-template-columns: 1fr;
+		}
+		@include max-width(991px){
+			margin-top: 80px;
+		}
+		@include max-width(767px){
+			margin-top: 50px;
+		}
 		.team-member{
 			padding: clamp(10px, 5%, 35px);
 			.team-member__img{
 				margin-bottom: 50px;
-				display: inline-block;
 				position: relative;
+				img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
 				.add-icon{
 					position: absolute;
 					bottom: 20px;
@@ -35,13 +51,16 @@
 				font-weight: 300;
 
 				@include max-width(1024px){
-					font-size: 28px;
+					font-size: 52px;
 				}
 				@include max-width(992px){
-					font-size: 20px;
+					font-size: 30px;
 				}
 				@include max-width(768px){
-					font-size: 15px;
+					font-size: 24px;
+				}
+				@include max-width(575px){
+					font-size: 20px;
 				}
 			}
 			.team-member__profession{
@@ -50,14 +69,18 @@
 				line-height: 1.33;
 				color: $light-color-01;
 				@include max-width(1024px){
-					font-size: 22px;
+					font-size: 38px;
 				}
 				@include max-width(992px){
-					font-size: 18px;
+					font-size: 28px;
 				}
 				@include max-width(768px){
-					font-size: 13px;
+					font-size: 22px;
 				}
+				@include max-width(575px){
+					font-size: 17px;
+				}
+				
 			}
 		}
 	}

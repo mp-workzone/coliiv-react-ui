@@ -7,7 +7,7 @@ function TeamHero() {
         <img src={Leaf} alt="" />
       </div>
       <h1 className="team-hero__title">Nosotros</h1>
-      <h4 className="dsc">
+      <h4 className="dsc sub-title-primary">
         Ut varius lorem id tincidunt ornare. Aenean dui nisl, rhoncus ut arcu
         eget, pharetra facilisis nulla. Nunc a elit vitae enim aliquam aliquet.
         Maecenas eleifend mi enim, vel elementum purus tristique sit amet.

@@ -1,0 +1,106 @@
+
+//  contact form start
+
+.input-name,
+.input-email{
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid $secondary-color-06;
+    margin-bottom: 45px;
+    font-family: "montserrat";
+    &::placeholder{
+        color: $secondary-color-06;
+    }
+}
+.input-name,
+.input-email,
+.agreement-label{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.32;
+    @include max-width(1024px){
+        font-size: 42px;
+    }
+    @include max-width(992px){
+        font-size: 22px;
+    }
+    @include max-width(768px){
+        font-size: 18px;
+    }
+}
+.agreement{
+    display: flex;
+    .agreement-label{
+        color: $secondary-color-06;
+        padding-left: 40px;
+		@include max-width(767px){
+			padding-left: 15px;
+		}
+    }
+}
+
+.input-name,
+.input-email,
+.submit-btn{
+    display: block;
+}
+input[type=checkbox]{
+    visibility: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 36px;
+        width: 36px;
+        border-radius: 8px;
+        border: 2px solid $secondary-color-06;
+        top: 2px;
+        left: 0;
+        visibility: visible;
+        @include max-width(992px){
+            height: 24px;
+            width: 24px;
+        }
+        @include max-width(767px){
+			top: 0;
+            height: 18px;
+            width: 18px;
+			border-radius: 4px;
+        }
+    }
+    &:checked::after{
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 13px;
+        width: 10px;
+        height: 24px;
+        border:solid $primary-color-01;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        visibility: visible;
+        @include max-width(992px){
+            height: 15px;
+            width: 6px;
+            left: 9px;
+        }
+        @include max-width(767px){
+			border-width: 0 2px 2px 0;
+            height: 10px;
+            width: 5px;
+            left: 7px;
+			top: 3px;
+        }
+    }
+}
+.submit-btn{
+    margin: 45px auto 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: $secondary-color-03;
+    text-transform: uppercase;
+}
+
+// contact form end

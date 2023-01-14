@@ -21,7 +21,7 @@ function FranchisesHero() {
         <div className="hero__img">
           <img src={FranchisesHeroImg} alt="" />
         </div>
-        <h1 className="hero__title">franquicias</h1>
+        <h1 className="hero__title hero-title">franquicias</h1>
       </section>
 
       {/* investment factor start*/}

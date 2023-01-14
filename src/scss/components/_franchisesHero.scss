@@ -28,10 +28,25 @@
 		position: absolute;
 		top: -50%;
 		left: -33%;
+		z-index: -1;
+		@include max-width(1024px){
+			top: 0;
+			left: -70%;
+		}
+		@include max-width(991px){
+			top: -20%;
+			right: 50%;
+		}
 	}
 	.investment-facilities__title{
 		text-align: center;
 		margin-bottom: 200px;
+		@include max-width(767px){
+			margin-bottom: 80px;
+		}
+		@include max-width(575px){
+			margin-bottom: 40px;
+		}
 		
 		.title-primary{
 			color: $secondary-color-03;
@@ -74,6 +89,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: clamp(2px, 4%, 50px);
+		overflow: hidden;
 		@include max-width(1024px){
 			grid-template-columns: repeat(2, 1fr);
 		}
@@ -90,6 +106,17 @@
 				top: 0;
 				left: 0;
 				background-color: rgba(0, 0, 0, .3);
+			}
+			.project__img{
+				@include max-width(767px){
+					max-height: 530px;
+				}
+				overflow: hidden;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			}
 			.project__title{
 				position: absolute;
@@ -152,6 +179,10 @@
 		top: 23%;
 		right: -17%;
 		z-index: -1;
+		@include max-width(1024px){
+			left: 70%;
+			top: 18%;
+		}
 	}
 	.our-partners-title{
 		margin-bottom: 120px;
@@ -167,7 +198,11 @@
 	}
 	.our-partners-tabs{
 		@extend .flex-center-spaceBetween;
-		padding-bottom: 130px;
+		margin-bottom: 120px;
+		padding-bottom: 10px;
+		// flex-wrap: wrap;
+		// gap: 30px;
+		overflow-x: scroll;
 		@include max-width(767px){
 			padding-bottom: 60px;
 		}
@@ -184,6 +219,18 @@
 				line-height: 1.47;
 				color: #b9b9b9;
 				transition: .3s;
+				@include max-width(1024px){
+					font-size: 52px;
+				}
+				@include max-width(991px){
+					font-size: 48px;
+				}
+				@include max-width(767px){
+					font-size: 36px;
+				}
+				@include max-width(575px){
+					font-size: 30px;
+				}
 				&::after{
 					content: '';
 					position: absolute;
@@ -211,11 +258,22 @@
 			padding: 38px;
 			box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
 			background-color: $light-color-01;
+			@include max-width(1024px){
+				flex-direction: column;
+				padding-top: 160px;
+				gap: 135px;
+			}
+			@include max-width(991){
+				flex-direction: column;
+				padding-top: 100px;
+				gap: 95px;
+			}
 			@include max-width(767px){
-				padding: 25px;
+				padding: 55px 35px;
+				gap: 35px;
 			}
 		@include max-width(575px){
-			padding: 15px;
+			padding: 40px 20px;
 		}
 			.partnar-logo{
 				flex: 1;

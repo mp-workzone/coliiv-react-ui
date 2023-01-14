@@ -5,6 +5,11 @@
 		position: absolute;
 		top: 5%;
 		right: -10%;
+		z-index: -1;
+		left: 40%;
+		@include max-width(1024px){
+			top: 45%;
+		}
 	}
 }
 .career-intro-spacing{
@@ -157,6 +162,10 @@
 				box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
 				padding: 40px 23px;
 				margin-bottom: clamp(15px, 5%, 30px);
+				@include max-width(1024px){
+					display: block;
+					align-items: start;
+				}
 				@include max-width(767px){
 					padding: 25px 15px;
 				}
@@ -201,6 +210,11 @@
 					font-weight: 400;
 					line-height: 1.48;
 					color: $primary-color-01;
+					@include max-width(1024px){
+						text-align: center;
+						display: block;
+						font-size: 42px;
+					}
 					@include max-width(991px){
 						font-size: 24px;
 					}

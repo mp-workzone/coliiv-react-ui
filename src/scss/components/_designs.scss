@@ -3,9 +3,18 @@
 	.design{
 		@extend .flex-center-spaceBetween;
 		margin-bottom: clamp(80px, 10%, 190px);
-		column-gap: clamp(40px, 10%, 200px);
+		gap: clamp(40px, 10%, 200px);
+		@include max-width(1180px){
+			gap: 40px;
+		}
+		@include max-width(1080px){
+			flex-direction: column;
+		}
 		.content{
 			max-width: 50%;
+			@include max-width(1080px){
+				max-width: 100%;
+			}
 			.design__title{
 				position: relative;
 				font-size: 52px;
@@ -14,6 +23,19 @@
 				color: $secondary-color-03;
 				line-height: 1.34;
 				margin-bottom: 40px;
+				@include max-width(1024px){
+					font-size: 62px;
+				}
+				@include max-width(991px){
+					font-size: 48px;
+				}
+				@include max-width(767px){
+					font-size: 38px;
+				}
+				@include max-width(575px){
+					font-size: 30px;
+				}
+				
 				.landscape{
 					height: 25%;
 					width: 40%;
@@ -31,6 +53,9 @@
 	
 	.design:nth-child(even){
 		flex-direction: row-reverse;
+		@include max-width(1080px){
+			flex-direction: column;
+		}
 
 	}
 	.design:last-child{
@@ -39,5 +64,14 @@
 	.negative-space{
 		margin-top: -250px;
 		position: relative;
+		.design-img{
+			max-width: 50%;
+		}
+		@include max-width(1564px){
+			margin-top: -100px;
+		}
+		@include max-width(1564px){
+			margin-top: 0;
+		}
 	}
 }

@@ -1,9 +1,10 @@
 .team-hero{
-	padding: 210px 0 60px;
 	position: relative;
 	text-align: center;
-	// height: 100vh;
 	z-index: 9;
+	@extend .flex-center-center;
+	flex-direction: column;
+	height: 100vh;
 	.leaf{
 		position: absolute;
 		top: -70px;
@@ -21,20 +22,48 @@
 		}
 		@include max-width(767px){
 			font-size: 42px;
+			margin-bottom: 50px;
 		}
 		@include max-width(575px){
 			font-size: 36px;
+			margin-bottom: 30px;
 		}
 	}
 	.dsc{
 		color: $secondary-color-04;
-		font-size: 27px;
 		max-width: 900px;
 		margin: 0 auto;
 		margin-bottom: 80px;
+		@include max-width(992px){
+			padding: 0 20px;
+		}
+		@include max-width(575px){
+			padding: 0 10px;
+			margin-bottom: 30px;
+		}
 		.portrait{
 			height: 110%;
 			bottom: 15%;
+			@include max-width(992px){
+				right: 0;
+				width: 5%;
+			}
+		}
+	}
+	.scroll-down{
+		svg{
+			@include max-width(1024px){
+				height: 166px;
+				width: 166px;
+			}
+			@include max-width(991px){
+				height: 120px;
+				width: 120px;
+			}
+			@include max-width(767px){
+				height: 90px;
+				width: 90px;
+			}
 		}
 	}
 }

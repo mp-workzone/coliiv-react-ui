@@ -142,9 +142,7 @@ function CareerHero() {
               </div>
               <div className="project">
                 <div className="project__content">
-                  <h4 className="project__title">
-                    Pasante de gestión de construcción
-                  </h4>
+                  <h4 className="project__title">Tecnólogo en altura</h4>
                   <h6 className="project__subtitle">Presencial </h6>
                   <p className="project__location">
                     <span className="location-icon">{ICON_LOCATION}</span>
@@ -157,12 +155,10 @@ function CareerHero() {
               </div>
             </div>
             <div className="project-category">
-              <h3 className="project-category__title">Construcción </h3>
+              <h3 className="project-category__title">Limpiza </h3>
               <div className="project">
                 <div className="project__content">
-                  <h4 className="project__title">
-                    Pasante de gestión de construcción
-                  </h4>
+                  <h4 className="project__title">Aseadora</h4>
                   <h6 className="project__subtitle">Presencial </h6>
                   <p className="project__location">
                     <span className="location-icon">{ICON_LOCATION}</span>
@@ -175,9 +171,7 @@ function CareerHero() {
               </div>
               <div className="project">
                 <div className="project__content">
-                  <h4 className="project__title">
-                    Pasante de gestión de construcción
-                  </h4>
+                  <h4 className="project__title">Limpiador de vidrios</h4>
                   <h6 className="project__subtitle">Presencial </h6>
                   <p className="project__location">
                     <span className="location-icon">{ICON_LOCATION}</span>
@@ -190,12 +184,10 @@ function CareerHero() {
               </div>
             </div>
             <div className="project-category">
-              <h3 className="project-category__title">Construcción </h3>
+              <h3 className="project-category__title">Operaciones </h3>
               <div className="project">
                 <div className="project__content">
-                  <h4 className="project__title">
-                    Pasante de gestión de construcción
-                  </h4>
+                  <h4 className="project__title">Administrador de contactos</h4>
                   <h6 className="project__subtitle">Presencial </h6>
                   <p className="project__location">
                     <span className="location-icon">{ICON_LOCATION}</span>
@@ -208,10 +200,18 @@ function CareerHero() {
               </div>
               <div className="project">
                 <div className="project__content">
-                  <h4 className="project__title">
-                    Pasante de gestión de construcción
-                  </h4>
+                  <h4 className="project__title">Relaciones de residentes</h4>
                   <h6 className="project__subtitle">Presencial </h6>
+                  <div className="dsc">
+                    Praesent non sem lectus. Fusce varius ipsum eu libero
+                    sagittis, id pulvinar erat convallis.Aliquam erat volutpat.
+                    In non lacus augue. Vestibulum vel velit lacus. Ut ornare mi
+                    turpis, sit amet eleifend ex luctus at. Proin imperdiet urna
+                    vel interdum euismod. Etiam nec nisl erat. Nullam nisi
+                    neque, euismod sed dui et, rutrum mattis sapien. Sed eu
+                    justo auctor, rhoncus purus non, sagittis eros. Mauris nunc
+                    lectus, porta ut mauris et, tristique elementum magna.
+                  </div>
                   <p className="project__location">
                     <span className="location-icon">{ICON_LOCATION}</span>
                     Medellín, Colombia

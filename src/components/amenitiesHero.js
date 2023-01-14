@@ -14,6 +14,9 @@ import BarGarden from "../assets/bar-garden.jpg";
 import GYM from "../assets/gym.jpg";
 import GYM01 from "../assets/gym01.jpg";
 import Salon from "../assets/salon.jpg";
+import Spa from "../assets/spa.jpg";
+import Spa01 from "../assets/spa01.jpg";
+import Spa02 from "../assets/spa01.jpg";
 function AmenitiesHero() {
   return (
     <>
@@ -58,7 +61,7 @@ function AmenitiesHero() {
 
       {/*  facility-intro 02 start */}
       <section className="facility-intro two intro-section right-space">
-        <div className="inner-section">
+        <div className="inner-section responsive-reverse">
           <div className="intro-figure maximum">
             <img src={FacilityIntro02} alt="" />
           </div>
@@ -104,7 +107,7 @@ function AmenitiesHero() {
       {/*  facility-intro 03 end */}
 
       {/* slide count 03 start */}
-      <section className="counter-lobby facility">
+      <section className="counter-lobby facility facility-after">
         <div className="facility__figure">
           <img src={Coworking} alt="" />
         </div>
@@ -146,7 +149,7 @@ function AmenitiesHero() {
 
       {/*  facility 02 start */}
       <section className="facility-intro two intro-section right-space">
-        <div className="inner-section">
+        <div className="inner-section responsive-reverse">
           <div className="intro-figure maximum">
             <img src={ZoomRooms} alt="" />
           </div>
@@ -166,7 +169,7 @@ function AmenitiesHero() {
       {/*  facility 02 end */}
 
       {/* slide count 05 start */}
-      <section className="counter-lobby facility">
+      <section className="counter-lobby facility facility-after">
         <div className="facility__figure">
           <img src={Terraza} alt="" />
         </div>
@@ -234,7 +237,7 @@ function AmenitiesHero() {
       {/*  facility 02 end */}
 
       {/* slide count 07 start */}
-      <section className="counter-lobby facility">
+      <section className="counter-lobby facility facility-after">
         <div className="facility__figure">
           <img src={Restaurant} alt="" />
         </div>
@@ -278,11 +281,11 @@ function AmenitiesHero() {
       {/*  facility 01 end */}
 
       {/* slide count 08 start */}
-      <section className="counter-lobby facility">
+      <section className="counter-lobby facility facility-after">
         <div className="facility__figure">
           <img src={Bar} alt="" />
         </div>
-        <h1 className="facility__title title-primary">Coworking</h1>
+        <h1 className="facility__title title-primary">BAR</h1>
         <div className="scrollbar">
           <div className="count-no">08</div>
           <div className="scrollbar__inner top"></div>
@@ -321,7 +324,7 @@ function AmenitiesHero() {
 
       {/*  facility 02 start */}
       <section className="facility-intro two intro-section right-space">
-        <div className="inner-section">
+        <div className="inner-section responsive-reverse">
           <div className="intro-figure maximum">
             <img src={BarGarden} alt="" />
           </div>
@@ -338,7 +341,7 @@ function AmenitiesHero() {
       {/*  facility 02 end */}
 
       {/* slide count 09 start */}
-      <section className="counter-lobby facility">
+      <section className="counter-lobby facility facility-after">
         <div className="facility__figure">
           <img src={GYM} alt="" />
         </div>
@@ -405,7 +408,7 @@ function AmenitiesHero() {
       {/*  facility 02 end */}
 
       {/* slide count 11 start */}
-      <section className="counter-lobby facility">
+      <section className="counter-lobby facility facility-after">
         <div className="facility__figure">
           <img src={Salon} alt="" />
         </div>
@@ -432,11 +435,11 @@ function AmenitiesHero() {
                 dictum risus, et eleifend quam mauris et justo proin sodales.
               </h4>
               <div className="pool-left-figure">
-                <img src={PoolFigure01} alt="" />
+                <img src={Spa02} alt="" />
               </div>
             </div>
             <div className="intro-figure  pool-right-figure">
-              <img src={PoolFigure02} alt="" />
+              <img src={Spa01} alt="" />
             </div>
           </div>
         </div>
@@ -454,7 +457,7 @@ function AmenitiesHero() {
             </h4>
           </div>
           <div className="intro-figure maximum">
-            <img src={FacilityIntro02} alt="" />
+            <img src={Spa} alt="" />
           </div>
         </div>
       </section>

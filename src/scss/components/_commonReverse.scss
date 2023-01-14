@@ -3,9 +3,12 @@
 	padding-top: 30px;
 	@extend .flex-center-spaceBetween;
 	gap: clamp(30px, 5%, 60px);
-	@include max-width(991px){
+	@include max-width(1024px){
 		flex-direction: column;
-
+		gap: 120px;
+	}
+	@include max-width(767px){
+		gap: 50px;
 	}
 	.reverse-item{
 		flex: 1;
@@ -54,18 +57,12 @@
 	.reverse-item:nth-child(odd){
 		margin-top: -175px;
 		@include max-width(1024px){
-			margin-top: -200px;
-		}
-		@include max-width(991px){
 			margin-top: 0;
 		}
 	}
 	.reverse-item:nth-child(even){
 		margin-top: 115px;
 		@include max-width(1024px){
-			margin-top: 210px;
-		}
-		@include max-width(991px){
 			margin-top: 0;
 		}
 	}

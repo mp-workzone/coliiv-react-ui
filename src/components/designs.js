@@ -30,9 +30,11 @@ function Designs() {
             <img src={Img02} alt="" />
           </div>
           <div className="content">
-            <h2 className="title-primary">
+            <h2 className="title-primary main-title">
               diseño
-              <span className="title-secondary">e innovación</span>
+              <span className="title-secondary main-title-secondary">
+                e innovación
+              </span>
             </h2>
             <h4 className="dsc">
               Curabitur sit amet dolor libero. Pellentesque vehicula felis ante,

@@ -55,6 +55,7 @@
 					height: 100%;
 					width: 100%;
 					object-fit: cover;
+					object-position: 50% -50%;
 				}
 				@include max-width(1080px){
 					margin-bottom: 40px;

@@ -4,7 +4,7 @@ function TeamMembers() {
   return (
     <section className="team-members">
       <div className="container">
-        <h2 className="team-members__title">Equipo</h2>
+        <h2 className="team-members__title main-title">Equipo</h2>
         <div className="grid-area">
           <div className="team-member">
             <div className="team-member__img">

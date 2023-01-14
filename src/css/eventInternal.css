@@ -104,14 +104,14 @@ h2 {
 h4 {
   font-size: 28px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   h4 {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -120,12 +120,12 @@ h5 {
 }
 @media (max-width: 992px) {
   h5 {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
   h5 {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -134,12 +134,12 @@ p {
 }
 @media (max-width: 992px) {
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -331,6 +331,7 @@ li {
   font-weight: 300;
   text-transform: capitalize;
   position: relative;
+  color: #737373;
 }
 @media (max-width: 1024px) {
   .dsc {
@@ -339,12 +340,12 @@ li {
 }
 @media (max-width: 992px) {
   .dsc {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -400,119 +401,20 @@ li {
   margin: 0 auto;
 }
 
-.input-name,
-.input-email {
-  width: 100%;
-  padding: 15px 30px;
-  border-radius: 10px;
-  border: 1px solid #707070;
-  margin-bottom: 45px;
-  font-family: "montserrat";
-}
-.input-name::-moz-placeholder, .input-email::-moz-placeholder {
-  color: #707070;
-}
-.input-name:-ms-input-placeholder, .input-email:-ms-input-placeholder {
-  color: #707070;
-}
-.input-name::placeholder,
-.input-email::placeholder {
-  color: #707070;
-}
-
-.input-name,
-.input-email,
-.agreement-label {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.32;
-}
-@media (max-width: 1024px) {
-  .input-name,
-.input-email,
-.agreement-label {
+@media (max-width: 1024px) and (min-width: 991px) {
+  .hero-title {
+    font-size: 88px;
+  }
+  .main-title {
+    font-size: 72px;
+  }
+  .main-title-secondary {
+    font-size: 70px;
+  }
+  .sub-title-primary {
     font-size: 42px;
   }
 }
-@media (max-width: 992px) {
-  .input-name,
-.input-email,
-.agreement-label {
-    font-size: 22px;
-  }
-}
-@media (max-width: 768px) {
-  .input-name,
-.input-email,
-.agreement-label {
-    font-size: 18px;
-  }
-}
-
-.agreement {
-  display: flex;
-}
-.agreement .agreement-label {
-  color: #707070;
-  padding-left: 40px;
-}
-
-.input-name,
-.input-email,
-.submit-btn {
-  display: block;
-}
-
-input[type=checkbox] {
-  visibility: hidden;
-  position: relative;
-}
-input[type=checkbox]::before {
-  content: "";
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  border-radius: 8px;
-  border: 2px solid #707070;
-  top: 2px;
-  left: 0;
-  visibility: visible;
-}
-@media (max-width: 992px) {
-  input[type=checkbox]::before {
-    height: 24px;
-    width: 24px;
-  }
-}
-input[type=checkbox]:checked::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 13px;
-  width: 10px;
-  height: 24px;
-  border: solid #9eb255;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-  visibility: visible;
-}
-@media (max-width: 992px) {
-  input[type=checkbox]:checked::after {
-    height: 15px;
-    width: 6px;
-    left: 9px;
-  }
-}
-
-.submit-btn {
-  margin: 45px auto 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  color: #2f2f2f;
-  text-transform: uppercase;
-}
-
 .event-internal-hero {
   padding-top: clamp(60px, 10%, 120px);
   padding-bottom: 45px;
@@ -1007,6 +909,141 @@ input[type=checkbox]:checked::after {
   .recomnended-events .events .event-dsc {
     font-size: 16px;
   }
+}
+
+.input-name,
+.input-email {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  margin-bottom: 45px;
+  font-family: "montserrat";
+}
+.input-name::-moz-placeholder, .input-email::-moz-placeholder {
+  color: #707070;
+}
+.input-name:-ms-input-placeholder, .input-email:-ms-input-placeholder {
+  color: #707070;
+}
+.input-name::placeholder,
+.input-email::placeholder {
+  color: #707070;
+}
+
+.input-name,
+.input-email,
+.agreement-label {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.32;
+}
+@media (max-width: 1024px) {
+  .input-name,
+.input-email,
+.agreement-label {
+    font-size: 42px;
+  }
+}
+@media (max-width: 992px) {
+  .input-name,
+.input-email,
+.agreement-label {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .input-name,
+.input-email,
+.agreement-label {
+    font-size: 18px;
+  }
+}
+
+.agreement {
+  display: flex;
+}
+.agreement .agreement-label {
+  color: #707070;
+  padding-left: 40px;
+}
+@media (max-width: 767px) {
+  .agreement .agreement-label {
+    padding-left: 15px;
+  }
+}
+
+.input-name,
+.input-email,
+.submit-btn {
+  display: block;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+  position: relative;
+}
+input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 8px;
+  border: 2px solid #707070;
+  top: 2px;
+  left: 0;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  input[type=checkbox]::before {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media (max-width: 767px) {
+  input[type=checkbox]::before {
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+  }
+}
+input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 13px;
+  width: 10px;
+  height: 24px;
+  border: solid #9eb255;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  input[type=checkbox]:checked::after {
+    height: 15px;
+    width: 6px;
+    left: 9px;
+  }
+}
+@media (max-width: 767px) {
+  input[type=checkbox]:checked::after {
+    border-width: 0 2px 2px 0;
+    height: 10px;
+    width: 5px;
+    left: 7px;
+    top: 3px;
+  }
+}
+
+.submit-btn {
+  margin: 45px auto 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #2f2f2f;
+  text-transform: uppercase;
 }
 
 .event-contact-area {

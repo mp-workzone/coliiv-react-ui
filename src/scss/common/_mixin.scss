@@ -3,3 +3,8 @@
 		@content;
 	}
 }
+@mixin minmax( $min-width, $max-width){
+	@media (max-width: $max-width) and (min-width: $min-width) {
+		@content;
+	}
+}
