@@ -67,12 +67,18 @@ h2 {
 
 h1 {
     font-size: 80px;
+    @include max-width(1024) {
+        font-size: 68px;
+    }
 
     @include max-width(992px) {
-        font-size: 42px;
+        font-size: 48px;
     }
 
     @include max-width(768px) {
+        font-size: 42px;
+    }
+    @include max-width(575px) {
         font-size: 36px;
     }
 }

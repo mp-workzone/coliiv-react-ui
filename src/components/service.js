@@ -37,9 +37,9 @@ function Service() {
                         transform="translate(19585 13840.523)"
                         fill="none"
                         stroke="#737373"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_2508"
@@ -48,9 +48,9 @@ function Service() {
                         transform="translate(19960 13775.246)"
                         fill="none"
                         stroke="#737373"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                     </g>
                   </svg>
@@ -62,7 +62,7 @@ function Service() {
                 maximus urna.
               </h5>
             </div>
-            <div class="service-img">
+            <div className="service-img">
               <img src={Service01} alt="" />
             </div>
           </div>
@@ -89,9 +89,9 @@ function Service() {
                         transform="translate(19585 13840.523)"
                         fill="none"
                         stroke="#737373"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_2508"
@@ -100,9 +100,9 @@ function Service() {
                         transform="translate(19960 13775.246)"
                         fill="none"
                         stroke="#737373"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                     </g>
                   </svg>
@@ -114,7 +114,7 @@ function Service() {
                 erat at velit sagittis elementum.
               </h5>
             </div>
-            <div class="service-img">
+            <div className="service-img">
               <img src={Service01} alt="" />
             </div>
           </div>
@@ -139,9 +139,9 @@ function Service() {
                         transform="translate(19585 13840.523)"
                         fill="none"
                         stroke="#737373"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_2508"
@@ -150,9 +150,9 @@ function Service() {
                         transform="translate(19960 13775.246)"
                         fill="none"
                         stroke="#737373"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                     </g>
                   </svg>
@@ -163,7 +163,7 @@ function Service() {
                 tristique purus et magna maximus, et eleifend est rutrum.
               </h5>
             </div>
-            <div class="service-img">
+            <div className="service-img">
               <img src={Service01} alt="" />
             </div>
           </div>
@@ -184,8 +184,8 @@ function Service() {
                 d="M309.364,336.27a101.175,101.175,0,1,0,34.772-76.339"
                 fill="none"
                 stroke="#9eb255"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 id="Path_2499"
@@ -194,8 +194,8 @@ function Service() {
                 transform="translate(-207.712 -195.197)"
                 fill="none"
                 stroke="#9eb255"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
             </g>
           </svg>

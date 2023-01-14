@@ -17,7 +17,7 @@ export const ICON_LOGO_ALT = (
         transform="translate(0)"
         fill="#c4d979"
         stroke="#c4d979"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_2922"
@@ -26,7 +26,7 @@ export const ICON_LOGO_ALT = (
         transform="translate(-97.214)"
         fill="#c4d979"
         stroke="#c4d979"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_2923"
@@ -35,7 +35,7 @@ export const ICON_LOGO_ALT = (
         transform="translate(-205.849)"
         fill="#c4d979"
         stroke="#c4d979"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_2924"
@@ -44,7 +44,7 @@ export const ICON_LOGO_ALT = (
         transform="translate(-375.24)"
         fill="#c4d979"
         stroke="#c4d979"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_2925"
@@ -53,7 +53,7 @@ export const ICON_LOGO_ALT = (
         transform="translate(-286.204 -0.084)"
         fill="#c4d979"
         stroke="#c4d979"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_2926"
@@ -62,7 +62,7 @@ export const ICON_LOGO_ALT = (
         transform="translate(-334.518 -0.083)"
         fill="#c4d979"
         stroke="#c4d979"
-        stroke-width="1"
+        strokeWidth="1"
       />
     </g>
   </svg>
@@ -155,8 +155,8 @@ export const ICON_SEE_MORE = (
         transform="translate(0 0)"
         fill="none"
         stroke="#fff"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
       <path
         id="Path_2499"
@@ -165,8 +165,8 @@ export const ICON_SEE_MORE = (
         transform="translate(-247.633 -236.742)"
         fill="none"
         stroke="#fff"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
     </g>
   </svg>
@@ -186,8 +186,8 @@ export const ICON_PUBLIC = (
         transform="translate(-68.218 -85.41)"
         fill="none"
         stroke="#737373"
-        stroke-miterlimit="10"
-        stroke-width="2.5"
+        strokeMiterlimit="10"
+        strokeWidth="2.5"
       />
       <circle
         id="Ellipse_78"
@@ -198,8 +198,8 @@ export const ICON_PUBLIC = (
         transform="translate(801.97 418.173)"
         fill="none"
         stroke="#737373"
-        stroke-miterlimit="10"
-        stroke-width="2.5"
+        strokeMiterlimit="10"
+        strokeWidth="2.5"
       />
       <path
         id="Path_2936"
@@ -208,8 +208,8 @@ export const ICON_PUBLIC = (
         transform="translate(-197.788 -75.993)"
         fill="none"
         stroke="#737373"
-        stroke-miterlimit="10"
-        stroke-width="2.5"
+        strokeMiterlimit="10"
+        strokeWidth="2.5"
       />
       <circle
         id="Ellipse_79"
@@ -220,8 +220,8 @@ export const ICON_PUBLIC = (
         transform="translate(828.769 423.442)"
         fill="none"
         stroke="#737373"
-        stroke-miterlimit="10"
-        stroke-width="2.5"
+        strokeMiterlimit="10"
+        strokeWidth="2.5"
       />
       <path
         id="Path_2937"
@@ -230,8 +230,8 @@ export const ICON_PUBLIC = (
         transform="translate(0 -75.993)"
         fill="none"
         stroke="#737373"
-        stroke-miterlimit="10"
-        stroke-width="2.5"
+        strokeMiterlimit="10"
+        strokeWidth="2.5"
       />
       <circle
         id="Ellipse_80"
@@ -242,8 +242,8 @@ export const ICON_PUBLIC = (
         transform="translate(782.488 423.442)"
         fill="none"
         stroke="#737373"
-        stroke-miterlimit="10"
-        stroke-width="2.5"
+        strokeMiterlimit="10"
+        strokeWidth="2.5"
       />
     </g>
   </svg>
@@ -263,9 +263,9 @@ export const ICON_MESSAGE = (
         transform="translate(4.103 4.303)"
         fill="none"
         stroke="#737373"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <path
         id="Path_48"
@@ -274,9 +274,9 @@ export const ICON_MESSAGE = (
         transform="translate(-3.375 -3.375)"
         fill="none"
         stroke="#737373"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
     </g>
   </svg>
@@ -296,7 +296,7 @@ export const ICON_BUBBLE_CHART = (
         transform="translate(-6 5.6)"
         fill="none"
         stroke="#737373"
-        stroke-width="2.5"
+        strokeWidth="2.5"
       />
       <path
         id="Path_50"
@@ -305,7 +305,7 @@ export const ICON_BUBBLE_CHART = (
         transform="translate(8.178 13.334)"
         fill="none"
         stroke="#737373"
-        stroke-width="2.5"
+        strokeWidth="2.5"
       />
       <path
         id="Path_51"
@@ -314,7 +314,7 @@ export const ICON_BUBBLE_CHART = (
         transform="translate(4.312 -6)"
         fill="none"
         stroke="#737373"
-        stroke-width="2.5"
+        strokeWidth="2.5"
       />
     </g>
   </svg>
@@ -347,9 +347,9 @@ export const ICON_TICK_SIGN = (
       transform="translate(-13667.239 -1559.403)"
       fill="none"
       stroke="#9eb255"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="7"
     />
   </svg>
 );
@@ -397,7 +397,7 @@ export const ICON_PARTNER01 = (
         transform="translate(0 -0.075)"
         fill="#fff"
         stroke="#fff"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         id="Trazado_2062"
@@ -406,7 +406,7 @@ export const ICON_PARTNER01 = (
         transform="translate(-70.368 0)"
         fill="#fff"
         stroke="#fff"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         id="Trazado_2063"
@@ -415,7 +415,7 @@ export const ICON_PARTNER01 = (
         transform="translate(-156.401 -0.075)"
         fill="#fff"
         stroke="#fff"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         id="Trazado_2064"
@@ -424,7 +424,7 @@ export const ICON_PARTNER01 = (
         transform="translate(-226.512 -0.075)"
         fill="#fff"
         stroke="#fff"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         id="Trazado_2065"
@@ -433,7 +433,7 @@ export const ICON_PARTNER01 = (
         transform="translate(-270.213 -0.075)"
         fill="#fff"
         stroke="#fff"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
     </g>
   </svg>
@@ -1086,8 +1086,8 @@ export const ICON_MORE = (
         d="M309.364,336.27a101.175,101.175,0,1,0,34.772-76.339"
         fill="none"
         stroke="#9eb255"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
       <path
         id="Path_2499"
@@ -1096,8 +1096,8 @@ export const ICON_MORE = (
         transform="translate(-207.712 -195.197)"
         fill="none"
         stroke="#9eb255"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
     </g>
   </svg>
@@ -1116,8 +1116,8 @@ export const ICON_SCROLL_DOWN = (
         d="M309.364,297.879a62.786,62.786,0,1,0,21.578-47.373"
         fill="none"
         stroke="#9eb255"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
       <path
         id="Path_2499"
@@ -1126,8 +1126,8 @@ export const ICON_SCROLL_DOWN = (
         transform="translate(893.036 -309.731) rotate(90)"
         fill="none"
         stroke="#9eb255"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
     </g>
   </svg>
@@ -1153,8 +1153,8 @@ export const ICON_ADD = (
             transform="translate(0 0.043)"
             fill="none"
             stroke="#fff"
-            stroke-linecap="round"
-            stroke-width="4"
+            strokeLinecap="round"
+            strokeWidth="4"
           />
           <line
             id="Line_2"
@@ -1164,8 +1164,8 @@ export const ICON_ADD = (
             transform="translate(25 0) rotate(90)"
             fill="none"
             stroke="#fff"
-            stroke-linecap="round"
-            stroke-width="4"
+            strokeLinecap="round"
+            strokeWidth="4"
           />
         </g>
       </g>
@@ -1187,8 +1187,8 @@ export const ICON_BACK = (
         transform="translate(0 6.617)"
         fill="none"
         stroke="#767676"
-        stroke-linecap="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeWidth="2"
       />
       <line
         id="Line_6"
@@ -1197,8 +1197,8 @@ export const ICON_BACK = (
         x2="6.617"
         fill="none"
         stroke="#767676"
-        stroke-linecap="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeWidth="2"
       />
       <line
         id="Line_7"
@@ -1208,8 +1208,8 @@ export const ICON_BACK = (
         transform="translate(0 6.617)"
         fill="none"
         stroke="#767676"
-        stroke-linecap="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeWidth="2"
       />
     </g>
   </svg>
@@ -1346,8 +1346,8 @@ export const ICON_SERVICE05 = (
         transform="translate(-47.649 -8516.384)"
         fill="#737373"
         stroke="#737373"
-        stroke-linecap="round"
-        stroke-width="0.5"
+        strokeLinecap="round"
+        strokeWidth="0.5"
       />
     </g>
   </svg>
@@ -1365,7 +1365,7 @@ export const ICON_SERVICE06 = (
       transform="translate(-46.881 -8545.48)"
       fill="#737373"
       stroke="#737373"
-      stroke-width="0.3"
+      strokeWidth="0.3"
     />
   </svg>
 );
@@ -1384,7 +1384,7 @@ export const ICON_SERVICE07 = (
         transform="translate(-46.738 -8571.705)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <rect
         id="Rectangle_2958"
@@ -1394,7 +1394,7 @@ export const ICON_SERVICE07 = (
         transform="translate(10.808 23.947)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <rect
         id="Rectangle_2959"
@@ -1404,7 +1404,7 @@ export const ICON_SERVICE07 = (
         transform="translate(17.092 23.947)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <rect
         id="Rectangle_2960"
@@ -1414,7 +1414,7 @@ export const ICON_SERVICE07 = (
         transform="translate(23.383 23.95)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <rect
         id="Rectangle_2961"
@@ -1424,7 +1424,7 @@ export const ICON_SERVICE07 = (
         transform="translate(36.261 23.944)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <rect
         id="Rectangle_2962"
@@ -1434,7 +1434,7 @@ export const ICON_SERVICE07 = (
         transform="translate(29.807 23.963)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <rect
         id="Rectangle_2963"
@@ -1444,7 +1444,7 @@ export const ICON_SERVICE07 = (
         transform="translate(38.404 4.425)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
     </g>
   </svg>
@@ -1464,7 +1464,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-48.652 -8596.832)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3775"
@@ -1473,7 +1473,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-25.954 -8588.061)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3776"
@@ -1482,7 +1482,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-35.237 -8589.598)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3777"
@@ -1491,7 +1491,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-40.395 -8589.608)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3778"
@@ -1500,7 +1500,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-24.918 -8592.708)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3779"
@@ -1509,7 +1509,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-23.391 -8590.631)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3780"
@@ -1518,7 +1518,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-46.069 -8581.348)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3781"
@@ -1527,7 +1527,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-23.875 -8580.321)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3782"
@@ -1536,7 +1536,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-23.367 -8585.478)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3783"
@@ -1545,7 +1545,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-21.303 -8585.478)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3784"
@@ -1554,7 +1554,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-23.367 -8583.415)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3785"
@@ -1563,7 +1563,7 @@ export const ICON_SERVICE08 = (
         transform="translate(-21.303 -8583.415)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
     </g>
   </svg>
@@ -1583,7 +1583,7 @@ export const ICON_SERVICE09 = (
         transform="translate(-50.099 -8620.243)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3787"
@@ -1592,7 +1592,7 @@ export const ICON_SERVICE09 = (
         transform="translate(-45.588 -8603.868)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
       <path
         id="Path_3788"
@@ -1601,7 +1601,7 @@ export const ICON_SERVICE09 = (
         transform="translate(-45.588 -8599.365)"
         fill="#737373"
         stroke="#737373"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
     </g>
   </svg>
@@ -1706,7 +1706,7 @@ export const ICON_LOCATION = (
         transform="translate(-148.567 -95.886)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_3131"
@@ -1715,7 +1715,7 @@ export const ICON_LOCATION = (
         transform="translate(-158.304 -106.256)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
     </g>
   </svg>
@@ -1735,9 +1735,9 @@ export const ICON_FACILITY01 = (
         transform="translate(322 4473.128)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <path
         id="Path_3365"
@@ -1746,9 +1746,9 @@ export const ICON_FACILITY01 = (
         transform="translate(112.254 4348.409)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <rect
         id="Rectangle_2787"
@@ -1758,9 +1758,9 @@ export const ICON_FACILITY01 = (
         transform="translate(348.793 4515.114)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
     </g>
   </svg>
@@ -1778,9 +1778,9 @@ export const ICON_FACILITY02 = (
       transform="translate(1.25 1.25)"
       fill="#737373"
       stroke="#707070"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2.5"
     />
   </svg>
 );
@@ -1799,9 +1799,9 @@ export const ICON_FACILITY03 = (
         transform="translate(-10.117 -270.693)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <path
         id="Path_3367"
@@ -1810,9 +1810,9 @@ export const ICON_FACILITY03 = (
         transform="translate(-168.143 -210.366)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <path
         id="Path_3368"
@@ -1821,9 +1821,9 @@ export const ICON_FACILITY03 = (
         transform="translate(-322.298 -151.868)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <rect
         id="Rectangle_2789"
@@ -1833,9 +1833,9 @@ export const ICON_FACILITY03 = (
         transform="translate(-0.006 24.241) rotate(-41.757)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
       <path
         id="Path_3369"
@@ -1844,9 +1844,9 @@ export const ICON_FACILITY03 = (
         transform="translate(-121.965)"
         fill="#737373"
         stroke="#707070"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
       />
     </g>
   </svg>
@@ -1890,8 +1890,8 @@ export const ICON_SCROLL_NEXT = (
         transform="translate(868.078 1444.192) rotate(135)"
         fill="none"
         stroke="#fff"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
     </g>
   </svg>
@@ -1941,7 +1941,6 @@ export const ICON_STEII = (
 export const ICON_NAV_GROUP = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    // xmlns:xlink="http://www.w3.org/1999/xlink"
     width="207.232"
     height="47.711"
     viewBox="0 0 207.232 47.711"

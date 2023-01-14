@@ -125,7 +125,7 @@
             .partnes {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 40px;
                 @include max-width(1400px) {
                     position: absolute;
                     bottom: -250px;
@@ -145,7 +145,7 @@
                 }
                 @include max-width(992px) {
                     left: auto;
-                    bottom: -200px;
+                    bottom: -230px;
                     transform: translateX(0);
                 }
                 @include max-width(767px) {

@@ -3,6 +3,10 @@
 	padding-top: 30px;
 	@extend .flex-center-spaceBetween;
 	gap: clamp(30px, 5%, 60px);
+	@include max-width(991px){
+		flex-direction: column;
+
+	}
 	.reverse-item{
 		flex: 1;
 		.reverse-item__icon{
@@ -15,17 +19,54 @@
 			color: $secondary-color-03;
 			margin-bottom: 30px;
 			text-transform: uppercase;
+			@include max-width(1024px){
+				font-size: 42px;
+			}
+			@include max-width(991){
+				font-size: 30px;
+			}
+			@include max-width(767px){
+				font-size: 28px;
+			}
+			@include max-width(575px){
+				font-size: 20px;
+			}
 		}
 		.reverse-item__dsc.dsc{
 			font-size: 28px;
 			line-height: 1.5;
 			color: $secondary-color-06;
+			@include max-width(1024px){
+				font-size: 36px;
+			}
+			@include max-width(991){
+				font-size: 28px;
+			}
+			@include max-width(767px){
+				font-size: 24px;
+			}
+			@include max-width(575px){
+				font-size: 16px;
+			}
+
 		}
 	}
 	.reverse-item:nth-child(odd){
 		margin-top: -175px;
+		@include max-width(1024px){
+			margin-top: -200px;
+		}
+		@include max-width(991px){
+			margin-top: 0;
+		}
 	}
 	.reverse-item:nth-child(even){
 		margin-top: 115px;
+		@include max-width(1024px){
+			margin-top: 210px;
+		}
+		@include max-width(991px){
+			margin-top: 0;
+		}
 	}
 }

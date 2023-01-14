@@ -66,12 +66,22 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024) {
+  h1 {
+    font-size: 68px;
+  }
+}
 @media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 36px;
   }
@@ -334,12 +344,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -542,6 +552,11 @@ input[type=checkbox]:checked::after {
   padding-top: 30px;
   gap: clamp(30px, 5%, 60px);
 }
+@media (max-width: 991px) {
+  .reverse-wrapper {
+    flex-direction: column;
+  }
+}
 .reverse-wrapper .reverse-item {
   flex: 1;
 }
@@ -556,16 +571,76 @@ input[type=checkbox]:checked::after {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+@media (max-width: 1024px) {
+  .reverse-wrapper .reverse-item .reverse-item__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 991) {
+  .reverse-wrapper .reverse-item .reverse-item__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .reverse-wrapper .reverse-item .reverse-item__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .reverse-wrapper .reverse-item .reverse-item__title {
+    font-size: 20px;
+  }
+}
 .reverse-wrapper .reverse-item .reverse-item__dsc.dsc {
   font-size: 28px;
   line-height: 1.5;
   color: #707070;
 }
+@media (max-width: 1024px) {
+  .reverse-wrapper .reverse-item .reverse-item__dsc.dsc {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991) {
+  .reverse-wrapper .reverse-item .reverse-item__dsc.dsc {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .reverse-wrapper .reverse-item .reverse-item__dsc.dsc {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .reverse-wrapper .reverse-item .reverse-item__dsc.dsc {
+    font-size: 16px;
+  }
+}
 .reverse-wrapper .reverse-item:nth-child(odd) {
   margin-top: -175px;
 }
+@media (max-width: 1024px) {
+  .reverse-wrapper .reverse-item:nth-child(odd) {
+    margin-top: -200px;
+  }
+}
+@media (max-width: 991px) {
+  .reverse-wrapper .reverse-item:nth-child(odd) {
+    margin-top: 0;
+  }
+}
 .reverse-wrapper .reverse-item:nth-child(even) {
   margin-top: 115px;
+}
+@media (max-width: 1024px) {
+  .reverse-wrapper .reverse-item:nth-child(even) {
+    margin-top: 210px;
+  }
+}
+@media (max-width: 991px) {
+  .reverse-wrapper .reverse-item:nth-child(even) {
+    margin-top: 0;
+  }
 }
 
 .franchises-hero {

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import "./css/common.css";
+import Amenities from "./pages/amenities";
 import OneHOneB from "./pages/apartments/OneHOneB";
 import StdioLoft from "./pages/apartments/stdioLoft";
 import TwoH2B from "./pages/apartments/TwoH2B";
@@ -30,6 +31,7 @@ function App() {
         <Route path="/franchises" element={<Franchises />} />
         <Route path="/career" element={<Career />} />
         <Route path="/colivers" element={<Colivers />} />
+        <Route path="/amenities" element={<Amenities />} />
       </Routes>
       <Footer />
     </div>

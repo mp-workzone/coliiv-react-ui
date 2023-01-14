@@ -10,18 +10,26 @@ export default class HeldEvent extends Component {
   render() {
     const settings = {
       dots: false,
-      // fade: true,
       infinite: true,
       speed: 800,
       slidesToShow: 3,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+          },
+        },
+      ],
     };
     return (
       <section className="held-event">
         <div className="container-alt">
           <div className="held-event__title">
             <h2 className="title-primary">Eventos realizados</h2>
-          </div>{" "}
+          </div>
         </div>
         <div className="held-event__slider-wrapper">
           <Slider {...settings}>

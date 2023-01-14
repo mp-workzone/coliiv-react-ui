@@ -1,12 +1,15 @@
 import { ICON_PUBLIC, ICON_MESSAGE, ICON_BUBBLE_CHART } from "../utils/icons";
 import HeroImg from "../assets/colivers-hero.jpg";
 import Plant from "../assets/plant01-left.png";
+import Leaf from "../assets/leaf02.png";
 import MainFigure from "../assets/main-figure.jpg";
 import SideFigure02 from "../assets/side-figure02.jpg";
-import SideFigure03 from "../assets/side-figure03.jpg";
 import SideFigure04 from "../assets/side-figure04.jpg";
 import IntroImg from "../assets/coliver-activity.jpg";
 import FavFoodImg from "../assets/fav-food.jpg";
+import FavSportImg from "../assets/fav-sport.jpg";
+import ColiversImg01 from "../assets/colivers-img01.jpg";
+import ColiversImg02 from "../assets/colivers-img02.jpg";
 function ColiversHero() {
   return (
     <>
@@ -20,18 +23,20 @@ function ColiversHero() {
       {/* hero end */}
 
       {/* coliv family start */}
-      <section className="coliv-family">
+      <section className="coliv-intro">
         <div className="plant">
           <img src={Plant} alt="" />
         </div>
         <div className="container-alt">
-          <div className="coliv-family__title">
-            <h2 className="title-primary">
+          <div className="coliv-intro__title">
+            <h2 className="title-primary colivers-title-primary">
               una verdadera
-              <span className="title-secondary">familia CoLIiV</span>
+              <span className="title-secondary colivers-title-secodary">
+                familia CoLIiV
+              </span>
             </h2>
           </div>
-          <div className="coliv-family__dsc dsc">
+          <div className="coliv-intro__dsc dsc">
             Ut varius lorem id tincidunt ornare. Aenean dui nisl, rhoncus ut
             arcu eget, pharetra facilisis nulla. Nunc a elit vitae enim aliquam
             aliquet. Maecenas eleifend mi enim, vel elementum purus tristique
@@ -49,18 +54,19 @@ function ColiversHero() {
                 El alma de la <br /> convivencia.
               </h4>
             </div>
-            <div className="facility reverse-item">
+            <div className=" reverse-item">
               <div className=" reverse-item__icon">{ICON_MESSAGE}</div>
               <h4 className="reverse-item__title">Diálogo</h4>
               <h4 className="reverse-item__dsc dsc">
-                Comunicación entre los residentes de nuestra comunidad.
+                Comunicación entre los <br /> residentes de nuestra <br />
+                comunidad.
               </h4>
             </div>
-            <div className="facility reverse-item">
+            <div className=" reverse-item">
               <div className=" reverse-item__icon">{ICON_BUBBLE_CHART}</div>
               <h4 className="reverse-item__title">Dinamismo</h4>
               <h4 className="reverse-item__dsc dsc">
-                Actividades especiales para cada huésped.
+                Actividades especiales <br /> para cada huésped.
               </h4>
             </div>
           </div>
@@ -71,25 +77,30 @@ function ColiversHero() {
       {/* coliv family gallery start */}
       <section className="coliv-family-gallery">
         <div className="gallery-center-content">
+          <div className="top-figure">
+            <div className="side-figure top-left">
+              <img src={SideFigure04} alt="" />
+            </div>
+            <div className="side-figure top-right">
+              <img src={SideFigure02} alt="" />
+            </div>
+          </div>
           <div className="main-figure">
             <img src={MainFigure} alt="" />
           </div>
+
           <h3 className="fig-caption">
             Aliquam commodo sed augue eget congue maecenas a augue lorem
             vestibulum ut
           </h3>
-        </div>
-        <div className="side-figure top-left">
-          <img src={SideFigure04} alt="" />
-        </div>
-        <div className="side-figure bottom-left">
-          <img src={SideFigure02} alt="" />
-        </div>
-        <div className="side-figure top-right">
-          <img src={SideFigure02} alt="" />
-        </div>
-        <div className="side-figure bottom-right">
-          <img src={SideFigure04} alt="" />
+          <div className="bottom-figure">
+            <div className="side-figure bottom-left">
+              <img src={SideFigure02} alt="" />
+            </div>
+            <div className="side-figure bottom-right">
+              <img src={SideFigure04} alt="" />
+            </div>
+          </div>
         </div>
       </section>
       {/* coliv family gallery end */}
@@ -99,9 +110,11 @@ function ColiversHero() {
         <div className="container-alt">
           <div className="inner-section">
             <div className="intro-text-area">
-              <h2 className="title-primary">
+              <h2 className="title-primary colivers-title-primary">
                 En quÉ trabajan
-                <span className="title-secondary">nuestros colivers</span>
+                <span className="title-secondary colivers-title-secodary">
+                  nuestros colivers
+                </span>
               </h2>
               <h4 className="dsc">
                 Donec nisl magna, blandit nec mauris sed, aliquam aliquam eros.
@@ -127,9 +140,9 @@ function ColiversHero() {
       {/* colivers family favorite food start */}
       <section className="colivers-fav-food">
         <div className="container">
-          <h2 className="title-primary">
+          <h2 className="title-primary colivers-title-primary">
             ¿Cuál es la comida favorita
-            <span className="title-secondary">
+            <span className="title-secondary colivers-title-secodary">
               de nuestra familia colivers?
             </span>
           </h2>
@@ -161,9 +174,11 @@ function ColiversHero() {
       <section className="fav-sport">
         <div className="container-alt">
           <div className="fav-sport__title">
-            <h2 className="title-primary">
+            <h2 className="title-primary colivers-title-primary">
               deporte favorito
-              <span className="title-secondary">de nuestros colivers</span>
+              <span className="title-secondary colivers-title-secodary">
+                de nuestros colivers
+              </span>
             </h2>
           </div>
           <div className="fav-sport__content">
@@ -185,12 +200,81 @@ function ColiversHero() {
               </span>
             </h4>
             <div className="fav-sport__figure">
-              <img src="" alt="" />
+              <img src={FavSportImg} alt="" />
             </div>
           </div>
         </div>
       </section>
       {/* colivers family fevorite sport end */}
+
+      {/* coliver family start */}
+      <section className="colivers-family">
+        <div className="leaf">
+          <img src={Leaf} alt="" />
+        </div>
+        <div className="container-alt">
+          <div className="colivers-family__title">
+            <h2 className="title-primary colivers-title-primary">
+              Como se describe
+              <span className="title-secondary colivers-title-secodary">
+                {" "}
+                nuestra familia colivers
+              </span>
+            </h2>
+          </div>
+          <div className="colivers-family__content grid-area">
+            <div className="grid-item flex ">
+              <div className="title">
+                <h3 className="title__main">Tranquilos</h3>
+                <h4 className="title__sub dsc">
+                  Raesent pretium finibus interdum. Vestibulum iaculis justo
+                  libero, faucibus blandit ante.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg01} alt="" />
+              </div>
+            </div>
+            <div className="grid-item flex">
+              <div className="title">
+                <h3 className="title__main">optimistas</h3>
+                <h4 className="title__sub dsc">
+                  Proin auctor eleifend diam, in aliquam nisl iaculis eget.
+                  Mauris eu leo dapibus, fringilla felis quis.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg02} alt="" />
+              </div>
+            </div>
+            <div className="grid-item flex">
+              <div className="title">
+                <h3 className="title__main">Animalistas</h3>
+                <h4 className="title__sub dsc">
+                  Aliquam neque. Nullam eget ex vitae risus scelerisque
+                  sollicitudin. Sed ullamcorper lorem.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg02} alt="" />
+              </div>
+            </div>
+            <div className="grid-item flex">
+              <div className="title">
+                <h3 className="title__main">cultos</h3>
+                <h4 className="title__sub dsc">
+                  Rutrum, nulla erat dapibus erat, a ultrices sem orci eget
+                  neque. Curabitur tincidunt felis.
+                </h4>
+              </div>
+              <div className="figure">
+                <img src={ColiversImg01} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* coliver family end */}
     </>
   );
 }

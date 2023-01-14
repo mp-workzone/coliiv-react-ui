@@ -66,12 +66,22 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024) {
+  h1 {
+    font-size: 68px;
+  }
+}
 @media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 36px;
   }
@@ -334,12 +344,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -540,7 +550,6 @@ input[type=checkbox]:checked::after {
 .event-concept {
   padding: 190px 0 130px;
   position: relative;
-  z-index: 9;
 }
 @media (max-width: 768px) {
   .event-concept {
@@ -553,8 +562,19 @@ input[type=checkbox]:checked::after {
   left: -35%;
   z-index: -1;
 }
+@media (max-width: 1180px) {
+  .event-concept .leaf {
+    top: -20%;
+    left: -50%;
+  }
+}
 .event-concept .inner-section {
   gap: clamp(50px, 12%, 120px);
+}
+@media (max-width: 1180px) {
+  .event-concept .inner-section {
+    flex-direction: column;
+  }
 }
 .event-concept .inner-section .content {
   flex: 1;
@@ -566,6 +586,11 @@ input[type=checkbox]:checked::after {
   font-family: "Berton";
   color: #2f2f2f;
   margin-bottom: 25px;
+}
+@media (max-width: 1180px) {
+  .event-concept .inner-section .content .content__title {
+    font-size: 62px;
+  }
 }
 @media (max-width: 992px) {
   .event-concept .inner-section .content .content__title {
@@ -588,6 +613,11 @@ input[type=checkbox]:checked::after {
   line-height: 1.48;
   color: #737373;
   max-width: 680px;
+}
+@media (max-width: 1180px) {
+  .event-concept .inner-section .content .content__dec {
+    max-width: 930px;
+  }
 }
 @media (max-width: 992px) {
   .event-concept .inner-section .content .content__dec {
@@ -614,6 +644,21 @@ input[type=checkbox]:checked::after {
   position: relative;
   z-index: 9;
 }
+@media (max-width: 1180px) {
+  .event-concept .inner-section .concept-figute {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .event-concept .inner-section .concept-figute {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .event-concept .inner-section .concept-figute {
+    margin-right: 8%;
+  }
+}
 .event-concept .inner-section .concept-figute::before {
   content: "";
   position: absolute;
@@ -623,6 +668,17 @@ input[type=checkbox]:checked::after {
   right: -65px;
   background-color: #f0f0f0;
   z-index: -1;
+}
+@media (max-width: 991px) {
+  .event-concept .inner-section .concept-figute::before {
+    right: -50px;
+  }
+}
+@media (max-width: 575px) {
+  .event-concept .inner-section .concept-figute::before {
+    right: -10%;
+    top: 30px;
+  }
 }
 
 @font-face {
@@ -693,12 +749,22 @@ h2 {
 h1 {
   font-size: 80px;
 }
+@media (max-width: 1024) {
+  h1 {
+    font-size: 68px;
+  }
+}
 @media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 36px;
   }
@@ -952,12 +1018,12 @@ li {
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .dsc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -1162,6 +1228,12 @@ input[type=checkbox]:checked::after {
   box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
   -moz-column-gap: 65px;
        column-gap: 65px;
+  position: relative;
+}
+@media (max-width: 1080px) {
+  .up-comming-events .event-list .event {
+    display: block;
+  }
 }
 @media (max-width: 575px) {
   .up-comming-events .event-list .event {
@@ -1174,6 +1246,18 @@ input[type=checkbox]:checked::after {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1080px) {
+  .up-comming-events .event-list .event .event__figure {
+    margin-bottom: 40px;
+    max-height: 350px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .up-comming-events .event-list .event .event__figure {
+    margin-bottom: 20px;
+  }
 }
 .up-comming-events .event-list .event .event__details .title .title__main {
   font-size: 29px;
@@ -1230,11 +1314,49 @@ input[type=checkbox]:checked::after {
 .up-comming-events .event-list .event .update-time {
   flex-direction: column;
 }
+@media (max-width: 1080px) {
+  .up-comming-events .event-list .event .update-time {
+    position: absolute;
+    top: 65%;
+    right: 20px;
+    transform: translateY(-65%);
+  }
+}
+@media (max-width: 890px) {
+  .up-comming-events .event-list .event .update-time {
+    top: 60%;
+    transform: translateY(-60%);
+  }
+}
+@media (max-width: 575px) {
+  .up-comming-events .event-list .event .update-time {
+    position: relative;
+    padding: 20px 0 0 20px;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+  }
+}
 .up-comming-events .event-list .event .update-time .update-time__no {
   font-weight: 500;
   font-size: 40px;
   color: #2f2f2f;
   margin-bottom: 4px;
+}
+@media (max-width: 991px) {
+  .up-comming-events .event-list .event .update-time .update-time__no {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .up-comming-events .event-list .event .update-time .update-time__no {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .up-comming-events .event-list .event .update-time .update-time__no {
+    font-size: 20px;
+  }
 }
 .up-comming-events .event-list .event .update-time .update-time__text {
   color: #2f2f2f;
@@ -1290,25 +1412,50 @@ input[type=checkbox]:checked::after {
   font-weight: 300;
   margin-bottom: 15px;
 }
+@media (max-width: 1024) {
+  .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__title {
+    font-size: 72px;
+  }
+}
 @media (max-width: 991px) {
   .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__title {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 @media (max-width: 767px) {
   .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__title {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 @media (max-width: 575px) {
   .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__title {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__subtitle {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
+}
+@media (max-width: 1024) {
+  .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__subtitle {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__subtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__subtitle {
+    font-size: 16px;
+  }
 }
 .held-event .held-event__slider-wrapper .slick-list .slider-item .slider-item__subtitle .slider-item__date {
   display: block;
@@ -1393,9 +1540,29 @@ input[type=checkbox]:checked::after {
   right: -35%;
   z-index: -1;
 }
+@media (max-width: 1024px) {
+  .event-contact-area .leaf {
+    right: -60%;
+  }
+}
 .event-contact-area .inner-section {
   gap: clamp(50px, 50%, 140px);
   padding: 0 32px;
+}
+@media (max-width: 1300px) {
+  .event-contact-area .inner-section {
+    gap: 50px;
+  }
+}
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .event-contact-area .inner-section {
+    padding: 0;
+  }
 }
 .event-contact-area .inner-section .contact-form {
   padding: 0 8px;
@@ -1411,6 +1578,21 @@ input[type=checkbox]:checked::after {
   text-transform: uppercase;
   font-family: "Berton";
 }
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-form .contact-form__title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-form .contact-form__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .contact-form__title {
+    font-size: 32px;
+  }
+}
 .event-contact-area .inner-section .contact-form .contact-form__title .landscape {
   width: 50%;
   top: -15%;
@@ -1424,11 +1606,36 @@ input[type=checkbox]:checked::after {
   display: block;
   font-family: "poppins";
 }
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-form .contact-form__subtitle {
+    font-size: 62px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-form .contact-form__subtitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .contact-form__subtitle {
+    font-size: 30px;
+  }
+}
 .event-contact-area .inner-section .contact-form .input-email {
   margin-bottom: 90px;
 }
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .input-email {
+    margin-top: 40px;
+  }
+}
 .event-contact-area .inner-section .contact-form .submit-btn {
   margin-top: 95px;
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-form .submit-btn {
+    margin-top: 40px;
+  }
 }
 .event-contact-area .inner-section .contact-right-area {
   flex: 1;
@@ -1441,11 +1648,46 @@ input[type=checkbox]:checked::after {
   margin-bottom: 40px;
   font-family: "Berton";
 }
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-right-area .title {
+    font-size: 72px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-right-area .title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-right-area .title {
+    font-size: 32px;
+  }
+}
 .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
   font-size: 25px;
   font-weight: 300;
   line-height: 1.52;
   margin-bottom: 35px;
+}
+@media (max-width: 1180px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 42px;
+  }
+}
+@media (max-width: 991px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .event-contact-area .inner-section .contact-right-area .contact-right__dsc {
+    font-size: 18px;
+  }
 }
 .event-contact-area .inner-section .contact-right-area .telephone {
   margin-top: 15px;

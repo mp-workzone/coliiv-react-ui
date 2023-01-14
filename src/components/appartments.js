@@ -28,49 +28,49 @@ function Appartments() {
             VER TODOS
           </a>
         </div>
-        <div class="appartment-wrapper">
-          <div class="left-shadow02 appartment ">
-            <div class="appartment__img">
+        <div className="appartment-wrapper">
+          <div className="left-shadow02 appartment ">
+            <div className="appartment__img">
               <img src={Appartment01} alt="" />
             </div>
-            <h3 class="appartment__title-primary">
-              Studio<span class="appartment__title-secondary">loft</span>
+            <h3 className="appartment__title-primary">
+              Studio<span className="appartment__title-secondary">loft</span>
             </h3>
             <a href="/" className="see-more">
               {ICON_SEE_MORE}
             </a>
           </div>
-          <div class="left-shadow appartment ">
-            <div class="appartment__img">
+          <div className="left-shadow appartment ">
+            <div className="appartment__img">
               <img src={Appartment02} alt="" />
             </div>
-            <h3 class="appartment__title-primary">
+            <h3 className="appartment__title-primary">
               Apartamento
-              <span class="appartment__title-secondary">1h - 1b</span>
+              <span className="appartment__title-secondary">1h - 1b</span>
             </h3>
             <a href="/" className="see-more">
               {ICON_SEE_MORE}
             </a>
           </div>
-          <div class=" right-shadow appartment">
-            <div class="appartment__img">
+          <div className=" right-shadow appartment">
+            <div className="appartment__img">
               <img src={Appartment03} alt="" />
             </div>
-            <h3 class="appartment__title-primary">
+            <h3 className="appartment__title-primary">
               Apartamento
-              <span class="appartment__title-secondary">2h - 2b</span>
+              <span className="appartment__title-secondary">2h - 2b</span>
             </h3>
             <a href="/" className="see-more">
               {ICON_SEE_MORE}
             </a>
           </div>
-          <div class="right-shadow02 appartment ">
-            <div class="appartment__img">
+          <div className="right-shadow02 appartment ">
+            <div className="appartment__img">
               <img src={Appartment04} alt="" />
             </div>
-            <h3 class="appartment__title-primary">
+            <h3 className="appartment__title-primary">
               Apartamento
-              <span class="appartment__title-secondary break-off">
+              <span className="appartment__title-secondary break-off">
                 2h - 2b plus
               </span>
             </h3>
