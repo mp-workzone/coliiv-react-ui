@@ -1,20 +1,52 @@
 .event-guests-area{
 	padding: 60px 0 90px;
 	position: relative;
+	@include max-width(767px){
+		padding: 35px 0 45px;
+	}
+	@include max-width(575px){
+		padding: 15px 0 25px;
+	}
 	.plant{
 		position: absolute;
 		bottom: 0px;
 		right: -12%;
+		z-index: -9;
+		@include max-width(1024px){
+			left: calc(70%);
+			bottom: -10%;
+		}
 	}
 	.title-primary{
 		text-align: center;
 		color: $secondary-color-03;
+		@include max-width(1024px){
+			font-size: 72px;
+		}
+		@include max-width(991px){
+			font-size: 42px;
+		}
+		@include max-width(767px){
+			font-size: 36px;
+		}
+		@include max-width(575px){
+			font-size: 32px;
+		}
 	}
 	.guest{
 		padding: 90px 0 10px;
 		display: flex;
 		align-items: center;
-		column-gap: 30px;
+		gap: 30px;
+		@include max-width(1024px){
+			flex-direction: column;
+			justify-content: center;
+			gap: 300px;
+		}
+		@include max-width(767px){
+			gap: 100px;
+			padding-top: 45px;
+		}
 		.guest-img{
 			flex: 1;
 			position: relative;
@@ -28,6 +60,13 @@
 				width: 100%;
 				background-color: $light-color-02;
 				z-index: -1;
+			}
+			@include max-width(1024px){
+				margin-right: 45px;
+				&::before{
+					bottom: -50px;
+					left: -45px;
+				}
 			}
 		}
 		.about-guest{

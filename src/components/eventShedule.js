@@ -20,7 +20,7 @@ function EventShedule() {
             <h5 className="grid-item-subtitle">Salón de eventos A 502</h5>
           </div>
         </div>
-        <h4 className="event-shedule__dsc">
+        <h4 className="event-shedule__dsc dsc">
           Aenean orci dolor, accumsan sed blandit id, accumsan vitae felis.
           Maecenas vitae turpis nibh. Pellentesque sit amet massa posuere,
           auctor augue et, efficitur sem. Phasellus tempus sapien vel libero

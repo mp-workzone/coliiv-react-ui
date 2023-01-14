@@ -528,7 +528,26 @@ input[type=checkbox]:checked::after {
 .team-hero .team-hero__title {
   color: #2f2f2f;
   margin-bottom: 93px;
-  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .team-hero .team-hero__title {
+    font-size: 88px;
+  }
+}
+@media (max-width: 991px) {
+  .team-hero .team-hero__title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .team-hero .team-hero__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 575px) {
+  .team-hero .team-hero__title {
+    font-size: 36px;
+  }
 }
 .team-hero .dsc {
   color: #737373;
