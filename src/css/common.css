@@ -423,9 +423,10 @@ li {
   padding: 33.5px 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -100px;
   background-color: transparent;
   z-index: 99999;
+  transition: 0.3s;
 }
 .header-area:before {
   background-color: #ffffff;
@@ -439,9 +440,10 @@ li {
   transition: 0.3s;
   opacity: 0;
 }
-.header-area.menu-open {
-  position: fixed !important;
+.header-area.menu-open, .header-area.fixed {
   width: 100%;
+  position: fixed;
+  top: 0px;
 }
 .header-area.menu-open:before, .header-area.fixed:before {
   opacity: 1;

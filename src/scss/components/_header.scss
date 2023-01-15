@@ -1,9 +1,10 @@
 .header-area {
     padding: 33.5px 0;
     position: sticky;
-    top: 0;
+    top: -100px;
     background-color: transparent;
     z-index: 99999;
+    transition: 0.3s;
 
     &:before {
         background-color: #ffffff;
@@ -18,13 +19,11 @@
         opacity: 0;
     }
 
-    &.menu-open {
-        position: fixed !important;
-        width: 100%;
-    }
-
     &.menu-open,
     &.fixed {
+        width: 100%;
+        position: fixed;
+        top: 0px;
         &:before {
             opacity: 1;
         }
