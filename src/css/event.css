@@ -1065,6 +1065,11 @@ li {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 575px) {
+  .up-comming-events .event-list .event .event__details {
+    margin-bottom: 30px;
+  }
+}
 .up-comming-events .event-list .event .event__details .title .title__main {
   font-size: 29px;
   font-weight: 500;
