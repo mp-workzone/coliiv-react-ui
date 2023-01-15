@@ -67,6 +67,9 @@
 				}
 			}
 			.event__details{
+				@include max-width(575px){
+				margin-bottom: 30px;
+			}
 				.title{
 					.title__main{
 						font-size: 29px;

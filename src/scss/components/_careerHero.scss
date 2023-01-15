@@ -209,6 +209,7 @@
 					font-weight: 400;
 					line-height: 1.48;
 					color: $primary-color-01;
+					min-width: 115px;
 					@include max-width(1024px){
 						text-align: center;
 						display: block;

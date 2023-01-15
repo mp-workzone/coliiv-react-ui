@@ -29,45 +29,47 @@ function Header() {
   return (
     <>
       <section className={`menu ${menuOpen ? "open" : ""}`}>
-        <div className="container">
-          <div className="language-menu">
-            <button>EN</button> <span>/</span> <button>ES</button>
+        <div className="main-content">
+          <div className="container">
+            <div className="language-menu">
+              <button>EN</button> <span>/</span> <button>ES</button>
+            </div>
           </div>
-        </div>
-        <div className="container-alt">
-          <div className="main-menu">
-            <ul>
-              <li className="main-menu__item">
-                <Link to="/xyz">Inicio</Link>
-              </li>
-              <li className="main-menu__item">
-                <Link to="/xyz">Apartamentos</Link>
-              </li>
-              <li className="main-menu__item">
-                <Link to="/xyz">amenidades</Link>
-              </li>
-              <li className="main-menu__item">
-                <Link to="/xyz">Colivers</Link>
-              </li>
-              <li className="main-menu__item">
-                <Link to="/xyz">Eventos</Link>
-              </li>
-              <li className="main-menu__item">
-                <Link to="/xyz">Nosotros</Link>
-              </li>
-              <li className="main-menu__item main-menu-item_alt">
-                <Link to="/xyz">Servicios</Link>
-              </li>
-              <li className="main-menu__item main-menu-item_alt">
-                <Link to="/xyz">Franquicias</Link>
-              </li>
-              <li className="main-menu__item main-menu-item_alt">
-                <Link to="/xyz">Carrera</Link>
-              </li>
-              <li className="main-menu__item main-menu-item_alt">
-                <Link to="/xyz">Blog</Link>
-              </li>
-            </ul>
+          <div className="container-alt">
+            <div className="main-menu">
+              <ul>
+                <li className="main-menu__item">
+                  <Link to="/xyz">Inicio</Link>
+                </li>
+                <li className="main-menu__item">
+                  <Link to="/xyz">Apartamentos</Link>
+                </li>
+                <li className="main-menu__item">
+                  <Link to="/xyz">amenidades</Link>
+                </li>
+                <li className="main-menu__item">
+                  <Link to="/xyz">Colivers</Link>
+                </li>
+                <li className="main-menu__item">
+                  <Link to="/xyz">Eventos</Link>
+                </li>
+                <li className="main-menu__item">
+                  <Link to="/xyz">Nosotros</Link>
+                </li>
+                <li className="main-menu__item main-menu-item_alt">
+                  <Link to="/xyz">Servicios</Link>
+                </li>
+                <li className="main-menu__item main-menu-item_alt">
+                  <Link to="/xyz">Franquicias</Link>
+                </li>
+                <li className="main-menu__item main-menu-item_alt">
+                  <Link to="/xyz">Carrera</Link>
+                </li>
+                <li className="main-menu__item main-menu-item_alt">
+                  <Link to="/xyz">Blog</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="menu-footer">

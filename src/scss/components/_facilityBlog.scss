@@ -1,0 +1,113 @@
+.facility-blog{
+	position: relative;
+	&.top{
+		padding: 190px 0 95px;
+		position: relative;
+		@include max-width(767px){
+			padding: 95px 0 40px;
+		}
+		@include max-width(575px){
+			padding: 40px 0 20px;
+		}
+		.plantNcircle{
+			position: absolute;
+			top: 5%;
+			left: 70%;
+			right: -30%;
+			z-index: -1;
+		}
+	}
+	&.middle{
+		padding: 95px 0;
+		@include max-width(767px){
+			padding: 40px 0;
+		}
+		@include max-width(575px){
+			padding: 20px 0;
+	
+		}
+	}
+	&.bottom{
+		padding: 95px 0 190px;
+		position: relative;
+		.plantNcircle{
+			position: absolute;
+			top: 5%;
+			right: -20%;
+			z-index: -1;
+			left: 70%;
+		}
+		@include max-width(767px){
+			padding: 40px 0 95px;
+		}
+		@include max-width(575px){
+			padding: 20px 0 40px;
+	
+		}
+	}
+	@include max-width(1024px){
+	.inner-section.responsive-reverse{
+		flex-direction: column-reverse ;
+	}
+	}
+	
+	.blog-details__text-area{
+		@include max-width(1024px){
+			padding-left: 8%;
+		}
+	}
+	.blog-details__text-area.no-space{
+		@include max-width(1024px){
+			padding: 0;
+		}
+	}
+	&.left-space{
+		margin-left: 8%;
+		@include max-width(1024px){
+				margin-left: 0;
+		}
+	}
+	&.right-space{
+		margin-right: 8%;
+		@include max-width(1024px){
+				margin-right: 0;
+		}
+	}
+	.coworking-portrait{
+		height: 250%;
+		width: 7%;
+		top: -50%;
+		left: -5%;
+	}
+	.terraza-portrait{
+		height: 150%;
+		width: 7%;
+		bottom: -5%;
+		left: -5%;
+	}
+	.bar-portrait{
+		height: 90%;
+		top: -20%;
+		left: -15%;
+		@include max-width(1024px){
+			left: 2%;
+		}
+	}
+	.align-end{
+		align-items: flex-end !important;
+	}
+	.zoom-leaf{
+		position: absolute;
+		top: -15%;
+		left: 60%;
+		right: -30%;
+	}
+	.garden-plant{
+		position: absolute;
+		top: 5%;
+		left: 70%;
+		right: -20%;
+
+	}
+	
+}

@@ -33,12 +33,23 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .brand-logo{
+            @include max-width(575px){
+                width: 100px;
+            }
+        }
 
         .hambarger-menu {
             background-color: transparent;
             padding: 3px 0;
             cursor: pointer;
             height: 32px;
+            @include max-width(575px){
+                svg{
+                    width: 30px;
+                    height: 20px;
+                }
+            }
         }
 
         .reservar-btn a {
@@ -80,7 +91,11 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
-
+    .main-content{
+        height: calc(100vh - 190px);
+        overflow-y: auto;
+        z-index: 99;
+    }
     .menu-figure {
         position: absolute;
         top: 12%;
@@ -115,6 +130,7 @@
                     color: #707070;
                     font-weight: 200;
                     text-transform: uppercase;
+                    line-height: 1.55;
                     @include max-width(991px){
                         font-size: 42px;
                     }
@@ -122,7 +138,7 @@
                         font-size: 36px;
                     }
                     @include max-width(575px){
-                        font-size: 30px;
+                        font-size: 26px;
                     }
                 }
 
@@ -131,7 +147,7 @@
                         font-size: 24px;
                         text-transform: capitalize;
                         @include max-width(767px){
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                     }
                 }

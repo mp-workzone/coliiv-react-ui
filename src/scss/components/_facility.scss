@@ -1,0 +1,93 @@
+.negative-space{
+	margin-top: -100px;
+}
+.facility{
+	position: relative;
+	height: 100vh;
+	&.facility-after::after{
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.facility__figure{
+		height: 100%;
+		width: 100%;
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.facility__title{
+		position: absolute;
+		bottom: 56px;
+		left: 8%;
+		color: $light-color-01;
+		text-transform: uppercase;
+		z-index: 99;
+	}
+	.scrollbar{
+		position: absolute;
+		bottom: 120px;
+		right: 70px;
+		z-index: 99;
+		@include max-width(575px){
+			bottom: 200px;
+		}
+		.scrollbar__inner{
+			width: 5px;
+			border-radius: 3px;
+			background-color: $light-color-01;
+			z-index: 99;
+			@include max-width(767px){
+				width: 3px;
+				border-radius: 1.5px;
+			}
+		}
+		.scrollbar__inner.top{
+			height: 190px;
+		}
+		.scrollbar__inner.bottom{
+			margin-top: 22px;
+			height: 30px;
+		}
+		.count-no,
+		.total-count{
+			position: absolute;
+			color: $light-color-01;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 31px;
+			font-weight: 500;
+			line-height: 1.5;
+			@include max-width(767px){
+				font-size: 24px;
+			}
+		}
+		.count-no{
+			top: -25%;
+		}
+		.total-count{
+			bottom: -25%;
+		}
+	}
+}
+.facility-text{
+	max-width: 680px;
+}
+.maximum{
+	max-width: 60%;
+	@include max-width(1024px){
+		width: 100%;
+		max-width: 100%;
+	}
+}
+.min-height{
+	@include minmax(1024px, 1180px){
+		height: 430px;
+	}
+}
