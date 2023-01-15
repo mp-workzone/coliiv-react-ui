@@ -37,7 +37,7 @@ const settings2 = {
 };
 function TwoH2BPlus() {
     return (
-        <div className='apartment-page apartment-page--stdio apartment-page--2h-plus'>
+        <div className='apartment-page apartment-page--stdio apartment-page--2h-plus s'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
