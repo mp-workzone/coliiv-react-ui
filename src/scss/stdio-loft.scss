@@ -97,7 +97,7 @@
 }
 
 // About
-.apartment-about {
+.apartment-intro {
     position: relative;
     padding: 230px 0;
 
@@ -117,14 +117,6 @@
 
     .figure {
         img {
-            &.image-1 {
-                width: 584px;
-                position: absolute;
-                left: -120px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
             &.image-2 {
                 width: 700px;
                 position: absolute;
@@ -154,7 +146,7 @@
         }
     }
 
-    .apartment-about-content {
+    .apartment-intro-content {
         max-width: 55%;
         margin-left: auto;
         padding-right: 60px;
@@ -510,6 +502,21 @@
             font-weight: 300;
             margin-top: 10px;
             text-decoration: underline;
+        }
+    }
+}
+
+// Style 1
+.style-1 {
+    .apartment-intro {
+        .figure {
+            img {
+                width: 584px;
+                position: absolute;
+                left: -120px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
 }

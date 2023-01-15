@@ -500,11 +500,11 @@ li {
   transform: translateX(-50%);
 }
 
-.apartment-about {
+.apartment-intro {
   position: relative;
   padding: 230px 0;
 }
-.apartment-about.has-circle::before {
+.apartment-intro.has-circle::before {
   height: 250px;
   width: 250px;
   background-color: #c4d979;
@@ -515,21 +515,14 @@ li {
   top: 113px;
   content: "";
 }
-.apartment-about .figure img.image-1 {
-  width: 584px;
-  position: absolute;
-  left: -120px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.apartment-about .figure img.image-2 {
+.apartment-intro .figure img.image-2 {
   width: 700px;
   position: absolute;
   left: -240px;
   top: 320px;
   transform: translateY(-50%);
 }
-.apartment-about .figure .figure__text {
+.apartment-intro .figure .figure__text {
   font-size: 420px;
   font-weight: 500;
   line-height: 1;
@@ -541,21 +534,21 @@ li {
   transform: translateY(calc(-50% - 0px));
   z-index: 9999;
 }
-.apartment-about .figure .figure__text .sub {
+.apartment-intro .figure .figure__text .sub {
   font-size: 70%;
   display: inline-block;
   position: relative;
   top: -140px;
 }
-.apartment-about .apartment-about-content {
+.apartment-intro .apartment-intro-content {
   max-width: 55%;
   margin-left: auto;
   padding-right: 60px;
 }
-.apartment-about .apartment-about-content.has-border-right {
+.apartment-intro .apartment-intro-content.has-border-right {
   position: relative;
 }
-.apartment-about .apartment-about-content.has-border-right::before {
+.apartment-intro .apartment-intro-content.has-border-right::before {
   background-color: #c4d979;
   width: 56px;
   height: calc(100% + 70px);
@@ -565,10 +558,10 @@ li {
   right: 60px;
   bottom: -10px;
 }
-.apartment-about .apartment-about-content .title.has-circle {
+.apartment-intro .apartment-intro-content .title.has-circle {
   position: relative;
 }
-.apartment-about .apartment-about-content .title.has-circle::before {
+.apartment-intro .apartment-intro-content .title.has-circle::before {
   height: 250px;
   width: 250px;
   background-color: #c4d979;
@@ -578,22 +571,22 @@ li {
   right: -70px;
   z-index: -1;
 }
-.apartment-about .apartment-about-content h2 {
+.apartment-intro .apartment-intro-content h2 {
   text-transform: uppercase;
   font-size: 62px;
   margin-bottom: 40px;
 }
-.apartment-about .apartment-about-content h2 .alt {
+.apartment-intro .apartment-intro-content h2 .alt {
   display: block;
   font-family: Poppins;
   font-weight: 200;
   font-size: 60px;
 }
-.apartment-about .apartment-about-content h2 .has-border {
+.apartment-intro .apartment-intro-content h2 .has-border {
   display: inline-block;
   position: relative;
 }
-.apartment-about .apartment-about-content h2 .has-border::before {
+.apartment-intro .apartment-intro-content h2 .has-border::before {
   background-color: #c4d979;
   width: 120%;
   height: 56px;
@@ -603,7 +596,7 @@ li {
   right: 0;
   top: -15px;
 }
-.apartment-about .apartment-about-content p {
+.apartment-intro .apartment-intro-content p {
   font-weight: 300;
   font-size: 28px;
   margin-bottom: 0;
@@ -861,4 +854,12 @@ li {
   font-weight: 300;
   margin-top: 10px;
   text-decoration: underline;
+}
+
+.style-1 .apartment-intro .figure img {
+  width: 584px;
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=stdio-loft.css.map */

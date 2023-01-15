@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="50.957" height="27.691" viewBox="0 0 50.957 27.691">
   <g id="l-r-icon" transform="translate(1 1)">
-    <path id="Path_2507" data-name="Path 2507" d="M-19585-13840.523v11.711a3.853,3.853,0,0,0,1,2.244,3.826,3.826,0,0,0,2.588,1h43.916" transform="translate(19585 13840.523)" fill="none" stroke="#737373" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Path_2508" data-name="Path 2508" d="M-19921.133-13770.146l10.09,10.089-10.09,10.089" transform="translate(19960 13775.246)" fill="none" stroke="#737373" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_2507" data-name="Path 2507" d="M-19585-13840.523v11.711a3.853,3.853,0,0,0,1,2.244,3.826,3.826,0,0,0,2.588,1h43.916" transform="translate(19585 13840.523)" fill="none" stroke="#737373" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
+    <path id="Path_2508" data-name="Path 2508" d="M-19921.133-13770.146l10.09,10.089-10.09,10.089" transform="translate(19960 13775.246)" fill="none" stroke="#737373" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
   </g>
 </svg>

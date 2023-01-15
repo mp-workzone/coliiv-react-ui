@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="204.358" height="204.358" viewBox="0 0 204.358 204.358">
   <g id="more-icon" transform="translate(-308.364 -234.091)">
-    <path id="Path_2498" data-name="Path 2498" d="M309.364,336.27a101.175,101.175,0,1,0,34.772-76.339" fill="none" stroke="#9eb255" stroke-miterlimit="10" stroke-width="2"/>
-    <path id="Path_2499" data-name="Path 2499" d="M590.2,549.245,621.124,517.6H593.137V503.576h53.172V556.1H632.935V527.389l-31.969,31.968Z" transform="translate(-207.712 -195.197)" fill="none" stroke="#9eb255" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_2498" data-name="Path 2498" d="M309.364,336.27a101.175,101.175,0,1,0,34.772-76.339" fill="none" stroke="#9eb255" strokeMiterlimit="10" strokeWidth="2"/>
+    <path id="Path_2499" data-name="Path 2499" d="M590.2,549.245,621.124,517.6H593.137V503.576h53.172V556.1H632.935V527.389l-31.969,31.968Z" transform="translate(-207.712 -195.197)" fill="none" stroke="#9eb255" strokeMiterlimit="10" strokeWidth="2"/>
   </g>
 </svg>

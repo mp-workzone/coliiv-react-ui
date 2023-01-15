@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="53" height="23" viewBox="0 0 53 23">
   <g id="menu_x" data-name="menu x" transform="translate(-2018.374 -120.24)">
-    <line id="Line_1" data-name="Line 1" x2="50" transform="translate(2019.874 121.74)" fill="none" stroke="#383838" stroke-linecap="round" stroke-width="3"/>
-    <line id="Line_2" data-name="Line 2" x2="49.384" transform="translate(2020.49 141.74)" fill="none" stroke="#383838" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_1" data-name="Line 1" x2="50" transform="translate(2019.874 121.74)" fill="none" stroke="#383838" strokeLinecap="round" strokeWidth="3"/>
+    <line id="Line_2" data-name="Line 2" x2="49.384" transform="translate(2020.49 141.74)" fill="none" stroke="#383838" strokeLinecap="round" strokeWidth="3"/>
   </g>
 </svg>

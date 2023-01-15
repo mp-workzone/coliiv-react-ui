@@ -69,9 +69,9 @@ function OneHOneB() {
                                 transform='translate(19586.152 13840.522)'
                                 fill='none'
                                 stroke='#fff'
-                                stroke-linecap='round'
-                                stroke-linejoin='round'
-                                stroke-width='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                                strokeWidth='2'
                             />
                             <path
                                 id='Path_2508'
@@ -80,9 +80,9 @@ function OneHOneB() {
                                 transform='translate(19921.133 13774.188)'
                                 fill='none'
                                 stroke='#fff'
-                                stroke-linecap='round'
-                                stroke-linejoin='round'
-                                stroke-width='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                                strokeWidth='2'
                             />
                         </g>
                     </svg>
@@ -91,13 +91,13 @@ function OneHOneB() {
                     <img src={IconScrollNext} alt='' />
                 </div>
             </section>
-            <section className='apartment-about'>
+            <section className='apartment-intro'>
                 <div className='figure'>
                     <span className="figure__text">A1</span>
                     <img className="image-2" src={AboutFigure} alt='' />
                 </div>
                 <div className='container-alt'>
-                    <div className='apartment-about-content'>
+                    <div className='apartment-intro-content'>
                         <div className='title has-circle'>
                             <h2>
                                 <span>El espacio</span>
@@ -149,9 +149,9 @@ function OneHOneB() {
                                                 transform='translate(0 -40.566)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2510'
@@ -160,9 +160,9 @@ function OneHOneB() {
                                                 transform='translate(-29.23 1.227)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -190,7 +190,7 @@ function OneHOneB() {
                                                 transform='translate(0 0)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-width='2.5'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2512'
@@ -199,7 +199,7 @@ function OneHOneB() {
                                                 transform='translate(-35.874 -48.339)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-width='2.5'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2513'
@@ -208,7 +208,7 @@ function OneHOneB() {
                                                 transform='translate(-76.861 -103.396)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-width='2.5'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -236,9 +236,9 @@ function OneHOneB() {
                                                 transform='translate(-0.034 -2)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2515'
@@ -247,9 +247,9 @@ function OneHOneB() {
                                                 transform='translate(0 -47.197)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2517'
@@ -258,9 +258,9 @@ function OneHOneB() {
                                                 transform='translate(-40.157 -108.965)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -288,8 +288,8 @@ function OneHOneB() {
                                                 transform='translate(-0.001 -65.18)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2519'
@@ -298,8 +298,8 @@ function OneHOneB() {
                                                 transform='translate(0 -1.021)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -386,9 +386,9 @@ function OneHOneB() {
                                             transform='translate(19635 20128.277)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                         <path
                                             id='Path_2508'
@@ -397,9 +397,9 @@ function OneHOneB() {
                                             transform='translate(20010 20063)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                     </g>
                                 </svg>
@@ -428,9 +428,9 @@ function OneHOneB() {
                                             transform='translate(19635 20128.277)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                         <path
                                             id='Path_2508'
@@ -439,9 +439,9 @@ function OneHOneB() {
                                             transform='translate(20010 20063)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                     </g>
                                 </svg>
@@ -469,8 +469,8 @@ function OneHOneB() {
                                         d='M309.364,297.879a62.786,62.786,0,1,0,21.578-47.373'
                                         fill='none'
                                         stroke='#9eb255'
-                                        stroke-miterlimit='10'
-                                        stroke-width='2'
+                                        strokeMiterlimit='10'
+                                        strokeWidth='2'
                                     ></path>
                                 </g>
                             </svg>
@@ -491,8 +491,8 @@ function OneHOneB() {
                                         transform='translate(893.036 -309.73) rotate(90)'
                                         fill='none'
                                         stroke='#9eb255'
-                                        stroke-miterlimit='10'
-                                        stroke-width='2'
+                                        strokeMiterlimit='10'
+                                        strokeWidth='2'
                                     ></path>
                                 </g>
                             </svg>

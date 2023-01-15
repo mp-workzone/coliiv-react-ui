@@ -6,14 +6,23 @@ import Gallery1 from "../../assets/apt-gal-01.webp";
 import MoreSpaceFigure from "../../assets/more-sp.webp";
 import MoreSpaces from "../../assets/more-spaces.webp";
 import IconScrollNext from "../../assets/scroll-next.svg";
-import AboutFigure from "../../assets/stdio-lofg-ab.png";
+import IntroFigure from "../../assets/stdio-lofg-ab.png";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
 import StudioLofFeatureFigure from "../../assets/stl-ft-r.webp";
+import ApartmentIntro from "../../components/apartment/apartmentIntro";
 import "../../css/stdio-loft.css";
 
 function StdioLoft() {
     const [galleryIndex, setGalleryIndex] = useState(1);
     const [mapIndex, setMapIndex] = useState(1);
+
+    let introContent = {
+        figure: IntroFigure,
+        figureAlt: "",
+        figureText: 'SL',
+        title: "<span class='has-border'>Disfrútalo</span> todo <span class='alt'>con estilo</span>",
+        descroption: "El Studio Loft te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat."
+    }
 
     const settings = {
         dots: false,
@@ -51,7 +60,7 @@ function StdioLoft() {
     };
 
     return (
-        <div className='apartment-page'>
+        <div className='apartment-page style-1'>
             <section className='aparetment-hero'>
                 <figure>
                     <img src={StudioLoftHero} alt='' />
@@ -83,9 +92,9 @@ function StdioLoft() {
                                 transform='translate(19586.152 13840.522)'
                                 fill='none'
                                 stroke='#fff'
-                                stroke-linecap='round'
-                                stroke-linejoin='round'
-                                stroke-width='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                                strokeWidth='2'
                             />
                             <path
                                 id='Path_2508'
@@ -94,9 +103,9 @@ function StdioLoft() {
                                 transform='translate(19921.133 13774.188)'
                                 fill='none'
                                 stroke='#fff'
-                                stroke-linecap='round'
-                                stroke-linejoin='round'
-                                stroke-width='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                                strokeWidth='2'
                             />
                         </g>
                     </svg>
@@ -105,28 +114,8 @@ function StdioLoft() {
                     <img src={IconScrollNext} alt='' />
                 </div>
             </section>
-            <section className='apartment-about'>
-                <div className='figure'>
-                    <span className="figure__text">SL</span>
-                    <img className="image-1" src={AboutFigure} alt='' />
-                </div>
-                <div className='container-alt'>
-                    <div className='apartment-about-content'>
-                        <div className='title'>
-                            <h2>
-                                <span className='has-border'>Disfrútalo</span>{" "}
-                                todo <span className='alt'>con estilo</span>
-                            </h2>
-                        </div>
-                        <p>
-                            El Studio Loft te ofrece amet, consectetur
-                            adipiscing elit. Phasellus vestibulum nisl sed
-                            faucibus consequat. Aliquam in leo metus. Fusce at
-                            orci auctor ante malesuada feugiat.
-                        </p>
-                    </div>
-                </div>
-            </section>
+
+            <ApartmentIntro introContent={introContent}/>
 
             <section className='apartment-figure-block'>
                 <img src={Apartment} alt='' />
@@ -166,9 +155,9 @@ function StdioLoft() {
                                                 transform='translate(0 -40.566)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2510'
@@ -177,9 +166,9 @@ function StdioLoft() {
                                                 transform='translate(-29.23 1.227)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -207,7 +196,7 @@ function StdioLoft() {
                                                 transform='translate(0 0)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-width='2.5'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2512'
@@ -216,7 +205,7 @@ function StdioLoft() {
                                                 transform='translate(-35.874 -48.339)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-width='2.5'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2513'
@@ -225,7 +214,7 @@ function StdioLoft() {
                                                 transform='translate(-76.861 -103.396)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-width='2.5'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -253,9 +242,9 @@ function StdioLoft() {
                                                 transform='translate(-0.034 -2)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2515'
@@ -264,9 +253,9 @@ function StdioLoft() {
                                                 transform='translate(0 -47.197)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2517'
@@ -275,9 +264,9 @@ function StdioLoft() {
                                                 transform='translate(-40.157 -108.965)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linecap='round'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -305,8 +294,8 @@ function StdioLoft() {
                                                 transform='translate(-0.001 -65.18)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                             <path
                                                 id='Path_2519'
@@ -315,8 +304,8 @@ function StdioLoft() {
                                                 transform='translate(0 -1.021)'
                                                 fill='none'
                                                 stroke='#737373'
-                                                stroke-linejoin='round'
-                                                stroke-width='2.5'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2.5'
                                             />
                                         </g>
                                     </svg>
@@ -414,9 +403,9 @@ function StdioLoft() {
                                             transform='translate(19635 20128.277)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                         <path
                                             id='Path_2508'
@@ -425,9 +414,9 @@ function StdioLoft() {
                                             transform='translate(20010 20063)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                     </g>
                                 </svg>
@@ -456,9 +445,9 @@ function StdioLoft() {
                                             transform='translate(19635 20128.277)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                         <path
                                             id='Path_2508'
@@ -467,9 +456,9 @@ function StdioLoft() {
                                             transform='translate(20010 20063)'
                                             fill='none'
                                             stroke='#fff'
-                                            stroke-linecap='round'
-                                            stroke-linejoin='round'
-                                            stroke-width='2'
+                                            strokeLinecap='round'
+                                            strokeLinejoin='round'
+                                            strokeWidth='2'
                                         />
                                     </g>
                                 </svg>
@@ -497,8 +486,8 @@ function StdioLoft() {
                                         d='M309.364,297.879a62.786,62.786,0,1,0,21.578-47.373'
                                         fill='none'
                                         stroke='#9eb255'
-                                        stroke-miterlimit='10'
-                                        stroke-width='2'
+                                        strokeMiterlimit='10'
+                                        strokeWidth='2'
                                     ></path>
                                 </g>
                             </svg>
@@ -519,8 +508,8 @@ function StdioLoft() {
                                         transform='translate(893.036 -309.73) rotate(90)'
                                         fill='none'
                                         stroke='#9eb255'
-                                        stroke-miterlimit='10'
-                                        stroke-width='2'
+                                        strokeMiterlimit='10'
+                                        strokeWidth='2'
                                     ></path>
                                 </g>
                             </svg>
