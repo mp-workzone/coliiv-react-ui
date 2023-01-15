@@ -1,11 +1,16 @@
-import FacilityIntro01 from "../assets/facility-intro01.jpg";
+// import FacilityIntro01 from "../assets/facility-blog01.jpg";
+import Coliiv from "../assets/coliiv.jpg";
 import FacilityIntro02 from "../assets/facility-intro02.jpg";
 import FacilityIntro03 from "../assets/facility-intro03.jpg";
+
 import CounterLobby01 from "../assets/counter-lobby01.jpg";
+
 import PoolFigure01 from "../assets/pool-figure01.jpg";
 import PoolFigure02 from "../assets/pool-figure02.jpg";
 import Coworking from "../assets/coworking.jpg";
 import PlantNcircle from "../assets/plantNcircle.png";
+import Leaf from "../assets/leaf06.png";
+import Plant from "../assets/plant05.png";
 import ZoomRooms from "../assets/zoomRooms.jpg";
 import Terraza from "../assets/terraza.jpg";
 import Restaurant from "../assets/restaurant.jpg";
@@ -16,7 +21,7 @@ import GYM01 from "../assets/gym01.jpg";
 import Salon from "../assets/salon.jpg";
 import Spa from "../assets/spa.jpg";
 import Spa01 from "../assets/spa01.jpg";
-import Spa02 from "../assets/spa01.jpg";
+import Spa02 from "../assets/spa02.jpg";
 function AmenitiesHero() {
   return (
     <>
@@ -33,14 +38,14 @@ function AmenitiesHero() {
         </div>
       </section>
 
-      {/* facility-intro 01 start */}
-      <section className="facility-intro one intro-section left-space">
+      {/* facility-blog 01 start */}
+      <section className="facility-blog top blog-details left-space">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="inner-section">
-          <div className="intro-text-area">
-            <h2 className="intro-title facility-text">
+          <div className="blog-details__text-area">
+            <h2 className="blog-details__title facility-text">
               Mauris venenatis dignissim aliquet in eget tristique orci
             </h2>
             <h4 className="dsc  facility-text">
@@ -51,21 +56,21 @@ function AmenitiesHero() {
               neque.
             </h4>
           </div>
-          <div className="intro-figure ">
-            <img src={FacilityIntro01} alt="" />
+          <div className="blog-details__figure ">
+            <img src={Coliiv} alt="" />
           </div>
         </div>
       </section>
 
-      {/*  facility-intro 01 end */}
+      {/*  facility-blog 01 end */}
 
-      {/*  facility-intro 02 start */}
-      <section className="facility-intro two intro-section right-space">
+      {/*  facility-blog 02 start */}
+      <section className="facility-blog middle blog-details right-space">
         <div className="inner-section responsive-reverse">
-          <div className="intro-figure maximum">
+          <div className="blog-details__figure maximum">
             <img src={FacilityIntro02} alt="" />
           </div>
-          <div className="intro-text-area facility-text">
+          <div className="blog-details__text-area facility-text">
             <h2 className="title-primary">
               Mini market
               <span className="title-secondary">
@@ -81,14 +86,14 @@ function AmenitiesHero() {
           </div>
         </div>
       </section>
-      {/*  facility-intro 02 end */}
+      {/*  facility-blog 02 end */}
 
-      {/* facility-intro 03 start */}
-      <section className="facility-intro three intro-section">
+      {/* facility-blog 03 start */}
+      <section className="facility-blog bottom blog-details">
         <div className="container-alt">
           <div className="inner-section">
-            <div className="intro-text-area facility-text">
-              <h2 className="intro-title">
+            <div className="blog-details__text-area facility-text no-space">
+              <h2 className="blog-details__title">
                 Aliquam commodo sed augue eget congue
               </h2>
               <h4 className="dsc">
@@ -97,14 +102,14 @@ function AmenitiesHero() {
                 maximus urna.
               </h4>
             </div>
-            <div className="intro-figure  shadow-right">
+            <div className="blog-details__figure  shadow-right">
               <img src={FacilityIntro03} alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      {/*  facility-intro 03 end */}
+      {/*  facility-blog 03 end */}
 
       {/* slide count 03 start */}
       <section className="counter-lobby facility facility-after">
@@ -122,10 +127,11 @@ function AmenitiesHero() {
       {/* slide count 03 end*/}
 
       {/* facility 01 start */}
-      <section className="facility-intro one intro-section left-space">
+      <section className="facility-blog top blog-details left-space">
         <div className="inner-section">
-          <div className="intro-text-area facility-text">
-            <h2 className="intro-title">
+          <div className="blog-details__text-area facility-text">
+            <h2 className="blog-details__title">
+              <span className="slice portrait coworking-portrait"></span>
               Vel efficitur augue vestibulum nisl orci, tristique eu leo sitam
             </h2>
             <h4 className="dsc">
@@ -139,7 +145,7 @@ function AmenitiesHero() {
               </span>
             </h4>
           </div>
-          <div className="intro-figure ">
+          <div className="blog-details__figure ">
             <img src={Coworking} alt="" />
           </div>
         </div>
@@ -148,12 +154,15 @@ function AmenitiesHero() {
       {/*  facility 01 end */}
 
       {/*  facility 02 start */}
-      <section className="facility-intro two intro-section right-space">
+      <section className="facility-blog bottom blog-details right-space">
+        <div className="zoom-leaf">
+          <img src={Leaf} alt="" />
+        </div>
         <div className="inner-section responsive-reverse">
-          <div className="intro-figure maximum">
+          <div className="blog-details__figure maximum">
             <img src={ZoomRooms} alt="" />
           </div>
-          <div className="intro-text-area facility-text">
+          <div className="blog-details__text-area facility-text">
             <h2 className="title-primary">
               Zoom
               <span className="title-secondary">Rooms</span>
@@ -173,7 +182,7 @@ function AmenitiesHero() {
         <div className="facility__figure">
           <img src={Terraza} alt="" />
         </div>
-        <h1 className="facility__title title-primary">Coworking</h1>
+        <h1 className="facility__title title-primary">Terraza</h1>
         <div className="scrollbar">
           <div className="count-no">05</div>
           <div className="scrollbar__inner top"></div>
@@ -184,30 +193,36 @@ function AmenitiesHero() {
       {/* slide count 05 end*/}
 
       {/* pool facility start */}
-      <section className="pool one intro-section">
+      <section className="pool top blog-details">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="container-alt">
           <div className="inner-section">
-            <div className="intro-text-area">
-              <h2 className="intro-title">
-                Placerat eleifend ligula, Cras in molestie velit
-              </h2>
-              <h4 className="dsc">
-                El Counter Lobby Quisque vitae suscipit justo. Cras fringilla,
-                ligula ultricies rutrum consequat, quam dui sagittis enim,
-                condimentum euismod nulla nunc a lacus. Vestibulum in ex id elit
-                aliquam lacinia. Fusce vitae magna in libero porta porta a nec
-                neque.
-              </h4>
-              <div className="pool__figure-title title-primary">Piscina</div>
-              <div className="pool-left-figure">
+            <div className="pool-inner">
+              <div className="blog-details__text-area">
+                <h2 className="blog-details__title maximum">
+                  Placerat eleifend ligula, Cras in molestie velit
+                </h2>
+                <h4 className="dsc maximum">
+                  El Counter Lobby Quisque vitae suscipit justo. Cras fringilla,
+                  ligula ultricies rutrum consequat, quam dui sagittis enim,
+                  condimentum euismod nulla nunc a lacus. Vestibulum in ex id
+                  elit aliquam lacinia. Fusce vitae magna in libero porta porta
+                  a nec neque.
+                </h4>
+                <div className="flex-items">
+                  <div className="pool__figure-title title-primary">
+                    Piscina
+                  </div>
+                  <div className="pool-left-figure">
+                    <img src={PoolFigure02} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="blog-details__figure  pool-right-figure">
                 <img src={PoolFigure01} alt="" />
               </div>
-            </div>
-            <div className="intro-figure  pool-right-figure">
-              <img src={PoolFigure02} alt="" />
             </div>
           </div>
         </div>
@@ -215,9 +230,9 @@ function AmenitiesHero() {
       {/* pool facility end */}
 
       {/*  facility 02 start */}
-      <section className="facility-intro two intro-section left-space">
+      <section className="facility-blog bottom blog-details left-space">
         <div className="inner-section">
-          <div className="intro-text-area">
+          <div className="blog-details__text-area">
             <h2 className="title-primary">
               Zona de
               <span className="title-secondary">relajación</span>
@@ -229,7 +244,7 @@ function AmenitiesHero() {
               vulputate metus vestibulum fringilla nisl.
             </h4>
           </div>
-          <div className="intro-figure ">
+          <div className="blog-details__figure ">
             <img src={Terraza} alt="" />
           </div>
         </div>
@@ -241,7 +256,7 @@ function AmenitiesHero() {
         <div className="facility__figure">
           <img src={Restaurant} alt="" />
         </div>
-        <h1 className="facility__title title-primary">Coworking</h1>
+        <h1 className="facility__title title-primary">Restaurante</h1>
         <div className="scrollbar">
           <div className="count-no">07</div>
           <div className="scrollbar__inner top"></div>
@@ -252,15 +267,15 @@ function AmenitiesHero() {
       {/* slide count 07 end*/}
 
       {/* facility 01 start */}
-      <section className="facility-intro one intro-section left-space">
+      <section className="facility-blog top blog-details left-space">
         <div className="inner-section">
-          <div className="intro-text-area">
-            <h2 className="intro-title">
+          <div className="blog-details__text-area">
+            <h2 className="blog-details__title">
               hendrerit aliquam erat in eros sem, posuere nec sollicitudin
               consectetur.
             </h2>
             <h4 className="dsc">
-              Donec nisl magna, blandit nec mauris sed, aliquam aliquam eros.
+              Dtopc nisl magna, blandit nec mauris sed, aliquam aliquam eros.
               Proin et metus consequat, facilisis nisi et, tincidunt ante.
               Integer interdum euismod mollis.
               <span className="dsc">
@@ -272,7 +287,7 @@ function AmenitiesHero() {
               </span>
             </h4>
           </div>
-          <div className="intro-figure maximum">
+          <div className="blog-details__figure maximum">
             <img src={Restaurant} alt="" />
           </div>
         </div>
@@ -296,11 +311,11 @@ function AmenitiesHero() {
       {/* slide count 08 end*/}
 
       {/* facility 01 start */}
-      <section className="facility-intro one intro-section left-space">
+      <section className="facility-blog top blog-details left-space">
         <div className="inner-section">
-          <div className="intro-text-area">
+          <div className="blog-details__text-area">
             <div className="slice portrait bar-portrait"></div>
-            <h2 className="intro-title">
+            <h2 className="blog-details__title">
               Eu euismod nunc integer vel pellentesque lorem
             </h2>
             <h4 className="dsc">
@@ -314,7 +329,7 @@ function AmenitiesHero() {
               </span>
             </h4>
           </div>
-          <div className="intro-figure ">
+          <div className="blog-details__figure ">
             <img src={Bar} alt="" />
           </div>
         </div>
@@ -323,12 +338,15 @@ function AmenitiesHero() {
       {/*  facility 01 end */}
 
       {/*  facility 02 start */}
-      <section className="facility-intro two intro-section right-space">
+      <section className="facility-blog bottom blog-details right-space">
+        <div className="garden-plant">
+          <img src={Plant} alt="" />
+        </div>
         <div className="inner-section responsive-reverse">
-          <div className="intro-figure maximum">
+          <div className="blog-details__figure maximum">
             <img src={BarGarden} alt="" />
           </div>
-          <div className="intro-text-area">
+          <div className="blog-details__text-area">
             <h2 className="title-primary">Gradería</h2>
             <h4 className="dsc">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -356,13 +374,13 @@ function AmenitiesHero() {
       {/* slide count 09 end*/}
 
       {/* facility 01 start */}
-      <section className="facility-intro three intro-section left-space">
+      <section className="facility-blog top blog-details left-space">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="inner-section align-end">
-          <div className="intro-text-area ">
-            <h2 className="intro-title">
+          <div className="blog-details__text-area ">
+            <h2 className="blog-details__title">
               Consectetur adipiscing elit, phasellus dui diam, varius a tellus
               at
             </h2>
@@ -373,7 +391,7 @@ function AmenitiesHero() {
               leo quis ligula varius maximus.
             </h4>
           </div>
-          <div className="intro-text-area">
+          <div className="blog-details__text-area">
             <h4 className="dsc">
               Phasellus dolor sem, iaculis id quam quis, aliquam facilisis enim.
               Proin facilisis viverra sodales. Vestibulum ut efficitur metus.
@@ -386,12 +404,12 @@ function AmenitiesHero() {
       {/*  facility 01 end */}
 
       {/*  facility 02 start */}
-      <section className="facility-intro two intro-section left-space">
+      <section className="facility-blog bottom blog-details left-space">
         <div className="inner-section">
-          <div className="intro-figure maximum">
+          <div className="blog-details__figure maximum">
             <img src={GYM01} alt="" />
           </div>
-          <div className="intro-text-area">
+          <div className="blog-details__text-area">
             <h2 className="title-primary">
               Salón de
               <span className="title-secondary">meditación y yoga</span>
@@ -412,7 +430,9 @@ function AmenitiesHero() {
         <div className="facility__figure">
           <img src={Salon} alt="" />
         </div>
-        <h1 className="facility__title title-primary">Coworking</h1>
+        <h1 className="facility__title title-primary">
+          Salón de belleza Y barbería
+        </h1>
         <div className="scrollbar">
           <div className="count-no">11</div>
           <div className="scrollbar__inner top"></div>
@@ -421,42 +441,51 @@ function AmenitiesHero() {
         </div>
       </section>
       {/* slide count 11 end*/}
+
       {/* pool facility start */}
-      <section className="pool intro-section">
+      <section className="pool top blog-details">
+        <div className="plantNcircle">
+          <img src={PlantNcircle} alt="" />
+        </div>
         <div className="container-alt">
           <div className="inner-section">
-            <div className="intro-text-area">
-              <h2 className="intro-title">
-                Fusce non dui est, praesent faucibus ut velit vel molestie
-              </h2>
-              <h4 className="dsc">
-                Donec ac lacinia metus, eget tempor ex. Vestibulum eget arcu
-                lorem. Nulla molestie, ante ac convallis tempus, justo lorem
-                dictum risus, et eleifend quam mauris et justo proin sodales.
-              </h4>
-              <div className="pool-left-figure">
+            <div className="pool-inner">
+              <div className="blog-details__text-area">
+                <h2 className="blog-details__title maximum">
+                  Fusce non dui est, praesent faucibus ut velit vel molestie
+                </h2>
+                <h4 className="dsc maximum">
+                  Dtopc ac lacinia metus, eget tempor ex. Vestibulum eget arcu
+                  lorem. Nulla molestie, ante ac convallis tempus, justo lorem
+                  dictum risus, et eleifend quam mauris et justo proin sodales.
+                </h4>
+                <div className="flex-items space-left">
+                  <div className="pool-left-figure">
+                    <img src={Spa01} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="blog-details__figure  pool-right-figure">
                 <img src={Spa02} alt="" />
               </div>
-            </div>
-            <div className="intro-figure  pool-right-figure">
-              <img src={Spa01} alt="" />
             </div>
           </div>
         </div>
       </section>
       {/* pool facility end */}
+
       {/*  facility 02 start */}
-      <section className="facility-intro two intro-section left-space">
+      <section className="facility-blog bottom blog-details left-space">
         <div className="inner-section">
-          <div className="intro-text-area facility-text">
+          <div className="blog-details__text-area facility-text">
             <h2 className="title-primary">Spa</h2>
             <h4 className="dsc">
               Aenean a laoreet diam. Class aptent taciti sociosqu ad litora
-              torquent per conubia nostra, per inceptos himenaeos. Donec sem
+              torquent per conubia nostra, per inceptos himenaeos. Dtopc sem
               leo, pulvinar eget arcu vel, tincidunt aliquam mi.
             </h4>
           </div>
-          <div className="intro-figure maximum">
+          <div className="blog-details__figure maximum">
             <img src={Spa} alt="" />
           </div>
         </div>

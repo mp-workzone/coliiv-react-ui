@@ -101,6 +101,12 @@
 					color: $secondary-color-03;
 					margin-bottom: 18px;
 					text-transform: uppercase;
+					@include max-width(1024px){
+						font-size: 42px;
+					}
+					@include max-width(767px){
+						font-size: 30px;
+					}
 					@include max-width(575px){
 						font-size: 28px;
 						margin-bottom: 0;

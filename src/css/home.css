@@ -879,9 +879,11 @@ li {
 .service-area .more {
   text-align: center;
 }
-.service-area .more .more-link svg {
-  height: 56px;
-  width: 56px;
+@media (max-width: 991px) {
+  .service-area .more .more-link svg {
+    height: 66px;
+    width: 66px;
+  }
 }
 .service-area .more span {
   margin-top: 24px;
@@ -1330,6 +1332,16 @@ li {
   margin-bottom: 18px;
   text-transform: uppercase;
 }
+@media (max-width: 1024px) {
+  .h2-contact .h2-contact__main-content .h2-contact__process .process-item .process-item__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .h2-contact .h2-contact__main-content .h2-contact__process .process-item .process-item__title {
+    font-size: 30px;
+  }
+}
 @media (max-width: 575px) {
   .h2-contact .h2-contact__main-content .h2-contact__process .process-item .process-item__title {
     font-size: 28px;
@@ -1438,7 +1450,7 @@ li {
 @media (max-width: 575px) {
   .service-table .leaf {
     left: -30%;
-    top: -10%;
+    top: -30%;
   }
 }
 .service-table .service-table__title {
@@ -1453,7 +1465,7 @@ li {
   color: #2f2f2f;
 }
 .service-table .service-table__content {
-  padding: 195px 60px 0;
+  padding: 170px 60px 0;
   width: 100%;
 }
 @media (max-width: 1024px) {
@@ -1463,7 +1475,7 @@ li {
 }
 @media (max-width: 1024px) {
   .service-table .service-table__content {
-    padding-top: 40px;
+    padding-top: 25px;
   }
 }
 .service-table .service-table__content .table-title {
@@ -1480,7 +1492,7 @@ li {
 }
 .service-table .service-table__content .table-title ul li {
   text-align: center;
-  padding-bottom: 25px;
+  padding: 25px 0;
   font-size: 32px;
   font-weight: 300;
   color: #2f2f2f;
@@ -1503,7 +1515,7 @@ li {
 }
 @media (max-width: 768px) {
   .service-table .service-table__content .table-title ul li {
-    padding-bottom: 15px;
+    padding-block: 15px;
   }
 }
 @media (max-width: 575px) {

@@ -22,13 +22,23 @@
 	.held-event__slider-wrapper{
 		width: 93%;
 		margin-left: auto;
+		overflow: hidden;
 		.slick-list{
 			margin: 0 -25px;
+			.slick-track{
+				left: 17%;
+				@include max-width(575px){
+					left: 0;
+				}
+			}
 			.slider-item{
 				padding: 0 25px;
 				color: $light-color-01;
 				.slider-item__figure{
 					margin-bottom: 15px;
+					img{
+						width: 100%;
+					}
 				}
 				.slider-item__title{
 					font-size: 50px;

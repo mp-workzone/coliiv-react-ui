@@ -46,7 +46,7 @@ function ColiversHero() {
             potenti. Sed quis diam nec sapien lobortis ornare.
           </div>
 
-          <div className="reverse-wrapper">
+          <div className="reverse-wrapper ">
             <div className="reverse-item">
               <div className=" reverse-item__icon">{ICON_PUBLIC}</div>
               <h4 className="reverse-item__title">Comunidad</h4>
@@ -106,10 +106,10 @@ function ColiversHero() {
       {/* coliv family gallery end */}
 
       {/* colivers activity start */}
-      <section className="coliver-activity intro-section">
+      <section className="coliver-activity blog-details">
         <div className="container-alt">
           <div className="inner-section">
-            <div className="intro-text-area">
+            <div className="blog-details__text-area">
               <h2 className="title-primary colivers-title-primary">
                 En quÉ trabajan
                 <span className="title-secondary colivers-title-secodary">
@@ -129,7 +129,7 @@ function ColiversHero() {
                 </span>
               </h4>
             </div>
-            <div className="intro-figure">
+            <div className="blog-details__figure">
               <img src={IntroImg} alt="" />
             </div>
           </div>

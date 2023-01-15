@@ -1,5 +1,5 @@
 .header-area {
-    padding: 35.5px 0;
+    padding: 33.5px 0;
     position: sticky;
     top: 0;
     background-color: transparent;
@@ -38,6 +38,7 @@
             background-color: transparent;
             padding: 3px 0;
             cursor: pointer;
+            height: 32px;
         }
 
         .reservar-btn a {
@@ -85,6 +86,10 @@
         top: 12%;
         right: -260px;
         width: 850px;
+        z-index: -1;
+        @include max-width(991px){
+            left: 60%;
+        }
     }
 
     &.open {
@@ -94,6 +99,9 @@
 
     .language-menu {
         padding: 30px 0;
+        @include max-width(991px){
+            padding: 15px 0;
+        }
         button {
             background-color: transparent;
         }
@@ -107,12 +115,24 @@
                     color: #707070;
                     font-weight: 200;
                     text-transform: uppercase;
+                    @include max-width(991px){
+                        font-size: 42px;
+                    }
+                    @include max-width(767px){
+                        font-size: 36px;
+                    }
+                    @include max-width(575px){
+                        font-size: 30px;
+                    }
                 }
 
                 &.main-menu-item_alt {
                     a {
                         font-size: 24px;
                         text-transform: capitalize;
+                        @include max-width(767px){
+                            font-size: 20px;
+                        }
                     }
                 }
             }

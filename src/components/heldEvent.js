@@ -10,7 +10,7 @@ export default class HeldEvent extends Component {
   render() {
     const settings = {
       dots: false,
-      infinite: true,
+      // infinite: true,
       speed: 800,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -18,8 +18,15 @@ export default class HeldEvent extends Component {
         {
           breakpoint: 1024,
           settings: {
+            slidesToShow: 1.2,
+            arrows: false,
+            speed: 500,
+          },
+          breakpoint: 575,
+          settings: {
             slidesToShow: 1,
             arrows: false,
+            speed: 400,
           },
         },
       ],

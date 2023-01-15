@@ -35,11 +35,18 @@
 		bottom: 120px;
 		right: 70px;
 		z-index: 99;
+		@include max-width(575px){
+			bottom: 200px;
+		}
 		.scrollbar__inner{
 			width: 5px;
 			border-radius: 3px;
 			background-color: $light-color-01;
 			z-index: 99;
+			@include max-width(767px){
+				width: 3px;
+				border-radius: 1.5px;
+			}
 		}
 		.scrollbar__inner.top{
 			height: 190px;
@@ -57,6 +64,9 @@
 			font-size: 31px;
 			font-weight: 500;
 			line-height: 1.5;
+			@include max-width(767px){
+				font-size: 24px;
+			}
 		}
 		.count-no{
 			top: -25%;
@@ -77,9 +87,10 @@
 	}
 }
 
-// facility-intro 01 start
-.facility-intro{
-	&.one{
+// facility-blog 01 start
+.facility-blog{
+	position: relative;
+	&.top{
 		padding: 190px 0 95px;
 		position: relative;
 		@include max-width(767px){
@@ -96,7 +107,7 @@
 			z-index: -1;
 		}
 	}
-	&.two{
+	&.middle{
 		padding: 95px 0;
 		@include max-width(767px){
 			padding: 40px 0;
@@ -106,7 +117,7 @@
 	
 		}
 	}
-	&.three{
+	&.bottom{
 		padding: 95px 0 190px;
 		position: relative;
 		.plantNcircle{
@@ -129,8 +140,16 @@
 		flex-direction: column-reverse ;
 	}
 	}
-	.intro-text-area{
-		padding-left: 8%;
+	
+	.blog-details__text-area{
+		@include max-width(1024px){
+			padding-left: 8%;
+		}
+	}
+	.blog-details__text-area.no-space{
+		@include max-width(1024px){
+			padding: 0;
+		}
 	}
 	&.left-space{
 		margin-left: 8%;
@@ -143,6 +162,12 @@
 		@include max-width(1024px){
 				margin-right: 0;
 		}
+	}
+	.coworking-portrait{
+		height: 250%;
+		width: 7%;
+		top: -50%;
+		left: -5%;
 	}
 	.terraza-portrait{
 		height: 150%;
@@ -161,8 +186,23 @@
 	.align-end{
 		align-items: flex-end !important;
 	}
+	.zoom-leaf{
+		position: absolute;
+		top: -15%;
+		left: 60%;
+		right: -30%;
+	}
+	.garden-plant{
+		position: absolute;
+		top: 5%;
+		left: 70%;
+		right: -20%;
+
+	}
+	
 }
-// facility-intro 01 end
+
+// facility-blog 01 end
 
 
 // pool facility start
@@ -182,16 +222,53 @@
 		padding: 40px 0 20px;
 	}
 	.pool__figure-title{
-		margin-top: 190px;
 		color: $secondary-color-03;
 	}
 	.pool-left-figure{
-		margin-top: 310px;
 		@include max-width(767px){
 			margin-top: 120px;
 		}
 		@include max-width(575px){
 			margin-top: 60px;
+		}
+	}
+	.pool-right-figure{
+		@include max-width(1024px){
+			width: 80%;
+		}
+		@include max-width(575px){
+			width: 100%;
+		}
+	}
+
+	.inner-section .pool-inner{
+		.flex-items{
+			margin-top: 190px;
+			display: flex;
+			justify-content: space-between;
+			gap: 100px;
+			margin-bottom: 60px;
+			@include max-width(1080px){	
+				gap: 50px;
+			}
+			@include max-width(767px){	
+				margin-top: 50px;
+			}
+			@include max-width(575px){	
+				display: block;
+			}
+			&.space-left{
+				padding-left: 20%;
+				display: block;
+				@include max-width(767px){	
+					padding: 0;
+				}
+				img{
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+				
 		}
 	}
 }

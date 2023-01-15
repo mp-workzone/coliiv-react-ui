@@ -22,7 +22,7 @@
 
         @include max-width(575px) {
             left: -30%;
-            top: -10%;
+            top: -30%;
         }
     }
 
@@ -38,13 +38,13 @@
     }
 
     .service-table__content {
-        padding: 195px 60px 0;
+        padding: 170px 60px 0;
         width: 100%;
         @include max-width(1024px) {
             padding-inline: 10px;
         }
         @include max-width(1024px) {
-           padding-top: 40px;
+           padding-top: 25px;
         }
 
         .table-title {
@@ -58,7 +58,7 @@
                 width: 100%;
                 li {
                     text-align: center;
-                    padding-bottom: 25px;
+                    padding: 25px 0;
                     font-size: 32px;
                     font-weight: 300;
                     color: $secondary-color-03;
@@ -75,7 +75,7 @@
                         font-size: 24px;
                     }
                     @include max-width(768px) {
-                        padding-bottom: 15px;
+                        padding-block: 15px;
                     }
                     @include max-width(575px) {
                        font-size: 17px;

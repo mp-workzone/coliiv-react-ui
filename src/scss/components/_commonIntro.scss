@@ -1,18 +1,20 @@
-.intro-section{
+.blog-details{
 	.inner-section{
 		@extend .flex-center-spaceBetween;
-		gap: clamp(40px, 12%, 120px);
+		gap: clamp(50px, 9%, 120px);
 		@include max-width(1024px){
 			flex-direction: column;
 		}
 		@include minmax(991px, 1024px){
 			gap: 190px;
 		}
-		.intro-figure{
+		@include max-width(991px){
+			gap: 100px;
+		}
+		.blog-details__figure{
 			flex: 1;
 			max-width: 50%;
 			@include max-width(1024px){
-				width: 100%;
 				max-width: 100%;
 			}
 			img{
@@ -36,7 +38,7 @@
 			}
 		}
 
-		.intro-text-area{
+		.blog-details__text-area{
 			flex: 1;
 			position: relative;
 			@include max-width(1024px){
@@ -50,12 +52,17 @@
 				height: 17%;
 				
 			}
-			.intro-title{
+			.blog-details__title{
 				font-size: 52px;
 				font-weight: 400;
 				line-height: 1.23;
 				color: $secondary-color-03;
 				margin-bottom: 35px;
+				position: relative;
+				@include max-width(1024px){
+					font-size: 62px;
+					margin-bottom: 30px;
+				}
 				@include max-width(991px){
 					font-size: 30px;
 					margin-bottom: 30px;
