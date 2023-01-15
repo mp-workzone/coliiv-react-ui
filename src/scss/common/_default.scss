@@ -26,6 +26,8 @@ body {
     font-family: "poppins";
     overflow-x: hidden;
     left: 1.33;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 ul,
@@ -78,6 +80,7 @@ h1 {
     @include max-width(768px) {
         font-size: 42px;
     }
+
     @include max-width(575px) {
         font-size: 36px;
     }

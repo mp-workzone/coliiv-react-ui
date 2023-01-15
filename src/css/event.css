@@ -24,6 +24,8 @@ body {
   font-family: "poppins";
   overflow-x: hidden;
   left: 1.33;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ul,
@@ -609,6 +611,8 @@ body {
   font-family: "poppins";
   overflow-x: hidden;
   left: 1.33;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ul,

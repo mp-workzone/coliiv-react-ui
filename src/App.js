@@ -22,16 +22,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/event-internal" element={<EventInternal />} />
         <Route path="/event" element={<Event />} />
-        <Route path="/apartments/stdio-loft" element={<StdioLoft />} />
-        <Route path="/apartments/1h-1b" element={<OneHOneB/>} />
-        <Route path="/apartments/2h-2b" element={<TwoH2B/>} />
-        <Route path="/apartments/2h-2b-plus" element={<TwoH2BPlus/>} />
+        <Route path="/event-internal" element={<EventInternal />} />
         <Route path="/franchises" element={<Franchises />} />
         <Route path="/career" element={<Career />} />
         <Route path="/colivers" element={<Colivers />} />
         <Route path="/amenities" element={<Amenities />} />
+        <Route path="/apartments/stdio-loft" element={<StdioLoft />} />
+        <Route path="/apartments/1h-1b" element={<OneHOneB/>} />
+        <Route path="/apartments/2h-2b" element={<TwoH2B/>} />
+        <Route path="/apartments/2h-2b-plus" element={<TwoH2BPlus/>} />
       </Routes>
       <Footer />
     </div>
