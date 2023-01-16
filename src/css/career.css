@@ -831,7 +831,7 @@ li {
 @media (max-width: 1024px) {
   .choose-project .projects .project-category .project {
     display: block;
-    align-items: start;
+    align-items: flex-start;
   }
 }
 @media (max-width: 767px) {

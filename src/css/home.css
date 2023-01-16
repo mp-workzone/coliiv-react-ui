@@ -1507,7 +1507,7 @@ li {
 }
 @media (max-width: 1024px) {
   .service-table .service-table__title {
-    text-align: start;
+    text-align: left;
   }
 }
 .service-table .service-table__title .title-primary {
@@ -2177,10 +2177,10 @@ li {
 }
 @media (max-width: 1024px) {
   .contact .content .contact__dsc {
-    text-align: start;
+    text-align: left;
   }
 }
 .contact .content .contact__form {
   padding: 0 25px;
-  text-align: start;
+  text-align: left;
 }/*# sourceMappingURL=home.css.map */

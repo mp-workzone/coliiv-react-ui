@@ -6,6 +6,7 @@
     @include max-width(575px) {
         padding: 40px 0 40px;
     }
+
     .leaf {
         position: absolute;
         top: -250px;
@@ -29,7 +30,7 @@
     .service-table__title {
         text-align: center;
         @include max-width(1024px) {
-            text-align: start;
+            text-align: left;
         }
 
         .title-primary {
@@ -43,8 +44,9 @@
         @include max-width(1024px) {
             padding-inline: 10px;
         }
+
         @include max-width(1024px) {
-           padding-top: 25px;
+            padding-top: 25px;
         }
 
         .table-title {
@@ -74,17 +76,21 @@
                     @include max-width(768px) {
                         font-size: 24px;
                     }
+
                     @include max-width(768px) {
                         padding-block: 15px;
                     }
+
                     @include max-width(575px) {
-                       font-size: 17px;
+                        font-size: 17px;
                     }
                 }
-                .left{
+
+                .left {
                     flex: 2;
                 }
-                .right{
+
+                .right {
                     flex: 1;
                 }
             }
@@ -98,82 +104,86 @@
                 align-items: center;
                 border-bottom: 3px dashed #afafaf;
                 padding: 22px 0;
-                @include max-width(575px){
+                @include max-width(575px) {
                     padding: 10px 0;
                 }
+            }
+
+            .left-side {
+                display: flex;
+                flex: 2;
+                align-items: center;
+                h4 {
+                    font-weight: 300;
+                    color: $secondary-color-03;
+                    line-height: 1.33;
+                    font-family: "montserrat";
+                    @include max-width(1024px) {
+                        font-size: 32px;
+                    }
+
+                    @include max-width(992px) {
+                        font-size: 26px;
+                    }
+
+                    @include max-width(768px) {
+                        font-size: 20px;
+                    }
+
+                    @include max-width(575px) {
+                        font-size: 14px;
+                    }
                 }
-                .left-side{
-                    display: flex;
-                    flex: 2;
-                    align-items: center;
-                    h4{
-                        font-weight: 300;
-                        color: $secondary-color-03;
-                        line-height: 1.33;
-                        font-family: "montserrat";
-                        @include max-width(1024px) {
-                            font-size: 32px;
-                        }
 
-                        @include max-width(992px) {
-                            font-size: 26px;
-                        }
-
-                        @include max-width(768px) {
-                            font-size: 20px;
-                        }
-                        @include max-width(575px) {
-                            font-size: 14px;
-                        }
-
-                    }
-                    .space-X {
-                        margin: 0 35px;
-                        width: 45px;
-                        text-align: center;
-                        display: inline-block;
-                        @include max-width(575px) {
-                            width: 20px;
-                            margin: 0 15px 0 0;
-                        }
-
-                    }
-                    .space-left {
-                        padding-left: 45px;
-                        @include max-width(1024px) {
-                            font-size: 27px;
-                        }
-
-                        @include max-width(992px) {
-                            font-size: 23px;
-                        }
-
-                        @include max-width(768px) {
-                            font-size: 17px;
-                        }
-                        @include max-width(575px) {
-                            padding-left: 10px;
-                            font-size: 14px;
-                        }
-                    }
-                 }
-                .check-mark {
-                    flex: 1;
+                .space-X {
+                    margin: 0 35px;
+                    width: 45px;
                     text-align: center;
-                    @include max-width(992px) {
-                        svg {
-                            height: 26px;
-                            width: 26px;
-                        }
+                    display: inline-block;
+                    @include max-width(575px) {
+                        width: 20px;
+                        margin: 0 15px 0 0;
                     }
+                }
+
+                .space-left {
+                    padding-left: 45px;
+                    @include max-width(1024px) {
+                        font-size: 27px;
+                    }
+
                     @include max-width(992px) {
-                        svg{
-                            height: 18px;
-                            width: 18px;
-                        }
+                        font-size: 23px;
+                    }
+
+                    @include max-width(768px) {
+                        font-size: 17px;
+                    }
+
+                    @include max-width(575px) {
+                        padding-left: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .check-mark {
+                flex: 1;
+                text-align: center;
+                @include max-width(992px) {
+                    svg {
+                        height: 26px;
+                        width: 26px;
+                    }
+                }
+
+                @include max-width(992px) {
+                    svg {
+                        height: 18px;
+                        width: 18px;
                     }
                 }
             }
         }
     }
-
+}
