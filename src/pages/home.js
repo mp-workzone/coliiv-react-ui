@@ -1,4 +1,5 @@
 // @flow
+import { useEffect } from "react";
 import Appartments from "../components/appartments";
 import Contact from "../components/contact";
 import Feature from "../components/feature";
@@ -11,6 +12,12 @@ import Service from "../components/service";
 import ServiceTable from "../components/serviceTable";
 import "../css/home.css";
 function Home() {
+  useEffect(() => {
+    document.body.classList.add('home');
+    return () => {
+      document.body.classList.remove('home')
+    }
+  }, [])
   return (
     <>
       <Hero />

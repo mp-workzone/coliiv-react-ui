@@ -22,13 +22,10 @@
 
     &.menu-open,
     &.fixed {
+        border-bottom: 1px solid #dddddd;
         &:before {
             opacity: 1;
         }
-    }
-
-    &.fixed {
-        border-bottom: 1px solid #dddddd;
     }
 
     .navbar {
@@ -89,7 +86,6 @@
     width: 100vw;
     background-color: #ffffff;
     z-index: 9999999999;
-    border-top: 1px solid #cecece;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;

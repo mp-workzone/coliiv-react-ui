@@ -1,18 +1,19 @@
-import EventHero from "../components/eventHero";
-import EventContact from "../components/eventContact";
-import "../css/event.css";
 import EventConcept from "../components/eventConcept";
-import UpCommingEvents from "../components/upCommingEvents";
+import EventContact from "../components/eventContact";
+import EventHero from "../components/eventHero";
 import HeldEvent from "../components/heldEvent";
+import UpCommingEvents from "../components/upCommingEvents";
+import "../css/event.css";
 function Event() {
-  return (
-    <>
-      <EventHero />
-      <EventConcept />
-      <UpCommingEvents />
-      <HeldEvent />
-      <EventContact />
-    </>
-  );
+    return (
+        <>
+            <EventHero />
+            <EventConcept />
+            <UpCommingEvents />
+            <HeldEvent />
+            <EventContact />
+        </>
+    );
 }
+
 export default Event;
