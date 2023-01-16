@@ -677,7 +677,7 @@ li {
 .blog-carousel .slider__wrapper .counter {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 8%;
   margin-top: 90px;
 }
