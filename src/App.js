@@ -7,6 +7,7 @@ import OneHOneB from "./pages/apartments/OneHOneB";
 import StdioLoft from "./pages/apartments/stdioLoft";
 import TwoH2B from "./pages/apartments/TwoH2B";
 import TwoH2BPlus from "./pages/apartments/TwoH2BPlus";
+import Blog from "./pages/blog";
 import Career from "./pages/career";
 import Colivers from "./pages/colivers";
 import Event from "./pages/event";
@@ -29,9 +30,10 @@ function App() {
         <Route path="/colivers" element={<Colivers />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/apartments/stdio-loft" element={<StdioLoft />} />
-        <Route path="/apartments/1h-1b" element={<OneHOneB/>} />
-        <Route path="/apartments/2h-2b" element={<TwoH2B/>} />
-        <Route path="/apartments/2h-2b-plus" element={<TwoH2BPlus/>} />
+        <Route path="/apartments/1h-1b" element={<OneHOneB />} />
+        <Route path="/apartments/2h-2b" element={<TwoH2B />} />
+        <Route path="/apartments/2h-2b-plus" element={<TwoH2BPlus />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </div>

@@ -24,13 +24,13 @@ function AmenitiesCounterLobby() {
       {/* counterLobbyBlog start */}
 
       {/* counterLobbyBlog 01 start */}
-      <section className="facility-blog top blog-details left-space">
+      <section className="facility-blog top info-blog left-space">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="inner-section">
-          <div className="blog-details__text-area">
-            <h2 className="blog-details__title facility-text">
+          <div className="info-blog__text-area">
+            <h2 className="info-blog__title facility-text">
               Mauris venenatis dignissim aliquet in eget tristique orci
             </h2>
             <h4 className="dsc  facility-text">
@@ -41,7 +41,7 @@ function AmenitiesCounterLobby() {
               neque.
             </h4>
           </div>
-          <div className="blog-details__figure ">
+          <div className="info-blog__figure ">
             <img src={Coliiv} alt="" />
           </div>
         </div>
@@ -50,12 +50,12 @@ function AmenitiesCounterLobby() {
       {/*  counterLobbyBlog 01 end */}
 
       {/*  counterLobbyBlog 02 start */}
-      <section className="facility-blog middle blog-details right-space">
+      <section className="facility-blog middle info-blog right-space">
         <div className="inner-section responsive-reverse">
-          <div className="blog-details__figure maximum">
+          <div className="info-blog__figure maximum">
             <img src={FacilityIntro02} alt="" />
           </div>
-          <div className="blog-details__text-area facility-text">
+          <div className="info-blog__text-area facility-text">
             <h2 className="title-primary">
               Mini market
               <span className="title-secondary">
@@ -74,11 +74,11 @@ function AmenitiesCounterLobby() {
       {/*  counterLobbyBlog 02 end */}
 
       {/* counterLobbyBlog 03 start */}
-      <section className="facility-blog bottom blog-details">
+      <section className="facility-blog bottom info-blog">
         <div className="container-alt">
           <div className="inner-section">
-            <div className="blog-details__text-area facility-text no-space">
-              <h2 className="blog-details__title">
+            <div className="info-blog__text-area facility-text no-space">
+              <h2 className="info-blog__title">
                 Aliquam commodo sed augue eget congue
               </h2>
               <h4 className="dsc">
@@ -87,7 +87,7 @@ function AmenitiesCounterLobby() {
                 maximus urna.
               </h4>
             </div>
-            <div className="blog-details__figure  shadow-right">
+            <div className="info-blog__figure  shadow-right">
               <img src={FacilityIntro03} alt="" />
             </div>
           </div>

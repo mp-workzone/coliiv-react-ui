@@ -106,10 +106,10 @@ function ColiversHero() {
       {/* coliv family gallery end */}
 
       {/* colivers activity start */}
-      <section className="coliver-activity blog-details">
+      <section className="coliver-activity info-blog">
         <div className="container-alt">
           <div className="inner-section">
-            <div className="blog-details__text-area">
+            <div className="info-blog__text-area">
               <h2 className="title-primary colivers-title-primary">
                 En quÉ trabajan
                 <span className="title-secondary colivers-title-secodary">
@@ -129,7 +129,7 @@ function ColiversHero() {
                 </span>
               </h4>
             </div>
-            <div className="blog-details__figure">
+            <div className="info-blog__figure">
               <img src={IntroImg} alt="" />
             </div>
           </div>

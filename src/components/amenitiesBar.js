@@ -20,11 +20,11 @@ function Bar() {
       {/* bar end*/}
 
       {/* barBlog01 start */}
-      <section className="facility-blog top blog-details left-space">
+      <section className="facility-blog top info-blog left-space">
         <div className="inner-section">
-          <div className="blog-details__text-area">
+          <div className="info-blog__text-area">
             <div className="slice portrait bar-portrait"></div>
-            <h2 className="blog-details__title">
+            <h2 className="info-blog__title">
               Eu euismod nunc integer vel pellentesque lorem
             </h2>
             <h4 className="dsc">
@@ -38,7 +38,7 @@ function Bar() {
               </span>
             </h4>
           </div>
-          <div className="blog-details__figure min-height">
+          <div className="info-blog__figure min-height">
             <img src={BarImg} alt="" />
           </div>
         </div>
@@ -47,15 +47,15 @@ function Bar() {
       {/*  barBlog01 end */}
 
       {/*  barBlog02 start */}
-      <section className="facility-blog bottom blog-details right-space">
+      <section className="facility-blog bottom info-blog right-space">
         <div className="garden-plant">
           <img src={Plant} alt="" />
         </div>
         <div className="inner-section responsive-reverse">
-          <div className="blog-details__figure maximum">
+          <div className="info-blog__figure maximum">
             <img src={BarGarden} alt="" />
           </div>
-          <div className="blog-details__text-area">
+          <div className="info-blog__text-area">
             <h2 className="title-primary">Gradería</h2>
             <h4 className="dsc">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices

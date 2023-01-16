@@ -21,10 +21,10 @@ function AmenitiesCoworking() {
       {/* coworking end*/}
 
       {/* coworkingBlog 01 start */}
-      <section className="facility-blog top blog-details left-space">
+      <section className="facility-blog top info-blog left-space">
         <div className="inner-section">
-          <div className="blog-details__text-area facility-text">
-            <h2 className="blog-details__title">
+          <div className="info-blog__text-area facility-text">
+            <h2 className="info-blog__title">
               <span className="slice portrait coworking-portrait"></span>
               Vel efficitur augue vestibulum nisl orci, tristique eu leo sitam
             </h2>
@@ -39,7 +39,7 @@ function AmenitiesCoworking() {
               </span>
             </h4>
           </div>
-          <div className="blog-details__figure min-height">
+          <div className="info-blog__figure min-height">
             <img src={Coworking} alt="" />
           </div>
         </div>
@@ -48,15 +48,15 @@ function AmenitiesCoworking() {
       {/*  coworkingBlog 01 end */}
 
       {/*  coworkingBlog 02 start */}
-      <section className="facility-blog bottom blog-details right-space">
+      <section className="facility-blog bottom info-blog right-space">
         <div className="zoom-leaf">
           <img src={Leaf} alt="" />
         </div>
         <div className="inner-section responsive-reverse">
-          <div className="blog-details__figure maximum">
+          <div className="info-blog__figure maximum">
             <img src={ZoomRooms} alt="" />
           </div>
-          <div className="blog-details__text-area facility-text">
+          <div className="info-blog__text-area facility-text">
             <h2 className="title-primary">
               Zoom
               <span className="title-secondary">Rooms</span>

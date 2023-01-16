@@ -21,15 +21,15 @@ function AmenitiesTerraza() {
       {/* terraza end*/}
 
       {/* terrazaBlog01 start */}
-      <section className="lg-blog top blog-details">
+      <section className="lg-blog top info-blog">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="container-alt">
           <div className="inner-section">
             <div className="lg-blog__inner">
-              <div className="blog-details__text-area">
-                <h2 className="blog-details__title maximum">
+              <div className="info-blog__text-area">
+                <h2 className="info-blog__title maximum">
                   Placerat eleifend ligula, Cras in molestie velit
                 </h2>
                 <h4 className="dsc maximum">
@@ -48,7 +48,7 @@ function AmenitiesTerraza() {
                   </div>
                 </div>
               </div>
-              <div className="blog-details__figure  lg-blog-right-figure">
+              <div className="info-blog__figure  lg-blog-right-figure">
                 <img src={PoolFigure01} alt="" />
               </div>
             </div>
@@ -58,9 +58,9 @@ function AmenitiesTerraza() {
       {/* terrazaBlog01 end */}
 
       {/*  terrazaBlog02 start */}
-      <section className="facility-blog bottom blog-details left-space">
+      <section className="facility-blog bottom info-blog left-space">
         <div className="inner-section">
-          <div className="blog-details__text-area">
+          <div className="info-blog__text-area">
             <h2 className="title-primary">
               Zona de
               <span className="title-secondary">relajación</span>
@@ -72,7 +72,7 @@ function AmenitiesTerraza() {
               vulputate metus vestibulum fringilla nisl.
             </h4>
           </div>
-          <div className="blog-details__figure min-height">
+          <div className="info-blog__figure min-height">
             <img src={Terraza} alt="" />
           </div>
         </div>

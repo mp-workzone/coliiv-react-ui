@@ -18,10 +18,10 @@ function Restaurante() {
       {/* restaurante end*/}
 
       {/* restauranteBlog01 start */}
-      <section className="facility-blog top blog-details left-space">
+      <section className="facility-blog top info-blog left-space">
         <div className="inner-section">
-          <div className="blog-details__text-area">
-            <h2 className="blog-details__title">
+          <div className="info-blog__text-area">
+            <h2 className="info-blog__title">
               hendrerit aliquam erat in eros sem, posuere nec sollicitudin
               consectetur.
             </h2>
@@ -38,7 +38,7 @@ function Restaurante() {
               </span>
             </h4>
           </div>
-          <div className="blog-details__figure maximum min-height">
+          <div className="info-blog__figure maximum min-height">
             <img src={Restaurant} alt="" />
           </div>
         </div>

@@ -24,15 +24,15 @@ function Salon() {
       {/* salon end*/}
 
       {/* salonBlog01 start */}
-      <section className="lg-blog top blog-details">
+      <section className="lg-blog top info-blog">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="container-alt">
           <div className="inner-section">
             <div className="lg-blog__inner">
-              <div className="blog-details__text-area">
-                <h2 className="blog-details__title maximum">
+              <div className="info-blog__text-area">
+                <h2 className="info-blog__title maximum">
                   Fusce non dui est, praesent faucibus ut velit vel molestie
                 </h2>
                 <h4 className="dsc maximum">
@@ -46,7 +46,7 @@ function Salon() {
                   </div>
                 </div>
               </div>
-              <div className="blog-details__figure  lg-blog-right-figure">
+              <div className="info-blog__figure  lg-blog-right-figure">
                 <img src={Spa02} alt="" />
               </div>
             </div>
@@ -56,9 +56,9 @@ function Salon() {
       {/* salonBlog01 end */}
 
       {/*  salonBlog02 start */}
-      <section className="facility-blog bottom blog-details left-space">
+      <section className="facility-blog bottom info-blog left-space">
         <div className="inner-section">
-          <div className="blog-details__text-area facility-text">
+          <div className="info-blog__text-area facility-text">
             <h2 className="title-primary">Spa</h2>
             <h4 className="dsc">
               Aenean a laoreet diam. Class aptent taciti sociosqu ad litora
@@ -66,7 +66,7 @@ function Salon() {
               leo, pulvinar eget arcu vel, tincidunt aliquam mi.
             </h4>
           </div>
-          <div className="blog-details__figure maximum">
+          <div className="info-blog__figure maximum">
             <img src={Spa} alt="" />
           </div>
         </div>

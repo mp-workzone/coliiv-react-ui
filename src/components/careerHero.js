@@ -18,16 +18,16 @@ function CareerHero() {
       </section>
 
       {/* intro section start */}
-      <section className="career-intro blog-details career-intro-spacing">
+      <section className="career-intro info-blog career-intro-spacing">
         <div className="leaf">
           <img src={CareerSideImg} alt="" />
         </div>
         <div className="container-alt">
           <div className="inner-section">
-            <div className="blog-details__figure">
+            <div className="info-blog__figure">
               <img src={IntroImg} alt="" />
             </div>
-            <div className="blog-details__text-area">
+            <div className="info-blog__text-area">
               <div className="intro-title">
                 <h2 className="title-primary">
                   un mundo por
@@ -82,10 +82,10 @@ function CareerHero() {
       {/* gallery end */}
 
       {/* built together start */}
-      <section className="build-together blog-details">
+      <section className="build-together info-blog">
         <div className="container-alt">
           <div className="inner-section">
-            <div className="blog-details__text-area">
+            <div className="info-blog__text-area">
               <h2 className="title-primary">
                 Construir
                 <span className="title-secondary">Juntos</span>
@@ -104,7 +104,7 @@ function CareerHero() {
                 </span>
               </h4>
             </div>
-            <div className="blog-details__figure">
+            <div className="info-blog__figure">
               <img src={IntroImg02} alt="" />
             </div>
           </div>

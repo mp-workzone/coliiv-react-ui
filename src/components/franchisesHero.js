@@ -25,10 +25,10 @@ function FranchisesHero() {
       </section>
 
       {/* investment factor start*/}
-      <section className="investment-factor intro-section">
+      <section className="investment-factor info-blog">
         <div className="container-alt">
           <div className="inner-section">
-            <div className="intro-text-area">
+            <div className="info-blog__text-area">
               <h2 className="title-primary">
                 <span className="slice portrait"></span>
                 POR QUÉ <span className="title-secondary">Invertir</span>
@@ -40,7 +40,7 @@ function FranchisesHero() {
                 se cotizan en bolsa.
               </h4>
             </div>
-            <div className="intro-figure shadow-right">
+            <div className="info-blog__figure shadow-right">
               <img src={Img01} alt="" />
             </div>
           </div>
@@ -95,12 +95,12 @@ function FranchisesHero() {
       {/* market potential & Investment strategy start */}
       <section className="market-potential-n-Investment-strategy">
         <div className="container-alt">
-          <div className="market-potential intro-section">
+          <div className="market-potential info-blog">
             <div className="inner-section">
-              <div className="intro-figure">
+              <div className="info-blog__figure">
                 <img src={Img02} alt="" />
               </div>
-              <div className="intro-text-area">
+              <div className="info-blog__text-area">
                 <h2 className="title-primary">
                   <span className="slice landscape"></span>
                   Diseñamos para aprovechar
@@ -119,9 +119,9 @@ function FranchisesHero() {
               </div>
             </div>
           </div>
-          <div className="investment-strategy intro-section">
+          <div className="investment-strategy info-blog">
             <div className="inner-section">
-              <div className="intro-text-area">
+              <div className="info-blog__text-area">
                 <h2 className="title-primary">
                   eSTRATEGIAS
                   <span className="title-secondary">DE INVERSIÓN</span>
@@ -140,7 +140,7 @@ function FranchisesHero() {
                   </span>
                 </div>
               </div>
-              <div className="intro-figure">
+              <div className="info-blog__figure">
                 <img src={Img03} alt="" />
               </div>
             </div>

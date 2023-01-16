@@ -20,13 +20,13 @@ function Gym() {
       {/* gym end*/}
 
       {/* gymBlog01 start */}
-      <section className="facility-blog top blog-details left-space">
+      <section className="facility-blog top info-blog left-space">
         <div className="plantNcircle">
           <img src={PlantNcircle} alt="" />
         </div>
         <div className="inner-section align-end">
-          <div className="blog-details__text-area ">
-            <h2 className="blog-details__title">
+          <div className="info-blog__text-area ">
+            <h2 className="info-blog__title">
               Consectetur adipiscing elit, phasellus dui diam, varius a tellus
               at
             </h2>
@@ -37,7 +37,7 @@ function Gym() {
               leo quis ligula varius maximus.
             </h4>
           </div>
-          <div className="blog-details__text-area">
+          <div className="info-blog__text-area">
             <h4 className="dsc">
               Phasellus dolor sem, iaculis id quam quis, aliquam facilisis enim.
               Proin facilisis viverra sodales. Vestibulum ut efficitur metus.
@@ -50,12 +50,12 @@ function Gym() {
       {/*  gymBlog01 end */}
 
       {/*  gymBlog02 start */}
-      <section className="facility-blog bottom blog-details left-space">
+      <section className="facility-blog bottom info-blog left-space">
         <div className="inner-section">
-          <div className="blog-details__figure maximum">
+          <div className="info-blog__figure maximum">
             <img src={GYM01} alt="" />
           </div>
-          <div className="blog-details__text-area">
+          <div className="info-blog__text-area">
             <h2 className="title-primary">
               Salón de
               <span className="title-secondary">meditación y yoga</span>
