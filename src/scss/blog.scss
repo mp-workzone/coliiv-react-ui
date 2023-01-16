@@ -4,8 +4,7 @@
 @import "./common/default";
 @import "./common/util";
 
-//Amenities page style
+//blog page style
+@import "./components/blogHero";
 @import "./components/commonBlogInfo";
-@import "./components/facility";
-@import "./components/facilityBlog";
-@import "./components/facilityLgBlog"; 
+@import "./components/heldEvent";

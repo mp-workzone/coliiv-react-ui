@@ -419,6 +419,48 @@ li {
     font-size: 42px;
   }
 }
+.top {
+  padding: 190px 0 95px;
+}
+@media (max-width: 767px) {
+  .top {
+    padding: 95px 0 40px;
+  }
+}
+@media (max-width: 575px) {
+  .top {
+    padding: 40px 0 20px;
+  }
+}
+
+.middle {
+  padding: 95px 0;
+}
+@media (max-width: 767px) {
+  .middle {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 575px) {
+  .middle {
+    padding: 20px 0;
+  }
+}
+
+.bottom {
+  padding: 95px 0 190px;
+}
+@media (max-width: 767px) {
+  .bottom {
+    padding: 40px 0 95px;
+  }
+}
+@media (max-width: 575px) {
+  .bottom {
+    padding: 20px 0 40px;
+  }
+}
+
 @media (max-width: 1024px) {
   .colivers-title-primary {
     font-size: 72px;

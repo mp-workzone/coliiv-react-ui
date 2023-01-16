@@ -1,0 +1,26 @@
+.blog{
+	.blog-time{
+		font-style: italic;
+		color: #767676;
+		line-height: 1.5;
+		font-weight: 400;
+		margin-bottom: 40px;
+	}
+	.more-link{
+		color: $primary-color-01;
+		font-weight: 400;
+		margin-top: 30px;
+	}
+}
+.blog01{
+	.dsc{
+		position: relative;
+		.portrait{
+			height: 55%;
+			left: -5%;
+			top: -5%;
+			width: 8%;
+
+		}
+	}
+}
