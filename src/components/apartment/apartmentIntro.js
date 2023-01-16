@@ -8,14 +8,11 @@ function ApartmentIntro({introContent}) {
             </div>
             <div className='container-alt'>
                 <div className='apartment-intro-content'>
-                    <div className='title'>
+                    <div className={`title ${introContent.titleClass ? introContent.titleClass : ''}`}>
                         <h2 dangerouslySetInnerHTML={{__html: introContent.title}}/>
                     </div>
                     <p>
-                        El Studio Loft te ofrece amet, consectetur adipiscing
-                        elit. Phasellus vestibulum nisl sed faucibus consequat.
-                        Aliquam in leo metus. Fusce at orci auctor ante
-                        malesuada feugiat.
+                        {introContent.descroption}
                     </p>
                 </div>
             </div>
