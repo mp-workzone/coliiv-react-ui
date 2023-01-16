@@ -689,6 +689,30 @@ li {
   color: #ffffff;
   font-weight: 500;
 }
+@media (max-width: 1024px) {
+  .blog-carousel .slider__wrapper .counter .current-value,
+.blog-carousel .slider__wrapper .counter .total-value {
+    font-size: 42px;
+  }
+}
+@media (max-width: 991px) {
+  .blog-carousel .slider__wrapper .counter .current-value,
+.blog-carousel .slider__wrapper .counter .total-value {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-carousel .slider__wrapper .counter .current-value,
+.blog-carousel .slider__wrapper .counter .total-value {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .blog-carousel .slider__wrapper .counter .current-value,
+.blog-carousel .slider__wrapper .counter .total-value {
+    font-size: 20px;
+  }
+}
 .blog-carousel .slider__wrapper .counter .counter-line {
   height: 3px;
   width: 100px;
@@ -738,11 +762,20 @@ li {
 .insta-carousel.slider .slick-dots {
   bottom: 0;
 }
-.insta-carousel.slider .slick-dots button::before {
+.insta-carousel.slider .slick-dots li {
+  margin-right: 15px;
+}
+.insta-carousel.slider .slick-dots li button::before {
   height: 14px;
   width: 14px;
   background-color: black;
   border-radius: 50%;
+}
+.insta-carousel.slider .slick-dots li:first-child {
+  margin-left: 0;
+}
+.insta-carousel.slider .slick-dots li:last-child {
+  margin-right: 0;
 }
 
 .follw-us-insta {

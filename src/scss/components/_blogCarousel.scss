@@ -44,6 +44,18 @@
 				line-height: 1.5;
 				color: $light-color-01;
 				font-weight: 500;
+				@include max-width(1024px){
+					font-size: 42px;
+				}
+				@include max-width(991px){
+					font-size: 30px;
+				}
+				@include max-width(767px){
+					font-size: 24px;
+				}
+				@include max-width(575px){
+					font-size: 20px;
+				}
 			}
 			.counter-line{
 				height: 3px;

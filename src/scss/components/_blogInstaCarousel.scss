@@ -32,11 +32,20 @@
 	}
 	.slick-dots{
 		bottom: 0;
-		button::before{
-			height: 14px;
-			width: 14px;
-			background-color: black;
-			border-radius: 50%;
+		li{
+			margin-right: 15px;
+			button::before{ 
+				height: 14px;
+				width: 14px;
+				background-color: black;
+				border-radius: 50%;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
 		}
 	}
 }
