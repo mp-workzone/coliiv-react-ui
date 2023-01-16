@@ -9,7 +9,7 @@ import ApartmentImageBlock from "../../components/apartment/apartmentImageBlock"
 import ApartmentIntro from "../../components/apartment/apartmentIntro";
 import ApartmentMap from "../../components/apartment/apartmentMap";
 import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces";
-import "../../css/stdio-loft.css";
+import "../../css/apartments.css";
 
 function StdioLoft() {
     let introContent = {

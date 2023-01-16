@@ -9,7 +9,7 @@
   font-weight: 400;
 }
 :root {
-  --header-offset: -100px;
+  --header-offset: 100px;
 }
 
 *,
@@ -942,4 +942,4 @@ li {
   bottom: -30px;
   z-index: -1;
   transform: translateX(-100%);
-}/*# sourceMappingURL=stdio-loft.css.map */
+}/*# sourceMappingURL=apartments.css.map */
