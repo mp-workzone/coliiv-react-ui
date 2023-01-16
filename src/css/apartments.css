@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -685,10 +689,6 @@ li {
   font-size: 28px;
   font-weight: 400;
   color: #737373;
-}
-
-*:focus-visible {
-  outline: none;
 }
 
 .apartment-gallery {

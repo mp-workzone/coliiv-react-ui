@@ -184,7 +184,6 @@
     padding-top: 240px;
     .title {
         padding-left: 70px;
-
         &.has-border {
             position: relative;
             &:before {
@@ -247,12 +246,6 @@
                 }
             }
         }
-    }
-}
-
-* {
-    &:focus-visible {
-        outline: none;
     }
 }
 

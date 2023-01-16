@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 body,
 html {
   overflow-x: hidden;
