@@ -588,10 +588,6 @@ li {
   }
 }
 
-.franchises-hero {
-  margin-top: -100px;
-}
-
 .investment-factor {
   padding: 190px 0 95px;
 }
@@ -830,7 +826,7 @@ li {
 .our-partners-area .our-partners-tabs {
   margin-bottom: 120px;
   padding-bottom: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 @media (max-width: 767px) {
   .our-partners-area .our-partners-tabs {

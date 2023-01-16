@@ -463,7 +463,6 @@ li {
 
 .hero-section {
   position: relative;
-  margin-top: -100px;
   background-image: url(../assets/home-hero.webp);
   background-size: cover;
   background-repeat: no-repeat;
