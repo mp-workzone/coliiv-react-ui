@@ -9,7 +9,7 @@
   font-weight: 400;
 }
 :root {
-  --header-offset: -100px;
+  --header-offset: 100px;
 }
 
 *,
@@ -482,11 +482,11 @@ li {
   transition: 0.3s;
   opacity: 0;
 }
+.header-area.menu-open, .header-area.fixed {
+  border-bottom: 1px solid #dddddd;
+}
 .header-area.menu-open:before, .header-area.fixed:before {
   opacity: 1;
-}
-.header-area.fixed {
-  border-bottom: 1px solid #dddddd;
 }
 .header-area .navbar {
   display: flex;
@@ -532,7 +532,6 @@ li {
   width: 100vw;
   background-color: #ffffff;
   z-index: 9999999999;
-  border-top: 1px solid #cecece;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
