@@ -1,4 +1,4 @@
-.held-event{
+.slider{
 	background-color: $secondary-color-02;
 	padding: 120px 0 115px;
 	@include max-width(767px){
@@ -7,7 +7,7 @@
 	@include max-width(575px){
 		padding: 40px 0;
 	}
-	.held-event__title{
+	.slider__title{
 		margin-bottom: 120px;
 		.title-primary{
 			color: $light-color-01;
@@ -19,7 +19,7 @@
 			}
 		}
 	}
-	.held-event__slider-wrapper{
+	.slider__wrapper{
 		width: 93%;
 		margin-left: auto;
 		overflow: hidden;
@@ -38,6 +38,7 @@
 					margin-bottom: 15px;
 					img{
 						width: 100%;
+						// object-fit: cover;
 					}
 				}
 				.slider-item__title{
@@ -75,7 +76,7 @@
 					@include max-width(575px){
 						font-size: 16px;
 					}
-					.slider-item__date{
+					span{
 						display: block;
 						margin-top: 6px;
 					}

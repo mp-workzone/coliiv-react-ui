@@ -34,13 +34,13 @@ export default class HeldEvent extends Component {
       ],
     };
     return (
-      <section className="held-event">
+      <section className="held-event-slider slider">
         <div className="container-alt">
-          <div className="held-event__title">
+          <div className="slider__title">
             <h2 className="title-primary">Eventos realizados</h2>
           </div>
         </div>
-        <div className="held-event__slider-wrapper">
+        <div className="held-event__slider-wrapper slider__wrapper">
           <Slider {...settings}>
             <div className="slider-item">
               <div className="slider-item__figure">
