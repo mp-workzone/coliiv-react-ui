@@ -83,6 +83,15 @@
         font-family: Poppins;
         font-weight: 300;
         display: inline-block;
+        white-space: nowrap;
+
+        @include max-width(1024px) {
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            text-align: center;
+        }
+
         span {
             display: block;
         }
