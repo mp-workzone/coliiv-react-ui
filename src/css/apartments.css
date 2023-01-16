@@ -535,6 +535,15 @@ li {
   font-family: Poppins;
   font-weight: 300;
   display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 1024px) {
+  .aparetment-hero .more-apartment {
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+  }
 }
 .aparetment-hero .more-apartment span {
   display: block;
@@ -942,4 +951,4 @@ li {
   bottom: -30px;
   z-index: -1;
   transform: translateX(-100%);
-}/*# sourceMappingURL=stdio-loft.css.map */
+}/*# sourceMappingURL=apartments.css.map */
