@@ -6,7 +6,7 @@ import Gym from "../components/amenitiesGym";
 import Restaurante from "../components/amenitiesRestaurante";
 import Salon from "../components/amenitiesSalon";
 import AmenitiesTerraza from "../components/amenitiesTerraza";
-import "../css/amenities.css";
+import "../scss/amenities.scss";
 function Amenities() {
     useEffect(() => {
         document.body.classList.add("header-light");

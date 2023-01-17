@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import featureFigure from "../../assets/1h-1b-features.webp";
 import ApartmentFigure from "../../assets/apartment-1.webp";
 import AboutFigure from "../../assets/shape-1h-1b.webp";
@@ -9,9 +10,16 @@ import ApartmentImageBlock from "../../components/apartment/apartmentImageBlock"
 import ApartmentIntro from "../../components/apartment/apartmentIntro";
 import ApartmentMap from "../../components/apartment/apartmentMap";
 import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces";
-import "../../css/apartments.css";
+import "../../scss/apartments.scss";
 
 function OneHOneB() {
+  useEffect(() => {
+    document.body.classList.add('header-light')
+    return () => {
+      document.body.classList.remove('header-light')
+    }
+  }, []);
+
   let heroContent = {
     figure: ApartmentHeroFigure,
     figureAlt: "",

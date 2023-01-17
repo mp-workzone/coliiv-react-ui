@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Apartment from "../../assets/apartment-1.webp";
 import IntroFigure from "../../assets/stdio-lofg-ab.png";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
@@ -9,9 +10,16 @@ import ApartmentImageBlock from "../../components/apartment/apartmentImageBlock"
 import ApartmentIntro from "../../components/apartment/apartmentIntro";
 import ApartmentMap from "../../components/apartment/apartmentMap";
 import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces";
-import "../../css/apartments.css";
+import "../../scss/apartments.scss";
 
 function StdioLoft() {
+  useEffect(() => {
+    document.body.classList.add('header-light')
+    return () => {
+      document.body.classList.remove('header-light')
+    }
+  }, []);
+
   let introContent = {
     figure: IntroFigure,
     figureAlt: "",

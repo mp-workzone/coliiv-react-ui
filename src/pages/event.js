@@ -4,7 +4,7 @@ import EventContact from "../components/eventContact";
 import EventHero from "../components/eventHero";
 import HeldEvent from "../components/heldEvent";
 import UpCommingEvents from "../components/upCommingEvents";
-import "../css/event.css";
+import "../scss/event.scss";
 function Event() {
     useEffect(() => {
         document.body.classList.add('header-light')

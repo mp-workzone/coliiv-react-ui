@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import BlogContent from "../components/blogContent";
 import InstaCarousel from "../components/blogInstaCarousel";
-import "../css/blog.css";
+import "../scss/blog.scss";
 
 function Blog() {
   useEffect(() => {

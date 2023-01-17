@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import CareerPageContent from "../components/careerPageContent";
-import "../css/career.css";
+import "../scss/career.scss";
 function Career() {
   useEffect(() => {
     document.body.classList.add('header-light');

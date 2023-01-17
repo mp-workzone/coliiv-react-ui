@@ -14,8 +14,9 @@
     @include max-width(768px) {
         padding: 80px 0 120px;
     }
+
     @include max-width(575px) {
-        padding:40px 0;
+        padding: 40px 0;
     }
 
     // overflow: hidden;
@@ -39,6 +40,7 @@
         @include max-width(768px) {
             width: 95%;
         }
+
         @include max-width(768px) {
             top: -5%;
             left: 50%;
@@ -47,9 +49,10 @@
 
     .homeCarousel__title {
         margin-bottom: 100px;
-        @include max-width(575px){
+        @include max-width(575px) {
             margin-bottom: 30px;
         }
+
         .title-primary,
         .title-secondary {
             color: $light-color-01;
@@ -57,10 +60,11 @@
     }
 
     .slick-list {
-        @include max-width(1400px){
+        @include max-width(1400px) {
             padding-bottom: 272px;
         }
-        @include  max-width(575px){
+
+        @include max-width(575px) {
             padding-bottom: 0;
         }
     }
@@ -77,9 +81,9 @@
             width: 50%;
             @include max-width(992px) {
                 width: 100%;
-                img{
-                width: 100%;
-            }
+                img {
+                    width: 100%;
+                }
             }
         }
 
@@ -93,9 +97,11 @@
             @include max-width(1636px) {
                 padding: 0;
             }
+
             @include max-width(992px) {
                 max-width: 100%;
             }
+
             @include max-width(575px) {
                 flex-direction: column;
                 justify-content: center;
@@ -108,9 +114,10 @@
                 color: $secondary-color-05;
                 position: relative;
                 text-transform: uppercase;
-                @include max-width(575px){
+                @include max-width(575px) {
                     font-size: 20px;
                 }
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -143,11 +150,13 @@
                         margin-right: 50px;
                     }
                 }
+
                 @include max-width(992px) {
                     left: auto;
                     bottom: -230px;
                     transform: translateX(0);
                 }
+
                 @include max-width(767px) {
                     transform: translateX(0);
                     left: auto;
@@ -155,13 +164,14 @@
                         margin-right: 30px;
                     }
                 }
-                @include max-width(575px){
+
+                @include max-width(575px) {
                     position: relative;
                     bottom: 0;
                     transform: translateX(0);
                     left: 0;
                     margin-top: 30px;
-                    .partner{
+                    .partner {
                         margin-right: 15px;
                         width: 60px;
                     }
@@ -186,13 +196,16 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
         @include max-width(992px) {
             top: 70%;
         }
+
         @include max-width(767px) {
             height: 48px;
             width: 48px;
         }
+
         @include max-width(575px) {
             bottom: -35px;
             top: auto;
@@ -204,7 +217,7 @@
     .slick-next {
         right: 3%;
         &::before {
-            background-image: url("../assets/slide-right.svg");
+            background-image: url("../../assets/slide-right.svg");
         }
     }
 
@@ -220,7 +233,7 @@
         }
 
         &::before {
-            background-image: url("../assets/left-slide.svg");
+            background-image: url("../../assets/left-slide.svg");
         }
     }
 }
