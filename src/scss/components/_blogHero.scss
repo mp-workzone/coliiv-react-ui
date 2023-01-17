@@ -1,70 +1,73 @@
-.blog{
-	.info-blog__text-area{
-		display: flex;
-		flex-direction: column;
-		.blog-time{
-			font-style: italic;
-			color: #767676;
-			line-height: 1.5;
-			font-weight: 400;
-			margin-bottom: 40px;
-			@include max-width(1024px){
-				margin-bottom: 15px;
-				order: 3;
-			}
-		}
-		h5.dsc{
-			margin-bottom: 30px;
-			@include max-width(1024px){
-				order: 2;
-			}
-		}
-		.more-link{
-			color: $primary-color-01;
-			font-weight: 400;
-			order: 4;
-		}
-	}
-}
-.blog01{
-	.dsc{
-		position: relative;
-		.portrait{
-			height: 55%;
-			left: -5%;
-			top: -5%;
-			width: 8%;
+.blog {
+    .info-blog__text-area {
+        display: flex;
+        flex-direction: column;
+        .blog-time {
+            font-style: italic;
+            color: #767676;
+            line-height: 1.5;
+            font-weight: 400;
+            margin-bottom: 40px;
+            @include max-width(1024px) {
+                margin-bottom: 15px;
+                order: 3;
+            }
+        }
 
-		}
-	}
-}
-.blog-pagination{
-	ul{
-		@extend .flex-center-center;
-		li {
-			a{
-				font-size: 28px;
-				font-weight: 400;
-				line-height: 1.5;
-				color: #000;
-				margin-right: 33px;
-				padding: 0 15px;
-				display: inline-block;
-				transition: .3s;
-				text-decoration: underline;
-				&.active,
-				&:hover{
-					background-color: $primary-color-02;
-					text-decoration: none;
+        h5.dsc {
+            margin-bottom: 30px;
+            @include max-width(1024px) {
+                order: 2;
+            }
+        }
 
-				}
-			}
-			&:last-child{
-				margin-top: 0;
-				a{
-					text-decoration: none;
-				}
-			}
-		}
-	}
+        .more-link {
+            color: $primary-color-01;
+            font-weight: 400;
+            order: 4;
+        }
+    }
+}
+
+.blog01 {
+    .dsc {
+        position: relative;
+        .portrait {
+            height: 55%;
+            left: -5%;
+            top: -5%;
+            width: 8%;
+        }
+    }
+}
+
+.blog-pagination {
+    ul {
+        @extend .flex-center-center;
+        li {
+            a {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #000;
+                margin-right: 33px;
+                padding: 0 15px;
+                display: inline-block;
+                transition: 0.3s;
+                text-decoration: underline;
+                &.active,
+                &:hover {
+                    background-color: $primary-color-02;
+                    text-decoration: none;
+                }
+            }
+
+            &:last-child {
+                margin-top: 0;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

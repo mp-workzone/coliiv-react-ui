@@ -1,16 +1,16 @@
-import { ICON_PUBLIC, ICON_MESSAGE, ICON_BUBBLE_CHART } from "../utils/icons";
-import HeroImg from "../assets/colivers-hero.jpg";
-import Plant from "../assets/plant01-left.png";
-import Leaf from "../assets/leaf02.png";
-import MainFigure from "../assets/main-figure.jpg";
-import SideFigure02 from "../assets/side-figure02.jpg";
-import SideFigure04 from "../assets/side-figure04.jpg";
 import IntroImg from "../assets/coliver-activity.jpg";
-import FavFoodImg from "../assets/fav-food.jpg";
-import FavSportImg from "../assets/fav-sport.jpg";
+import HeroImg from "../assets/colivers-hero.jpg";
 import ColiversImg01 from "../assets/colivers-img01.jpg";
 import ColiversImg02 from "../assets/colivers-img02.jpg";
-function ColiversHero() {
+import FavFoodImg from "../assets/fav-food.jpg";
+import FavSportImg from "../assets/fav-sport.jpg";
+import Leaf from "../assets/leaf02.png";
+import MainFigure from "../assets/main-figure.jpg";
+import Plant from "../assets/plant01-left.png";
+import SideFigure02 from "../assets/side-figure02.jpg";
+import SideFigure04 from "../assets/side-figure04.jpg";
+import { ICON_BUBBLE_CHART, ICON_MESSAGE, ICON_PUBLIC } from "../utils/icons";
+function ColiversPageContent() {
   return (
     <>
       {/* hero start */}
@@ -278,4 +278,5 @@ function ColiversHero() {
     </>
   );
 }
-export default ColiversHero;
+
+export default ColiversPageContent;

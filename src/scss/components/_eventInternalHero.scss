@@ -1,62 +1,71 @@
-.event-internal-hero{
-	padding-top: clamp(60px, 10%, 120px);
-	padding-bottom: 45px;
-	@include max-width(767px){
-		padding: 45px 0 30px;
-	}
-	@include max-width(575px){
-		padding: 30px 0 20px;
-	}
-	.back-link{
-		font-size: 20px;
-		line-height: 1.35;
-		font-weight: 400;
-		color: #767676;
-		margin-bottom: 30px;
-		display: inline-block;
-		@include max-width(767px){
-			font-size: 17px;
-		}
-		@include max-width(575px){
-			font-size: 15px;
-		}
-		span{
-			margin-right: 15px;
-			vertical-align: text-top;
-		}
-	}
-	.title-secondary{
-		font-family: "Berton";
-		font-weight: 400;
-		@include max-width(1024px){
-			font-size: 72px;
-		}
-		@include max-width(991px){
-			font-size: 48px;
-		}
-		@include max-width(767px){
-			font-size: 42px;
-		}
-		@include max-width(575px){
-			font-size: 34px;
-		}
-	}
-	.subtitle{
-		font-weight: 300;
-		font-size: 26px;
-		color: #767676;
-		margin-bottom: 40px;
-		@include max-width(1024px){
-			font-size: 42px;
-			font-family: "Berton";
-		}
-		@include max-width(991px){
-			font-size: 24px;
-		}
-		@include max-width(767px){
-			font-size: 20px;
-		}
-		
-	}
+.event-internal-hero {
+    padding-top: clamp(60px, 10%, 220px);
+    padding-bottom: 45px;
+    @include max-width(767px) {
+        padding: 45px 0 30px;
+    }
 
+    @include max-width(575px) {
+        padding: 30px 0 20px;
+    }
+
+    .back-link {
+        font-size: 20px;
+        line-height: 1.35;
+        font-weight: 400;
+        color: #767676;
+        margin-bottom: 30px;
+        display: inline-block;
+        @include max-width(767px) {
+            font-size: 17px;
+        }
+
+        @include max-width(575px) {
+            font-size: 15px;
+        }
+
+        span {
+            margin-right: 15px;
+            vertical-align: text-top;
+        }
+    }
+
+    .title-secondary {
+        font-family: "Berton";
+        font-weight: 400;
+        @include max-width(1024px) {
+            font-size: 72px;
+        }
+
+        @include max-width(991px) {
+            font-size: 48px;
+        }
+
+        @include max-width(767px) {
+            font-size: 42px;
+        }
+
+        @include max-width(575px) {
+            font-size: 34px;
+        }
+    }
+
+    .subtitle {
+        font-weight: 300;
+        font-size: 26px;
+        color: #767676;
+        margin-bottom: 40px;
+        @include max-width(1024px) {
+            font-size: 42px;
+            font-family: "Berton";
+        }
+
+        @include max-width(991px) {
+            font-size: 24px;
+        }
+
+        @include max-width(767px) {
+            font-size: 20px;
+        }
+    }
 }

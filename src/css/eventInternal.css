@@ -466,7 +466,7 @@ li {
 }
 
 .event-internal-hero {
-  padding-top: clamp(60px, 10%, 120px);
+  padding-top: clamp(60px, 10%, 220px);
   padding-bottom: 45px;
 }
 @media (max-width: 767px) {

@@ -1,13 +1,13 @@
 import CareerHeroImg from "../assets/career-hero.jpg";
 import CareerSideImg from "../assets/career-intro-side-img.png";
-import IntroImg from "../assets/intro-img.jpg";
 import GalleryImg01 from "../assets/gallery-img01.jpg";
 import GalleryImg02 from "../assets/gallery-img02.jpg";
 import GalleryImg03 from "../assets/gallery-img03.jpg";
 import GalleryImg04 from "../assets/gallery-img04.jpg";
+import IntroImg from "../assets/intro-img.jpg";
 import IntroImg02 from "../assets/intro-img02.jpg";
 import { ICON_LOCATION } from "../utils/icons";
-function CareerHero() {
+function CareerPageContent() {
   return (
     <>
       <section className="career-hero hero">
@@ -229,4 +229,5 @@ function CareerHero() {
     </>
   );
 }
-export default CareerHero;
+
+export default CareerPageContent;

@@ -183,3 +183,29 @@
         }
     }
 }
+
+// Header Light
+.header-light {
+    .header-area {
+        &:not(.fixed):not(.menu-open) {
+            .navbar {
+                .hambarger-menu {
+                    .main {
+                        line {
+                            stroke: #ffffff;
+                        }
+                    }
+                }
+
+                .brand-logo {
+                    svg {
+                        path {
+                            stroke: #ffffff;
+                            fill: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

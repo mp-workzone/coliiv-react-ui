@@ -1,18 +1,18 @@
-import Img01 from "../assets/insta-carousel-img01.jpg";
-import Img02 from "../assets/insta-carousel-img02.jpg";
-import Coliiv from "../assets/coliiv-ext-img.jpg";
-import { ICON_INSTAGRAM_LIGHT } from "../utils/icons";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import Coliiv from "../assets/coliiv-ext-img.jpg";
+import Img01 from "../assets/insta-carousel-img01.jpg";
+import Img02 from "../assets/insta-carousel-img02.jpg";
+import { ICON_INSTAGRAM_LIGHT } from "../utils/icons";
 
 export default class InstaCarousel extends Component {
   render() {
     const settings = {
       dots: true,
       speed: 800,
-      // slidesToShow: 4,
+      slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
         {

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Bar from "../components/amenitiesBar";
 import AmenitiesCounterLobby from "../components/amenitiesCounterLobby";
 import AmenitiesCoworking from "../components/amenitiesCoworking";
@@ -7,16 +8,24 @@ import Salon from "../components/amenitiesSalon";
 import AmenitiesTerraza from "../components/amenitiesTerraza";
 import "../css/amenities.css";
 function Amenities() {
-  return (
-    <>
-      <AmenitiesCounterLobby />
-      <AmenitiesCoworking />
-      <AmenitiesTerraza />
-      <Restaurante />
-      <Bar />
-      <Gym />
-      <Salon />
-    </>
-  );
+    useEffect(() => {
+        document.body.classList.add("header-light");
+        return () => {
+            document.body.classList.remove("header-light");
+        };
+    }, []);
+
+    return (
+        <>
+            <AmenitiesCounterLobby />
+            <AmenitiesCoworking />
+            <AmenitiesTerraza />
+            <Restaurante />
+            <Bar />
+            <Gym />
+            <Salon />
+        </>
+    );
 }
+
 export default Amenities;

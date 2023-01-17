@@ -562,6 +562,7 @@ li {
 .relative-blogs {
   background-color: #272727;
   padding: 120px 0;
+  border-bottom: 1px solid #737373;
 }
 @media (max-width: 767px) {
   .relative-blogs {
