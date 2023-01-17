@@ -3,6 +3,8 @@ import BlogImg01 from "../assets/blog-img.jpg";
 import BlogImg02 from "../assets/blog-img02.jpg";
 import BlogImg03 from "../assets/blog-img03.jpg";
 import BlogImg04 from "../assets/blog-img04.jpg";
+import Leaf from "../assets/leaf03.png";
+import Plant from "../assets/plant04.png";
 import BlogCarousel from "./blogCarousel";
 function BlogContent() {
   return (
@@ -72,6 +74,9 @@ function BlogContent() {
 
       {/* blog 03 start */}
       <section className="info-blog blog bottom">
+        <div className="bottom-plant">
+          <img src={Plant} alt="" />
+        </div>
         <div className="container-alt">
           <div className="inner-section">
             <div className="info-blog__text-area">
@@ -98,7 +103,10 @@ function BlogContent() {
       <BlogCarousel />
 
       {/* blog 04 start */}
-      <section className="info-blog blog top">
+      <section className="info-blog blog top ">
+        <div className="top-leaf">
+          <img src={Leaf} alt="" />
+        </div>
         <div className="container-alt">
           <div className="inner-section">
             <div className="info-blog__text-area">

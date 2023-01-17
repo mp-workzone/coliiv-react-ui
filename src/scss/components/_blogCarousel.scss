@@ -16,14 +16,14 @@
             .slider-item__title {
                 margin-bottom: 30px;
                 @include minmax(991px, 1024px) {
-                    flex: 52;
+                    font-size: 70px !important;
                 }
             }
 
             .slider-item__subtitle {
                 font-weight: 400;
-                @include min-width(1024px) {
-                    font-size: 28px !important;
+                @include minmax(991px, 1024px) {
+                    font-size: 38px !important;
                 }
             }
 
@@ -31,6 +31,9 @@
                 color: $light-color-01;
                 font-weight: 400;
                 margin-top: 15px;
+                @include minmax(991px, 1024px) {
+                    font-size: 38px !important;
+                }
             }
         }
 

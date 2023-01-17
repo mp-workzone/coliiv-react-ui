@@ -2816,7 +2816,7 @@ export const ICON_INSTAGRAM_LIGHT = (
         transform="translate(0 0)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_3330"
@@ -2825,7 +2825,7 @@ export const ICON_INSTAGRAM_LIGHT = (
         transform="translate(0.829 0.827)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_3331"
@@ -2834,7 +2834,7 @@ export const ICON_INSTAGRAM_LIGHT = (
         transform="translate(2.721 0.473)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_3332"
@@ -2843,7 +2843,7 @@ export const ICON_INSTAGRAM_LIGHT = (
         transform="translate(1.425 1.423)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_3333"
@@ -2852,7 +2852,7 @@ export const ICON_INSTAGRAM_LIGHT = (
         transform="translate(1.124 1.123)"
         fill="#767676"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
     </g>
   </svg>

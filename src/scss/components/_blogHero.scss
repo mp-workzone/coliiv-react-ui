@@ -1,4 +1,18 @@
 .blog {
+    .bottom-plant{
+        position: absolute;
+        bottom: -20%;
+        left: 70%;
+        right: -30%;
+        z-index: -1;
+    }
+    .top-leaf{
+        position: absolute;
+        left: -10%;
+        right: 70%;
+        top: 5%;
+        z-index: -1;
+    }
     .info-blog__text-area {
         display: flex;
         flex-direction: column;

@@ -1,4 +1,5 @@
 .info-blog{
+	position: relative;
 	.inner-section{
 		@extend .flex-center-spaceBetween;
 		gap: clamp(50px, 9%, 120px);

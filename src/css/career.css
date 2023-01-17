@@ -498,6 +498,9 @@ li {
   z-index: 99;
 }
 
+.info-blog {
+  position: relative;
+}
 .info-blog .inner-section {
   gap: clamp(50px, 9%, 120px);
 }
