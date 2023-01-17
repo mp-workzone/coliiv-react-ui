@@ -16,14 +16,15 @@ export default class BlogCarousel extends Component {
       speed: 800,
       slidesToShow: 3,
       arrows: false,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       beforeChange: (current, next) => this.setState({ activeSlide: next + 1 }),
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1,
             slidesToScroll: 1,
+            variableWidth: true,
           },
         },
         {
@@ -31,6 +32,7 @@ export default class BlogCarousel extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            variableWidth: false,
           },
         },
       ],

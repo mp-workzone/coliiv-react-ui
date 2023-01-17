@@ -12,7 +12,7 @@ export default class InstaCarousel extends Component {
     const settings = {
       dots: true,
       speed: 800,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
         {

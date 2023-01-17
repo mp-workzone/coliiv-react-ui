@@ -1308,12 +1308,6 @@ li {
   margin-left: auto;
   overflow: hidden;
 }
-.slider .slider__wrapper .slick-list {
-  margin: 0 -25px;
-}
-.slider .slider__wrapper .slick-list .slick-track {
-  left: 17%;
-}
 @media (max-width: 575px) {
   .slider .slider__wrapper .slick-list .slick-track {
     left: 0;
@@ -1328,6 +1322,8 @@ li {
 }
 .slider .slider__wrapper .slick-list .slider-item .slider-item__figure img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider .slider__wrapper .slick-list .slider-item .slider-item__title {
   font-size: 50px;

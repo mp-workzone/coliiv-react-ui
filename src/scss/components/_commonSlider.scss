@@ -24,9 +24,7 @@
 		margin-left: auto;
 		overflow: hidden;
 		.slick-list{
-			margin: 0 -25px;
 			.slick-track{
-				left: 17%;
 				@include max-width(575px){
 					left: 0;
 				}
@@ -38,7 +36,7 @@
 					margin-bottom: 15px;
 					img{
 						width: 100%;
-						// object-fit: cover;
+						object-fit: cover;
 					}
 				}
 				.slider-item__title{
