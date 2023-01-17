@@ -1,10 +1,10 @@
+import HeroImg from "../assets/blog-hero-img.jpg";
 import BlogImg01 from "../assets/blog-img.jpg";
 import BlogImg02 from "../assets/blog-img02.jpg";
 import BlogImg03 from "../assets/blog-img03.jpg";
 import BlogImg04 from "../assets/blog-img04.jpg";
-import HeroImg from "../assets/blog-hero-img.jpg";
 import BlogCarousel from "./blogCarousel";
-function BlogHero() {
+function BlogContent() {
   return (
     <>
       <section className="blgo-hero hero">
@@ -195,4 +195,5 @@ function BlogHero() {
     </>
   );
 }
-export default BlogHero;
+
+export default BlogContent;

@@ -1,6 +1,15 @@
-import FranchisesHero from "../components/franchisesHero";
+import { useEffect } from "react";
+import FranchisesPageContent from "../components/franchisesPageContent";
 import "../css/franchises.css";
 function Franchises() {
-  return <FranchisesHero />;
+  useEffect(() => {
+    document.body.classList.add('header-light');
+    return () => {
+      document.body.classList.remove('header-light')
+    }
+  }, [])
+
+  return <FranchisesPageContent />;
 }
+
 export default Franchises;

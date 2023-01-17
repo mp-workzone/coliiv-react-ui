@@ -627,6 +627,14 @@ li {
   font-size: 24px;
 }
 
+.header-light .header-area:not(.fixed):not(.menu-open) .navbar .hambarger-menu .main line {
+  stroke: #ffffff;
+}
+.header-light .header-area:not(.fixed):not(.menu-open) .navbar .brand-logo svg path {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
 .footer-area {
   background-color: #272727;
   padding: 90px 0 20px;

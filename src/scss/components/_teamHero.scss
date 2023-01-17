@@ -5,7 +5,6 @@
     padding-top: var(--header-offset);
     @extend .flex-center-center;
     flex-direction: column;
-    // height: 100vh;
     .leaf {
         position: absolute;
         top: -70px;
