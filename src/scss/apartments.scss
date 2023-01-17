@@ -6,15 +6,16 @@
 
 .apartment-title {
     h2 {
-        font-size: 62px;
-        text-transform: uppercase;
+    //     font-size: 62px;
+    //     text-transform: uppercase;
+    color: $secondary-color-03;
 
-        span {
-            font-size: 60px;
-            font-weight: 100;
-            font-family: Poppins;
-            display: block;
-        }
+    //     span {
+    //         font-size: 60px;
+    //         font-weight: 100;
+    //         font-family: Poppins;
+    //         display: block;
+    //     }
     }
 }
 
@@ -201,15 +202,9 @@
         }
 
         h2 {
-            font-size: 62px;
-            text-transform: uppercase;
+
             margin-bottom: 80px;
-            span {
-                font-size: 60px;
-                font-weight: 100;
-                font-family: Poppins;
-                display: block;
-            }
+            color: $secondary-color-03;
         }
     }
 
