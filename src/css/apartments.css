@@ -466,14 +466,7 @@ li {
 }
 
 .apartment-title h2 {
-  font-size: 62px;
-  text-transform: uppercase;
-}
-.apartment-title h2 span {
-  font-size: 60px;
-  font-weight: 100;
-  font-family: Poppins;
-  display: block;
+  color: #2f2f2f;
 }
 
 .aparetment-hero {
@@ -650,15 +643,8 @@ li {
   transform: translateX(-100%);
 }
 .apartment-features .title h2 {
-  font-size: 62px;
-  text-transform: uppercase;
   margin-bottom: 80px;
-}
-.apartment-features .title h2 span {
-  font-size: 60px;
-  font-weight: 100;
-  font-family: Poppins;
-  display: block;
+  color: #2f2f2f;
 }
 .apartment-features .features-list {
   position: relative;

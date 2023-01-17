@@ -516,6 +516,9 @@ li {
     gap: 100px;
   }
 }
+.info-blog .inner-section.responsive-reverse {
+  flex-direction: column-reverse;
+}
 .info-blog .inner-section .info-blog__figure {
   flex: 1;
   max-width: 50%;

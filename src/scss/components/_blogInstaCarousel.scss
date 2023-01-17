@@ -26,6 +26,9 @@
 	background-color: $light-color-01;
 	.slick-track{
 		padding-bottom: 105px;
+		@include max-width(767px){
+			padding-bottom: 60px;
+		}
 		.slick-slide{
 			padding-inline: 5px;
 		}
@@ -58,9 +61,13 @@
 	}
 	a{
 		display: inline-flex;
+		align-items: center;
 		padding: 13px 23px;
 		border-radius: 11px;
 		box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
+		@include max-width(767px){
+			padding: 8px 15px;
+		}
 		.icon{
 			margin-right: 40px;
 			@include max-width(767px){

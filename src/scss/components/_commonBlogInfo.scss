@@ -11,6 +11,9 @@
 		@include max-width(991px){
 			gap: 100px;
 		}
+		&.responsive-reverse{
+		flex-direction: column-reverse ;
+	}
 		.info-blog__figure{
 			flex: 1;
 			max-width: 50%;
