@@ -29,7 +29,7 @@
     .service-table__title {
         text-align: center;
         @include max-width(1024px) {
-            text-align: start;
+            text-align: left;
         }
 
         .title-primary {

@@ -75,12 +75,11 @@
 			color: $secondary-color-06;
 			margin-bottom: 90px;
 			@include max-width(1024px){
-				text-align: start;
+				text-align: left;
 			}
 		}
 		.contact__form{
 			padding: 0 25px;
-			text-align: start;
 		}
 	}
 }

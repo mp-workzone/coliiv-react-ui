@@ -16,21 +16,21 @@ export default class BlogCarousel extends Component {
       speed: 800,
       slidesToShow: 3,
       arrows: false,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       beforeChange: (current, next) => this.setState({ activeSlide: next + 1 }),
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 1.2,
-            speed: 500,
+            slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 575,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
-            speed: 400,
+            slidesToScroll: 1,
           },
         },
       ],
@@ -131,7 +131,11 @@ export default class BlogCarousel extends Component {
             </div>
           </Slider>
           <div className="counter">
-            <p className="current-value">{this.state.activeSlide} </p>
+            <p className="current-value">
+              {this.state.activeSlide < 10 ? 0 : ""}
+              {this.state.activeSlide}
+            </p>
+
             <div className="counter-line"></div>
             <p className="total-value">06</p>
           </div>

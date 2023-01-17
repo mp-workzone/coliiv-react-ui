@@ -1,15 +1,29 @@
 .blog{
-	.blog-time{
-		font-style: italic;
-		color: #767676;
-		line-height: 1.5;
-		font-weight: 400;
-		margin-bottom: 40px;
-	}
-	.more-link{
-		color: $primary-color-01;
-		font-weight: 400;
-		margin-top: 30px;
+	.info-blog__text-area{
+		display: flex;
+		flex-direction: column;
+		.blog-time{
+			font-style: italic;
+			color: #767676;
+			line-height: 1.5;
+			font-weight: 400;
+			margin-bottom: 40px;
+			@include max-width(1024px){
+				margin-bottom: 15px;
+				order: 3;
+			}
+		}
+		h5.dsc{
+			margin-bottom: 30px;
+			@include max-width(1024px){
+				order: 2;
+			}
+		}
+		.more-link{
+			color: $primary-color-01;
+			font-weight: 400;
+			order: 4;
+		}
 	}
 }
 .blog01{

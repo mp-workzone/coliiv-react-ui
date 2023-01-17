@@ -11,28 +11,23 @@ export default class InstaCarousel extends Component {
   render() {
     const settings = {
       dots: true,
-      speed: 500,
-      slidesToShow: 4,
+      speed: 800,
+      // slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            speed: 500,
+            slidesToShow: 2,
+            slidesPerRows: 2,
+            rows: 2,
           },
         },
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 2,
-            speed: 400,
-          },
-        },
-        {
-          breakpoint: 575,
-          settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
           },
         },
       ],

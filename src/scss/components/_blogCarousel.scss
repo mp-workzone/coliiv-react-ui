@@ -1,4 +1,4 @@
-.blog-carousel{
+// .blog-carousel{
 	.slider__wrapper{
 		.slider-item{
 			position: relative;
@@ -15,6 +15,9 @@
 				padding-left: 30px;
 				.slider-item__title{
 					margin-bottom: 30px;
+					@include minmax(991px, 1024px){
+						flex: 52;
+					}
 				}
 				.slider-item__subtitle{
 					font-weight: 400;
@@ -28,11 +31,18 @@
 					margin-top: 15px;
 				}
 			}
+			.slider-item__figure{
+				img{
+					width: 100% !important;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
 		}
 		.counter{
 			display: flex;
 			align-items: center;
-			justify-content: end;
+			justify-content: flex-end;
 			padding-right: 8%;
 			margin-top: 90px;
 			@include max-width(767px){
@@ -65,4 +75,4 @@
 			}
 		}
 	}
-}
+// }

@@ -479,6 +479,9 @@ li {
     gap: 100px;
   }
 }
+.info-blog .inner-section.responsive-reverse {
+  flex-direction: column-reverse;
+}
 .info-blog .inner-section .info-blog__figure {
   flex: 1;
   max-width: 50%;
@@ -723,11 +726,6 @@ li {
   right: -20%;
   z-index: -1;
   left: 70%;
-}
-@media (max-width: 1024px) {
-  .facility-blog .inner-section.responsive-reverse {
-    flex-direction: column-reverse;
-  }
 }
 @media (max-width: 1024px) {
   .facility-blog .blog-details__text-area {

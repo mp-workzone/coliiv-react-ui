@@ -48,7 +48,7 @@ function BlogHero() {
       {/* blog 02 start */}
       <section className="info-blog blog middle">
         <div className="container-alt">
-          <div className="inner-section">
+          <div className="inner-section responsive-reverse">
             <div className="info-blog__figure">
               <img src={BlogImg02} alt="" />
             </div>
@@ -124,7 +124,7 @@ function BlogHero() {
       {/* blog 05 start */}
       <section className="info-blog blog middle">
         <div className="container-alt">
-          <div className="inner-section">
+          <div className="inner-section responsive-reverse">
             <div className="info-blog__figure">
               <img src={BlogImg02} alt="" />
             </div>
