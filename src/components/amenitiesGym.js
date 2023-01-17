@@ -1,6 +1,6 @@
-import GYM from "../assets/gym.jpg";
-import GYM01 from "../assets/gym01.jpg";
-import PlantNcircle from "../assets/plantNcircle.png";
+import GYM from "../assets/gym.webp";
+import GYM01 from "../assets/gym01.webp";
+import PlantNcircle from "../assets/plantNcircle.webp";
 function Gym() {
   return (
     <>

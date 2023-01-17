@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -56,8 +57,9 @@ export default class BlogCarousel extends Component {
                 </h3>
                 <h4 className="slider-item__subtitle">
                   20 Agosto 2022
-                  <span className="more-link">Leer artÍculo</span>
+                  <Link className="more-link" to="/blog/blog-details">Leer artÍculo</Link>
                 </h4>
+
               </div>
             </div>
             <div className="slider-item">
@@ -70,7 +72,7 @@ export default class BlogCarousel extends Component {
                 </h3>
                 <h4 className="slider-item__subtitle">
                   20 Agosto 2022
-                  <span className="more-link">Leer artÍculo</span>
+                  <Link className="more-link" to="/blog/blog-details">Leer artÍculo</Link>
                 </h4>
               </div>
             </div>
@@ -84,7 +86,7 @@ export default class BlogCarousel extends Component {
                 </h3>
                 <h4 className="slider-item__subtitle">
                   20 Agosto 2022
-                  <span className="more-link ">Leer artÍculo</span>
+                  <Link className="more-link" to="/blog/blog-details">Leer artÍculo</Link>
                 </h4>
               </div>
             </div>
@@ -99,7 +101,7 @@ export default class BlogCarousel extends Component {
                 </h3>
                 <h4 className="slider-item__subtitle">
                   20 Agosto 2022
-                  <span className="more-link">Leer artÍculo</span>
+                  <Link className="more-link" to="/blog/blog-details">Leer artÍculo</Link>
                 </h4>
               </div>
             </div>
@@ -113,7 +115,7 @@ export default class BlogCarousel extends Component {
                 </h3>
                 <h4 className="slider-item__subtitle">
                   20 Agosto 2022
-                  <span className="more-link">Leer artÍculo</span>
+                  <Link className="more-link" to="/blog/blog-details">Leer artÍculo</Link>
                 </h4>
               </div>
             </div>
@@ -127,7 +129,7 @@ export default class BlogCarousel extends Component {
                 </h3>
                 <h4 className="slider-item__subtitle">
                   20 Agosto 2022
-                  <span className="more-link">Leer artÍculo</span>
+                  <Link className="more-link" to="/blog/blog-details">Leer artÍculo</Link>
                 </h4>
               </div>
             </div>

@@ -1,12 +1,9 @@
+import Plant from "../assets/plant03.webp";
 import {
-  ICON_BLOOMBERG,
-  ICON_INC,
-  ICON_FASTOMPANY,
-  ICON_FORBES,
-  ICON_THENEWWORKTIMES,
-  ICON_WSJ,
+  ICON_BLOOMBERG, ICON_FASTOMPANY,
+  ICON_FORBES, ICON_INC, ICON_THENEWWORKTIMES,
+  ICON_WSJ
 } from "../utils/icons";
-import Plant from "../assets/plant03.png";
 
 function Partners() {
   return (

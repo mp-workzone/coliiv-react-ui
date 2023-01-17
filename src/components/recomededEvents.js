@@ -1,6 +1,6 @@
-import Img01 from "../assets/event-img01.jpg";
-import Img02 from "../assets/event-img02.jpg";
-import Img03 from "../assets/event-img03.jpg";
+import Img01 from "../assets/event-img01.webp";
+import Img02 from "../assets/event-img02.webp";
+import Img03 from "../assets/event-img03.webp";
 function RecomendedEvents() {
   return (
     <section className="recomnended-events">

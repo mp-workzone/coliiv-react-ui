@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Coliiv from "../assets/coliiv-ext-img.jpg";
-import Img01 from "../assets/insta-carousel-img01.jpg";
-import Img02 from "../assets/insta-carousel-img02.jpg";
+import Img01 from "../assets/insta-carousel-img01.webp";
+import Img02 from "../assets/insta-carousel-img02.webp";
 import { ICON_INSTAGRAM_LIGHT } from "../utils/icons";
 
 export default class InstaCarousel extends Component {

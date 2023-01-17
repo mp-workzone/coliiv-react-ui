@@ -1,5 +1,5 @@
-import GuestImg from "../assets/guest-img.jpg";
-import Plant from "../assets/plant01.png";
+import GuestImg from "../assets/guest-img.webp";
+import Plant from "../assets/plant01.webp";
 function EventGuests() {
   return (
     <section className="event-guests-area">

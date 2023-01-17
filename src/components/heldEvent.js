@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import Img01 from "../assets/held-event-slide-img01.jpg";
-import Img02 from "../assets/held-event-slide-img02.jpg";
-import Img03 from "../assets/held-event-slide-img03.jpg";
+import Img01 from "../assets/held-event-slide-img01.webp";
+import Img02 from "../assets/held-event-slide-img02.webp";
+import Img03 from "../assets/held-event-slide-img03.webp";
 
 export default class HeldEvent extends Component {
   render() {

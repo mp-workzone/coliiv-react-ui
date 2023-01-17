@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CarouselIcon from "../assets/home-carousel-icon.png";
-import CarouselImg from "../assets/carousel-img.jpg";
-import CarouselImg02 from "../assets/slider-img02.jpg";
-import CarouselImg03 from "../assets/slider-img03.jpg";
-import CarouselImg04 from "../assets/slider-img04.jpg";
+import "slick-carousel/slick/slick.css";
+import CarouselImg from "../assets/carousel-img.webp";
+import CarouselIcon from "../assets/home-carousel-icon.webp";
+import CarouselImg02 from "../assets/slider-img02.webp";
+import CarouselImg03 from "../assets/slider-img03.webp";
+import CarouselImg04 from "../assets/slider-img04.webp";
 import { ICON_PARTNER01, ICON_PARTNER02 } from "../utils/icons";
 
 export default class HomeCarousel extends Component {

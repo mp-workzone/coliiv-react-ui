@@ -1,11 +1,11 @@
-import CareerHeroImg from "../assets/career-hero.jpg";
-import CareerSideImg from "../assets/career-intro-side-img.png";
-import GalleryImg01 from "../assets/gallery-img01.jpg";
-import GalleryImg02 from "../assets/gallery-img02.jpg";
-import GalleryImg03 from "../assets/gallery-img03.jpg";
-import GalleryImg04 from "../assets/gallery-img04.jpg";
-import IntroImg from "../assets/intro-img.jpg";
-import IntroImg02 from "../assets/intro-img02.jpg";
+import CareerHeroImg from "../assets/career-hero.webp";
+import CareerSideImg from "../assets/career-intro-side-img.webp";
+import GalleryImg01 from "../assets/gallery-img01.webp";
+import GalleryImg02 from "../assets/gallery-img02.webp";
+import GalleryImg03 from "../assets/gallery-img03.webp";
+import GalleryImg04 from "../assets/gallery-img04.webp";
+import IntroImg from "../assets/intro-img.webp";
+import IntroImg02 from "../assets/intro-img02.webp";
 import { ICON_LOCATION } from "../utils/icons";
 function CareerPageContent() {
   return (

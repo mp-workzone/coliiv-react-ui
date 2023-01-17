@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Apartment from "../../assets/apartment-1.webp";
-import IntroFigure from "../../assets/stdio-lofg-ab.png";
+import IntroFigure from "../../assets/stdio-lofg-ab.webp";
 import StudioLoftHero from "../../assets/stdio-loft.webp";
 import StudioLofFeatureFigure from "../../assets/stl-ft-r.webp";
 import ApartmentFeatures from "../../components/apartment/apartmentFeatures";

@@ -1,8 +1,8 @@
 import ContentImg01 from "../assets/blog-content-img.jpg";
-import ContentImg02 from "../assets/content-img02.jpg";
-import ContentImg03 from "../assets/rl-blog-img.jpg";
-import { ICON_BACK } from "../utils/icons";
 import MainImg from "../assets/blog-details-main.jpg";
+import ContentImg02 from "../assets/content-img02.webp";
+import ContentImg03 from "../assets/rl-blog-img.webp";
+import { ICON_BACK } from "../utils/icons";
 function BlogDetailsHero() {
   return (
     <>

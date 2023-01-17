@@ -1,5 +1,5 @@
-import plant from "../assets/plant01.png";
-import video from "../assets/video01.jpg";
+import plant from "../assets/plant01.webp";
+import video from "../assets/video01.webp";
 import { ICON_PLAY } from "../utils/icons";
 function Feature() {
   return (

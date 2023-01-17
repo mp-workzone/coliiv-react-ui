@@ -1,4 +1,4 @@
-import Restaurant from "../assets/restaurant.jpg";
+import Restaurant from "../assets/restaurant.webp";
 function Restaurante() {
   return (
     <>

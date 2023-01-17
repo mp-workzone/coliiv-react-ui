@@ -1,14 +1,14 @@
-import IntroImg from "../assets/coliver-activity.jpg";
-import HeroImg from "../assets/colivers-hero.jpg";
-import ColiversImg01 from "../assets/colivers-img01.jpg";
-import ColiversImg02 from "../assets/colivers-img02.jpg";
+import IntroImg from "../assets/coliver-activity.webp";
+import HeroImg from "../assets/colivers-hero.webp";
+import ColiversImg01 from "../assets/colivers-img01.webp";
+import ColiversImg02 from "../assets/colivers-img02.webp";
 import FavFoodImg from "../assets/fav-food.jpg";
 import FavSportImg from "../assets/fav-sport.jpg";
-import Leaf from "../assets/leaf02.png";
-import MainFigure from "../assets/main-figure.jpg";
-import Plant from "../assets/plant01-left.png";
-import SideFigure02 from "../assets/side-figure02.jpg";
-import SideFigure04 from "../assets/side-figure04.jpg";
+import Leaf from "../assets/leaf02.webp";
+import MainFigure from "../assets/main-figure.webp";
+import Plant from "../assets/plant01-left.webp";
+import SideFigure02 from "../assets/side-figure02.webp";
+import SideFigure04 from "../assets/side-figure04.webp";
 import { ICON_BUBBLE_CHART, ICON_MESSAGE, ICON_PUBLIC } from "../utils/icons";
 function ColiversPageContent() {
   return (

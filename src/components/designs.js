@@ -1,6 +1,6 @@
-import Img01 from "../assets/design-img.jpg";
-import Img02 from "../assets/design-img02.jpg";
-import Img03 from "../assets/design-img03.jpg";
+import Img01 from "../assets/design-img.webp";
+import Img02 from "../assets/design-img02.webp";
+import Img03 from "../assets/design-img03.webp";
 function Designs() {
   return (
     <section className="design-wrapper">

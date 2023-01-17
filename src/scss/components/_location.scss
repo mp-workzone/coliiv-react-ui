@@ -1,73 +1,99 @@
-.location{
-	padding: 190px 0 80px;
-	@include max-width(768px){
-		padding-top: 80px;
-	}
-	.location__title{
-		color: $secondary-color-03;
-		font-weight: 400;
-		margin-bottom: 120px;
-		z-index: 9;
-		text-transform: uppercase;
-		font-family: "Berton";
-		@include max-width(1024px){
-			font-size: 68px;
-			margin-bottom: 80px;
-		}
-		@include max-width(992px){
-			font-size: 42px;
-		}
-		@include max-width(768px){
-			font-size: 36px;
-			margin-bottom: 40px;
-		}
-		@include max-width(575px){
-			font-size: 24px;
-			margin-bottom: 20px;
-		}
-	}
-	.address{
-		color: $secondary-color-04;
-		z-index: 999;
-		@include max-width(1024px){
-			font-size: 42px;
-		}
-		@include max-width(992px){
-			font-size: 35px;
-		}
-		@include max-width(767px){
-			font-size: 24px;
-		}
-		@include max-width(575px){
-			font-size: 16px;
-		}
-	}
-	.map{
-		position: relative;
-		padding: 0 90px;
-		margin-top: -90px;
-		z-index: -1;
-		img{
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-		@include max-width(1024px){
-			padding: 0;
-		}
-		@include max-width(768px){
-			height: 560px;
-		}
-	}
-	.more-link{
-		display: block;
-		text-align: center;
-		span{
-			margin-top: 24px;
-			display: block;
-			color: #707070;
-			text-decoration: underline;
-			text-transform: uppercase;
-		}
-	}
+.location {
+    padding: 190px 0 80px;
+    @include max-width(768px) {
+        padding-top: 80px;
+    }
+
+    .location__title {
+        color: $secondary-color-03;
+        font-weight: 400;
+        margin-bottom: 120px;
+        z-index: 9;
+        text-transform: uppercase;
+        font-family: "Berton";
+        @include max-width(1024px) {
+            font-size: 68px;
+            margin-bottom: 80px;
+        }
+
+        @include max-width(992px) {
+            font-size: 42px;
+        }
+
+        @include max-width(768px) {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        @include max-width(575px) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .address {
+        color: $secondary-color-04;
+        z-index: 999;
+        @include max-width(1024px) {
+            font-size: 42px;
+        }
+
+        @include max-width(992px) {
+            font-size: 35px;
+        }
+
+        @include max-width(767px) {
+            font-size: 24px;
+        }
+
+        @include max-width(575px) {
+            font-size: 16px;
+        }
+    }
+
+    .map {
+        position: relative;
+        padding: 0 90px;
+        margin-top: -90px;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include max-width(1024px) {
+            padding: 0;
+        }
+
+        @include max-width(768px) {
+            height: 560px;
+        }
+    }
+
+    .btn-map {
+        text-align: center;
+    }
+
+    .more-link {
+        display: inline-block;
+        text-align: center;
+        svg {
+            transition: 0.3s;
+        }
+
+        &:hover {
+            svg {
+                transform: rotate(45deg);
+            }
+        }
+
+        span {
+            margin-top: 24px;
+            display: block;
+            color: #707070;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    }
 }

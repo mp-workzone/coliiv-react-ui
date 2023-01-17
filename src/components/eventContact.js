@@ -1,4 +1,4 @@
-import Leaf from "../assets/leaf02.png";
+import Leaf from "../assets/leaf02.webp";
 function EventContact() {
   return (
     <section className="event-contact-area">

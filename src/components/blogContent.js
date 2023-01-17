@@ -1,11 +1,13 @@
-import HeroImg from "../assets/blog-hero-img.jpg";
-import BlogImg01 from "../assets/blog-img.jpg";
-import BlogImg02 from "../assets/blog-img02.jpg";
-import BlogImg03 from "../assets/blog-img03.jpg";
-import BlogImg04 from "../assets/blog-img04.jpg";
-import Leaf from "../assets/leaf03.png";
-import Plant from "../assets/plant04.png";
+import { Link } from "react-router-dom";
+import HeroImg from "../assets/blog-hero-img.webp";
+import BlogImg01 from "../assets/blog-img.webp";
+import BlogImg02 from "../assets/blog-img02.webp";
+import BlogImg03 from "../assets/blog-img03.webp";
+import BlogImg04 from "../assets/blog-img04.webp";
+import Leaf from "../assets/leaf03.webp";
+import Plant from "../assets/plant04.webp";
 import BlogCarousel from "./blogCarousel";
+
 function BlogContent() {
   return (
     <>
@@ -16,7 +18,6 @@ function BlogContent() {
         <h1 className="hero__title">BLOG</h1>
       </section>
 
-      {/* blog 01 start */}
       <section className="info-blog blog blog01 top">
         <div className="container-alt">
           <div className="inner-section">
@@ -37,7 +38,7 @@ function BlogContent() {
                   metus. Nulla fringilla non nibh non fermentum.
                 </span>
               </h5>
-              <h4 className="more-link">Leer artÍculo</h4>
+              <Link to="/blog/blog-details" className="more-link">Leer artÍculo</Link>
             </div>
             <div className="info-blog__figure">
               <img src={BlogImg01} alt="" />
@@ -45,9 +46,7 @@ function BlogContent() {
           </div>
         </div>
       </section>
-      {/* blog 01 end */}
 
-      {/* blog 02 start */}
       <section className="info-blog blog middle">
         <div className="container-alt">
           <div className="inner-section responsive-reverse">
@@ -65,14 +64,12 @@ function BlogContent() {
                 Nulla scelerisque, neque in fringilla tincidunt, dui mauris
                 sollicitudin elit, a iaculis erat nisi.
               </h5>
-              <h4 className="more-link">Leer artÍculo</h4>
+              <Link to="/blog/blog-details" className="more-link">Leer artÍculo</Link>
             </div>
           </div>
         </div>
       </section>
-      {/* blog 02 end */}
 
-      {/* blog 03 start */}
       <section className="info-blog blog bottom">
         <div className="bottom-plant">
           <img src={Plant} alt="" />
@@ -90,7 +87,7 @@ function BlogContent() {
                 eleifend a. Maecenas fringilla vulputate venenatis quisque
                 tristique dui in felis.
               </h5>
-              <h4 className="more-link">Leer artÍculo</h4>
+              <Link to="/blog/blog-details" className="more-link">Leer artÍculo</Link>
             </div>
             <div className="info-blog__figure">
               <img src={BlogImg03} alt="" />
@@ -98,11 +95,9 @@ function BlogContent() {
           </div>
         </div>
       </section>
-      {/* blog 03 end */}
 
       <BlogCarousel />
 
-      {/* blog 04 start */}
       <section className="info-blog blog top ">
         <div className="top-leaf">
           <img src={Leaf} alt="" />
@@ -120,7 +115,7 @@ function BlogContent() {
                 ante. Phasellus tempus vehicula urna, sed feugiat arcu venenatis
                 ac.
               </h5>
-              <h4 className="more-link">Leer artÍculo</h4>
+              <Link to="/blog/blog-details" className="more-link">Leer artÍculo</Link>
             </div>
             <div className="info-blog__figure">
               <img src={BlogImg01} alt="" />
@@ -128,8 +123,7 @@ function BlogContent() {
           </div>
         </div>
       </section>
-      {/* blog 04 end */}
-      {/* blog 05 start */}
+
       <section className="info-blog blog middle">
         <div className="container-alt">
           <div className="inner-section responsive-reverse">
@@ -148,13 +142,12 @@ function BlogContent() {
                 libero. Maecenas eget maximus eros. In sodales quam ante, sit
                 amet sodales dui.
               </h5>
-              <h4 className="more-link">Leer artÍculo</h4>
+              <Link to="/blog/blog-details" className="more-link">Leer artÍculo</Link>
             </div>
           </div>
         </div>
       </section>
-      {/* blog 05 end */}
-      {/* blog 06 start */}
+
       <section className="info-blog blog bottom">
         <div className="container-alt">
           <div className="inner-section">
@@ -169,7 +162,7 @@ function BlogContent() {
                 imperdiet at. Cras lectus neque, consectetur sed purus porta
                 congue.
               </h5>
-              <h4 className="more-link">Leer artÍculo</h4>
+              <Link to="/blog/blog-details" className="more-link">Leer artÍculo</Link>
             </div>
             <div className="info-blog__figure">
               <img src={BlogImg04} alt="" />
@@ -177,9 +170,7 @@ function BlogContent() {
           </div>
         </div>
       </section>
-      {/* blog 06 end */}
 
-      {/* pagination start */}
       <div className="blog-pagination">
         <ul>
           <li>
@@ -199,7 +190,6 @@ function BlogContent() {
         </ul>
       </div>
 
-      {/* pagination end */}
     </>
   );
 }

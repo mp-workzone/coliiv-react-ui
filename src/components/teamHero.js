@@ -1,4 +1,4 @@
-import Leaf from "../assets/leaf04.png";
+import Leaf from "../assets/leaf04.webp";
 import { ICON_SCROLL_DOWN } from "../utils/icons";
 function TeamHero() {
   return (

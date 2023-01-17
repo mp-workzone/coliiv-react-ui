@@ -1,13 +1,13 @@
-import ExploreProject01 from "../assets/explore-project01.jpg";
-import ExploreProject02 from "../assets/explore-project02.jpg";
-import ExploreProject03 from "../assets/explore-project03.jpg";
-import ExploreProject04 from "../assets/explore-project04.jpg";
-import FranchisesHeroImg from "../assets/franchisesHero-img.jpg";
-import Img03 from "../assets/Investment-strategy.jpg";
-import Img01 from "../assets/InvestmentFactorImg.jpg";
-import Leaf from "../assets/leaf05.png";
-import Img02 from "../assets/market-potential.jpg";
-import Plant from "../assets/plant04.png";
+import ExploreProject01 from "../assets/explore-project01.webp";
+import ExploreProject02 from "../assets/explore-project02.webp";
+import ExploreProject03 from "../assets/explore-project03.webp";
+import ExploreProject04 from "../assets/explore-project04.webp";
+import FranchisesHeroImg from "../assets/franchiseshero-img.webp";
+import Img03 from "../assets/Investment-strategy.webp";
+import Img01 from "../assets/InvestmentFactorImg.webp";
+import Leaf from "../assets/leaf05.webp";
+import Img02 from "../assets/market-potential.webp";
+import Plant from "../assets/plant04.webp";
 import {
   ICON_FACILITY01,
   ICON_FACILITY02,

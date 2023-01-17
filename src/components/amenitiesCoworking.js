@@ -1,6 +1,6 @@
-import Coworking from "../assets/coworking.jpg";
-import Leaf from "../assets/leaf06.png";
-import ZoomRooms from "../assets/zoomRooms.jpg";
+import Coworking from "../assets/coworking.webp";
+import Leaf from "../assets/leaf06.webp";
+import ZoomRooms from "../assets/zoomRooms.webp";
 
 function AmenitiesCoworking() {
   return (

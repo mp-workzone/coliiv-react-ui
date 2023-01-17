@@ -1,5 +1,5 @@
+import HeroImg from "../assets/hero-img.webp";
 import { ICON_BACK } from "../utils/icons";
-import HeroImg from "../assets/hero-img.jpg";
 function EventInternalHero() {
   return (
     <section className="event-internal-hero">

@@ -1,6 +1,6 @@
-import Figure01 from "../assets/contact-figure01.jpg";
-import Figure02 from "../assets/contact-figure02.jpg";
-import Leaf from "../assets/leaf03.png";
+import Figure01 from "../assets/contact-figure01.webp";
+import Figure02 from "../assets/contact-figure02.webp";
+import Leaf from "../assets/leaf03.webp";
 function Contact() {
   return (
     <section className="contact">

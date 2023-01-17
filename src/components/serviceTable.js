@@ -1,5 +1,5 @@
+import Leaf from "../assets/leaf01.webp";
 import {
-  ICON_TICK_SIGN,
   ICON_SERVICE,
   ICON_SERVICE02,
   ICON_SERVICE03,
@@ -9,9 +9,8 @@ import {
   ICON_SERVICE07,
   ICON_SERVICE08,
   ICON_SERVICE09,
-  ICON_SERVICE10,
+  ICON_SERVICE10, ICON_TICK_SIGN
 } from "../utils/icons";
-import Leaf from "../assets/leaf01.png";
 function ServiceTable() {
   return (
     <section className="service-table">

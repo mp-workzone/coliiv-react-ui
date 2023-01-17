@@ -1,5 +1,5 @@
-import Img from "../assets/concept-img.jpg";
-import Leaf from "../assets/leaf05.png";
+import Img from "../assets/concept-img.webp";
+import Leaf from "../assets/leaf05.webp";
 function EventConcept() {
   return (
     <section className="event-concept">

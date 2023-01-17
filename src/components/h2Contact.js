@@ -1,10 +1,7 @@
-import plantNcircle from "../assets/plantNcircle.png";
-import VideoImg from "../assets/video.jpg";
+import plantNcircle from "../assets/plantNcircle.webp";
+import VideoImg from "../assets/video.webp";
 import {
-  ICON_PUBLIC,
-  ICON_MESSAGE,
-  ICON_BUBBLE_CHART,
-  ICON_PLAY,
+  ICON_BUBBLE_CHART, ICON_MESSAGE, ICON_PLAY, ICON_PUBLIC
 } from "../utils/icons.js";
 function H2Contact() {
   return (

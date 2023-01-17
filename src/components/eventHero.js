@@ -1,4 +1,4 @@
-import HeroImg from "../assets/hero-img02.jpg";
+import HeroImg from "../assets/hero-img02.webp";
 function EventHero() {
   return (
     <section className="event-hero">

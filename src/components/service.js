@@ -1,5 +1,5 @@
-import Leaf from "../assets/leaf01.png";
-import Service01 from "../assets/service01.png";
+import Leaf from "../assets/leaf01.webp";
+import Service01 from "../assets/service01.webp";
 function Service() {
   return (
     <section className="service-area">

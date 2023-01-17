@@ -1,8 +1,8 @@
-import SalonImg from "../assets/salon.jpg";
-import Spa from "../assets/spa.jpg";
-import Spa01 from "../assets/spa01.jpg";
-import Spa02 from "../assets/spa02.jpg";
-import PlantNcircle from "../assets/plantNcircle.png";
+import PlantNcircle from "../assets/plantNcircle.webp";
+import SalonImg from "../assets/salon.webp";
+import Spa from "../assets/spa.webp";
+import Spa01 from "../assets/spa01.webp";
+import Spa02 from "../assets/spa02.webp";
 function Salon() {
   return (
     <>

@@ -1,4 +1,4 @@
-import Member from "../assets/member.jpg";
+import Member from "../assets/member.webp";
 import { ICON_ADD } from "../utils/icons";
 function TeamMembers() {
     let teamMembers = [

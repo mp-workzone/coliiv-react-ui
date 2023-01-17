@@ -1,9 +1,9 @@
 // import FacilityIntro01 from "../assets/facility-blog01.jpg";
-import Coliiv from "../assets/coliiv.jpg";
+import Coliiv from "../assets/coliiv.webp";
+import CounterLobby01 from "../assets/counter-lobby01.jpg";
 import FacilityIntro02 from "../assets/facility-intro02.jpg";
 import FacilityIntro03 from "../assets/facility-intro03.jpg";
-import CounterLobby01 from "../assets/counter-lobby01.jpg";
-import PlantNcircle from "../assets/plantNcircle.png";
+import PlantNcircle from "../assets/plantNcircle.webp";
 
 function AmenitiesCounterLobby() {
   return (

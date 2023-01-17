@@ -1,10 +1,9 @@
-import { ICON_LOCATION } from "../utils/icons";
-import Img from "../assets/event-list-img01.jpg";
-import Img02 from "../assets/uc-event02.jpg";
-import Img03 from "../assets/uc-event03.jpg";
-import Img04 from "../assets/uc-event04.jpg";
-import Img05 from "../assets/uc-event05.jpg";
-import { ICON_CALENDAR } from "../utils/icons";
+import Img from "../assets/event-list-img01.webp";
+import Img02 from "../assets/uc-event02.webp";
+import Img03 from "../assets/uc-event03.webp";
+import Img04 from "../assets/uc-event04.webp";
+import Img05 from "../assets/uc-event05.webp";
+import { ICON_CALENDAR, ICON_LOCATION } from "../utils/icons";
 function UpCommingEvents() {
   return (
     <section className="up-comming-events">
