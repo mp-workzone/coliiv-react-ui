@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -649,6 +653,10 @@ li {
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -1236,7 +1244,7 @@ li {
     position: relative;
     padding: 20px 0 0 20px;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 15px;
   }
 }
