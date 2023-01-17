@@ -12,6 +12,7 @@
 
 .aparetment-hero {
     position: relative;
+    z-index: 99;
     figure {
         margin: 0;
         height: 100vh;
@@ -169,6 +170,13 @@
         max-width: 55%;
         margin-left: auto;
         padding-right: 60px;
+        @include max-width(1080px){
+            padding: 0;
+        }
+        @include max-width(991px){
+            max-width: 100%;
+            margin-top: 150px;
+        }
 
         h2 {
             color: $secondary-color-03;
@@ -251,7 +259,7 @@
             width: 500px;
             right: -186px;
             top: -98px;
-            z-index: 999;
+            z-index: -1;
         }
 
         ul {
@@ -260,6 +268,13 @@
             grid-template-columns: 1fr 1fr;
             grid-column-gap: 250px;
             grid-row-gap: 90px;
+            z-index: 99;
+            @include max-width(991px){
+                column-gap: 120px;
+            }
+            @include max-width(575px){
+                grid-template-columns: 1fr;
+            }
             li {
                 h3 {
                     color: #2f2f2f;
@@ -378,16 +393,30 @@
         display: flex;
         width: 100%;
         align-items: center;
+        @include max-width(991px){
+            flex-direction: column;
+            margin-top: 30px;
+        }
         .apartment-map__gallery__info {
             flex: 0 0 40%;
             max-width: 40%;
+            @include max-width(991px){
+                width: 100%;
+                max-width: 100%;
+            }
         }
 
         .apartment-map__gallery__slides {
             flex: 0 0 60%;
             max-width: 60%;
+            @include max-width(991px){
+                width: 100%;
+                max-width: 100%;
+            }
             img {
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -433,6 +462,20 @@
 
         .more-spaces-gallery__item {
             position: relative;
+            @include max-width(1024px){
+                height: 400px;
+            }
+            @include max-width(676px){
+                height: 300px;
+            }
+            @include max-width(575px){
+                height: 240px;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
             .text {
                 position: absolute;
                 left: 50%;
@@ -464,7 +507,11 @@
         padding-top: 120px;
         padding-bottom: 90px;
         text-align: center;
-        a {
+        @include max-width(991px){
+            // padding-top: 0;
+        }
+        &.a {
+            position: relative;
             display: inline-block;
         }
 
@@ -493,12 +540,21 @@
 .style-1 {
     .apartment-intro {
         .figure {
+            .figure__text{
+                @include max-width(1080px){
+                    top: 20%;
+                }
+            }
             img {
                 width: 584px;
                 position: absolute;
                 left: -120px;
                 top: 50%;
                 transform: translateY(-50%);
+                @include max-width(1080px){
+                    width: 450px;
+                    top: 20%;
+                }
             }
         }
     }
@@ -514,6 +570,7 @@
                 background-color: $primary-color-02;
                 right: 0px;
                 top: -10px;
+                z-index: -1;
             }
         }
     }
@@ -522,12 +579,21 @@
 .style-2 {
     .apartment-intro {
         .figure {
+            .figure__text{
+                @include max-width(1080px){
+                    top: 20%;
+                }
+            }
             img {
                 width: 700px;
                 position: absolute;
                 left: -240px;
                 top: 320px;
                 transform: translateY(-50%);
+                @include max-width(1080px){
+                    width: 540px;
+                    top: 15%;
+                }
             }
         }
 
@@ -578,12 +644,23 @@
 .style-3 {
     .apartment-intro {
         .figure {
+            .figure__text{
+                @include max-width(1080px){
+                    top: 20%;
+                    font-size: 360px;
+                }
+            }
             img {
                 width: 584px;
                 position: absolute;
                 left: -120px;
                 top: 50%;
                 transform: translateY(-50%);
+                @include max-width(1080px){
+                    width: 540px;
+                    top: 15%;
+                    left: -20%;
+                }
             }
         }
     }
@@ -599,6 +676,11 @@
             z-index: -1;
             right: 60px;
             bottom: -10px;
+            @include max-width(991px){
+                height: 55%;
+                bottom: 10%;
+                right: -2%;
+            }
         }
     }
 
@@ -620,12 +702,26 @@
 .style-4 {
     .apartment-intro {
         .figure {
+            .figure__text{
+                @include max-width(1450px){
+                    font-size: 320px;
+                    left: -3%;
+                }
+                @include max-width(1080px){
+                    top: 20%;
+                }
+            }
             img {
                 width: 584px;
                 position: absolute;
                 left: -120px;
                 top: 50%;
                 transform: translateY(-50%);
+                @include max-width(1080px){
+                    width: 540px;
+                    top: 20%;
+                    left: -20%;
+                }
             }
         }
 
@@ -639,6 +735,7 @@
             z-index: 99;
             top: 113px;
             content: "";
+            z-index: -1;
         }
     }
 

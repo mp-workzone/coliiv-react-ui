@@ -12,8 +12,10 @@
 			gap: 100px;
 		}
 		&.responsive-reverse{
-		flex-direction: column-reverse ;
-	}
+			@include max-width(1024px){
+				flex-direction: column-reverse ;
+			}
+		}
 		.info-blog__figure{
 			flex: 1;
 			max-width: 50%;

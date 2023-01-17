@@ -16,8 +16,8 @@ function Salon() {
         </h1>
         <div className="scrollbar">
           <div className="count-no">11</div>
-          <div className="scrollbar__inner top"></div>
-          <div className="scrollbar__inner bottom"></div>
+          <div className="scrollbar__inner top-part"></div>
+          <div className="scrollbar__inner bottom-part"></div>
           <div className="total-count">12</div>
         </div>
       </section>

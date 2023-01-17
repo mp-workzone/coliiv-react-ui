@@ -13,8 +13,8 @@ function AmenitiesCoworking() {
         <h1 className="facility__title title-primary">Coworking</h1>
         <div className="scrollbar">
           <div className="count-no">03</div>
-          <div className="scrollbar__inner top"></div>
-          <div className="scrollbar__inner bottom"></div>
+          <div className="scrollbar__inner top-part"></div>
+          <div className="scrollbar__inner bottom-part"></div>
           <div className="total-count">12</div>
         </div>
       </section>

@@ -26,7 +26,7 @@ function ApartmentMap({ figure }) {
 
         <div className="apartment-map__gallery">
           <div className="apartment-map__gallery__info">
-            <p>Apartamento en piso impar</p>
+            <p className="dsc">Apartamento en piso impar</p>
           </div>
           <div className="apartment-map__gallery__slides">
             <div className="slider-progress">

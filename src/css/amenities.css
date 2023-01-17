@@ -483,8 +483,10 @@ li {
     gap: 100px;
   }
 }
-.info-blog .inner-section.responsive-reverse {
-  flex-direction: column-reverse;
+@media (max-width: 1024px) {
+  .info-blog .inner-section.responsive-reverse {
+    flex-direction: column-reverse;
+  }
 }
 .info-blog .inner-section .info-blog__figure {
   flex: 1;
@@ -601,10 +603,6 @@ li {
   }
 }
 
-.negative-space {
-  margin-top: -100px;
-}
-
 .facility {
   position: relative;
 }
@@ -658,10 +656,10 @@ li {
     border-radius: 1.5px;
   }
 }
-.facility .scrollbar .scrollbar__inner.top {
+.facility .scrollbar .scrollbar__inner.top-part {
   height: 190px;
 }
-.facility .scrollbar .scrollbar__inner.bottom {
+.facility .scrollbar .scrollbar__inner.bottom-part {
   margin-top: 22px;
   height: 30px;
 }

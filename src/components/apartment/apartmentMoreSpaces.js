@@ -108,9 +108,9 @@ function ApartmentMoreSpaces({ figure }) {
       </div>
       <div className="ver-todos">
         <a href="/" className="ver-todos">
-          <span class="svg-group">
+          <span className="svg-group">
             <svg
-              class="rotate-infinite"
+              className="rotate-infinite"
               xmlns="http://www.w3.org/2000/svg"
               width="127.576"
               height="127.576"
@@ -118,7 +118,7 @@ function ApartmentMoreSpaces({ figure }) {
             >
               <g id="scroll-down" transform="translate(-308.364 -234.091)">
                 <path
-                  class="path-rotate"
+                  className="path-rotate"
                   data-name="Path 2497"
                   d="M309.364,297.879a62.786,62.786,0,1,0,21.578-47.373"
                   fill="none"
@@ -129,7 +129,7 @@ function ApartmentMoreSpaces({ figure }) {
               </g>
             </svg>
             <svg
-              class="svg-alt"
+              className="svg-alt"
               xmlns="http://www.w3.org/2000/svg"
               width="127.576"
               height="127.576"
