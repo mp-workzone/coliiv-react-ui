@@ -10,7 +10,7 @@ import Location from "../components/location";
 import Partners from "../components/partners";
 import Service from "../components/service";
 import ServiceTable from "../components/serviceTable";
-import "../css/home.css";
+import "../scss/home.scss";
 function Home() {
   useEffect(() => {
     document.body.classList.add('home');

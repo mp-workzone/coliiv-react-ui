@@ -1,5 +1,5 @@
 import BlogDetailsHero from "../components/blogDetailsHero";
-import "../css/blogDetails.css";
+import "../scss/blogDetails.scss";
 function BlogDetaisl() {
   return (
     <>
@@ -7,4 +7,5 @@ function BlogDetaisl() {
     </>
   );
 }
+
 export default BlogDetaisl;

@@ -1,7 +1,7 @@
 import Designs from "../components/designs";
 import TeamHero from "../components/teamHero";
 import TeamMembers from "../components/teamMembers";
-import "../css/team.css";
+import "../scss/team.scss";
 
 function Team() {
   return (
@@ -12,4 +12,5 @@ function Team() {
     </>
   );
 }
+
 export default Team;

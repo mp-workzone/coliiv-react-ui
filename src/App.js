@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import "./css/common.css";
 import Amenities from "./pages/amenities";
 import OneHOneB from "./pages/apartments/OneHOneB";
 import StdioLoft from "./pages/apartments/stdioLoft";
@@ -16,6 +15,7 @@ import EventInternal from "./pages/eventInternal";
 import Franchises from "./pages/franchises";
 import Home from "./pages/home";
 import Team from "./pages/team";
+import "./scss/common.scss";
 function App() {
   return (
     <div className="main">

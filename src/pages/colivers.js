@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import ColiversPageContent from "../components/coliversPageContent";
-import "../css/colivers.css";
+import "../scss/colivers.scss";
 function Colivers() {
     useEffect(() => {
         document.body.classList.add("header-light");

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import FeatureFigure from "../../assets/2h-2b-feature.webp";
 import IntroFigure from "../../assets/2h-2b-plus.webp";
 import Apartment from "../../assets/apartment-1.webp";
@@ -9,9 +10,16 @@ import ApartmentImageBlock from "../../components/apartment/apartmentImageBlock"
 import ApartmentIntro from "../../components/apartment/apartmentIntro";
 import ApartmentMap from "../../components/apartment/apartmentMap";
 import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces";
-import "../../css/apartments.css";
+import "../../scss/apartments.scss";
 
 function TwoH2BPlus() {
+  useEffect(() => {
+    document.body.classList.add('header-light')
+    return () => {
+      document.body.classList.remove('header-light')
+    }
+  }, []);
+
   let figureContent = {
     src: Apartment,
     alt: "",

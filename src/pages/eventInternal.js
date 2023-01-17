@@ -3,7 +3,7 @@ import EventGuests from "../components/eventGuests";
 import EventInternalHero from "../components/eventInternalHero";
 import EventShedule from "../components/eventShedule";
 import RecomendedEvents from "../components/recomededEvents";
-import "../css/eventInternal.css";
+import "../scss/eventInternal.scss";
 function EventInternal() {
   return (
     <>
@@ -15,4 +15,5 @@ function EventInternal() {
     </>
   );
 }
+
 export default EventInternal;

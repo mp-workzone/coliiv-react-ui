@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import FranchisesPageContent from "../components/franchisesPageContent";
-import "../css/franchises.css";
+import "../scss/franchises.scss";
 function Franchises() {
   useEffect(() => {
     document.body.classList.add('header-light');
