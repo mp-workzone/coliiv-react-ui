@@ -12,43 +12,44 @@ import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces"
 import "../../css/apartments.css";
 
 function StdioLoft() {
-    let introContent = {
-        figure: IntroFigure,
-        figureAlt: "",
-        figureText: 'SL',
-        title: "<span class='has-border'>Disfrútalo</span> todo <span class='alt'>con estilo</span>",
-        descroption: "El Studio Loft te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat."
-    }
+  let introContent = {
+    figure: IntroFigure,
+    figureAlt: "",
+    figureText: "SL",
+    title:
+      "<span class='has-border'>Disfrútalo</span> todo <span class='alt title-secondary'>con estilo</span>",
+    descroption:
+      "El Studio Loft te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.",
+  };
 
-    let heroContent = {
-        figure: StudioLoftHero,
-        figureAlt: "",
-        title: "<span>Studio</span><span className='lt'>Loft</span>",
-        titleBgText: 'SL',
-    }
+  let heroContent = {
+    figure: StudioLoftHero,
+    figureAlt: "",
+    title: "<span>Studio</span><span className='lt title'>Loft</span>",
+    titleBgText: "SL",
+  };
 
-    let figureContent = {
-        src: Apartment,
-        alt: "",
-    }
+  let figureContent = {
+    src: Apartment,
+    alt: "",
+  };
 
-    let featuresContent = {
-        figure: StudioLofFeatureFigure,
-        alt: "",
-    }
+  let featuresContent = {
+    figure: StudioLofFeatureFigure,
+    alt: "",
+  };
 
-    return (
-        <div className='apartment-page style-1'>
-
-           <ApartmentHero heroContent={heroContent}/>
-            <ApartmentIntro introContent={introContent}/>
-            <ApartmentImageBlock figure={figureContent} />
-            <ApartmentFeatures featuresContent={featuresContent}/>
-            <ApartmentGallery/>
-            <ApartmentMap/>
-            <ApartmentMoreSpaces/>
-        </div>
-    );
+  return (
+    <div className="apartment-page style-1">
+      <ApartmentHero heroContent={heroContent} />
+      <ApartmentIntro introContent={introContent} />
+      <ApartmentImageBlock figure={figureContent} />
+      <ApartmentFeatures featuresContent={featuresContent} />
+      <ApartmentGallery />
+      <ApartmentMap />
+      <ApartmentMoreSpaces />
+    </div>
+  );
 }
 
 export default StdioLoft;

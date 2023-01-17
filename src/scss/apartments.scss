@@ -6,16 +6,7 @@
 
 .apartment-title {
     h2 {
-    //     font-size: 62px;
-    //     text-transform: uppercase;
     color: $secondary-color-03;
-
-    //     span {
-    //         font-size: 60px;
-    //         font-weight: 100;
-    //         font-family: Poppins;
-    //         display: block;
-    //     }
     }
 }
 
@@ -41,15 +32,41 @@
         h1 {
             color: #ffffff;
             font-size: 64px;
-            font-family: Poppins;
             font-weight: 400;
+            z-index: 9;
+            text-transform: uppercase;
+            @include max-width(1024px){
+                font-size: 68px;
+            }
+            @include max-width(991px){
+                font-size: 48px;
+            }
+            @include max-width(767px){
+                font-size: 42px;
+            }
+            @include max-width(575px){
+                font-size: 36px;
+            }
             span {
                 display: block;
                 text-align: center;
                 line-height: 1.25;
-                &.lt {
-                    font-size: 62px;
-                    font-weight: 200;
+            }
+            span:last-child {
+                font-size: 62px;
+                font-weight: 200;
+                font-family: "Poppins";
+                @include max-width(1024px){
+                    font-size: 66px;
+                }
+                @include max-width(991px){
+                    font-size: 46px;
+                }
+                @include max-width(767px){
+                    font-size: 40px;
+                }
+                @include max-width(575px){
+                    font-size: 34px;
                 }
             }
         }
@@ -65,6 +82,10 @@
             left: 50%;
             transform: translate(-50%, 65%);
             white-space: nowrap;
+            z-index: -1;
+            @include max-width(767px){
+                font-size: 140px;
+            }
             .sub {
                 font-size: 70%;
                 display: inline-block;
@@ -85,12 +106,21 @@
         font-weight: 300;
         display: inline-block;
         white-space: nowrap;
-
         @include max-width(1024px) {
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
             text-align: center;
+             font-size: 34px;
+        }
+        @include max-width(991px){
+           font-size: 27px;
+        }
+        @include max-width(767px){
+           font-size: 24px;
+        }
+        @include max-width(575px){
+           font-size: 20px;
         }
 
         span {
@@ -103,6 +133,10 @@
         bottom: 70px;
         left: 50%;
         transform: translateX(-50%);
+        @include max-width(767px){
+            height: 100px;
+            width: 100px;
+        }
     }
 }
 
@@ -137,15 +171,8 @@
         padding-right: 60px;
 
         h2 {
-            text-transform: uppercase;
-            font-size: 62px;
+            color: $secondary-color-03;
             margin-bottom: 40px;
-            .alt {
-                display: block;
-                font-family: Poppins;
-                font-weight: 200;
-                font-size: 60px;
-            }
 
             .has-border {
                 display: inline-block;
@@ -167,6 +194,15 @@
             font-weight: 300;
             font-size: 28px;
             margin-bottom: 0;
+            @include max-width(991px){
+                font-size: 32px;
+             }
+             @include max-width(767px){
+                font-size: 24px;
+             }
+             @include max-width(575px){
+                font-size: 18px;
+             }
         }
     }
 }
@@ -231,12 +267,30 @@
                     text-transform: uppercase;
                     font-weight: 300;
                     margin: 10px 0;
+                    @include max-width(991px){
+                        font-size: 38px;
+                     }
+                     @include max-width(767px){
+                        font-size: 30px;
+                     }
+                     @include max-width(575px){
+                        font-size: 24px;
+                     }
                 }
 
                 p {
                     font-size: 28px;
                     font-weight: 400;
                     color: #737373;
+                    @include max-width(991px){
+                        font-size: 34px;
+                     }
+                     @include max-width(767px){
+                        font-size: 24px;
+                     }
+                     @include max-width(575px){
+                        font-size: 20px;
+                     }
                 }
             }
         }
@@ -274,6 +328,15 @@
         font-size: 28px;
         color: #707070;
         margin-top: 20px;
+        @include max-width(991px){
+            font-size: 34px;
+         }
+         @include max-width(767px){
+            font-size: 28px;
+         }
+         @include max-width(575px){
+            font-size: 22px;
+         }
         span {
             width: 63px;
             height: 2px;
@@ -295,6 +358,15 @@
         margin-top: 20px;
         justify-content: flex-end;
         padding-right: 22px;
+        @include max-width(991px){
+            font-size: 34px;
+         }
+         @include max-width(767px){
+            font-size: 28px;
+         }
+         @include max-width(575px){
+            font-size: 22px;
+         }
         span {
             display: inline-block;
             margin: 0 5px;
@@ -331,7 +403,10 @@
         position: absolute;
         width: 580px;
         top: 30px;
-        left: 0;
+        left: -7%;
+        @include max-width(991px){
+            width: 400px;
+        }
     }
 
     .title {
@@ -371,6 +446,15 @@
                     font-size: 38px;
                     margin-bottom: 5px;
                     text-transform: uppercase;
+                    @include max-width(991px){
+                        font-size: 46px;
+                     }
+                     @include max-width(767px){
+                        font-size: 32px;
+                     }
+                     @include max-width(575px){
+                        font-size: 24px;
+                     }
                 }
             }
         }
@@ -392,6 +476,15 @@
             font-weight: 300;
             margin-top: 25px;
             text-decoration: underline;
+            @include max-width(991px){
+                font-size: 34px;
+             }
+             @include max-width(767px){
+                font-size: 28px;
+             }
+             @include max-width(575px){
+                font-size: 22px;
+             }
         }
     }
 }

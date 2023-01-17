@@ -236,6 +236,12 @@ li {
   }
 }
 
+.inner-wrapper {
+  width: clamp(320px, 80%, 1520px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .title-primary {
   font-size: 62px;
   text-transform: uppercase;
@@ -403,12 +409,6 @@ li {
   top: -15px;
 }
 
-.inner-wrapper {
-  width: clamp(320px, 80%, 1520px);
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 @media (max-width: 1024px) and (min-width: 991px) {
   .hero-title {
     font-size: 88px;
@@ -492,17 +492,59 @@ li {
 .aparetment-hero .hero-title h1 {
   color: #ffffff;
   font-size: 64px;
-  font-family: Poppins;
   font-weight: 400;
+  z-index: 9;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .aparetment-hero .hero-title h1 {
+    font-size: 68px;
+  }
+}
+@media (max-width: 991px) {
+  .aparetment-hero .hero-title h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .aparetment-hero .hero-title h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 575px) {
+  .aparetment-hero .hero-title h1 {
+    font-size: 36px;
+  }
 }
 .aparetment-hero .hero-title h1 span {
   display: block;
   text-align: center;
   line-height: 1.25;
 }
-.aparetment-hero .hero-title h1 span.lt {
+.aparetment-hero .hero-title h1 span:last-child {
   font-size: 62px;
   font-weight: 200;
+  font-family: "Poppins";
+}
+@media (max-width: 1024px) {
+  .aparetment-hero .hero-title h1 span:last-child {
+    font-size: 66px;
+  }
+}
+@media (max-width: 991px) {
+  .aparetment-hero .hero-title h1 span:last-child {
+    font-size: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .aparetment-hero .hero-title h1 span:last-child {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .aparetment-hero .hero-title h1 span:last-child {
+    font-size: 34px;
+  }
 }
 .aparetment-hero .hero-title .bg-text {
   position: absolute;
@@ -515,6 +557,12 @@ li {
   left: 50%;
   transform: translate(-50%, 65%);
   white-space: nowrap;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .aparetment-hero .hero-title .bg-text {
+    font-size: 140px;
+  }
 }
 .aparetment-hero .hero-title .bg-text .sub {
   font-size: 70%;
@@ -540,6 +588,22 @@ li {
     transform: translateX(-50%);
     white-space: nowrap;
     text-align: center;
+    font-size: 34px;
+  }
+}
+@media (max-width: 991px) {
+  .aparetment-hero .more-apartment {
+    font-size: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .aparetment-hero .more-apartment {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .aparetment-hero .more-apartment {
+    font-size: 20px;
   }
 }
 .aparetment-hero .more-apartment span {
@@ -550,6 +614,12 @@ li {
   bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .aparetment-hero .scroll-next {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 .apartment-intro {
@@ -580,15 +650,8 @@ li {
   padding-right: 60px;
 }
 .apartment-intro .apartment-intro-content h2 {
-  text-transform: uppercase;
-  font-size: 62px;
+  color: #2f2f2f;
   margin-bottom: 40px;
-}
-.apartment-intro .apartment-intro-content h2 .alt {
-  display: block;
-  font-family: Poppins;
-  font-weight: 200;
-  font-size: 60px;
 }
 .apartment-intro .apartment-intro-content h2 .has-border {
   display: inline-block;
@@ -608,6 +671,21 @@ li {
   font-weight: 300;
   font-size: 28px;
   margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .apartment-intro .apartment-intro-content p {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .apartment-intro .apartment-intro-content p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .apartment-intro .apartment-intro-content p {
+    font-size: 18px;
+  }
 }
 
 .apartment-figure-block {
@@ -671,10 +749,40 @@ li {
   font-weight: 300;
   margin: 10px 0;
 }
+@media (max-width: 991px) {
+  .apartment-features .features-list ul li h3 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .apartment-features .features-list ul li h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .apartment-features .features-list ul li h3 {
+    font-size: 24px;
+  }
+}
 .apartment-features .features-list ul li p {
   font-size: 28px;
   font-weight: 400;
   color: #737373;
+}
+@media (max-width: 991px) {
+  .apartment-features .features-list ul li p {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .apartment-features .features-list ul li p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .apartment-features .features-list ul li p {
+    font-size: 20px;
+  }
 }
 
 .apartment-gallery {
@@ -707,6 +815,21 @@ li {
   color: #707070;
   margin-top: 20px;
 }
+@media (max-width: 991px) {
+  .apartment-gallery .slider-progress {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .apartment-gallery .slider-progress {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .apartment-gallery .slider-progress {
+    font-size: 22px;
+  }
+}
 .apartment-gallery .slider-progress span {
   width: 63px;
   height: 2px;
@@ -726,6 +849,21 @@ li {
   margin-top: 20px;
   justify-content: flex-end;
   padding-right: 22px;
+}
+@media (max-width: 991px) {
+  .apartment-map .slider-progress {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .apartment-map .slider-progress {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .apartment-map .slider-progress {
+    font-size: 22px;
+  }
 }
 .apartment-map .slider-progress span {
   display: inline-block;
@@ -759,7 +897,12 @@ li {
   position: absolute;
   width: 580px;
   top: 30px;
-  left: 0;
+  left: -7%;
+}
+@media (max-width: 991px) {
+  .more-spaces .shape-top {
+    width: 400px;
+  }
 }
 .more-spaces .title h2 {
   color: #ffffff;
@@ -795,6 +938,21 @@ li {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
+@media (max-width: 991px) {
+  .more-spaces .more-spaces-gallery .more-spaces-gallery__item .text span {
+    font-size: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .more-spaces .more-spaces-gallery .more-spaces-gallery__item .text span {
+    font-size: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .more-spaces .more-spaces-gallery .more-spaces-gallery__item .text span {
+    font-size: 24px;
+  }
+}
 .more-spaces .ver-todos {
   padding-top: 120px;
   padding-bottom: 90px;
@@ -811,6 +969,21 @@ li {
   font-weight: 300;
   margin-top: 25px;
   text-decoration: underline;
+}
+@media (max-width: 991px) {
+  .more-spaces .ver-todos .text {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .more-spaces .ver-todos .text {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .more-spaces .ver-todos .text {
+    font-size: 22px;
+  }
 }
 
 .style-1 .apartment-intro .figure img {

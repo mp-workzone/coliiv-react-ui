@@ -12,44 +12,45 @@ import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces"
 import "../../css/apartments.css";
 
 function OneHOneB() {
-    let heroContent = {
-        figure: ApartmentHeroFigure,
-        figureAlt: "",
-        title: "<span>Apartamento</span><span className='lt'>1H - 1B</span>",
-        titleBgText: "A1",
-    };
+  let heroContent = {
+    figure: ApartmentHeroFigure,
+    figureAlt: "",
+    title: "<span>Apartamento</span><span className='lt'>1H - 1B</span>",
+    titleBgText: "A1",
+  };
 
-    let introContent = {
-        figure: AboutFigure,
-        figureAlt: "",
-        figureText: "A1",
-        title: "El espacio todo <span class='alt'>perfecto para ti</span>",
-        titleClass: "has-circle",
-        descroption:
-            "Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.",
-    };
+  let introContent = {
+    figure: AboutFigure,
+    figureAlt: "",
+    figureText: "A1",
+    title:
+      "El espacio todo <span class='alt title-secondary'>perfecto para ti</span>",
+    titleClass: "has-circle",
+    descroption:
+      "Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.",
+  };
 
-    let figureContent = {
-        src: ApartmentFigure,
-        alt: "",
-    };
+  let figureContent = {
+    src: ApartmentFigure,
+    alt: "",
+  };
 
-    let featuresContent = {
-        figure: featureFigure,
-        alt: "",
-    };
+  let featuresContent = {
+    figure: featureFigure,
+    alt: "",
+  };
 
-    return (
-        <div className='apartment-page style-2'>
-            <ApartmentHero heroContent={heroContent} />
-            <ApartmentIntro introContent={introContent} />
-            <ApartmentImageBlock figure={figureContent} />
-            <ApartmentFeatures featuresContent={featuresContent} />
-            <ApartmentGallery />
-            <ApartmentMap />
-            <ApartmentMoreSpaces />
-        </div>
-    );
+  return (
+    <div className="apartment-page style-2">
+      <ApartmentHero heroContent={heroContent} />
+      <ApartmentIntro introContent={introContent} />
+      <ApartmentImageBlock figure={figureContent} />
+      <ApartmentFeatures featuresContent={featuresContent} />
+      <ApartmentGallery />
+      <ApartmentMap />
+      <ApartmentMoreSpaces />
+    </div>
+  );
 }
 
 export default OneHOneB;

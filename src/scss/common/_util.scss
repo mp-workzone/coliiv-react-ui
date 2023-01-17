@@ -31,6 +31,11 @@
         max-width: 100%;
     }
 }
+.inner-wrapper{
+    width: clamp(320px, 80%, 1520px);
+    padding: 0 10px;
+    margin: 0 auto;
+}
 
 .title-primary {
     font-size: 62px;
@@ -158,11 +163,6 @@
     top: -15px;
 }
 
-.inner-wrapper{
-    width: clamp(320px, 80%, 1520px);
-    padding: 0 10px;
-    margin: 0 auto;
-}
 
 @include minmax(991px, 1024px){
     .hero-title{

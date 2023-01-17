@@ -12,41 +12,43 @@ import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces"
 import "../../css/apartments.css";
 
 function TwoH2BPlus() {
-    let figureContent = {
-        src: Apartment,
-        alt: "",
-    };
-    let featuresContent = {
-        figure: FeatureFigure,
-        alt: "",
-    };
+  let figureContent = {
+    src: Apartment,
+    alt: "",
+  };
+  let featuresContent = {
+    figure: FeatureFigure,
+    alt: "",
+  };
 
-    let introContent = {
-        figure: IntroFigure,
-        figureAlt: "",
-        figureText: 'A2<span class="sub">+</span>',
-        title: " Un nuevo hogar todo <span class='alt'>una nueva vida</span>",
-        descroption: "Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat."
-    }
+  let introContent = {
+    figure: IntroFigure,
+    figureAlt: "",
+    figureText: 'A2<span class="sub">+</span>',
+    title:
+      " Un nuevo hogar todo <span class='alt title-secondary'>una nueva vida</span>",
+    descroption:
+      "Apartamento te ofrece amet, consectetur adipiscing elit. Phasellus vestibulum nisl sed faucibus consequat. Aliquam in leo metus. Fusce at orci auctor ante malesuada feugiat.",
+  };
 
-    let heroContent = {
-        figure: HeroFigure,
-        figureAlt: "",
-        title: "<span>Apartamento</span><span className='lt'>2H - 2B PLUS</span>",
-        titleBgText: 'A2<span className="sub">+</span>',
-    }
+  let heroContent = {
+    figure: HeroFigure,
+    figureAlt: "",
+    title: "<span>Apartamento</span><span className='lt'>2H - 2B PLUS</span>",
+    titleBgText: 'A2<span className="sub">+</span>',
+  };
 
-    return (
-        <div className='apartment-page style-4'>
-            <ApartmentHero heroContent={heroContent}/>
-            <ApartmentIntro introContent={introContent}/>
-            <ApartmentImageBlock figure={figureContent} />
-            <ApartmentFeatures featuresContent={featuresContent} />
-            <ApartmentGallery/>
-            <ApartmentMap/>
-            <ApartmentMoreSpaces/>
-        </div>
-    );
+  return (
+    <div className="apartment-page style-4">
+      <ApartmentHero heroContent={heroContent} />
+      <ApartmentIntro introContent={introContent} />
+      <ApartmentImageBlock figure={figureContent} />
+      <ApartmentFeatures featuresContent={featuresContent} />
+      <ApartmentGallery />
+      <ApartmentMap />
+      <ApartmentMoreSpaces />
+    </div>
+  );
 }
 
 export default TwoH2BPlus;

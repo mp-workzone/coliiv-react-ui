@@ -236,6 +236,12 @@ li {
   }
 }
 
+.inner-wrapper {
+  width: clamp(320px, 80%, 1520px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .title-primary {
   font-size: 62px;
   text-transform: uppercase;
@@ -401,12 +407,6 @@ li {
   height: 30%;
   width: 20%;
   top: -15px;
-}
-
-.inner-wrapper {
-  width: clamp(320px, 80%, 1520px);
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
 @media (max-width: 1024px) and (min-width: 991px) {
@@ -862,6 +862,12 @@ li {
   }
 }
 
+.inner-wrapper {
+  width: clamp(320px, 80%, 1520px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .title-primary {
   font-size: 62px;
   text-transform: uppercase;
@@ -1027,12 +1033,6 @@ li {
   height: 30%;
   width: 20%;
   top: -15px;
-}
-
-.inner-wrapper {
-  width: clamp(320px, 80%, 1520px);
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
 @media (max-width: 1024px) and (min-width: 991px) {
