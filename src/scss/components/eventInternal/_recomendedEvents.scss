@@ -1,0 +1,120 @@
+.recomnended-events{
+	padding: 90px 0 175px;
+	@include max-width(1024px){
+		padding: 200px 0;
+	}
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 8%;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $secondary-color-06;
+	}
+	.recomended-events__title{
+		color: $secondary-color-03;
+		.title-primary{
+			margin-bottom: 92px;
+			@include max-width(1024px){
+				font-size: 72px;
+				.title-secondary{
+					font-size: 70px;
+				}
+			}
+			@include max-width(991px){
+				font-size: 48px;
+				margin-bottom: 50px;
+				.title-secondary{
+					font-size: 46px;
+				}
+			}
+			@include max-width(767px){
+				font-size: 38px;
+				.title-secondary{
+					font-size: 36px;
+				}
+			}
+			@include max-width(575px){
+				font-size: 32px;
+				margin-bottom: 30px;
+				.title-secondary{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.events{
+		display: flex;
+		gap: 40px;
+		@include max-width(1024px){
+			flex-direction: column;
+		}
+		.event-figure{
+			margin-bottom: 30px;
+			img{
+				width: 100%;
+			}
+			@include max-width(1024px){
+				text-align: center;
+			}
+		}
+		.event-title{
+			font-size: 38px;
+			font-family: "Berton";
+			font-weight: 400;
+			line-height: 1.84;
+			color: $secondary-color-03 ;
+			margin-bottom: 15px;
+			@include max-width(1024px){
+				font-size: 60px;
+			}
+			@include max-width(992px){
+				font-size: 36px;
+			}
+			@include max-width(768px){
+				font-size: 32px;
+			}
+			@include max-width(575px){
+				font-size: 28px;
+			}
+		}
+		.event-subtitle{
+			font-size: 27px;
+			font-weight: 400;
+			line-height: 1.48;
+			color: #767676;
+			margin-bottom: 25px;
+			@include max-width(1024px){
+				font-size: 38px;
+			}
+			@include max-width(992px){
+				font-size: 32px;
+			}
+			@include max-width(768px){
+				font-size: 24px;
+			}
+			@include max-width(575px){
+				font-size: 16px;
+			}
+		}
+		.event-dsc{
+			font-size: 27px;
+			color: $secondary-color-03;
+			@include max-width(1024px){
+				font-size: 38px;
+			}
+			@include max-width(992px){
+				font-size: 32px;
+			}
+			@include max-width(768px){
+				font-size: 24px;
+			}
+			@include max-width(575px){
+				font-size: 16px;
+			}
+		}
+	}
+}

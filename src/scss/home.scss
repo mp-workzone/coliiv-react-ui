@@ -5,14 +5,14 @@
 @import "common/util";
 
 // Home Page Style
-@import "components/hero";
-@import "components/feature";
-@import "components/service";
-@import "components/appartments";
-@import "components/h2Contact";
-@import "components/serviceTable";
-@import "components/homeCarousel";
-@import "components/partners";
-@import "components/location";
-@import "components/contact";
+@import "./components/home/hero";
+@import "./components/home/feature";
+@import "./components/home/service";
+@import "./components/home/appartments";
+@import "./components/home/h2Contact";
+@import "./components/home/serviceTable";
+@import "./components/home/homeCarousel";
+@import "./components/home/partners";
+@import "./components/home/location";
+@import "./components/home/contact";
 

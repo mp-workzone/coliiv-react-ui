@@ -5,9 +5,8 @@
 @import "./common/util";
 
 // blog page style
-@import "./components/blogHero";
+@import "./components/blog/blogHero";
 @import "./components/commonBlogInfo";
-@import "./components/blogCarousel";
-@import "./components/blogInstaCarousel";
+@import "./components/blog/blogCarousel";
+@import "./components/blog/blogInstaCarousel";
 @import "./components/commonSlider";
-@import "./components/blogDetailsHero";

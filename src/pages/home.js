@@ -1,23 +1,23 @@
 // @flow
 import { useEffect } from "react";
-import Appartments from "../components/appartments";
-import Contact from "../components/contact";
-import Feature from "../components/feature";
-import H2Contact from "../components/h2Contact";
-import Hero from "../components/hero";
-import HomeCarousel from "../components/homeCarousel";
-import Location from "../components/location";
-import Partners from "../components/partners";
-import Service from "../components/service";
-import ServiceTable from "../components/serviceTable";
+import Appartments from "../components/home/appartments";
+import Contact from "../components/home/contact";
+import Feature from "../components/home/feature";
+import H2Contact from "../components/home/h2Contact";
+import Hero from "../components/home/hero";
+import HomeCarousel from "../components/home/homeCarousel";
+import Location from "../components/home/location";
+import Partners from "../components/home/partners";
+import Service from "../components/home/service";
+import ServiceTable from "../components/home/serviceTable";
 import "../scss/home.scss";
 function Home() {
   useEffect(() => {
-    document.body.classList.add('home');
+    document.body.classList.add("home");
     return () => {
-      document.body.classList.remove('home')
-    }
-  }, [])
+      document.body.classList.remove("home");
+    };
+  }, []);
   return (
     <>
       <Hero />

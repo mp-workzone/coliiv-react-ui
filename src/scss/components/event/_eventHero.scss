@@ -1,0 +1,32 @@
+.event-hero{
+	height: 100vh;
+	position: relative;
+	@extend .flex-center-center;
+	.bg-img{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 9;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, .4);
+			z-index: 8;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.hero-title{
+		color: $light-color-01;
+		z-index: 99;
+	}
+}

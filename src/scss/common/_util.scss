@@ -86,10 +86,10 @@
     @include max-width(1024px){
         font-size: 53px;
     }
-    @include max-width(992px){
+    @include max-width(991px){
         font-size: 24px;
     }
-    @include max-width(768px){
+    @include max-width(767px){
         font-size: 20px;
     }
 }
