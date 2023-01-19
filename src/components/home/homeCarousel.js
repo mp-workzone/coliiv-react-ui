@@ -118,4 +118,5 @@ function HomeCarousel() {
     </div>
   );
 }
+
 export default HomeCarousel;

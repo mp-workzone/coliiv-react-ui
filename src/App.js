@@ -1,7 +1,8 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Amenities from "./pages/amenities";
+import Apartments from "./pages/apartments";
 import OneHOneB from "./pages/apartments/OneHOneB";
 import StdioLoft from "./pages/apartments/stdioLoft";
 import TwoH2B from "./pages/apartments/TwoH2B";
@@ -16,7 +17,8 @@ import Franchises from "./pages/franchises";
 import Home from "./pages/home";
 import Team from "./pages/team";
 import "./scss/common.scss";
-function App() {
+function App(props) {
+  const location = useLocation();
   return (
     <div className="main">
       <Header />
@@ -33,10 +35,12 @@ function App() {
         <Route path="/apartments/1h-1b" element={<OneHOneB />} />
         <Route path="/apartments/2h-2b" element={<TwoH2B />} />
         <Route path="/apartments/2h-2b-plus" element={<TwoH2BPlus />} />
+        <Route path="/apartments" element={<Apartments />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/blog-details" element={<BlogDetaisl />} />
       </Routes>
-      <Footer />
+      { location.pathname !== '/apartments' && <Footer /> }
+
     </div>
   );
 }

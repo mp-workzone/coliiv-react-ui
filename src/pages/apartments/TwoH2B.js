@@ -10,7 +10,7 @@ import ApartmentImageBlock from "../../components/apartment/apartmentImageBlock"
 import ApartmentIntro from "../../components/apartment/apartmentIntro";
 import ApartmentMap from "../../components/apartment/apartmentMap";
 import ApartmentMoreSpaces from "../../components/apartment/apartmentMoreSpaces";
-import "../../scss/apartments.scss";
+import "../../scss/apartment.scss";
 
 function OneHOneB() {
   useEffect(() => {
