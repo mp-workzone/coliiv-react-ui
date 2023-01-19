@@ -28,11 +28,19 @@
             }
         }
 
-        h5.dsc {
+        .dsc {
             margin-bottom: 30px;
             @include max-width(1024px) {
                 order: 2;
+                position: relative;
             }
+            // .beforeSlice{
+            //     position: absolute;
+            //     width: 5%;
+            //     background-color: $primary-color-02;
+            //     top: -2%;
+            //     left: -3%;
+            // }
         }
 
         .more-link {
