@@ -39,34 +39,34 @@ function Header() {
             <div className="main-menu">
               <ul>
                 <li className="main-menu__item">
-                  <Link to="/xyz">Inicio</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/">Inicio</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link to="/xyz">Apartamentos</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/apartments">Apartamentos</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link to="/xyz">amenidades</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/amenities">Amenidades</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link to="/xyz">Colivers</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/colivers">Colivers</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link to="/xyz">Eventos</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/event">Eventos</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link to="/xyz">Nosotros</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/team">Nosotros</Link>
+                </li>
+                {/* <li className="main-menu__item main-menu-item_alt">
+                  <Link to="/">Servicios</Link>
+                </li> */}
+                <li className="main-menu__item main-menu-item_alt">
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/franchises">Franquicias</Link>
                 </li>
                 <li className="main-menu__item main-menu-item_alt">
-                  <Link to="/xyz">Servicios</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/career">Carrera</Link>
                 </li>
                 <li className="main-menu__item main-menu-item_alt">
-                  <Link to="/xyz">Franquicias</Link>
-                </li>
-                <li className="main-menu__item main-menu-item_alt">
-                  <Link to="/xyz">Carrera</Link>
-                </li>
-                <li className="main-menu__item main-menu-item_alt">
-                  <Link to="/xyz">Blog</Link>
+                  <Link onClick={ ()=> setMenuOpen(false)} to="/blog">Blog</Link>
                 </li>
               </ul>
             </div>
