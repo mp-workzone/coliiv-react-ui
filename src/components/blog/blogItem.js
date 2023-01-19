@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-function BlogItem({ blog }) {
+function BlogItem({ blog, cssClass }) {
   return (
-    <section className={`info-blog blog`}>
+    <section className={`info-blog blog ${cssClass}`}>
       <div className={blog.class}>
         <img src={blog.sideImg} alt="" />
       </div>
@@ -14,9 +14,11 @@ function BlogItem({ blog }) {
               className="dsc"
               dangerouslySetInnerHTML={{ __html: blog.dscription }}
             />
-            <Link to="/blog/blog-details" className="more-link">
-              {blog.link}
-            </Link>
+            <div>
+              <Link to="/blog/blog-details" className="more-link">
+                {blog.link}
+              </Link>
+            </div>
           </div>
           <div className="info-blog__figure">
             <img src={blog.thumb} alt="" />
