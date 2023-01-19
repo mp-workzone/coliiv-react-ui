@@ -3,6 +3,58 @@
 @import "common/variable";
 @import "common/default";
 @import "common/util";
+
+.apartments-list {
+    padding-top: 140px;
+    .slick-slide {
+        padding: 0 20px;
+    }
+}
+
+.apartment-carousel__item {
+    h1 {
+        font-size: 42px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        span {
+            font-family: "Poppins";
+            font-weight: 200;
+            display: block;
+        }
+    }
+
+    h4{
+        font-size: 30px;
+        color: #2F2F2F;
+        opacity: .7;
+        font-weight: 300;
+        text-align: right;
+    }
+
+    figure {
+        margin: 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    &.even {
+        padding-top: 25px;
+        figure {
+            padding: 0px 15px;
+        }
+
+        .apartment-carousel__title {
+            padding: 0 15px;
+        }
+
+        h4{
+            padding-right: 15px;
+        }
+    }
+}
+
 .apartments-footer {
     position: absolute;
     width: 100%;
