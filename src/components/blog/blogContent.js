@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import BlogImg01 from "../../assets/blog-img.webp";
 import BlogImg02 from "../../assets/blog-img02.webp";
 import BlogImg03 from "../../assets/blog-img03.webp";
@@ -10,7 +10,7 @@ import BlogHero from "./blogHero";
 import BlogItem from "./blogItem";
 
 function BlogContent() {
-  let blogData = [
+  let blogData01 = [
     {
       title: "Consectetur adipiscing elit, phasellus dui diam, varius a tellus",
       time: "Prensa - 20 Julio 2022",
@@ -19,6 +19,7 @@ function BlogContent() {
       thumb: BlogImg01,
     },
     {
+      direction: "changeDirection",
       title: "A lectus. Phasellus condimentum eu diam quis ullamcorper",
       time: "Prensa - 20 Julio 2022",
       dscription:
@@ -27,6 +28,8 @@ function BlogContent() {
       thumb: BlogImg02,
     },
     {
+      class: "bottom-plant",
+      sideImg: Plant,
       title: "Sed sed fringilla neque etiam feugiat, felis nec aliquet",
       time: "Prensa - 20 Julio 2022",
       dscription:
@@ -34,30 +37,59 @@ function BlogContent() {
       link: "Leer artÍculo",
       thumb: BlogImg03,
     },
+  ];
+
+  let blogData02 = [
     {
+      class: "top-leaf",
+      sideImg: Leaf,
       title: "Aenean leo est, facilisis non turpis sed, dictum rutrum ante",
       time: "Prensa - 20 Julio 2022",
       dscription:
         "<p>Sed sed magna rhoncus metus ultrices aliquam nec in sapien. Nulla id iaculis justo, et euismod ante. Integer tristique risus ante. Phasellus tempus vehicula urna, sed feugiat arcu venenatis ac.</p>",
       link: "Leer artÍculo",
-      thumb: BlogImg04,
+      thumb: BlogImg01,
     },
     {
+      direction: "changeDirection",
       title: "Ut aliquam venenatis hendrerit in faucibus, ex non volutpat",
       time: "Prensa - 20 Julio 2022",
       dscription:
         "<p>Curabitur vestibulum tristique lectus, nec vehicula felis luctus vitae. Ut leo velit, aliquam nec leo ut, porttitor mollis libero. Maecenas eget maximus eros. In sodales quam ante, sit amet sodales dui.</p>",
-      thumb: BlogImg03,
+      thumb: BlogImg02,
+    },
+    {
+      title: "Pellentesque hendrerit consectetur tortor vel laoreet",
+      time: "Prensa - 20 Julio 2022",
+      dscription:
+        "<p>Aenean Ligula Tellus, Efficitur Ut Vehicula Sit Amet, Malesuada Quis Arcu. Pellentesque Suscipit Mollis Urna, Vitae Porta Arcu Imperdiet At. Cras Lectus Neque, Consectetur Sed Purus Porta Congue.</p>",
+      thumb: BlogImg04,
     },
   ];
+  // function spacing() {
+  //   if (index == 0) {
+  //     return "top";
+  //   } else if (index == arr.length - 1) {
+  //     return "bottom";
+  //   } else {
+  //     return "middle";
+  //   }
+  // }
   return (
     <>
       <BlogHero />
-      {blogData.map((blog, index) => {
+
+      {blogData01.map((blog, index, arr) => {
         return <BlogItem blog={blog} key={index} />;
       })}
 
-      <section className="info-blog blog blog01 top">
+      <BlogCarousel />
+
+      {blogData02.map((blog, index) => {
+        return <BlogItem blog={blog} key={index} />;
+      })}
+
+      {/* <section className="info-blog blog blog01 top">
         <div className="container-alt">
           <div className="inner-section">
             <div className="info-blog__text-area">
@@ -220,7 +252,7 @@ function BlogContent() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="blog-pagination">
         <ul>
