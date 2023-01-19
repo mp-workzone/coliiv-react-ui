@@ -29,18 +29,26 @@
         }
 
         .dsc {
+            p{
             margin-bottom: 30px;
+            position: relative;
+        }
             @include max-width(1024px) {
                 order: 2;
-                position: relative;
             }
-            // .beforeSlice{
-            //     position: absolute;
-            //     width: 5%;
-            //     background-color: $primary-color-02;
-            //     top: -2%;
-            //     left: -3%;
-            // }
+            .beforeSlice::before{
+                content: '';
+                height: 120%;
+                position: absolute;
+                width: 7%;
+                background-color: $primary-color-02;
+                bottom: 5%;
+                left: -3%;
+                z-index: -1;
+                @include max-width(1024px){
+                    width: 40px;
+                }
+            }
         }
 
         .more-link {
