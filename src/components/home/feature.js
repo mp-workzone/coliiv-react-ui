@@ -3,7 +3,7 @@ import video from "../../assets/video01.webp";
 import { ICON_PLAY } from "../../utils/icons";
 function Feature() {
   return (
-    <section className="feature-area">
+    <section className="feature-area" id="feature-area">
       <div className="plant">
         <img src={plant} alt="" />
       </div>

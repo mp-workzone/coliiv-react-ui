@@ -84,6 +84,7 @@
         position: absolute;
         bottom: 55px;
         left: 4%;
+        cursor: pointer;
         @include max-width(767px) {
             svg {
                 height: 72px;

@@ -170,7 +170,7 @@ function Service() {
         </div>
       </div>
       <div className="more">
-        <a href="/" className="more-link">
+        <div className="more-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="204.358"
@@ -200,7 +200,7 @@ function Service() {
             </g>
           </svg>
           <span>VER TODOS</span>
-        </a>
+        </div>
         <h5 className="ext-info">12 Amenidades</h5>
       </div>
     </section>

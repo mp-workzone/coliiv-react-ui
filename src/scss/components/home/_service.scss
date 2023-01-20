@@ -1,205 +1,248 @@
-.service-area{
-	position: relative;
-	padding: 240px 0 80px;
-	background-image: linear-gradient(#ffffff, #f0f0f0);
-	z-index: 1;
-	@include max-width(767px){
-		padding-top: 80px;
-	}
-	@include max-width(767px){
-		padding: 30px 0;
-	}
-	.leaf{
-		position: absolute;
-		top: -392px;
-		left: -277px;
-		transform: rotate(-5deg);
-		z-index: -1;
-		@include max-width(768px){
-			left: -70%;
-		}
-		@include max-width(575px){
-			display: none;
-		}
-		}
-	.service-title{
-		@include max-width(1024px){
-			margin-bottom: 160px;
-		}
-		@include max-width(768px){
-			margin-bottom: 80px;
-		}
-		@include max-width(575px){
-			margin-bottom: 0;
-		}
-	}
-	.service-items{
-		.service-item{
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-end;
-			column-gap: 40px;
-			margin-bottom: 160px;
-			@include max-width(1448px){
-				flex-direction: column-reverse;
-			}
-			@include max-width(768px){
-				margin-bottom: 80px;
-			}
-			@include max-width(575px){
-				margin-bottom: 35px;
-			}
-			.content{
-				max-width: 700px;
-				@include max-width(1448px){
-					max-width: 100%;
-				}
-				.title{
-					position: relative;
-					z-index: 9;
-					.portrait{
-						left: -40px;
-						height: 95%;
-						width: 8%;
-						bottom: 35%;
-						@include max-width(1448px){
-							width: 4%;
-							bottom: 50%;
-						}
-					}
-					.landscape{
-						left: -50px;
-						height: 30%;
-						width: 25%;
-						top: -13%;
-					}
-				}
-				.title__main,
-				.title__sub{
-					color: $secondary-color-01;
-				}
-				.title__sub{
-					@include max-width(1448px){
-						margin-bottom: 42px;
-					}
-					@include max-width(575px){
-						margin-bottom:15px;
-					}
-				}
-				.right-arrow{
-					margin-bottom: 60px;
-					display: inline-block;
-					@include max-width(575px){
-						margin-bottom: 15px;
-					}
-						svg{
-						@include max-width(1448px){
-							width: 94px;
-							height: 48px;
-						}
-						@include max-width(992px){
-							width: 70px;
-							height: 40px;
-						}
-						@include max-width(768px){
-							width: 56px;
-							height: 32px;
-						}
-						@include max-width(575px){
-							width: 32px;
-							height: 24px;
-						}
-					}
-				}
-				.service-dsc{
-					margin-bottom: 30px;
-					color: $secondary-color-04;
-					@include max-width(1448px){
-						font-size: 38px;
-					}
-					@include max-width(992px){
-						font-size: 28px;
-					}
-					@include max-width(768px){
-						font-size: 24px;
-					}
-					@include max-width(575px){
-						font-size: 15px;
-					}
-				}
-			}
-			.service-img{
-				@include max-width(1448px){
-					width: 100%;
-					margin-bottom: 120px;
-					img{
-						width: 100%;
-					}
-				}
-				@include max-width(768px){
-					margin-bottom: 80px;
-				}
-				@include max-width(575px){
-					margin-bottom: 20px;
-				}
-			}
-		}
-		.service-item:first-child{
-			margin-top: -100px;
-			@include max-width(1636px){
-				margin-top: 50px;
-			}
-			@include max-width(575px){
-				margin-top: 30px;
-			}
-		}
-		.service-item:last-child{
-			margin-bottom: 140px;
-			@include max-width(575px){
-				margin-bottom: 30px;
-			}
-		}
-		.service-item:nth-child(even){
-			flex-direction: row-reverse;
-			column-gap: 100px;
-			
-			.content{
-				max-width: 600px;
-			}
-			@include max-width(1448px){
-				flex-direction: column-reverse;
-				.content{
-					max-width: 100%;
-				}
-			}
-		}
-	}
-	.more{
-		text-align: center;
-		.more-link{
-			svg{
-				@include max-width(991px){
-					height: 66px;
-					width: 66px;
-				}
-			}
-		}
-		span{
-			margin-top: 24px;
-			display: block;
-			color: $secondary-color-01;
-			text-decoration: underline;
-			@include max-width(575px){
-				margin-top: 15px;
-			}
-		}
-		.ext-info{
-			line-height: 1.33;
-			font-weight: 300;
-			margin-top: 18px;
-			@include max-width(575px){
-				margin-top: 10px;
-			}
-		}
-	}
+.service-area {
+    position: relative;
+    padding: 240px 0 80px;
+    background-image: linear-gradient(#ffffff, #f0f0f0);
+    z-index: 1;
+    @include max-width(767px) {
+        padding-top: 80px;
+    }
+
+    @include max-width(767px) {
+        padding: 30px 0;
+    }
+
+    .leaf {
+        position: absolute;
+        top: -392px;
+        left: -277px;
+        transform: rotate(-5deg);
+        z-index: -1;
+        @include max-width(768px) {
+            left: -70%;
+        }
+
+        @include max-width(575px) {
+            display: none;
+        }
+    }
+
+    .service-title {
+        @include max-width(1024px) {
+            margin-bottom: 160px;
+        }
+
+        @include max-width(768px) {
+            margin-bottom: 80px;
+        }
+
+        @include max-width(575px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .service-items {
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            column-gap: 40px;
+            margin-bottom: 160px;
+            @include max-width(1448px) {
+                flex-direction: column-reverse;
+            }
+
+            @include max-width(768px) {
+                margin-bottom: 80px;
+            }
+
+            @include max-width(575px) {
+                margin-bottom: 35px;
+            }
+
+            .content {
+                max-width: 700px;
+                @include max-width(1448px) {
+                    max-width: 100%;
+                }
+
+                .title {
+                    position: relative;
+                    z-index: 9;
+                    .portrait {
+                        left: -40px;
+                        height: 95%;
+                        width: 8%;
+                        bottom: 35%;
+                        @include max-width(1448px) {
+                            width: 4%;
+                            bottom: 50%;
+                        }
+                    }
+
+                    .landscape {
+                        left: -50px;
+                        height: 30%;
+                        width: 25%;
+                        top: -13%;
+                    }
+                }
+
+                .title__main,
+                .title__sub {
+                    color: $secondary-color-01;
+                }
+
+                .title__sub {
+                    @include max-width(1448px) {
+                        margin-bottom: 42px;
+                    }
+
+                    @include max-width(575px) {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .right-arrow {
+                    margin-bottom: 60px;
+                    display: inline-block;
+                    @include max-width(575px) {
+                        margin-bottom: 15px;
+                    }
+
+                    svg {
+                        @include max-width(1448px) {
+                            width: 94px;
+                            height: 48px;
+                        }
+
+                        @include max-width(992px) {
+                            width: 70px;
+                            height: 40px;
+                        }
+
+                        @include max-width(768px) {
+                            width: 56px;
+                            height: 32px;
+                        }
+
+                        @include max-width(575px) {
+                            width: 32px;
+                            height: 24px;
+                        }
+                    }
+                }
+
+                .service-dsc {
+                    margin-bottom: 30px;
+                    color: $secondary-color-04;
+                    @include max-width(1448px) {
+                        font-size: 38px;
+                    }
+
+                    @include max-width(992px) {
+                        font-size: 28px;
+                    }
+
+                    @include max-width(768px) {
+                        font-size: 24px;
+                    }
+
+                    @include max-width(575px) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .service-img {
+                @include max-width(1448px) {
+                    width: 100%;
+                    margin-bottom: 120px;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                @include max-width(768px) {
+                    margin-bottom: 80px;
+                }
+
+                @include max-width(575px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .service-item:first-child {
+            margin-top: -100px;
+            @include max-width(1636px) {
+                margin-top: 50px;
+            }
+
+            @include max-width(575px) {
+                margin-top: 30px;
+            }
+        }
+
+        .service-item:last-child {
+            margin-bottom: 140px;
+            @include max-width(575px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .service-item:nth-child(even) {
+            flex-direction: row-reverse;
+            column-gap: 100px;
+
+            .content {
+                max-width: 600px;
+            }
+
+            @include max-width(1448px) {
+                flex-direction: column-reverse;
+                .content {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .more {
+        text-align: center;
+        .more-link {
+            cursor: pointer;
+            svg {
+                transition: 0.3s;
+                @include max-width(991px) {
+                    height: 66px;
+                    width: 66px;
+                }
+            }
+
+            &:hover {
+                svg {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        span {
+            margin-top: 24px;
+            display: block;
+            color: $secondary-color-01;
+            text-decoration: underline;
+            @include max-width(575px) {
+                margin-top: 15px;
+            }
+        }
+
+        .ext-info {
+            line-height: 1.33;
+            font-weight: 300;
+            margin-top: 18px;
+            @include max-width(575px) {
+                margin-top: 10px;
+            }
+        }
+    }
 }
