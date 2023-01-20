@@ -17,10 +17,11 @@ function TeamHero() {
         sapien lobortis ornare.
         <span className="slice portrait"></span>
       </h4>
-      <a href="/" className="scroll-down">
+      <div className="scroll-down">
         {ICON_SCROLL_DOWN}
-      </a>
+      </div>
     </section>
   );
 }
+
 export default TeamHero;
