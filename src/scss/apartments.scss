@@ -7,26 +7,73 @@
 .apartments-list {
     padding-top: 140px;
     .slick-slide {
-        padding: 0 20px;
+        padding: 0 25px;
+        @include max-width(1024px){
+            padding: 0 20px;
+        }
+        &:nth-child(2n + 1){
+            padding: 30px 45px 0;
+            @include max-width(1024px){
+                padding: 25px 40px 0;
+            }
+            @include max-width(767px){
+                padding: 30px 45px 0;
+            }
+            @include max-width(575px){
+                padding: 0 20px;
+            }
+        }
     }
 }
 
 .apartment-carousel__item {
+    .apartment-carousel__title{
+        @include max-width(1024px){
+            text-align: center;
+        }
+    }
     h1 {
         font-size: 42px;
         text-transform: uppercase;
         line-height: 1.2;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        color: $secondary-color-01;
+        @include max-width(1024px){
+            font-size: 52px;
+        }
+        @include max-width(991px){
+            font-size: 38px;
+        }
+        @include max-width(767px){
+            font-size: 34px;
+        }
+        @include max-width(575px){
+            font-size: 30px;
+        }
         span {
             font-family: "Poppins";
             font-weight: 200;
             display: block;
+            font-size: 40px;
+            @include max-width(1024px){
+                font-size: 50px;
+            }
+            @include max-width(991px){
+                font-size: 36px;
+            }
+            @include max-width(767px){
+                font-size: 32px;
+            }
+            @include max-width(575px){
+                font-size: 28px;
+            }
         }
     }
 
-    h4{
+    .category{
+        margin-top: 10px;
         font-size: 30px;
-        color: #2F2F2F;
+        color: $secondary-color-03;
         opacity: .7;
         font-weight: 300;
         text-align: right;
@@ -36,40 +83,87 @@
         margin: 0;
         img {
             width: 100%;
+            object-fit: cover;
+            height: 100%;
         }
     }
 
-    &.even {
-        padding-top: 25px;
-        figure {
-            padding: 0px 15px;
+    // &.even {
+    //     padding-top: 25px;
+    //     figure {
+    //         padding: 0px 15px;
+    //     }
+
+    //     .apartment-carousel__title {
+    //         padding: 0 15px;
+    //     }
+
+    //     h4{
+    //         padding-right: 15px;
+    //     }
+    // }
+}
+.apartment-carousel__text{
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 15px;
+    .apartment-carousel__title{
+        font-size: 32px;
+        margin-bottom: 5px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: $secondary-color-03;
+        text-transform: uppercase;
+        @include max-width(1024px){
+            font-size: 42px;
+        }
+        @include max-width(991px){
+            font-size: 30px;
+        }
+        @include max-width(767px){
+            font-size: 28px;
+        }
+    }
+    .apartment-carousel__subtitle{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: $secondary-color-03;
+        @include max-width(1024px){
+            font-size: 30px;
+        }
+        @include max-width(991px){
+            font-size: 22px;
+        }
+        @include max-width(767px){
+            font-size: 20px;
+        }
+        @include max-width(575px){
+            font-size: 18px;
         }
 
-        .apartment-carousel__title {
-            padding: 0 15px;
-        }
-
-        h4{
-            padding-right: 15px;
-        }
     }
 }
 
 .apartments-footer {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    padding: 25px 0;
+    padding: 27px 0;
     .container-alt {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
+       @extend .flex-center-spaceBetween;
         ul {
             display: flex;
-            li {
+            li{
                 margin-right: 40px;
+                @include max-width(575px){
+                    margin-right: 20px;
+                }
+            }
+            @include max-width(575px){
+                a{
+                    svg{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
             }
         }
 

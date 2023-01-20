@@ -171,6 +171,16 @@
                 display: flex;
                 li {
                     margin-right: 40px;
+                    @include max-width(575px){
+                        margin-right: 20px;
+                        a{
+                            svg{
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                    
                 }
             }
 
