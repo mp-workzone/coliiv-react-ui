@@ -26,6 +26,7 @@ function Header() {
     }
   }
 
+  // Add menu active class
   function addActiveClass( path ){
     if( path === location.pathname ){
       return 'active';
