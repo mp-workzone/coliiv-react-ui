@@ -141,6 +141,10 @@
                     @include max-width(575px) {
                         font-size: 26px;
                     }
+
+                    &.active {
+                        color: #c4d979;
+                    }
                 }
 
                 &.main-menu-item_alt {
@@ -171,16 +175,15 @@
                 display: flex;
                 li {
                     margin-right: 40px;
-                    @include max-width(575px){
+                    @include max-width(575px) {
                         margin-right: 20px;
-                        a{
-                            svg{
+                        a {
+                            svg {
                                 height: 20px;
                                 width: 20px;
                             }
                         }
                     }
-                    
                 }
             }
 

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import menuFigure from "../assets/menu-figure.webp";
 
 function Header() {
   const [fix, setFix] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const location = useLocation();
   // Fixed Header
   function setFixed() {
     if (window.scrollY > 60) {
@@ -26,6 +26,12 @@ function Header() {
     }
   }
 
+  function addActiveClass( path ){
+    if( path === location.pathname ){
+      return 'active';
+    }
+  }
+
   return (
     <>
       <section className={`menu ${menuOpen ? "open" : ""}`}>
@@ -39,34 +45,31 @@ function Header() {
             <div className="main-menu">
               <ul>
                 <li className="main-menu__item">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/">Inicio</Link>
+                  <Link className={addActiveClass('/')} onClick={ ()=> setMenuOpen(false)} to="/">Inicio</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/apartments">Apartamentos</Link>
+                  <Link className={addActiveClass('/apartments')} onClick={ ()=> setMenuOpen(false)} to="/apartments">Apartamentos</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/amenities">Amenidades</Link>
+                  <Link className={addActiveClass('/amenities')} onClick={ ()=> setMenuOpen(false)} to="/amenities">Amenidades</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/colivers">Colivers</Link>
+                  <Link className={addActiveClass('/colivers')} onClick={ ()=> setMenuOpen(false)} to="/colivers">Colivers</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/event">Eventos</Link>
+                  <Link className={addActiveClass('/event')} onClick={ ()=> setMenuOpen(false)} to="/event">Eventos</Link>
                 </li>
                 <li className="main-menu__item">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/team">Nosotros</Link>
-                </li>
-                {/* <li className="main-menu__item main-menu-item_alt">
-                  <Link to="/">Servicios</Link>
-                </li> */}
-                <li className="main-menu__item main-menu-item_alt">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/franchises">Franquicias</Link>
+                  <Link className={addActiveClass('/team')} onClick={ ()=> setMenuOpen(false)} to="/team">Nosotros</Link>
                 </li>
                 <li className="main-menu__item main-menu-item_alt">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/career">Carrera</Link>
+                  <Link className={addActiveClass('/franchises')} onClick={ ()=> setMenuOpen(false)} to="/franchises">Franquicias</Link>
                 </li>
                 <li className="main-menu__item main-menu-item_alt">
-                  <Link onClick={ ()=> setMenuOpen(false)} to="/blog">Blog</Link>
+                  <Link className={addActiveClass('/career')} onClick={ ()=> setMenuOpen(false)} to="/career">Carrera</Link>
+                </li>
+                <li className="main-menu__item main-menu-item_alt">
+                  <Link className={addActiveClass('/blog')} onClick={ ()=> setMenuOpen(false)} to="/blog">Blog</Link>
                 </li>
               </ul>
             </div>
