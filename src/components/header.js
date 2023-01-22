@@ -6,6 +6,7 @@ function Header() {
   const [fix, setFix] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+
   // Fixed Header
   function setFixed() {
     if (window.scrollY > 60) {
